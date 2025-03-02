@@ -1,0 +1,263 @@
+.encabezado {
+	background-color: orange; 
+	background-image: url('hampages/lu1idc/bg-comic.jpg');
+	background-size: cover;
+	color: black; 
+	padding: 10px;
+	font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+	font-weight: 700;
+	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9); /* Sombra semi-transparente */
+}
+
+.row-1 {
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+	gap: 20px;
+}
+
+.row-2 {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.row-3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+       
+.row-4 {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 20px;
+}
+        
+.row-awards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}   
+        
+.sidebar {
+	background: black;
+	color: white;
+	padding: 20px;
+}
+
+main {
+	display: grid;
+	grid-template-rows: auto auto auto;
+	gap: 20px;
+	padding: 20px;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #f4f4f4; /* Un gris claro */
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2; /* Interlineado para mejor legibilidad */
+}
+
+aside {
+	background: #ffffff;
+	padding: 20px;
+	padding-top: 0px;
+	border: 2px solid black;
+}
+
+section {
+	position: relative; /* Necesario para que h2 se posicione respecto a section */
+	padding: 40px 20px 20px 20px; /* Asegura que no se superponga el contenido */
+	padding-top: 100px; /* Ajusta según el tamaño de h2 */
+	border: 2px solid black;
+	background-image: url('hampages/lu1idc/bg-paper.jpg');
+	/*overflow: visible; /* Permite que el triángulo sea visible */
+}
+
+.inverted {
+	background: black;
+	color: #ffffff;
+}
+
+.inverted a {
+	color: white;
+}
+
+.alinear-derecha {
+	text-align: right;
+}
+
+.alinear-centro {
+	text-align: center;
+}
+	
+h1, h2, h3, h4 {
+	font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; /* O elige otra fuente */
+}
+
+h2 {
+	background-image: url('hampages/lu1idc/bg-paper.jpg');
+	background-color: white;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 0;
+	margin-bottom: 30px;
+	position: absolute; /* Lo posiciona dentro del section */
+	top: -2px;
+	left: -2px;
+}
+	
+h2::before {
+	content: "";
+	position: absolute;
+	bottom: -40px; /* Ajusta la posición vertical */
+	left: 20px; /* Ajusta la posición horizontal */
+	border-top: 40px solid black; /* Ajusta el tamaño del triángulo */
+	border-left: 30px solid transparent;
+	border-right: 0 solid black;
+	width: 0; /* Evita que herede ancho */
+	height: 0; /* Evita que herede altura */
+}
+
+.inverted h2 {
+	background-image: none;
+	background-color: black;
+	border: 2px solid white;
+}
+
+.inverted h2::before {
+	border-top: 40px solid white; /* Ajusta el tamaño del triángulo */
+}
+
+nav ul {
+	font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+	list-style: none; /* Quitar viñetas */
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+nav ul li {
+	margin: 10px 0;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+a {
+	color: #000000;
+}
+
+.image-container {
+	width: 100%; /* El contenedor ocupa todo el ancho de la celda */
+	height: 0;
+	padding-bottom: 100%; /* Mantiene la relación de aspecto 1:1 */
+	position: relative; /* Necesario para posicionar la imagen */
+}
+
+.image-container img {
+	position: absolute; /* Posiciona la imagen dentro del contenedor */
+	top: 0;
+	left: 0;
+	width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+	height: 100%; /* La imagen ocupa todo el alto del contenedor */
+	object-fit: cover; /* Ajusta la imagen al contenedor */
+	filter: grayscale(100%) contrast(200%) brightness(80%);
+	transition: transform 0.3s ease; /* Transición suave */
+}
+
+.image-container img:hover {
+	/*transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+	filter: grayscale(0%);
+}
+
+#sufix {
+	display: flex; /* Reemplaza <center> */
+	justify-content: center; /* Reemplaza <center> */
+	padding-top: 20px;
+	max-width: 240px;
+	width: 100%; /* Asegura que la sección ocupe el ancho disponible */
+	box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+#sufix img {
+	width: 100%; /* La imagen ocupa el ancho de la sección */
+	height: auto; /* La altura se ajusta proporcionalmente */
+	object-fit: contain; /* Ajusta la imagen sin recortarla */
+	filter: grayscale(100%) contrast(200%) brightness(80%);
+	transition: transform 0.3s ease; /* Transición suave */
+	display: block;
+}
+
+#sufix img:hover {
+	transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+	filter: grayscale(0%);
+}	
+
+
+
+#my-town img {
+	margin: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	/*width: 150px;
+	height: 150px;*/
+	max-height: 200px;
+	width: auto;
+	/*object-fit: cover;*/
+	filter: grayscale(100%) contrast(200%) brightness(80%);
+	transition: transform 0.3s ease; /* Transición suave */
+}
+
+#my-town img:hover {
+	transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+	filter: grayscale(0%);
+}
+
+#contests img, #awards img {
+	margin: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	/*width: 150px;
+	height: 150px;*/
+	max-height: 100px;
+	width: auto;
+	/*object-fit: cover;*/
+	filter: grayscale(100%) contrast(200%) brightness(80%);
+	transition: transform 0.3s ease; /* Transición suave */
+}
+
+#contests img:hover, #awards img:hover {
+	transform: scale(1.5); /* Ligeramente más grande al pasar el ratón */
+	filter: grayscale(0%);
+}
+
+.texto-resaltado {
+	background-color: LightSalmon;
+	padding: 5px; /* Opcional: añade relleno para que el fondo se vea mejor */
+	/*margin-right: 10px; /* Ajuste del margen derecho */
+	display: inline; /* Importante: permite aplicar padding y márgenes */
+	text-align: right;
+	font-weight: 700;
+}
+
+#pie {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 0px;
+	padding-bottom: 0px;
+	height: 150px;
+	background-image: url('hampages/lu1idc/bg-tapas.jpg');
+	background-size: cover;
+	/* text-align: right; */
+	font-weight: 700;
+}	
