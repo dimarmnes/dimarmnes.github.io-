@@ -1,2 +1,15 @@
+# El nombre de nuestro sitio
+# va a mostrarse en la barra de navegación superior
+name: LU1IDC
+
+# Descripción de nuestro sitio
+# va a mostrarse en la barra de navegación superior
+description:
+ Abaout LU1IDC
+
+# URL del logo del blog
+# va a mostrarse en la barra de navegación superior
+avatar: https://raw.githubusercontent.com/dimarmnes/dimarmnes.github.io/master/images/logo.png
+
 # Este valor se usa para generar la navegación interna del sitio
 url: https://lu1idc.com.ar
