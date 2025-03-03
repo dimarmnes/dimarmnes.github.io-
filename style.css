@@ -1,6 +1,6 @@
 .encabezado {
 	background-color: orange; 
-	background-image: url('hampages/lu1idc/bg-comic.jpg');
+	background-image: url('images/bg-comic.jpg');
 	background-size: cover;
 	color: black; 
 	padding: 10px;
@@ -72,7 +72,7 @@ section {
 	padding: 40px 20px 20px 20px; /* Asegura que no se superponga el contenido */
 	padding-top: 100px; /* Ajusta según el tamaño de h2 */
 	border: 2px solid black;
-	background-image: url('hampages/lu1idc/bg-paper.jpg');
+	background-image: url('images/bg-paper.jpg');
 	/*overflow: visible; /* Permite que el triángulo sea visible */
 }
 
@@ -256,7 +256,7 @@ a {
 	padding: 0px;
 	padding-bottom: 0px;
 	height: 150px;
-	background-image: url('hampages/lu1idc/bg-tapas.jpg');
+	background-image: url('images/bg-tapas.jpg');
 	background-size: cover;
 	/* text-align: right; */
 	font-weight: 700;
