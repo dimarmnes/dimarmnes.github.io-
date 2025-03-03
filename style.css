@@ -319,7 +319,7 @@ a {
     }
 
     .sidebar {
-        width: 100%; /* La barra lateral ocupa todo el ancho */
+        /*width: 100%; /* La barra lateral ocupa todo el ancho */
 		margin-bottom: 20px; /* Agrega margen inferior */
     }
 
@@ -344,6 +344,21 @@ a {
 	#on-air iframe {
         max-width: 100%; /* Ocupa todo el ancho en móviles */
         height: auto; /* La altura se ajusta automáticamente */
+	}
+
+	nav ul {
+		flex-direction: row;
+		flex-wrap: wrap; /* Agrega esta línea */
+		justify-content: center; /* Centra los elementos horizontalmente */
+		margin: 0 20px; /* Ajusta el margen para separar los elementos */
+	}
+	nav ul li {
+        margin: 10px 0; /* Ajusta el margen para móviles */
+	}
+	nav ul li a {
+		color: white;
+		text-decoration: none;
+		padding: 5px 10px;
 	}
 
 }
