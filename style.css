@@ -1,4 +1,4 @@
-.encabezado {
+header {
 	background-color: orange; 
 	background-image: url('images/bg-comic.jpg');
 	background-size: cover;
@@ -241,10 +241,10 @@ a {
 }
 
 .texto-resaltado {
-	background-color: LightSalmon;
+	background-color: #F47A0B;
 	padding: 5px; /* Opcional: añade relleno para que el fondo se vea mejor */
 	/*margin-right: 10px; /* Ajuste del margen derecho */
-	display: inline; /* Importante: permite aplicar padding y márgenes */
+	/*display: inline; /* Importante: permite aplicar padding y márgenes */
 	text-align: right;
 	font-weight: 700;
 }
@@ -261,3 +261,79 @@ a {
 	/* text-align: right; */
 	font-weight: 700;
 }	
+
+/* Media query para pantallas más anchas (escritorio) */
+@media (min-width: 768px) {
+    .row-1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        gap: 20px;
+    }
+
+    .row-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .row-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .row-4 {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+    }
+
+    .row-awards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+/* Media query para pantallas más pequeñas (móviles) */
+@media (max-width: 767px) {
+
+	header {
+		margin-bottom: 20px;
+	}
+    .row-1, .row-2, .row-3, .row-4, .row-awards {
+        display: block; /* Cambia a bloque para mostrar uno debajo del otro */
+		gap: 0px;
+    }
+
+    .sidebar {
+        width: 100%; /* La barra lateral ocupa todo el ancho */
+		margin-bottom: 20px; /* Agrega margen inferior */
+    }
+
+    main {
+        padding: 10px; /* Reduce el padding para móviles */
+		gap: 0px;
+    }
+
+    section {
+        /*padding: 20px 10px; /* Reduce el padding para móviles */
+		padding-top: 100px;
+		margin-bottom: 20px; /* Agrega margen inferior */
+	}
+    
+
+    .image-container {
+        padding-bottom: 60%; /* Ajusta la relación de aspecto para móviles */
+		margin-bottom: 20px; /* Agrega margen inferior */
+
+    }
+
+}
+
