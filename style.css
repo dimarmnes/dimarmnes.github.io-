@@ -4,7 +4,7 @@
 	background-size: cover;
 	color: black; 
 	padding: 10px;
-	font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+	font-family: 'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
 	font-weight: 700;
 	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9); /* Sombra semi-transparente */
 }
@@ -94,7 +94,7 @@ section {
 }
 	
 h1, h2, h3, h4 {
-	font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; /* O elige otra fuente */
+	font-family:'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* O elige otra fuente */
 }
 
 h2 {
@@ -132,7 +132,7 @@ h2::before {
 }
 
 nav ul {
-	font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+	font-family:'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
 	list-style: none; /* Quitar viñetas */
 	padding: 0;
 	display: flex;
