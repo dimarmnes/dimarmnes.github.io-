@@ -9,6 +9,12 @@ header {
 	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9); /* Sombra semi-transparente */
 }
 
+.header img {
+    width: 100%;
+    height: auto;
+    display: block; /* Evita espacios en blanco innecesarios */
+}
+
 .row-1 {
 	display: grid;
 	grid-template-columns: 1fr 2fr 2fr;
