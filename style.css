@@ -7,13 +7,10 @@ header {
 	font-family: 'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
 	font-weight: 700;
 	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9); /* Sombra semi-transparente */
+	overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
-.header img {
-    width: 100%;
-    height: auto;
-    display: block; /* Evita espacios en blanco innecesarios */
-}
+
 
 .row-1 {
 	display: grid;
@@ -312,6 +309,14 @@ a {
 
 	header {
 		margin-bottom: 20px;
+		/*max-height: 50px; /* Altura máxima para móviles */
+	}
+
+	header img {
+		width: 100%;
+		height: auto;
+		display: block; /* Evita espacios en blanco innecesarios */
+		object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
 	}
     .row-1, .row-2, .row-3, .row-4, .row-awards {
         display: block; /* Cambia a bloque para mostrar uno debajo del otro */
@@ -343,7 +348,7 @@ a {
 
 	#on-air iframe {
         max-width: 100%; /* Ocupa todo el ancho en móviles */
-        height: auto; /* La altura se ajusta automáticamente */
+        /*height: auto; /* La altura se ajusta automáticamente */
 	}
 
 	nav ul {
@@ -361,5 +366,8 @@ a {
 		padding: 5px 10px;
 	}
 
+	#sufix{
+		max-width: 100%;
+	}
 }
 
