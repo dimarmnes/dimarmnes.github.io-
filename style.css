@@ -10,6 +10,10 @@ header {
 	overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
+header p {
+	margin-top: 5px; /* Reduce el margen superior */
+	margin-bottom: 5px; /* Reduce el margen inferior */
+  }
 
 
 .row-1 {
