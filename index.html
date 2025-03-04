@@ -56,7 +56,7 @@
     
 	<div class="row-3">
 		<div class="image-container">
-			<img src="images/sh_radio_lupin.jpg" alt="Radio Lupin">		
+			<img src="images/sh_radio_lupin.jpg" data-modal-imagen="images/sh_radio_lupin.jpg"  alt="Radio Lupin">		
 		</div>		
 		
 		<section id="my-rig" class="inverted">
@@ -101,7 +101,7 @@
 	</div>
 
 		<section id="my-town" class="alinear-centro">
-		<h2>Mi pueblo/My town</h2>
+		<h2>Postales de mi pueblo/Postcards of my town</h2>
 			         
          <a href="images/ph_san_javier_letras.jpg" target="_blank"><img src="images/ph_san_javier_letras.jpg" alt="Welcome letters to San Javier"/></a>
 			<a href="images/ph_rio_uruguay_luna.jpg" target="_blank"><img src="images/ph_rio_uruguay_luna.jpg" alt="Moon over Uruguay river" /></a>
@@ -135,6 +135,7 @@
         </section>
 	</div>
 		
+	<div class="row-4">
 		<section id="old-activations">
             <h2>Activaciones pasadas/Old Activations</h2>
             <ul>
@@ -142,14 +143,90 @@
 				<li>22/06/2024 - 23/06/2024&nbsp; &quot;TODOS UNIDOS BAJO EL MISMO MANTO PATRIO&quot; - <a href="https://qsolog.ar/certificados" target="_blank" rel="noopener noreferrer">Download QSL</a></li>
 			</ul>
         </section>
-        
+
+		<section id="logos" class="alinear-centro">
+			<img src="images/LU1IDC_logo.png" alt=" " />
+			<img src="images/o_radioaficionados_misiones_logo.png" alt=" " /><br>
+			<img src="images/eqsl_authenticity.jpg" alt="eQSL Authenticity" />
+		</section>
+	</div>
+
 		<section id="pie">
 			<!--<span class="texto-resaltado">© 2024 LU1IDC inspirado por Guerrero y Sídoli</span>-->
 		</section>
-    
+	
+
 	<footer>
 		<p class="texto-resaltado">© 2024 LU1IDC inspired by Guerrero y Sídoli</p>
 	</footer>
+
+	<a href="#" id="volver-arriba" title="Volver arriba">
+		<img src="images/up-arrow.png" alt="Volver arriba">
+	</a>
+
 	</main>
+
+	<div id="modal-imagen" class="modal">
+		<span class="cerrar">&times;</span>
+		<img class="modal-contenido" id="img01">
+	</div>  
+
+	<script>
+		// Tu código JavaScript aquí
+		window.onscroll = function() {
+		  mostrarOcultarBoton();
+		};
+	
+		function mostrarOcultarBoton() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("volver-arriba").style.display = "block";
+		  } else {
+			document.getElementById("volver-arriba").style.display = "none";
+		  }
+		}
+	
+		document.getElementById("volver-arriba").onclick = function(e) {
+			e.preventDefault();
+		  window.scrollTo({
+			top: 0,
+			behavior: "smooth"
+		  });
+		};
+
+// Obtén el modal
+const modal = document.getElementById("modal-imagen");
+
+// Obtén todas las imágenes con el atributo data-modal-imagen
+const imagenes = document.querySelectorAll("[data-modal-imagen]");
+
+// Obtén el elemento <img> dentro del modal
+const modalImagen = document.getElementById("img01");
+
+// Obtén el elemento <span> que cierra el modal
+const cerrar = document.getElementsByClassName("cerrar")[0];
+
+// Agrega un evento click a cada imagen
+imagenes.forEach(imagen => {
+  imagen.onclick = function() {
+    modal.style.display = "flex"; // Cambiado a flex para centrar
+    modalImagen.src = this.dataset.modalImagen;
+  }
+});
+
+// Agrega un evento click al botón de cerrar
+cerrar.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Agrega un evento click al fondo del modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+	  </script>
+
+
 </body>
 </html>
