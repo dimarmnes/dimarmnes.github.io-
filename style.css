@@ -6,7 +6,7 @@ header {
 	padding: 10px;
 	font-family: 'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
 	font-weight: 700;
-	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9); /* Sombra semi-transparente */
+	text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9); /* Sombra semi-transparente */
 	overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
