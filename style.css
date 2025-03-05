@@ -240,8 +240,8 @@ a {
 	transition: transform 0.3s ease; /* Transición suave */
 }
 
-#contests img:hover, #awards img:hover, #logos img:hover {
-	transform: scale(1.5); /* Ligeramente más grande al pasar el ratón */
+#contests img:hover, #awards img:hover {
+	transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
 	filter: grayscale(0%);
 }
 
