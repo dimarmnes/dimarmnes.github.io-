@@ -1,61 +1,28 @@
-header {
-	background-color: orange; 
-	background-image: url('images/bg-comic.jpg');
-	background-size: cover;
-	color: black; 
-	padding: 10px;
-	font-family: 'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+:root {
+    --fuente:'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+.alinear-centro {
+	text-align: center;
+}
+
+.alinear-izquierda {
+	text-align: left;
+}
+
+.texto-resaltado {
+	background-color: #F47A0B;
+	padding: 5px; /* Opcional: añade relleno para que el fondo se vea mejor */
+	text-align: right;
 	font-weight: 700;
-	text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9); /* Sombra semi-transparente */
-	overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
-header p {
-	margin-top: 5px; /* Reduce el margen superior */
-	margin-bottom: 5px; /* Reduce el margen inferior */
-  }
-
-
-.row-1 {
-	display: grid;
-	grid-template-columns: 1fr 2fr 2fr;
-	gap: 20px;
-}
-
-.row-2 {
-	display: grid;
-	grid-template-columns: 1fr;
-}
-
-.row-3 {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 20px;
-}
-       
-.row-4 {
-	display: grid;
-	grid-template-columns: 1fr auto;
-	gap: 20px;
-}
-        
-.row-awards {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-}   
-        
-.sidebar {
-	background: black;
-	color: white;
-	padding: 20px;
-}
-
-main {
-	display: grid;
-	grid-template-rows: auto auto auto;
-	gap: 20px;
-	padding: 20px;
+a {
+	color: #000000;
 }
 
 body {
@@ -63,53 +30,165 @@ body {
 	background-color: #f4f4f4; /* Un gris claro */
 	color: #000000;
 	margin: 0;
-	padding: 0;
-	line-height: 1.2; /* Interlineado para mejor legibilidad */
+	line-height: 1.2; /* Interlineado para mejor legibilidad */	
+	padding: 10px;
 }
 
-aside {
-	background: #ffffff;
+header {
+	background-image: url('images/bg-comic.jpg');
+	background-size: cover;
+	color: black; 
+	padding: 10px;
+	font-family: var(--fuente);
+	font-weight: 700;
+	text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9); /* Sombra semi-transparente */
+	overflow: hidden; /* Oculta el contenido que se desborda */
+	margin-bottom: 10px;
+}
+
+header img {
+	width: 100%;
+	height: auto;
+	display: block; /* Evita espacios en blanco innecesarios */
+	object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+header p {
+	margin-top: 5px; /* Reduce el margen superior */
+	margin-bottom: 5px; /* Reduce el margen inferior */
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; /* Agrega esta línea */
+	list-style: none; /* Quitar viñetas */
+	justify-content: center; /* Centra los elementos horizontalmente */
+	margin: 0 20px; /* Ajusta el margen para separar los elementos */
+	padding-left: 0;
+}
+
+
+nav ul li {
+	margin: 10px 0; /* Ajusta el margen para móviles */
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+nav ul li a:hover {
+	text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+nav {
+	background: black;
+	color: white;
 	padding: 20px;
-	padding-top: 0px;
-	border: 2px solid black;
+	margin-bottom: 10px; /* Agrega margen inferior */
+	margin-top: 10px; /* Agrega margen superior */
 }
 
 section {
 	position: relative; /* Necesario para que h2 se posicione respecto a section */
-	padding: 40px 20px 20px 20px; /* Asegura que no se superponga el contenido */
-	padding-top: 100px; /* Ajusta según el tamaño de h2 */
+	padding: 100px 20px 30px 20px; /* Asegura que no se superponga el contenido */
 	border: 2px solid black;
 	background-image: url('images/bg-paper.jpg');
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
-#logos {
-	padding-top: 20px;
-}
-
-.inverted {
+.section-inverted {
 	background: black;
 	color: #ffffff;
 }
 
-.inverted a {
+.section-inverted a {
 	color: white;
 }
 
-.alinear-derecha {
-	text-align: right;
+.section-inverted h2 {
+	background-image: none;
+	background-color: black;
+	border: 2px solid white;
 }
 
-.alinear-centro {
+.section-inverted h2::before {
+	border-top: 40px solid white; /* Ajusta el tamaño del triángulo */
+}
+
+.section-gallery, .section-gallery-100 {
 	text-align: center;
 }
-	
-h1, h2, h3, h4 {
-	font-family:'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* O elige otra fuente */
+
+.section-gallery img{
+	margin: 5px;
+	border-radius: 5px;
+	max-height: 200px;
+	max-width: 100%;*/
+	/*width: auto;*/
+	transition: transform 0.3s ease; /* Transición suave */
+}
+ 
+.section-gallery-100 img{
+	margin: 5px;
+	border-radius: 5px;
+	max-height: 100px;
+	max-width: 100%;*/
+	transition: transform 0.3s ease; /* Transición suave */
+}
+
+.section-gallery img:hover, .section-gallery-100 img:hover {
+	transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+}
+
+.more{
+	border: 2px solid black;
+	padding: 6px;
+	margin: 0;
+	position: absolute; /* Lo posiciona dentro del section */
+	bottom: -2px;
+	right: -2px;
+}
+
+.image-container {
+	display: flex; /* Reemplaza <center> */
+	justify-content: center; /* Reemplaza <center> */
+	padding: 20px;
+	/*width: 100%; /* Asegura que la sección ocupe el ancho disponible */
+	/*box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.image-container img {
+	max-width: 400px;
+	width: 100%; /* La imagen ocupa el ancho de la sección */
+	height: auto; /* La altura se ajusta proporcionalmente */
+	object-fit: contain; /* Ajusta la imagen sin recortarla */
+	transition: transform 0.3s ease; /* Transición suave */
+	/*display: block;*/
+}
+
+.image-container img:hover {
+	transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+}
+
+
+#logos {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#logos img {
+	max-height: 100px;
 }
 
 h2 {
-	background-image: url('images/bg-paper.jpg');
-	background-color: white;
+    font-family: var(--fuente);
+}
+
+h2 {
 	border: 2px solid black;
 	padding: 10px;
 	margin: 0;
@@ -131,127 +210,9 @@ h2::before {
 	height: 0; /* Evita que herede altura */
 }
 
-.inverted h2 {
-	background-image: none;
-	background-color: black;
-	border: 2px solid white;
-}
-
-.inverted h2::before {
-	border-top: 40px solid white; /* Ajusta el tamaño del triángulo */
-}
-
-nav ul {
-	font-family:'Comic Neue', 'Comic Sans MS', 'Chalkboard SE', sans-serif;
-	list-style: none; /* Quitar viñetas */
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-}
-
-nav ul li {
-	margin: 10px 0;
-}
-
-nav ul li a {
-	color: white;
-	text-decoration: none;
-}
-
-nav a:hover {
-	text-decoration: underline; /* Subrayar al pasar el ratón */
-}
-
-a {
-	color: #000000;
-}
-
-.image-container {
-	width: 100%; /* El contenedor ocupa todo el ancho de la celda */
-	height: 0;
-	padding-bottom: 100%; /* Mantiene la relación de aspecto 1:1 */
-	position: relative; /* Necesario para posicionar la imagen */
-}
-
-.image-container img {
-	position: absolute; /* Posiciona la imagen dentro del contenedor */
-	top: 0;
-	left: 0;
-	width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-	height: 100%; /* La imagen ocupa todo el alto del contenedor */
-	object-fit: cover; /* Ajusta la imagen al contenedor */
-	/* filter: grayscale(100%) contrast(200%) brightness(80%); */
-	transition: transform 0.3s ease; /* Transición suave */
-}
-
-.image-container img:hover {
-	/*transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
-	filter: grayscale(0%);
-}
-
-#sufix {
-	display: flex; /* Reemplaza <center> */
-	justify-content: center; /* Reemplaza <center> */
-	padding-top: 20px;
-	max-width: 240px;
-	width: 100%; /* Asegura que la sección ocupe el ancho disponible */
-	box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-}
-
-#sufix img {
-	width: 100%; /* La imagen ocupa el ancho de la sección */
-	height: auto; /* La altura se ajusta proporcionalmente */
-	object-fit: contain; /* Ajusta la imagen sin recortarla */
-	/* filter: grayscale(100%) contrast(200%) brightness(80%); */
-	transition: transform 0.3s ease; /* Transición suave */
-	display: block;
-}
-
-#sufix img:hover {
-	transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
-	filter: grayscale(0%);
-}	
-
-#my-town img {
-	margin: 5px;
-	/* border: 3px solid #000000; */
-	border-radius: 5px;
-	/*width: 150px;
-	height: 150px;*/
-	max-height: 200px;
-	width: auto;
-	/*object-fit: cover;*/
-	/* filter: grayscale(100%) contrast(200%) brightness(80%); */
-	transition: transform 0.3s ease; /* Transición suave */
-}
-
-#my-town img:hover {
-	transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
-	filter: grayscale(0%);
-}
-
-#contests img, #awards img, #logos img {
-	margin: 5px;
-	/* border: 1px solid #ccc; */
-	border-radius: 5px;
-	max-height: 100px;
-	width: auto;
-	/* filter: grayscale(100%) contrast(200%) brightness(80%); */
-	transition: transform 0.3s ease; /* Transición suave */
-}
-
-#contests img:hover, #awards img:hover {
-	transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
-	filter: grayscale(0%);
-}
-
-.texto-resaltado {
-	background-color: #F47A0B;
-	padding: 5px; /* Opcional: añade relleno para que el fondo se vea mejor */
-	/*margin-right: 10px; /* Ajuste del margen derecho */
-	/*display: inline; /* Importante: permite aplicar padding y márgenes */
-	text-align: right;
-	font-weight: 700;
+#on-air iframe {
+	max-width: 100%; /* Ocupa todo el ancho en móviles */
+	/*height: auto; /* La altura se ajusta automáticamente */
 }
 
 #pie {
@@ -263,114 +224,7 @@ a {
 	height: 150px;
 	background-image: url('images/bg-tapas.jpg');
 	background-size: cover;
-	/* text-align: right; */
 	font-weight: 700;
-}	
-
-/* Media query para pantallas más anchas (escritorio) */
-@media (min-width: 768px) {
-    .row-1 {
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
-        gap: 20px;
-    }
-
-    .row-2 {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .row-3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-    }
-
-    .row-4 {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 20px;
-    }
-
-    .row-awards {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    main {
-        display: grid;
-        grid-template-rows: auto auto auto;
-        gap: 20px;
-        padding: 20px;
-    }
-}
-
-/* Media query para pantallas más pequeñas (móviles) */
-@media (max-width: 767px) {
-
-	header {
-		margin-bottom: 20px;
-		/*max-height: 50px; /* Altura máxima para móviles */
-	}
-
-	header img {
-		width: 100%;
-		height: auto;
-		display: block; /* Evita espacios en blanco innecesarios */
-		object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
-	}
-    .row-1, .row-2, .row-3, .row-4, .row-awards {
-        display: block; /* Cambia a bloque para mostrar uno debajo del otro */
-		gap: 0px;
-    }
-
-    .sidebar {
-        /*width: 100%; /* La barra lateral ocupa todo el ancho */
-		margin-bottom: 20px; /* Agrega margen inferior */
-    }
-
-    main {
-        padding: 10px; /* Reduce el padding para móviles */
-		gap: 0px;
-    }
-
-    section {
-        /*padding: 20px 10px; /* Reduce el padding para móviles */
-		padding-top: 100px;
-		margin-bottom: 20px; /* Agrega margen inferior */
-	}
-    
-
-    .image-container {
-        padding-bottom: 60%; /* Ajusta la relación de aspecto para móviles */
-		margin-bottom: 20px; /* Agrega margen inferior */
-
-    }
-
-	#on-air iframe {
-        max-width: 100%; /* Ocupa todo el ancho en móviles */
-        /*height: auto; /* La altura se ajusta automáticamente */
-	}
-
-	nav ul {
-		flex-direction: row;
-		flex-wrap: wrap; /* Agrega esta línea */
-		justify-content: center; /* Centra los elementos horizontalmente */
-		margin: 0 20px; /* Ajusta el margen para separar los elementos */
-	}
-	nav ul li {
-        margin: 10px 0; /* Ajusta el margen para móviles */
-	}
-	nav ul li a {
-		color: white;
-		text-decoration: none;
-		padding: 5px 10px;
-	}
-
-	#sufix{
-		max-width: 100%;
-	}
 }
 
 #volver-arriba {
@@ -378,10 +232,8 @@ a {
 	position: fixed; /* Posicionamiento fijo */
 	bottom: 20px; /* Distancia desde la parte inferior */
 	right: 20px; /* Distancia desde la derecha */
-	/*background-color: #007bff; /* Color de fondo */
 	color: white; /* Color del texto */
 	padding: 10px; /* Espacio interno */
-	/*border-radius: 5px; /* Bordes redondeados */
 	text-decoration: none; /* Elimina el subrayado del enlace */
 	z-index: 999; /* Asegura que esté encima de otros elementos */
 }
@@ -392,6 +244,8 @@ a {
 }
   
 .modal {
+	display: flex;
+	flex-direction: column; /* Cambia la dirección a columna */
 	display: none; /* Oculta el modal inicialmente */
 	position: fixed; /* Posicionamiento fijo */
 	z-index: 1; /* Asegura que esté encima de otros elementos */
@@ -403,7 +257,7 @@ a {
 	background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro semitransparente */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-
+ 
   }
 
 .modal-contenido {
@@ -428,4 +282,84 @@ a {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+#caption {
+	margin: 10px auto;
+	text-align: center;
+	color: #ccc;
+	font-family: var(--fuente);
+	font-weight: 700;
+  }
+
+  .anterior,
+  .siguiente {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 30px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	cursor: pointer;
+  }
   
+  .anterior {
+	left: 10px;
+  }
+  
+  .siguiente {
+	right: 10px;
+  }
+
+
+/* Media query para pantallas más anchas (escritorio) */
+@media (min-width: 768px) {
+	header img {
+		width: auto;
+	}
+
+	.row-1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        gap: 20px;
+    }
+
+	.row-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .row-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .row-4 {
+        display: grid;
+        grid-template-columns: 1fr 240px;
+        gap: 20px;
+    }
+
+    .row-5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+	.row-6 {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 20px;
+    }
+
+
+	nav ul {
+		justify-content: left; /* Centra los elementos horizontalmente */
+	}
+
+.sidebar ul{
+	flex-direction: column; 
+}
+
+}
