@@ -25,6 +25,8 @@ a {
 	color: #000000;
 }
 
+
+
 body {
 	font-family: sans-serif;
 	background-color: #f4f4f4; /* Un gris claro */
@@ -32,6 +34,7 @@ body {
 	margin: 0;
 	line-height: 1.2; /* Interlineado para mejor legibilidad */	
 	padding: 10px;
+	height: 100%
 }
 
 header {
@@ -61,11 +64,13 @@ header p {
 nav ul {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap; /* Agrega esta línea */
+	/*flex-wrap: wrap; /* Agrega esta línea */
 	list-style: none; /* Quitar viñetas */
 	justify-content: center; /* Centra los elementos horizontalmente */
 	margin: 0 20px; /* Ajusta el margen para separar los elementos */
 	padding-left: 0;
+	font-family: var(--fuente);
+	font-weight: 600;
 }
 
 
@@ -83,10 +88,17 @@ nav ul li a:hover {
 	text-decoration: underline; /* Subrayar al pasar el ratón */
 }
 
+nav ul li span {
+	color: white;
+	text-decoration: underline;
+	padding: 5px 10px;
+}
+
 nav {
 	background: black;
 	color: white;
-	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-bottom: 10px; /* Agrega margen inferior */
 	margin-top: 10px; /* Agrega margen superior */
 }
@@ -153,12 +165,19 @@ section {
 	right: -2px;
 }
 
+.more-inverted{
+	border: 2px white;
+	padding: 6px;
+	margin: 0;
+	position: absolute; /* Lo posiciona dentro del section */
+	bottom: -2px;
+	right: -2px;
+}
+
 .image-container {
 	display: flex; /* Reemplaza <center> */
 	justify-content: center; /* Reemplaza <center> */
 	padding: 20px;
-	/*width: 100%; /* Asegura que la sección ocupe el ancho disponible */
-	/*box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
 }
 
 .image-container img {
@@ -167,13 +186,26 @@ section {
 	height: auto; /* La altura se ajusta proporcionalmente */
 	object-fit: contain; /* Ajusta la imagen sin recortarla */
 	transition: transform 0.3s ease; /* Transición suave */
-	/*display: block;*/
 }
 
 .image-container img:hover {
 	transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
 }
+#about {
+	display: grid; /* Reemplaza <center> */
+	justify-content: center; /* Reemplaza <center> */
+	padding: 20px;
+	padding-top: 100px;
+}
 
+#about img {
+	max-width: 400px;
+	width: 100%; /* La imagen ocupa el ancho de la sección */
+	height: auto; /* La altura se ajusta proporcionalmente */
+	object-fit: contain; /* Ajusta la imagen sin recortarla */
+	transition: transform 0.3s ease; /* Transición suave */
+
+}
 
 #logos {
 	text-align: center;
@@ -186,6 +218,8 @@ section {
 
 h2 {
     font-family: var(--fuente);
+	font-size: 1.5rem;
+	font-weight: 700;
 }
 
 h2 {
@@ -363,3 +397,109 @@ h2::before {
 }
 
 }
+
+#map-canvas {
+	display: block;
+	height: 100%;
+	width: 95%;
+	margin: 0 auto;
+}
+
+#container {
+	height: 600px;
+	width: 100%;
+	display: flex;
+	position: relative; /* Necesario para que h2 se posicione respecto a section */
+	border: 2px solid black;
+	padding: 100px 20px 30px 20px; /* Asegura que no se superponga el contenido */
+	background-image: url('images/bg-paper.jpg');
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#entidades-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1px;
+  }
+  .continente {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+  }
+  .titulo-continente {
+	font-family: var(--fuente);
+	font-size:larger;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  .entidad {
+	width: 90px;
+	height: 130px;
+	perspective: 1000px;
+	display: inline-block;
+  }
+  .entidad-inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+  }
+  .entidad:hover .entidad-inner {
+	transform: rotateY(180deg);
+  }
+  .entidad-front, .entidad-back {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/*justify-content: center;*/
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background-color: #f9f9f9;
+	/*padding: 10px;*/
+  }
+  .entidad-front {
+	z-index: 2;
+  }
+  .entidad:hover .entidad-front {
+	visibility: hidden;
+  }
+  .entidad-back {
+	transform: rotateY(180deg);
+	background-color: #e3e3e3;
+	visibility: hidden;
+  }
+  .entidad:hover .entidad-back {
+	visibility: visible;
+  }
+  .entidad img {
+	max-width: 100px;
+  }
+  .entidad span {
+	max-width: 160px;
+	display: block;
+	white-space: normal;
+	font-size: 14px;
+	line-height: 1.4;
+  }
+  .modos {
+	font-size: 20px;
+	margin-top: 10px;
+  }
+  .pagination{
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+  .pagination a{
+	color: white;
+  }

@@ -1,52 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LU1IDC - Radioaficionado Argentino</title>
-    <link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet"> 
-	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">	
-</head>
-<body>
+ 		<!-- Required meta tags -->
+		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		 <meta name="description" content="QSO/ADIF Mapper">
+		 <meta name="author" content="Stephen Houser">
+ 
+		 <link rel="icon" href="favicon.ico">
+ 
+		 <title>LU1IDC - Radioaficionado Argentino</title>
+ 
+		 <!-- Bootstrap CSS -->
+		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		  crossorigin="anonymous">
+		 <!-- Bootstrap Table -- http://bootstrap-table.wenzhixin.net.cn -->
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+ 
+		 <!-- Font Awesome -->
+		 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+ 
+		 <!-- Bootstrap Social (icons) -->
+		 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"> -->
+ 
+ 
+		 <!-- ADIF file parsing functions -->
+		 <script src="adif.js"></script>
+		 <script src="locator.js"></script>
+ 
+		 <!-- Map Library (Leaflet/OpenStreetMap or Google -->
+		 <!-- Leaflet JS Mapping -->
+		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+		  crossorigin="" />
+		 <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+		  crossorigin=""></script>
+		 <script src="leaflet-map.js"></script>
+ 
+		 <!-- The main code for this application -->
+		 <script src="qso-mapper.js"></script>
 
-    <header>
+		 <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <title>LU1IDC - Radioaficionado Argentino</title>
+		 <link rel="stylesheet" href="style.css">
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+		   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet"> 
+		 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">	
+	 
+
+</head>
+
+<body>
+     <header>
         <img src="images/lu1idc_lupin_logo_100.png" alt="Logo Lu1idc">
-        <p>Lic. since 2003 - On air since 2024</p>
+        <p>Lic. desde 2003 - En el aire desde 2024</p>
         <p>San Javier, Misiones, Argentina - GG22KD - ITU Zone 14 - CQ Zone 13</p>
     </header>
- 
-    <main>
-		<nav class="menu">
+  
+
+
+      <main>
+ 		<nav class="menu">
             <ul>
-                <li><a href="index.html" title="Activaciones">HOME</a></li>
-                <li><a href="rig.html" title="Mi estación">MY RIG</a></li>
-                <li><a href="soft.html" title="Mi software">MY SOFT</a></li>
-				<li><a href="onair.html" title="En el aire">ON AIR</a></li>
-				<li><a href="contests.html" title="Concursos">CONTESTS</a></li>
-				<li><a href="awards.html" title="Diplomas">AWARDS</a></li>
-				<li><a href="qsl.html" title="QSLs">QSLs</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="rig.html">LA ESTACIÓN</a></li>
+                <li><a href="soft.html">MI SOFTWARE</a></li>
+				<li><span>EN EL AIRE</span></li>
+				<li><a href="contests.html">CONCURSOS</a></li>
+				<li><a href="awards.html">DIPLOMAS</a></li>
+				<li><a href="qsl-1.html">QSLs</a></li>
 		    </ul>
 		</nav>
 		
+		<div id="container">
+			<h2>Grillas trabajadas</h2>
+			<div id="map-canvas">
+			</div></div>
+
+
     <section>
-        <h2>En el Aire/On Air</h2>
-    </section>
+		<h2>Entidades trabajadas</h2>
+		<div id="entidades-container"></div>
+	</section>
 
     <footer>
-		<p class="texto-resaltado">© 2024 LU1IDC inspired by Guerrero y Sídoli</p>
+		<p class="texto-resaltado">© 2024 LU1IDC inspirado por Guerrero y Sídoli</p>
 	</footer>
 
 	<a href="#" id="volver-arriba" title="Volver arriba">
 		<img src="images/up-arrow.png" alt="Volver arriba">
 	</a>
 
-	</main>
-
+ 	</main>
+ 
 	<div id="modal-imagen" class="modal">
 		<a class="anterior">&#10094;</a>
 		<img class="modal-contenido" id="img01">
@@ -54,8 +105,130 @@
 		<a class="siguiente">&#10095;</a>
 		<p id="caption"></p>
 	</div>  
-
+ 
 <script src="script.js"></script>
+<!-- Bootstrap Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+
+		<!-- Bootstrap Table -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+
+		<script>
+			initQsoMapper();
+
+			// These are UI controls, leaving here for the moment.
+			function toggleElement(element, menuLink) {
+				var currentDisplay = window.getComputedStyle(element).display;
+				if (currentDisplay === 'none') {
+					element.style.display = 'block';
+					menuLink.classList.remove('active');
+				} else {
+					element.style.display = 'none';
+					menuLink.classList.add('active');
+				}
+			}
+
+			function toggleLog(e) {
+				var sender = window.event.target;				
+				var callLog = document.getElementById('call-log');
+				toggleElement(callLog, sender);
+			}
+
+			function toggleMap(e) {
+				var sender = window.event.target;				
+				var mapCanvas = document.getElementById('map-canvas');
+				toggleElement(mapCanvas, sender);
+			}
+
+			var marker = createMarker(-27.86514, -55.14205, 'LU1IDC');
+		</script>
+
+
+<script>
+/* 	const entidades = [
+	['Argentina', 'AR', ['D', 'F']], ['Bolivia', 'BO', ['D', 'F']], ['Bonaire', 'NL', ['D', 'F']], ['Brasil', 'BR', ['D', 'F']], ['Chile', 'CL', ['D', 'F']], ['Colombia', 'CO', ['D', 'F']], ['Curazao', 'CW', ['D', 'F']], ['Ecuador', 'EC', ['D']], ['Fernando de Noronha', 'BR', ['D']], ['Guayana Francesa', 'FR', ['F']], ['Guyana', 'GY', ['F']], ['Isla de Pascua', 'CL', ['D', 'F']], ['Islas Malvinas', 'FK', ['D', 'F']], ['Juan Fernández', 'CL', ['F']], ['Paraguay', 'PY', ['D', 'F']], ['Perú', 'PE', ['D', 'F']], ['Surinam', 'SR', ['D', 'F']], ['Trinidad y Tobago', 'TT', ['D', 'F']], ['Uruguay', 'UY', ['D', 'F']], ['Venezuela', 'VE', ['D', 'F']]
+]	
+	document.addEventListener("DOMContentLoaded", () => {
+	  const container = document.getElementById("entidades-container");
+	  entidades.forEach(([nombre, codigo, modos]) => {
+		const div = document.createElement("div");
+		div.className = "entidad";
+		div.innerHTML = `
+		  <div class="entidad-inner">
+			<div class="entidad-front">
+			  <img src='images/flags/${codigo}.png' alt='Bandera de ${nombre}'><br>
+			  <span>${nombre}</span>
+			</div>
+			<div class="entidad-back">
+			  <span><strong>Modos:</strong></span>
+			  <div class="modos">${modos.map(m => (m === "F" ? "🎙️" : m === "D" ? "💻" : "⚡")).join(" ")}</div>
+			</div>
+		  </div>
+		`;
+		container.appendChild(div);
+	  });
+	});
+ */	
+ 
+ const entidadesPorContinente = {
+  "Sudamérica": [
+  ['Argentina', 'AR', ['D', 'F']], ['Bolivia', 'BO', ['D', 'F']], ['Bonaire', 'NL', ['D', 'F']], ['Brasil', 'BR', ['D', 'F']], ['Chile', 'CL', ['D', 'F']], ['Colombia', 'CO', ['D', 'F']], ['Curazao', 'CW', ['D', 'F']], ['Ecuador', 'EC', ['D']], ['Fernando de Noronha', 'BR', ['D']], ['Guayana Francesa', 'FR', ['F']], ['Guyana', 'GY', ['F']], ['Isla de Pascua', 'CL', ['D', 'F']], ['Islas Malvinas', 'FK', ['D', 'F']], ['Juan Fernández', 'CL', ['F']], ['Paraguay', 'PY', ['D', 'F']], ['Perú', 'PE', ['D', 'F']], ['Surinam', 'SR', ['D', 'F']], ['Trinidad y Tobago', 'TT', ['D', 'F']], ['Uruguay', 'UY', ['D', 'F']], ['Venezuela', 'VE', ['D', 'F']]
+  ],
+  "Noteamérica": [
+  ['Alaska', 'US', ['D', 'F']], ['Barbados', 'BB', ['D', 'F']], ['Belice', 'BZ', ['D']], ['Canadá', 'CA', ['D', 'F']], ['Costa Rica', 'CR', ['D', 'F']], ['Cuba', 'CU', ['D', 'F']], ['Dominica', 'DM', ['D']], ['Estados Unidos', 'US', ['D', 'F']], ['Granada', 'GD', ['D']], ['Groenlandia', 'GL', ['F']], ['Guadalupe', 'FR', ['D', 'F']], ['Islas Caimán', 'KY', ['F']], ['Islas Turcas y Caicos', 'TC', ['F']], ['Islas Vírgenes de EE. UU.', 'VI', ['D', 'F']], ['Jamaica', 'JM', ['D']], ['Martinica', 'MQ', ['D', 'F']], ['Montserrat', 'MS', ['F']], ['México', 'MX', ['D', 'F']], ['Panamá', 'PA', ['D', 'F']], ['Puerto Rico', 'PR', ['D', 'F']], ['República Dominicana', 'DO', ['D', 'F']], ['San Bartolomé', 'FR', ['D']], ['San Cristóbal y Nieves', 'KN', ['D']], ['San Eustaquio y Saba', 'AN', ['D']], ['San Martín', 'FR', ['F']], ['San Vicente', 'VC', ['D', 'F']], ['Santa Lucía', 'LC', ['D']], ['Sede de las Naciones Unidas', 'united-nations', ['D']]
+  ],
+  "Europa": [
+  ['Andorra', 'AD', ['D']], ['Austria', 'AT', ['D', 'F']], ['Azores', 'PT', ['D', 'F']], ['Belarús', 'BY', ['D', 'F']], ['Bosnia y Herzegovina', 'BA', ['D', 'F']], ['Bulgaria', 'BG', ['D', 'F']], ['Bélgica', 'BE', ['D', 'F']], ['Cerdeña', 'IT', ['D', 'F']], ['Croacia', 'HR', ['D', 'F']], ['Dinamarca', 'DK', ['D', 'F']], ['Escocia', 'scotland', ['D', 'F']], ['Eslovenia', 'SI', ['D', 'F']], ['España', 'ES', ['D', 'F']], ['Estonia', 'EE', ['D', 'F']], ['Finlandia', 'FI', ['D', 'F']], ['Francia', 'FR', ['D', 'F']], ['Gales', 'wales', ['D', 'F']], ['Gibraltar', 'GI', ['D']], ['Grecia', 'GR', ['D', 'F']], ['Guernsey', 'GG', ['D']], ['Hungría', 'HU', ['D', 'F']], ['Inglaterra', 'england', ['D', 'F']], ['Irlanda', 'IE', ['D', 'F']], ['Irlanda del Norte', 'GB', ['D', 'F']], ['Isla de Man', 'IM', ['D']], ['Islandia', 'IS', ['D', 'F']], ['Islas Baleares', 'ES', ['D', 'F']], ['Italia', 'IT', ['D', 'F']], ['Jersey', 'JE', ['D']], ['Letonia', 'LV', ['D', 'F']], ['Lituania', 'LT', ['D', 'F']], ['Luxemburgo', 'LU', ['D', 'F']], ['Noruega', 'NO', ['D', 'F']], ['Países Bajos', 'NL', ['D', 'F']], ['Polonia', 'PL', ['D', 'F']], ['Portugal', 'PT', ['D', 'F']], ['República Checa', 'CZ', ['D', 'F']], ['República Eslovaca', 'SK', ['D', 'F']], ['República Federal de Alemania', 'DE', ['D', 'F']], ['República de Kosovo', 'XK', ['F']], ['Rumania', 'RO', ['D', 'F']], ['Rusia Europea', 'RU', ['D', 'F']], ['Serbia', 'RS', ['D', 'F']], ['Suecia', 'SE', ['D', 'F']], ['Suiza', 'CH', ['D', 'F']], ['Ucrania', 'UA', ['D', 'F']]
+  ],
+  "Africa":[
+  ['Angola', 'AO', ['D']], ['Botsuana', 'BW', ['D']], ['Cabo Verde', 'CV', ['F']], ['Ceuta y Melilla', 'ES', ['D', 'F']], ['Isla Mauricio', 'MU', ['D']], ['Isla Santa Helena', 'SH', ['D']], ['Islas Canarias', 'IC', ['D', 'F']], ['Islas Madeira', 'PT', ['D', 'F']], ['Kenia', 'KE', ['D']], ['Lesoto', 'LS', ['D']], ['Malaui', 'MW', ['D']], ['Marruecos', 'MA', ['D', 'F']], ['Namibia', 'NA', ['D']], ['Nigeria', 'NG', ['D']], ['República de Sudáfrica', 'ZA', ['D']], ['Reunión', 'FR', ['D']], ['Tanzania', 'TZ', ['F']], ['Uganda', 'UG', ['D']], ['Zambia', 'ZM', ['D']]
+  ],
+  "Asia": [
+  ['Arabia Saudita', 'SA', ['D']], ['Catar', 'QA', ['D']], ['China', 'CN', ['D']], ['Chipre', 'CY', ['F']], ['Emiratos Árabes Unidos', 'AE', ['D']], ['Hong Kong', 'HK', ['D']], ['India', 'IN', ['D']], ['Israel', 'IL', ['D', 'F']], ['Japón', 'JP', ['D', 'F']], ['Kazajistán', 'KZ', ['D']], ['Kirguistán', 'KG', ['D']], ['Kuwait', 'KW', ['D']], ['Líbano', 'LB', ['D']], ['Malasia Occidental', 'MY', ['D']], ['Maldivas', 'MV', ['D']], ['Omán', 'OM', ['D']], ['República de Corea', 'KR', ['D', 'F']], ['Rusia Asiática', 'RU', ['D', 'F']], ['Singapur', 'SG', ['D']], ['Sri Lanka', 'LK', ['D']], ['Tailandia', 'TH', ['D']], ['Taiwán', 'TW', ['D']], ['Turquía', 'TR', ['D']], ['Vietnam', 'VN', ['D']]  
+  ],
+  "Oceanía": [
+  ['Australia', 'AU', ['D']], ['Filipinas', 'PH', ['D']], ['Hawái', 'US', ['D']], ['Indonesia', 'ID', ['D']], ['Islas Australes', 'PF', ['D']], ['Kiribati Oriental', 'KI', ['D']], ['Nauru', 'NR', ['D']], ['Nueva Caledonia', 'NC', ['D', 'F']], ['Nueva Zelanda', 'NZ', ['D']], ['Samoa', 'WS', ['D']], ['Vanuatu', 'VU', ['D']], ['Wallis y Futuna', 'WF', ['D']]	
+  ],
+  "Antártida": [
+  ['Antártida', 'AQ', ['D']]
+  ]
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("entidades-container");
+  for (const [continente, entidades] of Object.entries(entidadesPorContinente)) {
+    if (entidades.length > 0) {
+      const section = document.createElement("div");
+      section.className = "continente";
+      section.innerHTML = `<div class='titulo-continente'>${continente}</div>`;
+      entidades.forEach(([nombre, codigo, modos]) => {
+        const div = document.createElement("div");
+        div.className = "entidad";
+        div.innerHTML = `
+          <div class="entidad-inner">
+            <div class="entidad-front">
+              <img src='images/flags/${codigo}.png' alt='Bandera de ${nombre}'><br>
+              <span>${nombre}</span>
+            </div>
+            <div class="entidad-back">
+              <span><strong>Modos:</strong></span>
+              <div class="modos">${modos.map(m => (m === "F" ? "🎙️" : m === "D" ? "💻" : "⚡")).join(" ")}</div>
+            </div>
+          </div>
+        `;
+        section.appendChild(div);
+      });
+      container.appendChild(section);
+    }
+  }
+});
+ </script>
 
 </body>
 </html>
