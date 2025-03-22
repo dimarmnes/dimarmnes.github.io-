@@ -40,12 +40,11 @@ body {
 header {
 	background-image: url('images/bg-comic.jpg');
 	background-size: cover;
-	color: black; 
+	color: rgb(135, 241, 240); 
 	padding: 10px;
 	font-family: var(--fuente);
 	font-weight: 700;
-	text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9); /* Sombra semi-transparente */
-	overflow: hidden; /* Oculta el contenido que se desborda */
+	text-shadow: 1px 1px 1px rgba(26, 5, 5, 0.9); /* Sombra semi-transparente */overflow: hidden; /* Oculta el contenido que se desborda */
 	margin-bottom: 10px;
 }
 
