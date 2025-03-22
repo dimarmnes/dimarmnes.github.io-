@@ -64,7 +64,7 @@ header p {
 nav ul {
 	display: flex;
 	flex-direction: row;
-	/*flex-wrap: wrap; /* Agrega esta línea */
+	flex-wrap: wrap; /* Agrega esta línea */
 	list-style: none; /* Quitar viñetas */
 	justify-content: center; /* Centra los elementos horizontalmente */
 	margin: 0 20px; /* Ajusta el margen para separar los elementos */
