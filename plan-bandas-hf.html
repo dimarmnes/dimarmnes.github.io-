@@ -31,7 +31,7 @@
       top: 10px;
       height: 30px;
       width: 98%;
-      pointer-events: none;
+      pointer-events:none;
     }
 
     .chart-tips .tip {
@@ -47,6 +47,51 @@
       text-wrap-mode: nowrap 
 
     }
+
+    .chart-obs {
+      position: absolute;
+      top: 45px;
+      height: 15px;
+      width: 98%;
+
+    }
+
+    .chart-obs .obs {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 2px;
+  white-space: nowrap; /* corregido: no es text-wrap-mode */
+  cursor: help; /* opcional */
+ /* position: relative;*/
+}
+
+.chart-obs .obs .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background: #333;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+  transition: opacity 0.3s;
+}
+
+.chart-obs .obs:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 
     .chart-inner {
       position: absolute;
@@ -276,7 +321,7 @@
         </div>
 
 <h3>Banda de 80 metros</h3>
-<div class="band-chart">
+<div class="band-chart" style="height: 190px;">
     <div class="chart-tips">
       <div class="tip" style="left: 50%;">3.750 kHz<br>Emer. IARU</div>
       <div class="tip" style="left: 12%;">3.560 kHz<br>CW QRP</div>
@@ -284,7 +329,26 @@
       <div class="tip" style="left: 90%;">3.985 kHz<br>Emer.IARU</div>
     </div>
 
-    <div class="chart-inner">
+    <div class="chart-obs">
+      <div class="obs" style="left: 3%;">
+        DX prio.
+        <span class="tooltip">3.500-3.515 kHz</span>
+      </div>
+      <div class="obs" style="left: 24%;">
+        SSB prio.
+        <span class="tooltip">3.620-3.635 kHz</span>
+      </div>
+      <div class="obs" style="left: 48%;">
+        DX prio.
+        <span class="tooltip">3.740-3.790 kHz</span>
+      </div>
+      <div class="obs" style="left: 58%;">
+        DX excl.
+        <span class="tooltip">3.790-3.800 kHz</span>
+      </div>
+    </div>
+
+    <div class="chart-inner" style="top: 70px;">
       <!-- Líneas de frecuencia -->
       <div class="frequency-marker" style="left: 0%; height: 10px;">
         <div class="frequency-label">3.500</div>
