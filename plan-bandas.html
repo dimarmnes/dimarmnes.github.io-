@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LU1IDC - Radioaficionado Argentino</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet"> 
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">	
+
+<style>
+    .band-chart {
+      position: relative;
+      height: 170px;
+      background: rgba(190, 188, 188, 0.5);
+      border: 1px solid #ccc;
+      margin-bottom: 2rem;
+      /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);*/
+      justify-content: center;
+      border-radius: 10px;
+      transition: height 0.3s ease;
+    }
+
+    .chart-tips {
+      position: absolute;
+      top: 10px;
+      height: 30px;
+      width: 98%;
+      /*pointer-events:none;*/
+    }
+
+    .chart-tips .tip {
+      position: absolute;
+      transform: translateX(-50%);
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-align: center;
+      color: #333;
+      border: 1px solid ;
+      border-radius: 4px;
+      padding: 2px;
+      white-space: nowrap;
+
+    }
+
+    .chart-obs {
+      position: absolute;
+      top: 45px;
+      height: 15px;
+      width: 98%;
+
+    }
+
+    .chart-obs .obs {
+      position: absolute;
+      transform: translateX(-50%);
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-align: center;
+      color: #333;
+      border: 1px solid;
+      border-radius: 4px;
+      padding: 2px;
+      white-space: nowrap; /* corregido: no es text-wrap-mode */
+    /* position: relative;*/
+    }
+
+    .toggle-details {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 10;
+        background: #ccc;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+
+      .chart-tips,
+      .chart-obs {
+        display: none;
+      }
+
+      .band-chart.expandida .chart-tips,
+      .band-chart.expandida .chart-obs {
+        display: block;
+      }
+
+    .chart-inner {
+      position: absolute;
+      top: 50px; /* deja lugar a los tips */
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 98%;
+      margin: 0 auto;   
+      transition: top 0.3s ease;
+    }
+
+    .horizontal-border {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: black;
+    }
+
+    .frequency-marker {
+      position: absolute;
+      bottom: 0;
+      width: 1px;
+      background: black;
+      height: 10px;
+    }
+
+    .frequency-marker .frequency-label{
+      position: absolute;
+      bottom: -1.2rem;
+      font-size: 0.7rem;
+      transform: translateX(-50%);
+
+    }
+
+    .bar {
+      position: absolute;
+      height: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      font-size: 0.6rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .cw { background: #8e44ad; }
+    .ssb { background: #2980b9; }
+    .am { background: #e67e22; }
+    .fm { background: #27ae60; }
+    .dv { background: #1abc9c; } /* nuevo */
+    .digital { background: #c0392b; }
+    .otros { background: #b2bec3; }
+    .repetidoras { background: #f39c12; } /* nuevo */
+    .satelites { 
+      /*background: #34495e; */
+      background: #7eb7f4; 
+      color: black; 
+      text-align: center;
+    }
+    .exclusivo {
+      background: #143e3e;
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+
+    .bar-cat {
+      position: absolute;
+      font-size: 0.7rem;
+      text-align: center;
+      height: 12px;
+      line-height: 12px;
+      background: #ccc;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .novicio  { background-color: #d2b4de; color: #000; } /* violeta claro */
+    .general  { background-color: #a569bd; color: #fff; } /* medio */
+    .superior { background-color: #6c3483; color: #fff; } /* intenso */
+
+    .frequency-label{
+            font-size: 0.8rem;
+    }
+
+    .notes {
+      font-size: 0.7rem;
+      margin: 5px;
+      margin-left: 50px;
+    }
+
+    .legend {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-top: 1px solid #ccc;
+      border-radius: 12px 12px 0 0;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+    }
+
+    .legend-color {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+    }
+</style>
+</head>
+<body  style="min-width: 800px;">
+
+    <header>
+        <img src="images/lu1idc_lupin_logo_100.png" alt="Logo Lu1idc">
+        <p>Lic. desde 2003 - En el aire desde 2024</p>
+        <p>San Javier, Misiones, Argentina - GG22KD - ITU Zone 14 - CQ Zone 13</p>
+    </header>
+ 
+    <main>
+		<nav class="menu">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="rig.html">LA ESTACIÓN</a></li>
+                <li><a href="soft.html">MI SOFTWARE</a></li>
+                <li><a href="onair.html">EN EL AIRE</a></li>
+                <li><a href="contests.html">CONCURSOS</a></li>
+                <li><a href="awards.html">DIPLOMAS</a></li>
+                <li><a href="qsl-1.html">QSLs</a></li>
+                <li><a href="useful.html">COSITAS ÚTILES</a></li>
+              </ul>
+          </nav>
+		
+    <section>
+        <h2>Plan de bandas República Argentina</h2>
+        
+        <h3>Banda de 2200 metros (kHz)</h3>
+        <div class="band-chart" style="height:155px;">
+          <div class="chart-inner" style="top:34px">
+        
+            <!-- Frecuencias -->
+            <div class="frequency-marker" style="left: 0%; height: 10px;">
+              <div class="frequency-label">135,7</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%; height: 10px;">
+              <div class="frequency-label">137,8</div>
+            </div>
+        
+            <!-- Barras -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 100%;"></div>
+            <div class="bar ssb" style="top: 15px; left: 0%; width: 100%;"></div>
+            <div class="bar am" style="top: 30px; left: 0%; width: 100%;"></div>
+            <div class="bar fm" style="top: 45px; left: 0%; width: 100%;"></div>
+            <div class="bar digital" style="top: 60px; left: 0%; width: 100%;"></div>
+            <div class="bar otros" style="top: 75px; left: 0%; width: 100%;"></div>
+
+        
+            <!-- Categoría -->
+            <div class="bar-cat novicio" style="top: 100px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        
+          <!-- Nota -->
+          <div class="notes" style="top: 85px; left: 0%;">* Las emisiones no deben superar una PIRE igual a 1 W y una anchura de banda de 200 Hz.</div>
+        </div>
+                                
+        <h3>Banda de 630 metros (kHz)</h3>
+        <div class="band-chart" style="height:90px;">
+          <div class="chart-inner" style="top:34px">
+  
+            <div class="frequency-marker" style="left:0%;height:10px;">
+              <div class="frequency-label">472</div>
+            </div>
+            <div class="frequency-marker" style="left:100%;height:10px;">
+              <div class="frequency-label">479</div>
+            </div>
+        
+            <div class="bar cw" style="top:0px;left:0%;width:100%;"></div>
+            <div class="bar digital" style="top:15px;left:0%;width:100%;"></div>
+        
+            <div class="bar-cat novicio" style="top:35px;left:0%;width:100%;">Todas las categorías</div>
+          </div>
+          <div class="notes">* PIRE máx 5 W y ancho de banda 200 Hz.</div>
+
+        </div>
+        
+        <h3>Banda de 160 metros (kHz)</h3>
+        <div class="band-chart"
+          data-altura-colapsada="125" 
+          data-altura-expandida="175" 
+          data-top-colapsado="35" 
+          data-top-expandido="85" 
+          style="height: 125px; position: relative;">
+
+          <button class="toggle-details">+</button>
+
+            <div class="chart-tips">
+            <div class="tip" style="left:55%;">1.910 kHz<br>SSB QRP</div>
+          </div>
+          <div class="chart-obs">
+            <div class="obs" style="left: 5%;">1.800-1.810<br>DX prio.</div>
+            <div class="obs" style="left: 58%;">1.830-2.000<br>DX prio.</div>
+          </div>
+      
+      
+          <div class="chart-inner" style="top: 35px;">
+            <div class="frequency-marker" style="left:0%;height:10px;"><div class="frequency-label">1.800</div></div>
+            <div class="frequency-marker" style="left:10%;height:10px;"><div class="frequency-label">1.810</div></div>
+            <div class="frequency-marker" style="left:15%;height:10px;"><div class="frequency-label">1.815</div></div>
+            <div class="frequency-marker" style="left:20%;height:10px;"><div class="frequency-label">1.830</div></div>
+            <div class="frequency-marker" style="left:25%;height:10px;"><div class="frequency-label">1.840</div></div>
+            <div class="frequency-marker" style="left:30%;height:10px;"><div class="frequency-label">1.850</div></div>
+            <div class="frequency-marker" style="left:35%;height:10px;"><div class="frequency-label">1.880</div></div>
+            <div class="frequency-marker" style="left:100%;height:10px;"><div class="frequency-label">2.000</div></div>
+        
+            <div class="bar cw" style="top:0px;left:0%;width:30%;"></div>
+            <div class="bar cw" style="top:0px;left:35%;width:65%;"></div>
+        
+            <div class="bar ssb" style="top:15px;left:15%;width:5%;"></div>
+            <div class="bar ssb" style="top:15px;left:25%;width:75%;"></div>
+        
+            <div class="bar am" style="top:30px;left:30%;width:5%;"></div>
+            <div class="bar digital" style="top:45px;left:10%;width:5%;"></div>
+        
+            <div class="bar-cat novicio" style="top:70px;left:0%;width:100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 80 metros (kHz)</h3>
+        <div class="band-chart" 
+        data-altura-colapsada="155" 
+        data-altura-expandida="205" 
+        data-top-colapsado="35" 
+        data-top-expandido="85" 
+        style="height: 155px; position: relative;">
+
+        <button class="toggle-details">+</button>
+            <div class="chart-tips">
+              <div class="tip" style="left: 50%;">3.750 kHz<br>Emer. IARU</div>
+              <div class="tip" style="left: 12%;">3.560 kHz<br>CW QRP</div>
+              <div class="tip" style="left: 38%;">3.690 kHz<br>SSB QRP</div>
+              <div class="tip" style="left: 90%;">3.985 kHz<br>Emer.IARU</div>
+            </div>
+
+            <div class="chart-obs">
+              <div class="obs" style="left: 5%;">3.500-3.515<br>DX prio.</div>
+              <div class="obs" style="left: 24%;">3.620-3.635<br>SSB prio.</div>
+              <div class="obs" style="left: 48%;">3.740-3.790<br>DX prio.</div>
+              <div class="obs" style="left: 58%;">3.790-3.800<br>DX excl.</div>
+            </div>
+
+            <div class="chart-inner" style="top: 35px;">
+              <!-- Líneas de frecuencia -->
+              <div class="frequency-marker" style="left: 0%; height: 10px;">
+                <div class="frequency-label">3.500</div>
+              </div>
+              <div class="frequency-marker" style="left: 5%; height: 10px;">
+                <div class="frequency-label">3.525</div>
+              </div>
+              <div class="frequency-marker" style="left: 15%; height: 10px;">
+                <div class="frequency-label">3.570</div>
+              </div>
+              <div class="frequency-marker" style="left: 20%; height: 10px;">
+                <div class="frequency-label">3.580</div>
+              </div>
+              <div class="frequency-marker" style="left: 25%; height: 10px;">
+                <div class="frequency-label">3.620</div>
+              </div>
+              <div class="frequency-marker" style="left: 30%; height: 10px;">
+                <div class="frequency-label">3.635</div>
+              </div>
+              <div class="frequency-marker" style="left: 35%; height: 10px;">
+                <div class="frequency-label">3.650</div>
+              </div>
+              <div class="frequency-marker" style="left: 60%; height: 10px;">
+                <div class="frequency-label">3.800</div>
+              </div>
+              <div class="frequency-marker" style="left: 100%; height: 10px;">
+                <div class="frequency-label">4.000</div>
+              </div>
+
+              <!-- Barras -->
+              <div class="bar cw" style="top: 0px; left: 0%; width: 30%;"></div>
+              <div class="bar cw" style="top: 0px; left: 60%; width: 40%;"></div>
+              <div class="bar ssb" style="top: 15px; left: 5%; width: 95%;"></div>
+              <div class="bar am" style="top: 30px; left: 5%; width: 10%;"></div>
+              <div class="bar am" style="top: 30px; left: 20%; width: 15%;"></div>
+              <div class="bar am" style="top: 30px; left: 60%; width: 40%;"></div>
+              <div class="bar fm" style="top: 45px; left: 60%; width: 40%;"></div>
+              <div class="bar digital" style="top: 60px; left: 15%; width: 15%;"></div>
+              <div class="bar digital" style="top: 60px; left: 60%; width: 40%;"></div>
+              <div class="bar otros" style="top: 75px; left: 60%; width: 40%;"></div>
+
+              <div class="bar-cat novicio" style="top: 100px; left: 0%; width: 100%;">Todas las categorías</div>
+            </div>
+          </div>
+          
+        <h3>Banda de 60 metros (kHz)</h3>
+        <div class="band-chart" style="height:155px;">
+          <div class="notes" style="top: 85px; left: 0%;">* Las emisiones no deben superar una PIRE igual a 25 W.</div>
+
+          <div class="chart-inner" style="top:34px">
+          
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%; height: 10px;">
+                <div class="frequency-label">5.351,5</div>
+            </div>
+            <div class="frequency-marker" style="left: 15%; height: 10px;">
+                <div class="frequency-label">5.534</div>
+            </div>
+            <div class="frequency-marker" style="left: 90%; height: 10px;">
+                <div class="frequency-label">5.366</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%; height: 10px;">
+                <div class="frequency-label">5.366,5</div>
+            </div>
+
+            <!-- CW 5351,5 - 5366,5 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 100%;"></div>
+
+            <!-- SSB 5354 - 5366 -->
+            <div class="bar ssb" style="top: 15px; left: 15%; width: 75%;"></div>
+
+            <!-- AM 5354 - 5366 -->
+            <div class="bar am" style="top: 30px; left: 15%; width: 75%;"></div>
+
+            <!-- FM 5354 - 5366 -->
+            <div class="bar fm" style="top: 45px; left: 15%; width: 75%;"></div>
+
+            <!-- Digital 5351,5 - 5366,5 -->
+            <div class="bar digital" style="top: 60px; left: 0%; width: 100%;"></div>
+
+            <!-- Otros 5354 - 5366 -->
+            <div class="bar otros" style="top: 75px; left: 15%; width: 75%;"></div>
+          
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 100px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 40 metros (kHz)</h3>
+        <div class="band-chart" 
+        data-altura-colapsada="140" 
+        data-altura-expandida="190" 
+        data-top-colapsado="35" 
+        data-top-expandido="85" 
+        style="height: 140px; position: relative;">
+
+        <button class="toggle-details">+</button>
+          <div class="chart-tips">
+            <div class="tip" style="left: 20%;">7.060 kHz<br>Emer. IARU</div>
+            <div class="tip" style="left: 80%;">7.240 kHz<br>Emer. IARU</div>
+            <div class="tip" style="left: 87%;">7.275 kHz<br>Emer. IARU</div>
+            <div class="tip" style="left: 10%;">7.030 kHz<br>CW QRP</div>
+            <div class="tip" style="left: 30%;">7.090 kHz<br>SSB QRP</div>
+            <div class="tip" style="left: 94%;">7.285 kHz<br>SSB QRP</div>
+          </div>
+
+          <div class="chart-obs">
+            <div class="obs" style="left: 5%;">7.000-7.015<br>DX prio.</div>
+            <div class="obs" style="left: 12%;">7.035-7.040<br>RTTY prio.</div>
+            <div class="obs" style="left: 19%;">7.040-7.050<br>Packet prio.</div>
+            <div class="obs" style="left: 27%;">7.050-7.100<br>SSB prio.</div>
+            <div class="obs" style="left: 37%;">7.100-7.120<br>Packet Reg. prio.</div>
+            <div class="obs" style="left: 75%;">7.120-7.300<br>SSB prio.</div>
+            <div class="obs" style="left: 56%;">7.170 +/-5<br>SSTV</div>
+
+
+          </div>
+
+          <div class="chart-inner" style="top: 35px;">
+                <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">7.000</div>
+            </div>
+            <div class="frequency-marker" style="left: 10%;">
+                <div class="frequency-label">7.035</div>
+            </div>
+            <div class="frequency-marker" style="left: 15%;">
+                <div class="frequency-label">7.040</div>
+            </div>
+            <div class="frequency-marker" style="left: 25%;">
+                <div class="frequency-label">7.050</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">7.300</div>
+            </div>
+
+            <!-- CW 7000–7300 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 100%;"></div>
+
+            <!-- SSB 7040–7300 -->
+            <div class="bar ssb" style="top: 15px; left: 15%; width: 85%;"></div>
+
+            <!-- AM 7050–7300 -->
+            <div class="bar am" style="top: 30px; left: 25%; width: 75%;"></div>
+
+            <!-- Digital 7035–7300 -->
+            <div class="bar digital" style="top: 45px; left: 10%; width: 90%;"></div>
+
+            <!-- Otros 7050–7300 -->
+            <div class="bar otros" style="top: 60px; left: 25%; width: 75%;"></div>
+            
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 85px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 30 metros (kHz)</h3>
+        <div class="band-chart" 
+        data-altura-colapsada="95" 
+        data-altura-expandida="145" 
+        data-top-colapsado="35" 
+        data-top-expandido="85" 
+        style="height: 95px; position: relative;">
+
+        <button class="toggle-details">+</button>
+
+          <div class="notes">* Potencia máx. 250 W. * Prohibido concursos.</div>
+          <div class="chart-tips" style="top: 20px;">
+            <div class="tip" style="left: 32%;">10.116 kHz<br>QRP</div>
+          </div>
+          <div class="chart-obs">
+            <div class="obs" style="left: 70%;">10.130-10.140<br>RTTY prio.</div>
+            <div class="obs" style="left: 90%;">10.140-10.150<br>Packet prio.</div>
+          </div>
+
+            <div class="chart-inner" style="top: 35px;">
+          
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">10.100</div>
+            </div>
+            <div class="frequency-marker" style="left: 60%;">
+                <div class="frequency-label">10.130</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">10.150</div>
+            </div>
+
+            <!-- CW 10100 - 10150 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 100%;"></div>
+
+            <!-- Digital 10130 - 10150 -->
+            <div class="bar digital" style="top: 15px; left: 60%; width: 40%;"></div>
+          
+            <!-- Categorías -->
+            <div class="bar-cat superior " style="top: 40px; left: 0%; width: 100%;">Superior</div>
+            </div>
+        </div>
+
+        <h3>Banda de 20 metros (kHz)</h3>
+        <div class="band-chart" 
+        data-altura-colapsada="140" 
+        data-altura-expandida="190" 
+        data-top-colapsado="35" 
+        data-top-expandido="85" 
+        style="height: 140px; position: relative;">
+        <button class="toggle-details">+</button>
+          <div class="chart-tips">
+            <div class="tip" style="left: 85%;">14.300 kHz<br>Emer. IARU</div>
+            <div class="tip" style="left: 17%;">14.060 kHz<br>CW QRP</div>
+          </div>
+
+          <div class="chart-obs">
+            <div class="obs" style="left: 17%;">14.070-14.095<br>RTTY prio.</div>
+            <div class="obs" style="left: 24%;">14.095-14.099<br>Packet prio.</div>
+            <div class="obs" style="left: 32%;">14.101-14.119<br>Packet prio.</div>
+            <div class="obs" style="left: 42%;">14.119-14.160<br>SSB pref. concursos</div>
+            <div class="obs" style="left: 55%;">14.180-14.210<br>SSB DX prio.</div>
+            <div class="obs" style="left: 65%;">14.230 +/-5<br>FAX/SSTV</div>
+          </div>
+
+          <div class="chart-inner" style="top: 35px;">
+            
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">14.000</div>
+            </div>
+            <div class="frequency-marker" style="left: 20%;">
+                <div class="frequency-label">14.070</div>
+            </div>
+            <div class="frequency-marker" style="left: 25%;">
+                <div class="frequency-label">14.099</div>
+            </div>
+            <div class="frequency-marker" style="left: 30%;">
+                <div class="frequency-label">14.101</div>
+            </div>
+            <div class="frequency-marker" style="left: 35%;">
+                <div class="frequency-label">14.119</div>
+            </div>
+            <div class="frequency-marker" style="left: 45%;">
+                <div class="frequency-label">14.160</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">14.350</div>
+            </div>
+
+            <!-- CW 14000 - 14350 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 100%;"></div>
+
+            <!-- SSB 14101 - 14350 -->
+            <div class="bar ssb" style="top: 15px; left: 30%; width: 70%;"></div>
+
+            <!-- AM 14119 - 14160 -->
+            <div class="bar am" style="top: 30px; left: 35%; width: 10%;"></div>
+
+            <!-- Digital 14070 - 14099 -->
+            <div class="bar digital" style="top: 45px; left: 20%; width: 5%;"></div>
+            <!-- Digital 14101 - 14160 -->
+            <div class="bar digital" style="top: 45px; left: 30%; width: 5%;"></div>
+
+            <!-- Otros 14119 - 14350 -->
+            <div class="bar otros" style="top: 60px; left: 35%; width: 65%;"></div>
+
+            <!-- Otros 14099 - 14101 -->
+            <div class="bar exclusivo" style="top: 15px;height: 82px; left: 25%; width: 5%;">Exclusivo<br>Radiofaros<br>IBP</div>
+            
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 85px; left: 20%; width: 5%;">Todas las categorías</div>
+            <div class="bar-cat general " style="top: 85px; left: 0%; width: 20%;">General/Superior</div>
+            <div class="bar-cat general " style="top: 85px; left: 30%; width: 70%;">General/Superior</div>
+
+          </div>
+        </div>
+
+        <h3>Banda de 17 metros (kHz)</h3>
+        <div class="band-chart" 
+        data-altura-colapsada="110" 
+        data-altura-expandida="160" 
+        data-top-colapsado="35" 
+        data-top-expandido="85" 
+        style="height: 110px; position: relative;">
+        <button class="toggle-details">+</button>
+
+          <div class="chart-tips">
+            <div class="tip" style="left: 90%;">18.160 kHz<br>Emer. IARU</div>
+            <div class="tip" style="left: 18%;">18.086 kHz<br>CW QRP</div>
+            <div class="tip" style="left: 62%;">18.130 kHz<br>QRP</div>
+          </div>
+
+          <div class="chart-obs">
+            <div class="obs" style="left: 30%;">18.100-18.105<br>RTTY prio.</div>
+            <div class="obs" style="left: 40%;">18.105-18.109<br>Packet prio.</div>
+            <div class="obs" style="left: 75%;">18.111-18.168<br>SSB prio.</div>
+          </div>
+
+          <div class="chart-inner" style="top: 35px;">
+                <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%";>
+                <div class="frequency-label">18.068</div>
+            </div>
+            <div class="frequency-marker" style="left: 30%";>
+                <div class="frequency-label">18.100</div>
+            </div>
+            <div class="frequency-marker" style="left: 40%";>
+                <div class="frequency-label">18.109</div>
+            </div>
+            <div class="frequency-marker" style="left: 45%";>
+                <div class="frequency-label">18.111</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%";>
+                <div class="frequency-label">18.168</div>
+            </div>
+
+            <!-- CW 18068 - 18100 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 100%;"></div>
+
+            <!-- SSB 18111 - 18168 -->
+            <div class="bar ssb" style="top: 15px; left: 45%; width: 55%;"></div>
+
+            <!-- Digital 18100 - 18109 -->
+            <div class="bar digital" style="top: 30px; left: 30%; width: 10%;"></div>
+
+            <div class="bar exclusivo" style="top: 15px;height: 52px; left: 40%; width: 5%;">Exclusivo<br>Radiofaros<br>IBP</div>
+          
+            <!-- Categorías -->
+            <div class="bar-cat general " style="top: 55px; left: 0%; width: 40%;">General/Superior</div>
+            <div class="bar-cat general " style="top: 55px; left: 45%; width: 55%;">General/Superior</div>
+            </div>
+        </div>
+
+        <h3>Banda de 15 metros (kHz)</h3>
+        <div class="band-chart" 
+          data-altura-colapsada="170" 
+          data-altura-expandida="220" 
+          data-top-colapsado="35" 
+          data-top-expandido="85" 
+          style="height: 170px; position: relative;">
+          <button class="toggle-details">+</button>
+            <div class="chart-tips">
+              <div class="tip" style="left: 80%;">21.360 kHz<br>Emer. IARU</div>
+            </div>
+
+            <div class="chart-obs">
+              <div class="obs" style="left: 15%;">21.070-21.090<br>RTTY prio.</div>
+              <div class="obs" style="left: 25%;">21.090-21.125<br>Packet prio.</div>
+              <div class="obs" style="left: 56%;">21.200-21.340<br>Satélites prio.</div>
+              <div class="obs" style="left: 76%;">21340 +/-5<br>FAX/SSTV</div>
+              <div class="obs" style="left: 65%;">21.280-21.310<br>DX prio.</div>
+            </div>
+
+            <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">21.000</div>
+            </div>
+            <div class="frequency-marker" style="left: 15%;">
+                <div class="frequency-label">21.070</div>
+            </div>
+            <div class="frequency-marker" style="left: 20%;">
+                <div class="frequency-label">21.090</div>
+            </div>
+            <div class="frequency-marker" style="left: 25%;">
+                <div class="frequency-label">21.125</div>
+            </div>
+            <div class="frequency-marker" style="left:30%;">
+                <div class="frequency-label">21.149</div>
+            </div>
+            <div class="frequency-marker" style="left: 35%;">
+                <div class="frequency-label">21.151</div>
+            </div>
+            <div class="frequency-marker" style="left:45%;">
+                <div class="frequency-label">21.200</div>
+            </div>
+            <div class="frequency-marker" style="left: 55%;">
+                <div class="frequency-label">21.250</div>
+            </div>
+            <div class="frequency-marker" style="left: 75%;">
+                <div class="frequency-label">21.340</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">21.450</div>
+            </div>
+
+            <!-- CW 21000 - 21450 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 100%;"></div>
+
+            <!-- SSB 21151 - 21450 -->
+            <div class="bar ssb" style="top: 15px; left: 35%; width: 65%;"></div>
+
+            <!-- AM 21200 - 21340 -->
+            <div class="bar am" style="top: 30px; left: 45%; width: 30%;"></div>
+
+            <!-- FM 21200 - 21340 -->
+            <div class="bar fm" style="top: 45px; left: 45%; width: 30%;"></div>
+
+            <!-- DV 21200 - 21340 -->
+            <div class="bar dv" style="top: 60px; left: 45%; width: 30%;"></div>
+
+            <!-- Digital 21070 - 21125 -->
+            <div class="bar digital" style="top: 75px; left: 15%; width: 15%;"></div>
+            <!-- Digital 21200 - 21340 -->
+            <div class="bar digital" style="top: 75px; left: 45%; width: 30%;"></div>
+
+            <!-- Otros 21200 - 21450 -->
+            <div class="bar otros" style="top: 90px; left: 45%; width: 55%;"></div>
+
+            <!-- Otros 21149 - 21151 -->
+            <div class="bar exclusivo" style="top: 15px;height: 112px; left: 30%; width: 5%;">Exclusivo<br>Radiofaros<br>IBP</div>
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 115px; left: 15%; width: 15%;">Todas las categorías</div>
+            <div class="bar-cat novicio " style="top: 115px; left: 45%; width: 30%;">Novicio/General excl. Satelites</div>
+            <div class="bar-cat general " style="top: 115px; left: 0%; width: 15%;">General/Superior</div>
+            <div class="bar-cat general " style="top: 115px; left: 35%; width: 10%;">General/Superior</div>
+            <div class="bar-cat superior " style="top: 115px; left: 75%; width: 25%;">Superior</div>
+          </div>
+        </div>
+
+        <h3>Banda de 12 metros (kHz)</h3>
+        <div class="band-chart" 
+        data-altura-colapsada="110" 
+        data-altura-expandida="160" 
+        data-top-colapsado="35" 
+        data-top-expandido="85" 
+        style="height: 110px; position: relative;">
+        <button class="toggle-details">+</button>
+          <div class="chart-tips">
+            <div class="tip" style="left: 16%;">24.906 kHz<br>CW QRP</div>
+            <div class="tip" style="left: 60%;">24.950 kHz<br>SSB QRP</div>
+          </div>
+          <div class="chart-obs">
+            <div class="obs" style="left: 25%;">24.920-24.925<br>RTTY prio.</div>
+            <div class="obs" style="left: 35%;">24.925-24.929<br>Packet prio.</div>
+            <div class="obs" style="left: 70%;">24.931-24.990<br>DX prio.</div>
+          </div>
+
+          <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">24.890</div>
+            </div>
+            <div class="frequency-marker" style="left: 20%;">
+                <div class="frequency-label">24.915</div>
+            </div>
+            <div class="frequency-marker" style="left: 35%;">
+                <div class="frequency-label">24.929</div>
+            </div>
+            <div class="frequency-marker" style="left: 45%;">
+                <div class="frequency-label">24.931</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">24.990</div>
+            </div>
+
+            <!-- CW 24890 - 24990 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 100%;"></div>
+
+            <!-- SSB 24931 - 24990 -->
+            <div class="bar ssb" style="top: 15px; left: 45%; width: 55%;"></div>
+
+            <!-- Digital 24915 - 24929 -->
+            <div class="bar digital" style="top: 30px; left: 20%; width: 15%;"></div>
+            <div class="bar digital" style="top: 30px; left: 45%; width: 55%;"></div>
+
+            <div class="bar exclusivo" style="top: 15px;height: 52px; left: 35%; width: 10%;">Exclusivo<br>Radiofaros<br>IBP</div>
+
+            <!-- Categorías -->
+            <div class="bar-cat general " style="top: 55px; left: 0%; width: 35%;">General/Superior</div>
+            <div class="bar-cat general " style="top: 55px; left: 45%; width: 55%;">General/Superior</div>
+            </div>
+        </div>
+
+        <h3>Banda de 10 metros (kHz)</h3>
+        <div class="band-chart" 
+        data-altura-colapsada="185" 
+        data-altura-expandida="280" 
+        data-top-colapsado="35" 
+        data-top-expandido="130" 
+        style="height: 185px; position: relative;">
+        <button class="toggle-details">+</button>
+
+          <div class="chart-tips">
+            <div class="tip" style="left: 9%;">28.060 kHz<br>CW QRP</div>
+            <div class="tip" style="left: 30%;">28.360 kHz<br>SSB QRP</div>
+          </div>
+
+          <div class="chart-obs">
+            <div class="obs" style="left: 5%;">28.070-28.120<br>RTTY prio.</div>
+            <div class="obs" style="left: 15%;">28.190-28.199<br>Radiofaros excl.</div>
+            <div class="obs" style="left: 28%;">28.480-28.510<br>DX prio.</div>
+            <div class="obs" style="left: 40%;">28.680 +/-10<br> FAX/SSTV</div>
+            <div class="obs" style="left: 55%;">28.900-29.200<br>DX prio.</div>
+            <div class="obs" style="left: 90%;">28.600<br>Llamada FM</div>
+
+
+          </div>
+          <div class="chart-obs" style="top: 80px;">
+            <div class="obs" style="left: 10%;">28.120-28.190<br>Packet prio.</div>
+            <div class="obs" style="left: 49%;width: 53%;">28.201-29300 SSB prioritario<br>
+            28.300-38.350 Novicio/General únicamente DX</div>
+            <div class="obs" style="left: 85%;">29.510-29.590<br>Ent. Rep. prio.</div>
+            <div class="obs" style="left: 95%;">29.610-29.700<br>Sal. Rep.prio.</div>
+
+          </div>
+
+          <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;"><div class="frequency-label">28.000</div></div>
+            <div class="frequency-marker" style="left: 5%;"><div class="frequency-label">28.070</div></div>
+            <div class="frequency-marker" style="left: 10%;"><div class="frequency-label">28.190</div></div>
+            <div class="frequency-marker" style="left: 15%;"><div class="frequency-label">28.199</div></div>
+            <div class="frequency-marker" style="left: 20%;"><div class="frequency-label">28.201</div></div>
+            <div class="frequency-marker" style="left: 25%;"><div class="frequency-label">28.350</div></div>
+            <div class="frequency-marker" style="left: 50%;"><div class="frequency-label">28.900</div></div>
+            <div class="frequency-marker" style="left: 60%;"><div class="frequency-label">29.000</div></div>
+            <div class="frequency-marker" style="left: 75%;"><div class="frequency-label">29.300</div></div>
+            <div class="frequency-marker" style="left: 80%;"><div class="frequency-label">29.510</div></div>
+            <div class="frequency-marker" style="left: 85%;"><div class="frequency-label">29.590</div></div>
+            <div class="frequency-marker" style="left: 90%;"><div class="frequency-label">29.610</div></div>
+            <div class="frequency-marker" style="left: 100%;"><div class="frequency-label">29.700</div></div>
+
+            <!-- Barras por modo -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 75%;"></div>
+            <div class="bar satelites" style="top: 0px; left: 75%; width: 5%;"></div>
+
+            <div class="bar ssb" style="top: 15px; left: 20%; width:55%;"></div>
+            <div class="bar satelites" style="top: 15px; left: 75%; width: 5%;"></div>
+            <div class="bar exclusivo" style="top: 15px;height: 127px; left: 15%; width: 5%;">Exclusivo<br>Radiofaros<br>IBP</div>
+
+            <div class="bar am" style="top: 30px; left: 60%; width: 15%;"></div>
+            <div class="bar satelites" style="top: 30px; left: 75%; width: 5%;"></div>
+
+            <div class="bar fm" style="top: 45px; left: 50%; width: 25%;"></div>
+            <div class="bar fm" style="top: 45px; left: 80%; width: 20%;"></div>
+            <div class="bar satelites" style="top: 45px; left: 75%; width: 5%;">Exclusivo</div>
+
+            <div class="bar dv" style="top: 60px; left: 80%; width: 5%;"></div>
+            <div class="bar dv" style="top: 60px; left: 90%; width: 10%;"></div>
+            <div class="bar satelites" style="top: 60px; left: 75%; width: 5%;">Satélites</div>
+
+            <div class="bar digital" style="top: 75px; left: 5%; width: 5%;"></div>
+            <div class="bar satelites" style="top: 75px; left: 75%; width: 5%;"></div>
+
+            <div class="bar otros" style="top: 90px; left: 25%; width: 25%;"></div>
+            <div class="bar satelites" style="top: 90px; left: 75%; width: 5%;"></div>
+
+            <div class="bar repetidoras" style="top: 105px; left: 80%; width: 5%;">Ent. Repet.</div>
+            <div class="bar repetidoras" style="top: 105px; left: 90%; width: 10%;">Sal. Repetidoras</div>
+            <div class="bar satelites" style="top: 105px; left: 75%; width: 5%;"></div>
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio" style="top: 130px; left: 0%; width: 15%;">Todas las categorías</div>
+            <div class="bar-cat novicio" style="top: 130px; left: 20%; width: 80%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 6 metros (MHz)</h3>
+        <div class="band-chart" 
+          data-altura-colapsada="185" 
+          data-altura-expandida="235" 
+          data-top-colapsado="35" 
+          data-top-expandido="85" 
+          style="height: 185px; position: relative;">
+          <button class="toggle-details">+</button>
+            <div class="chart-tips">
+              <div class="tip" style="left: 8%;">50,11 MHz<br>Llamada SSB/CW</div>
+              <div class="tip" style="left: 40%;">51,50 MHz<br>Llamada FM</div>
+              <div class="tip" style="left: 18%;">50,4-50,5<br>Radiofaros</div>
+            </div>
+
+            <div class="chart-obs">
+              <div class="obs" style="left: 4%;">50-50,05<br>Excl. TLT</div>
+              <div class="obs" style="left: 13%;">50,05-50,1<br>Excl. Radiofaros</div>
+              <div class="obs" style="left: 30%;">51-51,1<br>DX Pacifico Sur</div>
+              <div class="obs" style="left: 53%;">52-52,05<br>DX Pacifico Sur</div>
+            </div>
+
+            <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">50</div>
+            </div>
+            <div class="frequency-marker" style="left: 2.5%;">
+                <div class="frequency-label">50,1</div>
+            </div>
+            <div class="frequency-marker" style="left: 6%;">
+                <div class="frequency-label">50,125</div>
+            </div>
+            <div class="frequency-marker" style="left: 10%;">
+                <div class="frequency-label">50,4</div>
+            </div>
+            <div class="frequency-marker" style="left:15%;">
+                <div class="frequency-label">50,6</div>
+            </div>
+            <div class="frequency-marker" style="left: 25%;">
+                <div class="frequency-label">51</div>
+            </div>
+            <div class="frequency-marker" style="left:30%;">
+                <div class="frequency-label">51,1</div>
+            </div>
+            <div class="frequency-marker" style="left: 50%;">
+                <div class="frequency-label">52</div>
+            </div>
+            <div class="frequency-marker" style="left: 53%;">
+                <div class="frequency-label">52,05</div>
+            </div>
+            <div class="frequency-marker" style="left: 75%;">
+                <div class="frequency-label">53</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+              <div class="frequency-label">54</div>
+          </div>
+
+            <!-- CW 50 - 50,6 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 15%;"></div>
+            <!-- CW 51 - 51,1 -->
+            <div class="bar cw" style="top: 0px; left: 25%; width: 5%;"></div>
+            <!-- CW 52 - 52,05 -->
+            <div class="bar cw" style="top: 0px; left: 50%; width: 3%;"></div>
+
+
+            <!-- SSB 50,1 - 51,1 -->
+            <div class="bar ssb" style="top: 15px; left: 2.5%; width: 27.5%;"></div>
+
+            <!-- AM 50,1 - 50,125 -->
+            <div class="bar am" style="top: 30px; left: 2.5%; width: 3.5%;"></div>
+            <!-- AM 50,4 - 50,6 -->
+            <div class="bar am" style="top: 30px; left: 10%; width: 5%;"></div>
+
+
+            <!-- FM 51,1 - 52 -->
+            <div class="bar fm" style="top: 45px; left: 30%; width: 20%;"></div>
+            <!-- FM 52,05 - 54 -->
+            <div class="bar fm" style="top: 45px; left: 53%; width: 47%;"></div>
+
+            <!-- DV 52,05 - 54 -->
+            <div class="bar dv" style="top: 60px; left: 53%; width: 47%;"></div>
+
+            <!-- Digital 50,125 - 50,4 -->
+            <div class="bar digital" style="top: 75px; left: 6%; width: 4.5%;"></div>
+            <!-- Digital 50,6 - 51 -->
+            <div class="bar digital" style="top: 75px; left: 15%; width: 10%;"></div>
+            <!-- Digital 51,1 - 52 -->
+            <div class="bar digital" style="top: 75px; left: 30%; width: 20%;"></div>
+
+            <!-- Otros 50,6 - 51 -->
+            <div class="bar otros" style="top: 90px; left: 15%; width: 10%;"></div>
+
+            <!-- Repetiforas 52,05 - 53 -->
+            <div class="bar repetidoras" style="top: 105px; left: 53%; width: 22%;">Entrada Repetidoras</div>
+            <!-- Repetiforas 53 - 54 -->
+            <div class="bar repetidoras" style="top: 105px; left: 75%; width: 25%;">Salida Repetidoras</div>
+
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 130px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 2 metros (MHz)</h3>
+        <div class="band-chart" 
+          data-altura-colapsada="185" 
+          data-altura-expandida="235" 
+          data-top-colapsado="35" 
+          data-top-expandido="85" 
+          style="height: 185px; position: relative;">
+          <button class="toggle-details">+</button>
+            <div class="chart-tips">
+              <div class="tip" style="left: 6%;">144-144,05<br>Excl. TLT</div>
+              <div class="tip" style="left: 15%;">144,06-144,15<br>TLT</div>
+              <div class="tip" style="left: 25%;">144,390<br>Llamada APRS</div>
+              <div class="tip" style="left: 35%;">144,490<br>ISS prio.</div>
+              <div class="tip" style="left: 60%;">145,79-145,8<br>Banda de protección</div>
+
+            </div>
+
+            <div class="chart-obs">
+              <div class="obs" style="left: 8%;">144,05-144,06<br>Excl. Radiofaros</div>
+              <div class="obs" style="left: 18%;">144,20 MHz<br>Llamada SSB</div>
+
+              <div class="obs" style="left: 30%;">144,3-144,32<br>SSB prio.</div>
+              <div class="obs" style="left: 40%;">144,32-144,5<br>Radiofaros</div>
+              <div class="obs" style="left: 50%;">144,9-145,2<br>Packet prio.</div>
+
+            </div>
+
+            <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">144</div>
+            </div>
+            <div class="frequency-marker" style="left: 5%;">
+                <div class="frequency-label">144,05</div>
+            </div>
+            <div class="frequency-marker" style="left: 10%;">
+                <div class="frequency-label">144,06</div>
+            </div>
+            <div class="frequency-marker" style="left: 15%;">
+                <div class="frequency-label">144,3</div>
+            </div>
+            <div class="frequency-marker" style="left:20%;">
+                <div class="frequency-label">144,32</div>
+            </div>
+            <div class="frequency-marker" style="left: 25%;">
+                <div class="frequency-label">144,5</div>
+            </div>
+            <div class="frequency-marker" style="left:30%;">
+                <div class="frequency-label">144,6</div>
+            </div>
+            <div class="frequency-marker" style="left: 35%;">
+                <div class="frequency-label">144,9</div>
+            </div>
+            <div class="frequency-marker" style="left: 40%;">
+                <div class="frequency-label">145</div>
+            </div>
+            <div class="frequency-marker" style="left: 45%;">
+                <div class="frequency-label">145,2</div>
+            </div>
+            <div class="frequency-marker" style="left: 50%;">
+              <div class="frequency-label">145,5</div>
+          </div>
+
+            <div class="frequency-marker" style="left: 55%;">
+              <div class="frequency-label">145,79</div>
+            </div>
+            <div class="frequency-marker" style="left: 60%;">
+              <div class="frequency-label">145,80</div>
+            </div>  
+            <div class="frequency-marker" style="left: 65%;">
+              <div class="frequency-label">146</div>
+            </div>
+            <div class="frequency-marker" style="left: 75%;">
+              <div class="frequency-label">146,6</div>
+            </div>
+            <div class="frequency-marker" style="left: 85%;">
+              <div class="frequency-label">147,4</div>
+            </div>
+            <div class="frequency-marker" style="left: 95%;">
+              <div class="frequency-label">147,6</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">148</div>
+            </div>
+
+            <!-- CW 144 - 144.05 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 5%;"></div>
+            <!-- CW 144.06 - 144.5 -->
+            <div class="bar cw" style="top: 0px; left: 10%; width: 15%;"></div>
+            <!-- CW 145.8 - 146 -->
+            <div class="bar satelites" style="top: 0px; left: 60%; width: 5%;"></div>
+
+
+            <!-- SSB 144,06 - 144,6 -->
+            <div class="bar ssb" style="top: 15px; left: 10%; width: 20%;"></div>
+            <!-- SSB 145.8 - 146 -->
+            <div class="bar satelites" style="top: 15px; left: 60%; width: 5%;"></div>
+
+            <!-- AM 145.8- 146 -->
+            <div class="bar satelites" style="top: 30px; left: 60%; width: 5%;"></div>
+
+
+            <!-- FM 144.32 - 145 -->
+            <div class="bar fm" style="top: 45px; left: 20%; width: 20%;"></div>
+            <!-- FM 145.2 - 145.79 -->
+            <div class="bar fm" style="top: 45px; left: 45%; width: 10%;"></div>
+            <!-- FM 145.8 - 146 -->
+            <div class="bar satelites" style="top: 45px; left: 60%; width: 5%;">Exclusivo</div>
+            <!-- FM 145.8 - 148 -->
+            <div class="bar fm" style="top: 45px; left: 65%; width: 35%;"></div>
+
+
+            <!-- DV 144.6 - 144.9 -->
+            <div class="bar dv" style="top: 60px; left: 30%; width: 5%;"></div>
+            <!-- DV 145.2 - 145.5 -->
+            <div class="bar dv" style="top: 60px; left: 45%; width: 5%;"></div>
+            <!-- FM 145.8 - 146 -->
+            <div class="bar satelites" style="top: 60px; left: 60%; width: 5%;">Satélites</div>
+            <!-- DV 146 - 147.4-->
+            <div class="bar dv" style="top: 60px; left: 65%; width: 20%;"></div>
+            <!-- DV 147.6 - 148 -->
+            <div class="bar dv" style="top: 60px; left: 95%; width: 5%;"></div>
+
+
+            <!-- Digital 144.06 - 144.3 -->
+            <div class="bar digital" style="top: 75px; left: 10%; width: 5%;"></div>
+            <!-- Digital 144.32 - 144.6-->
+            <div class="bar digital" style="top: 75px; left: 20%; width: 10%;"></div>
+            <!-- Digital 144.9 - 145.2 -->
+            <div class="bar digital" style="top: 75px; left: 35%; width: 10%;"></div>
+            <!-- Digital 145.5 - 145.79 -->
+            <div class="bar digital" style="top: 75px; left: 50%; width: 5%;"></div>
+            <!-- Digital 145.8 - 146 -->
+            <div class="bar satelites" style="top: 75px; left: 60%; width: 5%;"></div>
+
+
+            <!-- Otros 145.8 - 146 -->
+            <div class="bar satelites" style="top: 90px; left: 60%; width: 5%;"></div>
+
+            <!-- Repetiforas 144.6 - 144.9 -->
+            <div class="bar repetidoras" style="top: 105px; left: 30%; width: 5%;">Ent Rep</div>
+            <!-- Repetiforas 145.2 - 145.5 -->
+            <div class="bar repetidoras" style="top: 105px; left: 45%; width: 5%;">Sal Rep</div>
+            <!-- Repetiforas 146 - 146.6 -->
+            <div class="bar repetidoras" style="top: 105px; left: 65%; width: 10%;">Ent Rep</div>
+            <!-- Repetiforas 146.6 - 147.4 -->
+            <div class="bar repetidoras" style="top: 105px; left: 75%; width: 10%;">Sal Rep</div>
+            <!-- Repetiforas 147.6 - 148 -->
+            <div class="bar repetidoras" style="top: 105px; left: 95%; width: 5%;">Ent Rep</div>
+
+            <div class="bar exclusivo" style="top: 0px;height: 142px; left: 55%; width: 5%;background-color: #000;"></div>
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 130px; left: 0%; width: 55%;">Todas las categorías</div>
+            <div class="bar-cat novicio " style="top: 130px; left: 60%; width: 40%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 1,25 metros (MHz)</h3>
+        <div class="band-chart" 
+          data-altura-colapsada="170" 
+          data-altura-expandida="220" 
+          data-top-colapsado="35" 
+          data-top-expandido="85" 
+          style="height: 170px; position: relative;">
+          <button class="toggle-details">+</button>
+            <div class="chart-tips">
+              <div class="tip" style="left: 10%;">220,05-220,06<br>Exc. Radiofaros</div>
+              <div class="tip" style="left: 24%;">220,5-221<br>Novicio únic. Packet</div>
+              <div class="tip" style="left: 42%;">222,05-222,06<br>Excl. Radiofaros</div>
+              <div class="tip" style="left: 70%;">223,5<br>Llamada FM</div>
+            </div>
+
+            <div class="chart-obs">
+              <div class="obs" style="left: 4%;">220-220,05<br>Excl. TLT</div>
+              <div class="obs" style="left: 17%;">220,1<br>Llamada CW</div>
+              <div class="obs" style="left: 35%;">222-222,05<br>Excl. TLT</div>
+              <div class="obs" style="left: 50%;">222,1<br>Llamada CW/SSB</div>
+            </div>
+
+            <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">220</div>
+            </div>
+            <div class="frequency-marker" style="left: 5%;">
+                <div class="frequency-label">220,05</div>
+            </div>
+            <div class="frequency-marker" style="left: 10%;">
+                <div class="frequency-label">220,06</div>
+            </div>
+            <div class="frequency-marker" style="left: 15%;">
+                <div class="frequency-label">220,1</div>
+            </div>
+            <div class="frequency-marker" style="left:20%;">
+                <div class="frequency-label">220,5</div>
+            </div>
+            <div class="frequency-marker" style="left: 25%;">
+                <div class="frequency-label">221</div>
+            </div>
+            <div class="frequency-marker" style="left:30%;">
+                <div class="frequency-label">221,9</div>
+            </div>
+            <div class="frequency-marker" style="left: 35%;">
+                <div class="frequency-label">222</div>
+            </div>
+            <div class="frequency-marker" style="left: 40%;">
+                <div class="frequency-label">222,05</div>
+            </div>
+            <div class="frequency-marker" style="left: 45%;">
+                <div class="frequency-label">222,06</div>
+            </div>
+            <div class="frequency-marker" style="left: 50%;">
+               <div class="frequency-label">222,3</div>
+            </div>            
+            <div class="frequency-marker" style="left: 65%;">
+              <div class="frequency-label">223,4</div>
+           </div>
+              <div class="frequency-marker" style="left: 70%;">
+                <div class="frequency-label">223,9</div>
+            </div>            
+              <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">225</div>
+            </div>
+
+            <!-- CW 220 - 220.05 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 5%;"></div>
+            <!-- CW 220,06 - 220,5 -->
+            <div class="bar cw" style="top: 0px; left: 10%; width: 10%;"></div>
+            <!-- CW 221,9 - 222,3 -->
+            <div class="bar cw" style="top: 0px; left: 30%; width: 20%;"></div>
+
+
+            <!-- SSB 220,1 - 220,5 -->
+            <div class="bar ssb" style="top: 15px; left: 15%; width: 5%;"></div>
+            <!-- SSB 221 - 222,05 -->
+            <div class="bar ssb" style="top: 15px; left: 25%; width: 15%;"></div>
+            <!-- SSB 222,06 - 222,3 -->
+            <div class="bar ssb" style="top: 15px; left: 45%; width: 5%;"></div>
+
+
+            <!-- FM 220,1 - 222 -->
+            <div class="bar fm" style="top: 30px; left: 15%; width: 20%;"></div>
+            <!-- FM 222,06 - 225 -->
+            <div class="bar fm" style="top: 30px; left: 45%; width: 55%;"></div>
+
+            <!-- DV 221 - 221,9 -->
+            <div class="bar dv" style="top: 45px; left: 25%; width: 5%;"></div>
+            <!-- DV 222,3 - 223,4 -->
+            <div class="bar dv" style="top: 45px; left: 50%; width: 15%;"></div>
+
+            <!-- Digital 220,1 - 221 -->
+            <div class="bar digital" style="top: 60px; left: 15%; width: 10%;"></div>
+            <!-- Digital 221,9 - 222 -->
+            <div class="bar digital" style="top: 60px; left: 30%; width: 5%;"></div>
+            <!-- Digital 222,06 - 222,3 -->
+            <div class="bar digital" style="top: 60px; left: 45%; width: 5%;"></div>
+
+            <!-- Otros 220,1 - 220,5 -->
+            <div class="bar otros" style="top: 75px; left: 15%; width: 5%;"></div>
+
+            <!-- Repetiforas 221 - 221,9 -->
+            <div class="bar repetidoras" style="top: 90px; left: 25%; width: 5%;">Enlace Rep.</div>
+            <!-- Repetiforas 222,3 - 223,4 -->
+            <div class="bar repetidoras" style="top: 90px; left: 50%; width: 15%;">Entrada Repetidoras</div>
+            <!-- Repetiforas 223,9 - 225 -->
+            <div class="bar repetidoras" style="top: 90px; left: 70%; width: 30%;">Salida Repetidoras</div>
+
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 115px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 70 centímetros (MHz)</h3>
+        <div class="band-chart" 
+          data-altura-colapsada="185" 
+          data-altura-expandida="235" 
+          data-top-colapsado="35" 
+          data-top-expandido="85" 
+          style="height: 185px; position: relative;">
+          <button class="toggle-details">+</button>
+            <div class="chart-tips">
+              <div class="tip" style="left: 14%;">431,25-432<br>RTTY prio.</div>
+              <div class="tip" style="left: 24%;">432,07-432,08<br>Excl. Radiofaros</div>
+              <div class="tip" style="left: 42%;">432,3-432,42<br>Radiofaros</div>
+            </div>
+
+            <div class="chart-obs">
+              <div class="obs" style="left: 5%;">430,05-431,25<br>Packet prio.</div>
+              <div class="obs" style="left: 20%;">432-432,07<br>Excl. TLT</div>
+            <div class="obs" style="left: 32%;">432,1<br>Llamada CW/SSB</div>
+            </div>
+
+            <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">430</div>
+            </div>
+            <div class="frequency-marker" style="left: 5%;">
+                <div class="frequency-label">430,05</div>
+            </div>
+            <div class="frequency-marker" style="left: 10%;">
+                <div class="frequency-label">431,25</div>
+            </div>
+            <div class="frequency-marker" style="left: 15%;">
+                <div class="frequency-label">432</div>
+            </div>
+            <div class="frequency-marker" style="left:20%;">
+                <div class="frequency-label">432,07</div>
+            </div>
+            <div class="frequency-marker" style="left: 25%;">
+                <div class="frequency-label">432,08</div>
+            </div>
+            <div class="frequency-marker" style="left:30%;">
+                <div class="frequency-label">432,1</div>
+            </div>
+            <div class="frequency-marker" style="left: 35%;">
+                <div class="frequency-label">432,3</div>
+            </div>
+            <div class="frequency-marker" style="left: 40%;">
+                <div class="frequency-label">432,4</div>
+            </div>
+            <div class="frequency-marker" style="left: 45%;">
+                <div class="frequency-label">432,42</div>
+            </div>
+            <div class="frequency-marker" style="left: 50%;">
+               <div class="frequency-label">433</div>
+            </div>            
+            <div class="frequency-marker" style="left: 65%;">
+              <div class="frequency-label">435</div>
+           </div>
+              <div class="frequency-marker" style="left: 80%;">
+                <div class="frequency-label">438</div>
+            </div>            
+              <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">440</div>
+            </div>
+
+            <!-- CW 430 - 432,07 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 20%;"></div>
+            <!-- CW 432,08 - 433 -->
+            <div class="bar cw" style="top: 0px; left: 25%; width: 25%;"></div>
+            <!-- CW 435 - 438 -->
+            <div class="bar satelites" style="top: 0px; left: 65%; width: 15%;"></div>
+
+
+            <!-- SSB 430 - 430,05 -->
+            <div class="bar ssb" style="top: 15px; left: 0%; width: 5%;"></div>
+            <!-- SSB 431,25 - 432,07 -->
+            <div class="bar ssb" style="top: 15px; left: 10%; width: 10%;"></div>
+            <!-- SSB 432,08 - 432,3 -->
+            <div class="bar ssb" style="top: 15px; left: 25%; width: 10%;"></div>
+            <!-- SSB 432,42 - 433 -->
+            <div class="bar ssb" style="top: 15px; left: 45%; width: 5%;"></div>
+            <!-- SSB 435 - 438 -->
+            <div class="bar satelites" style="top: 15px; left: 65%; width: 15%;"></div>
+
+            <!-- AM 435 - 438 -->
+            <div class="bar satelites" style="top: 30px; left: 65%; width: 15%;"></div>
+
+
+            <!-- FM 430 - 430.05 -->
+            <div class="bar fm" style="top: 45px; left: 0%; width: 5%;"></div>
+            <!-- FM 432.1 - 432.3 -->
+            <div class="bar fm" style="top: 45px; left: 30%; width: 5%;"></div>
+            <!-- FM 432.42 - 435 -->
+            <div class="bar fm" style="top: 45px; left: 45%; width: 20%;"></div>
+            <!-- FM 435 - 438 -->
+            <div class="bar satelites" style="top: 45px; left: 65%; width: 15%;">Exclusivo</div>
+            <!-- FM 438 - 440 -->
+            <div class="bar fm" style="top: 45px; left: 80%; width: 20%;"></div>
+
+
+            <!-- DV 433 - 435 -->
+            <div class="bar dv" style="top: 60px; left: 50%; width: 15%;"></div>
+            <!-- DV 435 - 438 -->
+            <div class="bar satelites" style="top: 60px; left: 65%; width: 15%;">Satélites</div>
+            <!-- DV 438 - 440 -->
+            <div class="bar dv" style="top: 60px; left: 80%; width: 20%;"></div>
+
+            <!-- Digital 430 - 432 -->
+            <div class="bar digital" style="top: 75px; left: 0%; width: 15%;"></div>
+            <!-- Digital 432.1 - 432.3 -->
+            <div class="bar digital" style="top: 75px; left: 30%; width: 5%;"></div>
+            <!-- Digital 432.4 - 433 -->
+            <div class="bar digital" style="top: 75px; left: 40%; width: 10%;"></div>
+            <!-- Digital 435 - 438 -->
+            <div class="bar satelites" style="top: 75px; left: 65%; width: 15%;"></div>
+
+            <!-- Otros 430 - 430.05 -->
+            <div class="bar otros" style="top: 90px; left: 0%; width: 5%;"></div>
+            <!-- Otros 432.1 - 432.3 -->
+            <div class="bar otros" style="top: 90px; left: 30%; width: 5%;"></div>
+            <!-- Otros 432.42 - 433 -->
+            <div class="bar otros" style="top: 90px; left: 45%; width: 5%;"></div>
+            <!-- Otros 435 - 438 -->
+            <div class="bar satelites" style="top: 90px; left: 65%; width: 15%;"></div>
+
+            <!-- Repetiforas 433 - 435 -->
+            <div class="bar repetidoras" style="top: 105px; left: 50%; width: 15%;">Sal. Repetidoras</div>
+            <!-- Repetiforas 438 - 440 -->
+            <div class="bar repetidoras" style="top: 105px; left: 80%; width: 20%;">Entrada Repetidoras</div>
+
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 130px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 23 centímetros (MHz)</h3>
+        <div class="band-chart" 
+          data-altura-colapsada="185" 
+          data-altura-expandida="205" 
+          data-top-colapsado="35" 
+          data-top-expandido="55" 
+          style="height: 185px; position: relative;">
+          <button class="toggle-details">+</button>
+            <div class="chart-tips">
+              <div class="tip" style="left: 7%;">1240-1246<br>ATV</div>
+              <div class="tip" style="left: 20%;">1252-1258<br>ATV Prio.</div>
+              <div class="tip" style="left: 85%;">1296-1296,5<br>Excl. TLT</div>
+            </div>
+
+            <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">1240</div>
+            </div>
+            <div class="frequency-marker" style="left: 10%;">
+                <div class="frequency-label">1246</div>
+            </div>
+            <div class="frequency-marker" style="left: 20%;">
+                <div class="frequency-label">1252</div>
+            </div>
+            <div class="frequency-marker" style="left: 30%;">
+                <div class="frequency-label">1258</div>
+            </div>
+            <div class="frequency-marker" style="left:35%;">
+                <div class="frequency-label">1260</div>
+            </div>
+            <div class="frequency-marker" style="left: 45%;">
+                <div class="frequency-label">1270</div>
+            </div>
+            <div class="frequency-marker" style="left:55%;">
+                <div class="frequency-label">1276</div>
+            </div>
+            <div class="frequency-marker" style="left: 65%;">
+                <div class="frequency-label">1282</div>
+            </div>
+            <div class="frequency-marker" style="left: 75%;">
+                <div class="frequency-label">1288</div>
+            </div>
+            <div class="frequency-marker" style="left: 80%;">
+                <div class="frequency-label">1294</div>
+            </div>
+            <div class="frequency-marker" style="left: 85%;">
+               <div class="frequency-label">1296</div>
+            </div>            
+            <div class="frequency-marker" style="left: 90%;">
+              <div class="frequency-label">1296,5</div>
+           </div>
+              <div class="frequency-marker" style="left: 95%;">
+                <div class="frequency-label">1297</div>
+            </div>            
+              <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">1300</div>
+            </div>
+
+            <!-- CW 1246 - 1260 -->
+            <div class="bar cw" style="top: 0px; left: 10%; width: 25%;"></div>
+            <!-- CW 1288 - 1297 -->
+            <div class="bar cw" style="top: 0px; left: 75%; width: 20%;"></div>
+            <!-- CW 1260 - 1270 -->
+            <div class="bar satelites" style="top: 0px; left: 35%; width: 10%;"></div>
+
+
+            <!-- SSB 1246 - 1260 -->
+            <div class="bar ssb" style="top: 15px; left: 10%; width: 25%;"></div>
+            <!-- SSB 1288 - 1297 -->
+            <div class="bar ssb" style="top: 15px; left: 75%; width: 20%;"></div>
+            <!-- SSB 1260 - 1270 -->
+            <div class="bar satelites" style="top: 15px; left: 35%; width: 10%;"></div>
+
+            <!-- AM 1260 - 1270 -->
+            <div class="bar satelites" style="top: 30px; left: 35%; width: 10%;"></div>
+
+
+            <!-- FM 1246 - 1260 -->
+            <div class="bar fm" style="top: 45px; left: 10%; width: 25%;"></div>
+            <!-- FM 1270 - 1296 -->
+            <div class="bar fm" style="top: 45px; left: 45%; width: 40%;"></div>
+            <!-- FM 1296.5 - 1300 -->
+            <div class="bar fm" style="top: 45px; left: 90%; width: 10%;"></div>
+            <!-- FM 1260 - 1270 -->
+            <div class="bar satelites" style="top: 45px; left: 35%; width: 10%;">Exclusivo</div>
+
+
+            <!-- DV 1270 - 1276 -->
+            <div class="bar dv" style="top: 60px; left: 45%; width: 10%;"></div>
+            <!-- DV 1260 - 1270 -->
+            <div class="bar satelites" style="top: 60px; left: 35%; width: 10%;">Satélites</div>
+            <!-- DV 1282 - 1288 -->
+            <div class="bar dv" style="top: 60px; left: 65%; width: 10%;"></div>
+
+            <!-- Digital 1246 - 1252 -->
+            <div class="bar digital" style="top: 75px; left: 10%; width: 10%;"></div>
+            <!-- Digital 1258 - 1260 -->
+            <div class="bar digital" style="top: 75px; left: 30%; width: 5%;"></div>
+            <!-- Digital 1276 - 1282 -->
+            <div class="bar digital" style="top: 75px; left: 55%; width: 10%;"></div>
+            <!-- Digital 1288 - 1296 -->
+            <div class="bar digital" style="top: 75px; left: 75%; width: 10%;"></div>
+            <!-- Digital 1297 - 1300 -->
+            <div class="bar digital" style="top: 75px; left: 95%; width: 5%;"></div>
+            <!-- Digital 1260 - 1270 -->
+            <div class="bar satelites" style="top: 75px; left: 35%; width: 10%;"></div>
+
+            <!-- Otros 1240 - 1246 -->
+            <div class="bar otros" style="top: 90px; left: 0%; width: 10%;"></div>
+            <!-- Otros 1252 - 1258 -->
+            <div class="bar otros" style="top: 90px; left: 20%; width: 10%;"></div>
+            <!-- Otros 1276 - 1282 -->
+            <div class="bar otros" style="top: 90px; left: 55%; width: 10%;"></div>
+            <!-- Otros 1288 - 1294 -->
+            <div class="bar otros" style="top: 90px; left: 75%; width: 5%;"></div>
+            <!-- Otros 1260 - 1270 -->
+            <div class="bar satelites" style="top: 90px; left: 35%; width: 10%;"></div>
+
+            <!-- Repetiforas 1270 - 1276 -->
+            <div class="bar repetidoras" style="top: 105px; left: 45%; width: 10%;">Ent. Repetidoras</div>
+            <!-- Repetiforas 1282 - 1288 -->
+            <div class="bar repetidoras" style="top: 105px; left: 65%; width: 10%;">Sal. Repetidoras</div>
+
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 130px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 13 centímetros (MHz)</h3>
+        <div class="band-chart"  style="height: 170px; position: relative;">
+            <div class="chart-inner" style="top: 34px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">2390</div>
+            </div>
+            <div class="frequency-marker" style="left: 20%;">
+                <div class="frequency-label">2400</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">2450</div>
+            </div>
+
+            <!-- CW 2390 - 2400 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 20%;"></div>
+            <!-- CW 2400 - 2450 -->
+            <div class="bar satelites" style="top: 0px; left: 20%; width: 80%;"></div>
+
+            <!-- SSB 2390 - 2400 -->
+            <div class="bar ssb" style="top: 15px; left: 0%; width: 20%;"></div>
+            <!-- SSB 2400 - 2450 -->
+            <div class="bar satelites" style="top: 15px; left: 20%; width: 80%;"></div>
+
+            <!-- AM 2400 - 2450 -->
+            <div class="bar satelites" style="top: 30px; left: 20%; width: 80%;"></div>
+
+
+            <!-- FM 2390 - 2400 -->
+            <div class="bar fm" style="top: 45px; left: 0%; width: 20%;"></div>
+            <!-- FM 2400 - 2450 -->
+            <div class="bar satelites" style="top: 45px; left: 20%; width: 80%;">Exclusivo</div>
+
+            <!-- DV 2400 - 2450 -->
+            <div class="bar satelites" style="top: 60px; left: 20%; width: 80%;">Satélites</div>
+
+            <!-- Digital 2390 - 2400 -->
+            <div class="bar digital" style="top: 75px; left: 0%; width: 20%;"></div>
+            <!-- Digital 2400 - 2450 -->
+            <div class="bar satelites" style="top: 75px; left: 20%; width: 80%;"></div>
+
+            <!-- Otros 2390 - 2400 -->
+            <div class="bar otros" style="top: 90px; left: 0%; width: 20%;"></div>
+            <!-- Otros 2400 - 2450 -->
+            <div class="bar satelites" style="top: 90px; left: 20%; width: 80%;"></div>
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 115px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 9 centímetros (MHz)</h3>
+        <div class="band-chart" style="height: 140px; position: relative;">
+            <div class="chart-inner" style="top: 34px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">3300</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">3400</div>
+            </div>
+
+            <!-- CW 3300 - 3400 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 100%;"></div>
+
+            <!-- SSB 3300 - 3400 -->
+            <div class="bar ssb" style="top: 15px; left: 0%; width: 100%;"></div>
+
+            <!-- FM 3300 - 3400 -->
+            <div class="bar fm" style="top: 30px; left: 0%; width: 100%;"></div>
+
+            <!-- Digital 3300 - 3400 -->
+            <div class="bar digital" style="top: 45px; left: 0%; width: 100%;"></div>
+
+            <!-- Otros 3300 - 3400 -->
+            <div class="bar otros" style="top: 60px; left: 0%; width: 100%;"></div>
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 85px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 5 centímetros (MHz)</h3>
+        <div class="band-chart" 
+          data-altura-colapsada="170" 
+          data-altura-expandida="190" 
+          data-top-colapsado="35" 
+          data-top-expandido="55" 
+          style="height: 170px; position: relative;">
+          <button class="toggle-details">+</button>
+            <div class="chart-tips">
+              <div class="tip" style="left: 58%;">5760,3-5761<br>Excl. Radiofaros</div>
+            </div>
+
+            <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">5640</div>
+            </div>
+            <div class="frequency-marker" style="left: 15%;">
+                <div class="frequency-label">5670</div>
+            </div>
+            <div class="frequency-marker" style="left: 55%;">
+                <div class="frequency-label">5760,3</div>
+            </div>
+            <div class="frequency-marker" style="left: 60%;">
+                <div class="frequency-label">5761</div>
+            </div>
+            <div class="frequency-marker" style="left:90%;">
+                <div class="frequency-label">5830</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">5850</div>
+            </div>
+
+            
+            <!-- CW 5650 - 5670 -->
+            <div class="bar satelites" style="top: 0px; left: 0%; width: 15%;"></div>
+            <!-- CW 5670 - 5830 -->
+            <div class="bar cw" style="top: 0px; left: 15%; width: 75%;"></div>
+            <!-- CW 5830 - 5850 -->
+            <div class="bar satelites" style="top: 0px; left: 90%; width: 10%;"></div>
+
+
+            <!-- SSB 5650 - 5670 -->
+            <div class="bar satelites" style="top: 15px; left: 0%; width: 15%;"></div>
+            <!-- SSB 5670 - 5760.3 -->
+            <div class="bar ssb" style="top: 15px; left: 15%; width: 40%;"></div>
+            <!-- SSB 5761 - 5830 -->
+            <div class="bar ssb" style="top: 15px; left: 60%; width: 30%;"></div>
+            <!-- SSB 5830 - 5850 -->
+            <div class="bar satelites" style="top: 15px; left: 90%; width: 10%;"></div>
+
+            <!-- AM 5650 - 5670 -->
+            <div class="bar satelites" style="top: 30px; left: 0%; width: 15%;">Exclusivo</div>
+            <!-- AM 5830 - 5850 -->
+            <div class="bar satelites" style="top: 30px; left: 90%; width: 10%;">Exclusivo</div>
+
+
+            <!-- FM 5650 - 5670 -->
+            <div class="bar satelites" style="top: 45px; left: 0%; width: 15%;"></div>
+            <!-- FM 5670 - 5760.3 -->
+            <div class="bar fm" style="top: 45px; left: 15%; width: 40%;"></div>
+            <!-- FM 5761 - 5830 -->
+            <div class="bar fm" style="top: 45px; left: 60%; width: 30%;"></div>
+            <!-- FM 5830 - 5850 -->
+            <div class="bar satelites" style="top: 45px; left: 90%; width: 10%;"></div>
+
+
+            <!-- DV 5650 - 5670 -->
+            <div class="bar satelites" style="top: 60px; left: 0%; width: 15%;">Satélites</div>
+            <!-- DV 5830 - 5850 -->
+            <div class="bar satelites" style="top: 60px; left: 90%; width: 10%;">Satélites</div>
+
+            <!-- Digital 5650 - 5670 -->
+            <div class="bar satelites" style="top: 75px; left: 0%; width: 15%;"></div>
+            <!-- Digital 5670 - 5830  -->
+            <div class="bar digital" style="top: 75px; left: 15%; width: 75%;"></div>
+            <!-- Digital 5830 - 5850 -->
+            <div class="bar satelites" style="top: 75px; left: 90%; width: 10%;"></div>
+
+            <!-- Otros 5650 - 5670 -->
+            <div class="bar satelites" style="top: 90px; left: 0%; width: 15%;"></div>
+            <!-- Otros 5670 - 5760.3 -->
+            <div class="bar otros" style="top: 90px; left: 15%; width: 40%;"></div>
+            <!-- Otros 5761 - 5830 -->
+            <div class="bar otros" style="top: 90px; left: 60%; width: 30%;"></div>
+            <!-- Otros 5830 - 5850-->
+            <div class="bar satelites" style="top: 90px; left: 90%; width: 10%;"></div>
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 115px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 3 centímetros (GHz)</h3>
+        <div class="band-chart" 
+          data-altura-colapsada="170" 
+          data-altura-expandida="190" 
+          data-top-colapsado="35" 
+          data-top-expandido="55" 
+          style="height: 170px; position: relative;">
+          <button class="toggle-details">+</button>
+            <div class="chart-tips">
+              <div class="tip" style="left: 70%;">10,3683-10,3684<br>Radiofaros</div>
+            </div>
+
+            <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">10</div>
+            </div>
+            <div class="frequency-marker" style="left:90%;">
+                <div class="frequency-label">10,45</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">10,5</div>
+            </div>
+
+            
+            <!-- CW 10 - 10.45 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 90%;"></div>
+            <!-- CW 10.45 - 10.5 -->
+            <div class="bar satelites" style="top: 0px; left: 90%; width: 10%;"></div>
+
+            <!-- SSB 10 - 10.45 -->
+            <div class="bar ssb" style="top: 15px; left: 0%; width: 90%;"></div>
+            <!-- SSB 10.45 - 10.50 -->
+            <div class="bar satelites" style="top: 15px; left: 90%; width: 10%;"></div>
+
+            <!-- AM 10 - 10.5 -->
+            <div class="bar satelites" style="top: 30px; left: 90%; width: 10%;">Exclusivo</div>
+
+            <!-- FM 10 - 10.45 -->
+            <div class="bar fm" style="top: 45px; left: 0%; width: 90%;"></div>
+            <!-- FM 10.45 - 10.5 -->
+            <div class="bar satelites" style="top: 45px; left: 90%; width: 10%;"></div>
+
+            <!-- DV 10 - 10.5 -->
+            <div class="bar satelites" style="top: 60px; left: 90%; width: 10%;">Satélites</div>
+
+            <!-- Digital 10 - 10.45  -->
+            <div class="bar digital" style="top: 75px; left: 0%; width: 90%;"></div>
+            <!-- Digital 10.45 - 10.5 -->
+            <div class="bar satelites" style="top: 75px; left: 90%; width: 10%;"></div>
+
+            <!-- Otros 10 - 10.45 -->
+            <div class="bar otros" style="top: 90px; left: 0%; width: 90%;"></div>
+            <!-- Otros 10.45 - 10.5-->
+            <div class="bar satelites" style="top: 90px; left: 90%; width: 10%;"></div>
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 115px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 1,2 centímetros (GHz)</h3>
+        <div class="band-chart" 
+          data-altura-colapsada="170" 
+          data-altura-expandida="190" 
+          data-top-colapsado="35" 
+          data-top-expandido="55" 
+          style="height: 170px; position: relative;">
+          <button class="toggle-details">+</button>
+            <div class="chart-tips">
+              <div class="tip" style="left: 27%;">24,04875-24,049<br>Excl. Radiofaros</div>
+            </div>
+
+            <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">24</div>
+            </div>
+            <div class="frequency-marker" style="left: 10%;">
+                <div class="frequency-label">24,048</div>
+            </div>
+            <div class="frequency-marker" style="left: 20%;">
+                <div class="frequency-label">24,04875</div>
+            </div>
+            <div class="frequency-marker" style="left: 30%;">
+                <div class="frequency-label">24,049</div>
+            </div>
+            <div class="frequency-marker" style="left:40%;">
+                <div class="frequency-label">24,05</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">24,25</div>
+            </div>
+
+            
+            <!-- CW 24.048 - 24.04875 -->
+            <div class="bar satelites" style="top: 0px; left: 10%; width: 10%;"></div>
+            <!-- CW 24 - 24.048 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 10%;"></div>
+            <!-- CW 24.049 - 24.05 -->
+            <div class="bar satelites" style="top: 0px; left: 30%; width: 10%;"></div>
+            <!-- CW 24.05 - 24.25 -->
+            <div class="bar cw" style="top: 0px; left: 40%; width: 60%;"></div>
+
+
+            <!-- SSB 24.048 - 24.04875 -->
+            <div class="bar satelites" style="top: 15px; left: 10%; width: 10%;"></div>
+            <!-- SSB 24 - 24.048 -->
+            <div class="bar ssb" style="top: 15px; left: 0%; width: 10%;"></div>
+            <!-- SSB 24.05 - 24.25 -->
+            <div class="bar ssb" style="top: 15px; left: 40%; width: 60%;"></div>
+            <!-- SSB 24.049 - 24.05 -->
+            <div class="bar satelites" style="top: 15px; left: 30%; width: 10%;"></div>
+
+            <!-- AM 24.048 - 24.04875 -->
+            <div class="bar satelites" style="top: 30px; left: 10%; width: 10%;">Exclusivo</div>
+            <!-- AM 24.049 - 24.05 -->
+            <div class="bar satelites" style="top: 30px; left: 30%; width: 10%;">Exclusivo</div>
+
+
+            <!-- FM 24.048 - 24.04875 -->
+            <div class="bar satelites" style="top: 45px; left: 10%; width: 10%;"></div>
+            <!-- FM 24 - 24.048 -->
+            <div class="bar fm" style="top: 45px; left: 0%; width: 10%;"></div>
+            <!-- FM 24.05 - 24.25 -->
+            <div class="bar fm" style="top: 45px; left: 40%; width: 60%;"></div>
+            <!-- FM 24.049 - 24.05 -->
+            <div class="bar satelites" style="top: 45px; left: 30%; width: 10%;"></div>
+
+
+            <!-- DV 24.048 - 24.04875 -->
+            <div class="bar satelites" style="top: 60px; left: 10%; width: 10%;">Satélites</div>
+            <!-- DV 24.049 - 24.05 -->
+            <div class="bar satelites" style="top: 60px; left: 30%; width: 10%;">Satélites</div>
+
+            <!-- Digital 24.048 - 24.04875 -->
+            <div class="bar satelites" style="top: 75px; left: 10%; width: 10%;"></div>
+            <!-- Digital 24 - 24.048  -->
+            <div class="bar digital" style="top: 75px; left: 0%; width: 10%;"></div>
+            <!-- Digital 24.05 - 24.25  -->
+            <div class="bar digital" style="top: 75px; left: 40%; width: 60%;"></div>
+            <!-- Digital 24.049 - 24.05 -->
+            <div class="bar satelites" style="top: 75px; left: 30%; width: 10%;"></div>
+
+            <!-- Otros 24.048 - 24.04875 -->
+            <div class="bar satelites" style="top: 90px; left: 10%; width: 10%;"></div>
+            <!-- Otros 24 - 24.048 -->
+            <div class="bar otros" style="top: 90px; left: 0%; width: 10%;"></div>
+            <!-- Otros 24.05 - 24.25 -->
+            <div class="bar otros" style="top: 90px; left: 40%; width: 60%;"></div>
+            <!-- Otros 24.049 - 24.05-->
+            <div class="bar satelites" style="top: 90px; left: 30%; width: 10%;"></div>
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 115px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+        <h3>Banda de 6 milímetros (GHz)</h3>
+        <div class="band-chart"  style="height: 170px; position: relative;">
+            <div class="chart-inner" style="top: 35px;">
+
+            <!-- Líneas verticales de frecuencia -->
+            <div class="frequency-marker" style="left: 0%;">
+                <div class="frequency-label">47</div>
+            </div>
+            <div class="frequency-marker" style="left: 35%;">
+                <div class="frequency-label">47,088</div>
+            </div>
+            <div class="frequency-marker" style="left: 50%;">
+                <div class="frequency-label">47,09</div>
+            </div>
+            <div class="frequency-marker" style="left: 100%;">
+                <div class="frequency-label">47,2</div>
+            </div>
+
+            
+            <!-- CW 47.088 - 47.09 -->
+            <div class="bar satelites" style="top: 0px; left: 35%; width: 15%;"></div>
+            <!-- CW 47 - 47.088 -->
+            <div class="bar cw" style="top: 0px; left: 0%; width: 35%;"></div>
+            <!-- CW 47.09 - 47.2 -->
+            <div class="bar cw" style="top: 0px; left: 50%; width: 50%;"></div>
+
+
+            <!-- SSB 47.088 - 47.09  -->
+            <div class="bar satelites" style="top: 15px; left: 35%; width: 15%;"></div>
+            <!-- SSB 47 - 47.088 -->
+            <div class="bar ssb" style="top: 15px; left: 0%; width: 35%;"></div>
+            <!-- SSB 47.09 - 47.2 -->
+            <div class="bar ssb" style="top: 15px; left: 50%; width: 50%;"></div>
+
+            <!-- AM 47.088 - 47.09 -->
+            <div class="bar satelites" style="top: 30px; left: 35%; width: 15%;">Exclusivo</div>
+            <!-- AM 47 - 47.088 -->
+            <div class="bar am" style="top: 30px; left: 0%; width: 35%;"></div>
+            <!-- AM 47.09 - 47.2 -->
+            <div class="bar am" style="top: 30px; left: 50%; width: 50%;"></div>
+
+
+            <!-- FM 47.088 - 47.09  -->
+            <div class="bar satelites" style="top: 45px; left: 35%; width: 15%;"></div>
+
+
+            <!-- DV 47.088 - 47.09  -->
+            <div class="bar satelites" style="top: 60px; left: 35%; width: 15%;">Satélites</div>
+
+            <!-- Digital 47.088 - 47.09  -->
+            <div class="bar satelites" style="top: 75px; left: 35%; width: 15%;"></div>
+            <!-- Digital 47 - 47.088  -->
+            <div class="bar digital" style="top: 75px; left: 0%; width: 35%;"></div>
+            <!-- Digital 47.09 - 47.2  -->
+            <div class="bar digital" style="top: 75px; left: 50%; width: 50%;"></div>
+
+            <!-- Otros 47.088 - 47.09  -->
+            <div class="bar satelites" style="top: 90px; left: 35%; width: 15%;"></div>
+            <!-- Otros 47 - 47.088 -->
+            <div class="bar otros" style="top: 90px; left: 0%; width: 35%;"></div>
+            <!-- Otros 47 - 47.088 -->
+            <div class="bar otros" style="top: 90px; left: 50%; width: 50%;"></div>
+
+            <!-- Categorías -->
+            <div class="bar-cat novicio " style="top: 115px; left: 0%; width: 100%;">Todas las categorías</div>
+          </div>
+        </div>
+
+
+
+<p>Aunque se intenta que este trabajo sea lo más preciso posible,
+ no reemplaza de ninguna manera la lectura atenta de la ley vigente.  
+ Por eso, todo radioaficionado consciente debería tomarse el tiempo de chequear bien si está cumpliendo con las normas.</p>
+
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-color cw"></div>CW</div>
+  <div class="legend-item"><div class="legend-color ssb"></div>SSB</div>
+  <div class="legend-item"><div class="legend-color am"></div>AM</div>
+  <div class="legend-item"><div class="legend-color fm"></div>FM</div>
+  <div class="legend-item"><div class="legend-color dv"></div>DV</div>
+  <div class="legend-item"><div class="legend-color digital"></div>DM</div>
+  <div class="legend-item"><div class="legend-color otros"></div>Otros</div>
+  <div class="legend-item"><div class="legend-color repetidoras"></div>Repetidoras</div>
+</div>        
+    </section>
+
+    <footer>
+		<p class="texto-resaltado">© 2024 LU1IDC inspirado por Guerrero y Sídoli</p>
+	</footer>
+
+	<a href="#" id="volver-arriba" title="Volver arriba">
+		<img src="images/up-arrow.png" alt="Volver arriba">
+	</a>
+
+	</main>
+
+	<div id="modal-imagen" class="modal">
+		<a class="anterior">&#10094;</a>
+		<img class="modal-contenido" id="img01">
+		<span class="cerrar">&times;</span>
+		<a class="siguiente">&#10095;</a>
+		<p id="caption"></p>
+	</div>  
+
+
+<script>
+  document.querySelectorAll('.band-chart').forEach(chart => {
+  const btn = chart.querySelector('.toggle-details');
+  const inner = chart.querySelector('.chart-inner');
+
+  if (!btn || !inner) return; // <-- Saltea esta banda si falta algo
+
+  const hMin = parseInt(chart.dataset.alturaColapsada || 175);
+  const hMax = parseInt(chart.dataset.alturaExpandida || 205);
+  const tMin = parseInt(chart.dataset.topColapsado || 35);
+  const tMax = parseInt(chart.dataset.topExpandido || 85);
+
+  btn.addEventListener('click', () => {
+    const expandida = chart.classList.toggle('expandida');
+    chart.style.height = expandida ? `${hMax}px` : `${hMin}px`;
+    inner.style.top = expandida ? `${tMax}px` : `${tMin}px`;
+    btn.textContent = expandida ? '–' : '+';
+  });
+});
+  </script>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

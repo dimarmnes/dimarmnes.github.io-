@@ -1,0 +1,5 @@
+<img src="images/soft/gpredict-01.jpg" data-modal-imagen="images/soft/gpredict-01.jpg" alt="GPREDICT 01" />
+<img src="images/soft/QSSTV-01.jpg" data-modal-imagen="images/soft/QSSTV-01.jpg" alt="QSSTV 01" />
+<img src="images/soft/QLOG-01.jpg" data-modal-imagen="images/soft/QLOG-01.jpg" alt="QLOG 01" />
+<img src="images/soft/JTDX-01.jpg" data-modal-imagen="images/soft/JTDX-01.jpg" alt="JTDX 01" />
+<img src="images/soft/Gridtracker-01.jpg" data-modal-imagen="images/soft/Gridtracker-01.jpg" alt="GRIDTRACKER 01" />
