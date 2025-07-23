@@ -1,4 +1,0 @@
-<img src="images/awards/rca/20241226-Cert-Estaciones-ferroviarias-Clase-I.jpg" data-modal-imagen="images/awards/rca/20241226-Cert-Estaciones-ferroviarias-Clase-I.jpg" alt="20241226 CERT ESTACIONES FERROVIARIAS CLASE I" />
-<img src="images/awards/rca/20241221-RCA-Precalentamiento-Mes-YOTA.jpg" data-modal-imagen="images/awards/rca/20241221-RCA-Precalentamiento-Mes-YOTA.jpg" alt="20241221 RCA PRECALENTAMIENTO MES YOTA" />
-<img src="images/awards/rca/20240608-RCA-Semana-Mayo.jpg" data-modal-imagen="images/awards/rca/20240608-RCA-Semana-Mayo.jpg" alt="20240608 RCA SEMANA MAYO" />
-<img src="images/awards/rca/20240608-RCA-Semana-Mayo-YL.jpg" data-modal-imagen="images/awards/rca/20240608-RCA-Semana-Mayo-YL.jpg" alt="20240608 RCA SEMANA MAYO YL" />
