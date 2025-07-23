@@ -15,6 +15,7 @@ img {
 }
 
 .texto-resaltado {
+	margin-bottom: 70px;
 	background-color: #F47A0B;
 	padding: 5px; /* Opcional: añade relleno para que el fondo se vea mejor */
 	text-align: right;
@@ -353,7 +354,7 @@ h2::before {
 
 	.row-1 {
         display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-columns: auto 2fr 2fr;
         gap: 20px;
     }
 
@@ -398,6 +399,13 @@ h2::before {
 }
 
 #map-canvas {
+	display: block;
+	height: 100%;
+	width: 95%;
+	margin: 0 auto;
+}
+
+#map {
 	display: block;
 	height: 100%;
 	width: 95%;
