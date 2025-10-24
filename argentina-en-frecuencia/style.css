@@ -1,0 +1,458 @@
+/* ==========================================================
+   Diploma TLP - Hoja de estilo principal (tema claro / oscuro)
+   ========================================================== */
+
+/* --- Variables de color --- */
+:root {
+  /* Tema claro (predeterminado) */
+  --bg-color: #f4f6f8;
+  --text-color: #343a40;
+  --primary-color: #3366cc;
+  --border-color: #dee2e6;
+  --card-bg: #ffffff;
+  --card-border: #dee2e6;
+  --table-bg: #ffffff;
+  --table-border: #dee2e6;
+  --table-header-bg: #f8f9fa;
+  --table-header-text: #495057;
+  --button-bg: #f8f9fa;
+  --button-hover: #e9ecef;
+  --button-active: #dee2e6;
+  --success-bg: #90ee90;      /* Verde claro (LightGreen), más visible */
+  --success-text: #212529;    /* Texto oscuro para buen contraste */
+  --modal-bg: #ffffff;
+  --table-highlight-bg: #f1f3f5;
+  --modal-text: #343a40;
+  --footer-text: #777;
+  --shadow: rgba(0,0,0,0.1);
+  --map-default-fill: #d8d8d8; /* Gris un poco más oscuro para mejor contraste */
+  --map-stroke: #ffffff;
+  --map-hover-opacity: 0.8;
+  --text-muted-color: #aaa;
+}
+
+/* Tema oscuro */
+[data-theme="dark"] {
+  --bg-color: #181a1b;
+  --text-color: #e8e6e3;
+  --primary-color: #4da3ff;
+  --border-color: #333;
+  --card-bg: #242526;
+  --card-border: #444;
+  --table-bg: #242526;
+  --table-border: #444;
+  --table-header-bg: #2f3133;
+  --table-header-text: #ddd;
+  --button-bg: #333;
+  --button-hover: #3e3e3e;
+  --button-active: #555;
+  --success-bg: #204529;
+  --success-text: #b3ffcc;
+  --modal-bg: #2a2c2e;
+  --table-highlight-bg: #333;
+  --modal-text: #e8e6e3;
+  --footer-text: #aaa;
+  --shadow: rgba(0,0,0,0.4);
+  --map-default-fill: #3a3a3a;
+  --map-stroke: #777777;
+  --map-hover-opacity: 0.9;
+  --text-muted-color: #666;
+}
+
+/* --- Base global --- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* --- Estructura principal --- */
+header, main, footer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  box-sizing: border-box;
+}
+
+/* --- Encabezado --- */
+header {
+  text-align: center;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin-top: 0.3rem;
+}
+
+/* --- Contenido principal --- */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* --- Controles y botones --- */
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  overflow-x: auto; /* Permite scroll horizontal si no cabe */
+  padding-bottom: 1rem; /* Espacio para la barra de scroll */
+  /* Evita que los elementos se achiquen */
+  & > * { flex-shrink: 0; }
+}
+
+button,
+input[type="file"],
+select {
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+input[type="file"]:hover,
+select:hover {
+  background-color: var(--button-hover);
+}
+
+button:active {
+  background-color: var(--button-active);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Contenedor para el input de archivo y el botón de recarga */
+.input-with-button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.input-with-button input[type="file"] {
+  flex-grow: 1; /* El input ocupa el espacio disponible */
+}
+
+.input-with-button button {
+  flex-shrink: 0; /* El botón no se encoge */
+}
+
+/* --- Resumen de contactos --- */
+#summary {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 1px 2px var(--shadow);
+}
+
+/* --- Contenedor superior (Controles + Mapa) --- */
+.top-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que el mapa pase abajo en pantallas pequeñas */
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center; /* Centra los elementos cuando hay espacio de sobra */
+}
+
+.control-panel {
+  flex: 1;
+  min-width: 300px; /* Ancho mínimo para los controles */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Ajustes para el desplegable de configuración */
+.control-group summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Nuevo grupo de controles para una mejor organización visual */
+.control-group {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  font-weight: 500;
+}
+
+/* Contenido del desplegable con espaciado */
+.details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espacio entre los elementos internos */
+  margin-top: 1rem; /* Espacio después del título <summary> */
+}
+
+/* El textarea ocupa todo el ancho */
+.control-group textarea {
+  width: 100%;
+  box-sizing: border-box; /* Para que el padding no lo haga más ancho */
+}
+
+#map-container {
+  flex: 1.5; /* El mapa ocupará un poco más de espacio */
+  min-width: 300px;
+  min-height: 400px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  box-shadow: 0 2px 5px var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem; /* Espacio interno para que el mapa no toque los bordes */
+  overflow: hidden; /* Evita que el SVG se desborde */
+}
+
+/* --- Sección de Notas e Instrucciones --- */
+#notes ul {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+#notes code {
+  background-color: var(--button-bg);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-family: "Consolas", "Courier New", monospace;
+}
+
+/* --- Estilos del Mapa SVG --- */
+#map-container svg {
+  width: 100%;
+  height: 100%;
+  max-height: 500px; /* Altura máxima para que no sea gigante */
+}
+
+/* --- Estilos del Mapa SVG --- */
+#mapa-argentina-svg path, #mapa-argentina-svg g {
+  fill: var(--map-default-fill); /* Color por defecto (no contactada) */
+  stroke: var(--map-stroke); /* Borde entre provincias */
+  stroke-width: 2;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efecto hover para mejor interactividad */
+#mapa-argentina-svg path:hover, #mapa-argentina-svg g:hover {
+  opacity: var(--map-hover-opacity);
+}
+
+/* Estilo para provincias contactadas (afecta al elemento y a los paths internos si es un grupo) */
+#mapa-argentina-svg .contactada, #mapa-argentina-svg .contactada path {
+  fill: var(--success-bg);
+}
+
+/* --- Grilla principal (tabla) --- */
+#gridContainer {
+  overflow-x: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px var(--shadow);
+  background-color: var(--card-bg);
+}
+
+#provinceTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+  text-align: center;
+}
+
+#provinceTable th,
+#provinceTable td {
+  border: 1px solid var(--table-border);
+  padding: 0.5rem 0.8rem;
+}
+
+#provinceTable th {
+  background-color: var(--table-highlight-bg);
+  font-weight: bold; /* Aseguramos la negrita */
+  /* Forzar un contexto de apilamiento para que el z-index funcione correctamente */
+  background-color: var(--table-header-bg);
+}
+
+/* --- Reglas para la tabla pegajosa --- */
+
+/* 1. Todos los encabezados de columna (thead) son pegajosos en la parte superior */
+#provinceTable thead th {
+  position: sticky;
+  z-index: 2; /* Por encima de los encabezados de fila (tbody th) */
+}
+
+/* 2. Asignamos el desplazamiento vertical a cada fila del encabezado */
+#provinceTable thead tr:nth-child(1) th { top: 0; }
+#provinceTable thead tr:nth-child(2) th {
+  /* Desplazamiento = altura de la fila 1 (aprox 2.2rem) */
+  top: 2.2rem; 
+}
+#provinceTable thead tr:nth-child(3) th {
+  /* Desplazamiento = altura de fila 1 + fila 2 (aprox 4.4rem) */
+  top: 4.4rem; 
+}
+
+/* 3. Todos los encabezados de la primera columna son pegajosos a la izquierda */
+#provinceTable tr > th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1; /* Por defecto, están por debajo de los encabezados de columna */
+}
+
+/* 4. Los encabezados de la primera columna DENTRO del thead deben tener más prioridad */
+#provinceTable thead th:first-child {
+  z-index: 3; /* Por encima de los otros encabezados de columna */
+}
+
+#provinceTable td {
+  background-color: var(--table-bg);
+  transition: background 0.1s;
+}
+
+/* --- Separadores visuales en la tabla --- */
+/* Borde inferior del encabezado */
+#provinceTable thead tr:last-child th {
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+/* Borde superior del pie de tabla */
+#provinceTable tfoot th {
+  border-top: 2px solid var(--primary-color);
+}
+
+/* --- Celdas con contactos --- */
+#provinceTable td.contactado {
+  background-color: var(--success-bg);
+  color: var(--success-text);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#provinceTable td.cero,
+td.cero {
+  color: var(--text-muted-color);
+  text-align: center;
+}
+
+/* --- Modal de indicativos --- */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: var(--modal-bg);
+  color: var(--modal-text);
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 10px var(--shadow);
+  position: relative;
+  /* Nuevas propiedades para controlar el tamaño y el scroll */
+  max-height: 80vh; /* Altura máxima del 80% de la pantalla */
+  display: flex;
+  flex-direction: column;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+#modalTitle {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3rem;
+}
+
+#modalCallsigns {
+  margin-top: 1rem;
+  line-height: 1.6;
+  /* Permitimos que el texto se divida en varias líneas */
+  white-space: normal;
+  word-wrap: break-word;
+  /* Habilitamos el scroll vertical si el contenido excede la altura máxima */
+  overflow-y: auto;
+  max-height: 8em; /* Aprox. 5 filas (5 * 1.6 de line-height) */
+}
+
+/* --- Pie de página --- */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--footer-text);
+  border-top: 1px solid var(--border-color);
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* --- Adaptaciones responsivas --- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  #provinceTable {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 900px) {
+  /* En pantallas medianas, el mapa se pone debajo de los controles */
+  .top-container { flex-direction: column; }
+}
