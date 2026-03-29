@@ -222,6 +222,14 @@ function addSquareForQSO(qso) {
 		options
 	);
 
+	if (typeof qso.gridsquare === 'string' && qso.gridsquare !== '') {
+		var gridRef = qso.gridsquare.substring(0, Math.min(4, qso.gridsquare.length)).toUpperCase();
+		polygon.bindPopup(gridRef);
+		polygon.on('click', function () {
+			this.openPopup();
+		});
+	}
+
 	return polygon;
 }
 

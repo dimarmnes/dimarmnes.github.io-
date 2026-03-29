@@ -74,7 +74,7 @@ function createMap(mapDivName) {
  * 	for example `{color: 'red'}`
  */
 function createPolygon(points, options) {
-	var poly = L.polygon(points, {color: '#F47A0B', weight: 0.5});
+	var poly = L.polygon(points, {color: '#F47A0B', weight: 0.5, fillOpacity: 0.5});
 	poly.addTo(_polygonFeatureGroup);
 	_polygons.push(poly);
 	return poly;
