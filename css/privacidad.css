@@ -1,0 +1,118 @@
+:root {
+  --bg: #101820;
+  --bg2: #182530;
+  --text: #edf3f6;
+  --muted: #a5b4bd;
+  --gold: #d3aa58;
+  --line: #314856;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 18% 0%, #ffffff0a, transparent 30rem),
+    linear-gradient(180deg, var(--bg2), var(--bg));
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.privacy-site {
+  width: 100%;
+  max-width: 1180px;
+  margin: auto;
+  padding: 0 22px;
+}
+
+.privacy-heading {
+  padding: 30px 0 22px;
+}
+
+.privacy-eyebrow {
+  margin-bottom: 0.45rem;
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.privacy-heading h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  letter-spacing: -0.035em;
+}
+
+.privacy-heading > p {
+  max-width: 720px;
+  margin: 0.65rem 0 0;
+  color: #bdc8cf;
+  line-height: 1.65;
+}
+
+.privacy-heading time {
+  display: block;
+  margin-top: 0.75rem;
+  color: #82949f;
+  font-size: 0.7rem;
+}
+
+.privacy-card {
+  max-width: 900px;
+  padding: clamp(24px, 5vw, 52px);
+  border: 1px solid #3b4e59;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #182731f2, #111c23f5);
+  box-shadow: 0 24px 55px #0004;
+}
+
+.privacy-card section + section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ffffff10;
+}
+
+.privacy-card h2 {
+  margin: 0 0 0.65rem;
+  color: #f0d79e;
+  font-size: 1.05rem;
+}
+
+.privacy-card p {
+  margin: 0.55rem 0 0;
+  color: #c0cbd1;
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.privacy-card code {
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  background: #091116;
+  color: #e6c97f;
+}
+
+.privacy-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.2rem;
+}
+
+.privacy-links a {
+  color: #d9bd78;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .privacy-site {
+    padding: 0 14px;
+  }
+
+  .privacy-card {
+    padding: 22px 18px;
+    border-radius: 12px;
+  }
+}

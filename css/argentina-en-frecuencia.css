@@ -1,0 +1,161 @@
+:root {
+  --bg: #0d151b;
+  --bg2: #172630;
+  --text: #edf3f6;
+  --muted: #a7b6bf;
+  --gold: #d3aa58;
+  --line: #334955;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 0%, #36526333, transparent 32rem),
+    linear-gradient(180deg, var(--bg2), var(--bg));
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.argentina-site {
+  width: 100%;
+  max-width: 1460px;
+  margin: auto;
+  padding: 0 22px;
+}
+
+.argentina-heading {
+  max-width: 880px;
+  padding: 30px 0 28px;
+}
+
+.section-kicker {
+  margin: 1.3rem 0 0.7rem;
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.argentina-heading h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.argentina-heading > p:not(.section-kicker) {
+  max-width: 720px;
+  margin: 1rem 0 0;
+  color: #bdc8cf;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.local-note {
+  max-width: 720px;
+  margin-top: 1.2rem;
+  padding: 12px 15px;
+  border-left: 3px solid #69aa83;
+  background: #69aa830c;
+  color: #aebdc4;
+  font-size: 0.72rem;
+  line-height: 1.55;
+}
+
+.local-note strong {
+  color: #a9d5b8;
+}
+
+.tool-frame {
+  overflow: hidden;
+  border: 1px solid #415660;
+  border-radius: 14px;
+  background: #f4f6f8;
+  box-shadow: 0 28px 65px #0006;
+}
+
+.tool-frame-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 14px;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 13px;
+  border-bottom: 1px solid #ffffff13;
+  background: linear-gradient(#2c3f49, #1a2931);
+  color: #cbd5da;
+  font-size: 0.65rem;
+}
+
+.tool-frame-bar > span {
+  display: flex;
+  gap: 5px;
+}
+
+.tool-frame-bar i {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #70838c;
+}
+
+.tool-frame-bar i:first-child {
+  background: #b85f57;
+}
+
+.tool-frame-bar i:nth-child(2) {
+  background: #c59e54;
+}
+
+.tool-frame-bar i:last-child {
+  background: #619273;
+}
+
+.tool-frame-bar p {
+  margin: 0;
+  text-align: center;
+}
+
+.tool-frame-bar small {
+  color: #81959f;
+  font: 700 0.52rem/1 monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#argentina-tool {
+  display: block;
+  width: 100%;
+  min-height: 1100px;
+  border: 0;
+  background: #f4f6f8;
+}
+
+@media (max-width: 700px) {
+  .argentina-site {
+    padding: 0 14px;
+  }
+
+  .tool-frame {
+    margin: 0 -7px;
+    border-radius: 10px;
+  }
+
+  .tool-frame-bar {
+    grid-template-columns: auto 1fr;
+  }
+
+  .tool-frame-bar small {
+    display: none;
+  }
+
+  #argentina-tool {
+    min-height: 1500px;
+  }
+}

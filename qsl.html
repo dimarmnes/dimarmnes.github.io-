@@ -1,61 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LU1IDC - Radioaficionado Argentino</title>
-    <link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet"> 
-	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LU1IDC · QSL</title>
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/cabecera.css">
+  <link rel="stylesheet" href="css/pie.css">
+  <link rel="stylesheet" href="css/navegacion.css">
+  <link rel="stylesheet" href="css/qsl.css">
 </head>
-<body>
-
-    <header>
-        <img src="images/lu1idc_lupin_logo_100.png" alt="Logo Lu1idc">
-        <p>Lic. since 2003 - On air since 2024</p>
-        <p>San Javier, Misiones, Argentina - GG22KD - ITU Zone 14 - CQ Zone 13</p>
-    </header>
- 
+<body id="top">
+  <div class="qsl-site">
+<header class="global-header">
+        <a class="global-brand" href="index.html" aria-label="LU1IDC, inicio">LU1IDC</a>
+        <p class="global-meta">San Javier, Misiones · GG22KD · ITU 14 · CQ 13</p>
+        <button class="global-menu" type="button" aria-expanded="false" aria-controls="global-nav">
+          Menú
+        </button>
+        <nav class="global-nav" id="global-nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="estacion.html">La estación</a>
+          <a href="software.html">Software</a>
+          <a class="" href="en-el-aire.html">En el aire</a>
+          <a href="concursos.html">Concursos</a>
+          <a href="diplomas.html">Diplomas</a>
+          <a class="active" href="qsl.html">QSLs</a>
+          <a href="cositas-utiles.html">Cositas útiles</a>
+        </nav>
+      </header>
     <main>
-		<nav class="menu">
-            <ul>
-                <li><a href="index.html" title="Activaciones">HOME</a></li>
-                <li><a href="rig.html" title="Mi estación">MY RIG</a></li>
-                <li><a href="soft.html" title="Mi software">MY SOFT</a></li>
-				<li><a href="onair.html" title="En el aire">ON AIR</a></li>
-				<li><a href="contests.html" title="Concursos">CONTESTS</a></li>
-				<li><a href="awards.html" title="Diplomas">AWARDS</a></li>
-				<li><a href="qsl.html" title="QSLs">QSLs</a></li>
-		    </ul>
-		</nav>
-		
-    <section>
-        <h2>QSL</h2>
-    </section>
-
-    <footer>
-		<p class="texto-resaltado">© 2024 LU1IDC inspired by Guerrero y Sídoli</p>
-	</footer>
-
-	<a href="#" id="volver-arriba" title="Volver arriba">
-		<img src="images/up-arrow.png" alt="Volver arriba">
-	</a>
-
-	</main>
-
-	<div id="modal-imagen" class="modal">
-		<a class="anterior">&#10094;</a>
-		<img class="modal-contenido" id="img01">
-		<span class="cerrar">&times;</span>
-		<a class="siguiente">&#10095;</a>
-		<p id="caption"></p>
-	</div>  
-
-<script src="script.js"></script>
-
+      <section class="qsl-hero">
+        <div><p class="kicker">QSL · Correspondencia de radio</p><h1>Correo recibido<br>desde el aire.</h1><p>Una QSL no es solo una confirmación. También es una postal de la estación que estuvo del otro lado del QSO. Algunas tarjetas quedan sobre la mesa; el resto se conserva en el archivo.</p></div>
+        <div class="desk" id="qsl-desk" aria-label="Tarjetas sobre la mesa"></div>
+      </section>
+      <p class="section-label">Sobre la mesa · Correspondencia de radio</p>
+      <div class="qsl-intro-grid">
+        <section class="panel own-section" id="qsl-own-section">
+          <p class="kicker">Desde mi estación</p>
+          <h2>Mis QSL</h2>
+          <p>Las tarjetas con las que confirmo nuestros encuentros en el aire.</p>
+          <div class="qsl-strip" id="qsl-own"></div>
+          <p id="qsl-own-empty" hidden>Próximamente, mis tarjetas de confirmación.</p>
+          <a class="more" id="qsl-own-link" href="qsl-archivo.html?tipo=propias">Ver mis tarjetas →</a>
+        </section>
+        <section class="panel inbox">
+          <p class="kicker">Bandeja de entrada</p>
+          <h2>Últimas recibidas</h2>
+          <p>La correspondencia más reciente del archivo.</p>
+          <div class="inbox-list" id="qsl-selection"></div>
+          <a class="more" href="qsl-archivo.html">Explorar todas las recibidas →</a>
+        </section>
+      </div>
+      <section class="qsl-preview" aria-labelledby="qsl-preview-title">
+        <div class="archive-head">
+          <div>
+            <p class="kicker">Archivo QSL</p>
+            <h2 id="qsl-preview-title">La colección</h2>
+            <p id="qsl-total" role="status"></p>
+          </div>
+          <a class="archive-button" href="qsl-archivo.html">Ver archivo completo →</a>
+        </div>
+        <div class="qsl-grid preview-grid" id="qsl-preview"></div>
+      </section>
+      <section aria-labelledby="qsl-years-title"><p class="section-label" id="qsl-years-title">Recibidas · Por año</p><div class="year-folders" id="qsl-years"></div></section>
+    </main>
+<footer class="global-footer">
+        <div class="footer-mark">
+          <img src="images/LU1IDC_logo.png" alt="Logo de LU1IDC">
+          <p><b>LU1IDC</b><span>Radioaficionado argentino</span></p>
+        </div>
+        <p class="footer-station">San Javier · Misiones · Argentina<br>GG22KD · ITU 14 · CQ 13</p>
+        <p class="footer-motto">Inspirado por Guerrero y Sídoli<br>y por la curiosidad de hacer.</p>
+        <nav class="footer-links" aria-label="Enlaces del pie">
+          <a href="privacidad.html">Privacidad</a>
+          <a href="#top">↑ Volver arriba</a>
+        </nav>
+      </footer>
+  </div>
+  <dialog id="qsl-dialog" aria-label="Tarjeta QSL ampliada">
+    <div class="dialog-controls"><button id="qsl-prev" type="button" aria-label="Tarjeta anterior">←</button><button id="qsl-next" type="button" aria-label="Tarjeta siguiente">→</button><button id="qsl-close" type="button">Cerrar ×</button></div>
+    <img id="qsl-image" alt=""><p id="qsl-caption"></p>
+  </dialog>
+  <script src="js/cabecera.js"></script>
+  <script src="js/qsl-data.js"></script>
+  <script src="js/galeria-swipe.js?v=1"></script>
+  <script src="js/qsl.js?v=1"></script>
 </body>
 </html>

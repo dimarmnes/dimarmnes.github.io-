@@ -1,0 +1,986 @@
+@font-face {
+    font-family:"Logbook Hand";
+    src:url('../fonts/patrick-hand/PatrickHand-Regular.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal;
+    font-display:swap
+}
+:root {
+    --bg:#101820;
+    --bg2:#182530;
+    --text:#edf3f6;
+    --muted:#a5b4bd;
+    --gold:#d3aa58;
+    --line:#314856;
+    --ink:#26313a
+}
+* {
+    box-sizing:border-box
+}
+body {
+    margin:0;
+    background:radial-gradient(circle at 20% 0%,#ffffff0a,transparent 30rem),linear-gradient(180deg,var(--bg2),var(--bg));
+    color:var(--text);
+    font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+.logbook-site {
+    max-width:1180px;
+    margin:auto;
+    padding:0 22px
+}
+.logbook-heading {
+    padding:28px 0 18px
+}
+.logbook-heading h1 {
+    margin:0;
+    font-size:clamp(1.65rem,3vw,2.45rem);
+    font-weight:750;
+    letter-spacing:-.025em
+}
+.logbook-heading>p {
+    max-width:760px;
+    margin:.55rem 0 0;
+    color:#b9c4cc;
+    font-size:.95rem;
+    line-height:1.55
+}
+.logbook-desk {
+    position:relative;
+    overflow:hidden;
+    padding:32px 24px 26px;
+    border:1px solid #4b4037;
+    border-radius:18px;
+    background:linear-gradient(#08131aaa,#08131acc),url('../images/grids/shack-blur.png') center/cover;
+    box-shadow:0 24px 55px #0005
+}
+.logbook-desk::after {
+    content:"";
+    position:absolute;
+    inset:auto 5% 6px;
+    height:35px;
+    border-radius:50%;
+    background:#0008;
+    filter:blur(18px);
+    pointer-events:none
+}
+.book-instructions {
+    position:relative;
+    z-index:2;
+    margin:0 0 18px;
+    color:#c9d2d7;
+    font-size:.76rem;
+    text-align:center
+}
+.book-wrap {
+    position:relative;
+    z-index:2;
+    width:min(900px,92%);
+    aspect-ratio:793.65062/559.33479;
+    margin:auto;
+    filter:drop-shadow(0 22px 22px #0008)
+}
+.book {
+    width:100%;
+    height:100%
+}
+.book-page {
+    overflow:hidden;
+    background:#f8f8f6
+}
+.book-cover {
+    cursor:pointer;
+    background:#f8d957
+}
+.book-cover:focus-visible {
+    outline:3px solid #55c9ed;
+    outline-offset:-4px
+}
+.book-cover img,.paper-sheet>img {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:fill
+}
+.paper-sheet {
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#f8f8f6;
+    container-type:inline-size
+}
+.spiral {
+    position:absolute;
+    z-index:100;
+    left:-14px;
+    top:3%;
+    bottom:3%;
+    display:grid;
+    grid-template-rows:repeat(14,1fr);
+    align-items:center;
+    pointer-events:none
+}
+.spiral span {
+    display:block;
+    width:30px;
+    height:12px;
+    border:3px solid #687178;
+    border-left-color:#d6dde0;
+    border-radius:50%;
+    background:transparent;
+    box-shadow:2px 2px 2px #0005;
+    transform:rotate(-7deg)
+}
+.sheet-overlay {
+    position:absolute;
+    inset:0;
+    color:#26313a;
+    font-family:"Logbook Hand",cursive;
+    font-size:1.55cqw;
+    line-height:1
+}
+.station-call,.station-qth,.sheet-number {
+    position:absolute;
+    white-space:nowrap
+}
+.station-call {
+    left:14.2%;
+    top:8.6%;
+    font-size:1.08em
+}
+.station-qth {
+    left:18%;
+    top:14.4%;
+    font-size:.98em
+}
+.sheet-number {
+    left:89.5%;
+    top:11.8%;
+    width:8%;
+    font-size:1.12em;
+    text-align:center
+}
+.log-rows {
+    position:absolute;
+    left:3.02%;
+    top:26.55%;
+    width:94.36%;
+    height:69.25%;
+    display:grid;
+    grid-template-rows:repeat(13,1fr)
+}
+.log-row {
+    display:grid;
+    grid-template-columns:8.54% 9.35% 16.69% 13.75% 7.74% 8.68% 35.25%;
+    align-items:center;
+    min-width:0;
+    transform:rotate(var(--tilt,0deg));
+    line-height:1
+}
+.log-row span {
+    min-width:0;
+    padding:0 .25em;
+    text-align:center;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:clip
+}
+.log-row .notes {
+    text-align:left;
+    padding-left:.7em;
+    font-size:.89em
+}
+.log-row .call {
+    letter-spacing:.025em
+}
+.log-row .new-dxcc {
+    color:#7b4d14
+}
+.book-controls {
+    position:relative;
+    z-index:3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:9px;
+    margin-top:21px
+}
+.book-controls button {
+    padding:8px 11px;
+    border:1px solid #64747e;
+    border-radius:6px;
+    background:#172630;
+    color:#edf3f6;
+    font:inherit;
+    font-size:.72rem;
+    cursor:pointer
+}
+.book-controls button:hover:not(:disabled) {
+    border-color:var(--gold)
+}
+.book-controls button:disabled {
+    opacity:.35;
+    cursor:default
+}
+.book-controls span {
+    min-width:130px;
+    color:#d9c18d;
+    font:700 .72rem monospace;
+    text-align:center
+}
+.book-data-status,.prototype-note {
+    color:#91a3ad;
+    font-size:.7rem;
+    text-align:center
+}
+.prototype-note {
+    margin:16px 0 30px
+}
+.book-data-status {
+    position:relative;
+    z-index:2;
+    margin:14px 0 0
+}
+@media(max-width:700px) {
+    .logbook-site {
+        padding:0 14px
+    }
+    .logbook-desk {
+        padding:24px 8px 20px;
+        overflow-x:auto
+    }
+    .book-instructions,.book-controls,.book-data-status {
+        min-width:640px
+    }
+    .book-wrap {
+        width:660px
+    }
+    .spiral {
+        left:-10px
+    }
+    .spiral span {
+        width:24px;
+        height:10px;
+        border-width:2px
+    }
+}
+
+/* Anillado en capas: la hoja pasa entre el arco trasero y el delantero. */
+.book {
+    position: relative;
+    z-index: 2;
+}
+
+.book-page::after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    top: 2.1%;
+    bottom: 2.1%;
+    width: 2.4%;
+    background: radial-gradient(circle at 48% 50%, #30383d 0 2.4px, #c9cecf 2.7px 3.8px, transparent 4.1px) center top / 100% calc(100% / 14) repeat-y;
+    filter: drop-shadow(1px 1px 1px #0005);
+    pointer-events: none;
+}
+
+.spiral-back {
+    z-index: 1;
+}
+
+.spiral-front {
+    z-index: 100;
+    transition: opacity 150ms ease, transform 260ms ease;
+}
+
+.spiral-front span {
+    clip-path: inset(-6px -6px -6px 48%);
+}
+
+.book-wrap.is-turning .spiral-front {
+    opacity: 0;
+    transform: translateX(-5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .spiral-front {
+        transition: none;
+    }
+}
+
+/* PageFlip clona la hoja que se pliega; esta copia representa su reverso. */
+.book-page-back {
+    background:
+        radial-gradient(circle at 18% 12%, #ffffff80, transparent 26%),
+        linear-gradient(100deg, #e3e1d9 0, #f8f7f1 5%, #fbfaf5 100%) !important;
+}
+
+.book-page-back > * {
+    opacity: 0.11 !important;
+    filter: grayscale(1) contrast(0.72);
+}
+
+.book-page-back::after {
+    display: none !important;
+}
+
+/* Acabado de la libreta. */
+.book-page::after {
+    background: radial-gradient(
+        circle at 48% 50%,
+        #30383d 0 2.4px,
+        #c9cecf 2.7px 3.8px,
+        transparent 4.1px
+    ) center top / 100% calc(100% / 14) repeat-y;
+    opacity: 1;
+}
+
+.paper-sheet {
+    box-shadow:
+        inset -2px 0 2px #252d3217,
+        inset 0 -2px 2px #252d321c;
+}
+
+.paper-sheet > img {
+    position: relative;
+    z-index: 1;
+}
+
+.paper-sheet::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    inset: 0 auto 0 0;
+    width: 5.2%;
+    background: linear-gradient(
+        90deg,
+        #343a3d24 0,
+        #4f55581a 20%,
+        #ffffff24 52%,
+        transparent 100%
+    );
+    box-shadow: inset 1px 0 #ffffff4d;
+    pointer-events: none;
+}
+
+.sheet-overlay {
+    z-index: 3;
+}
+
+.book-cover {
+    box-shadow:
+        inset -2px 0 2px #5b461c38,
+        inset 0 -2px 2px #5b461c42;
+}
+
+.spiral-front {
+    transition:
+        opacity 260ms ease,
+        transform 420ms cubic-bezier(.22,.65,.32,1);
+}
+
+.book-wrap.is-turning .spiral-front {
+    opacity: 0.06;
+    transform: translateX(-7px) scaleX(0.94);
+}
+
+.book-controls {
+    width: max-content;
+    max-width: 100%;
+    margin: 21px auto 0;
+    padding: 7px;
+    border: 1px solid #52636d99;
+    border-radius: 9px;
+    background: linear-gradient(180deg, #1b2b35e8, #101c23e8);
+    box-shadow:
+        0 8px 20px #0004,
+        inset 0 1px #ffffff0d;
+}
+
+.book-controls button {
+    min-height: 34px;
+    border-color: #667983;
+    background: linear-gradient(180deg, #243742, #17262f);
+    box-shadow: inset 0 1px #ffffff0f;
+}
+
+.book-controls button:hover:not(:disabled) {
+    border-color: var(--gold);
+    background: linear-gradient(180deg, #2b414d, #1b2d36);
+}
+
+.book-controls span {
+    color: #e2c982;
+    font-family: "Logbook Hand", cursive;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+@media (max-width:700px) {
+    .book-controls {
+        max-width: none;
+    }
+}
+
+/* Vista inicial: la libreta apoyada sobre el escritorio del shack. */
+.logbook-desk::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 45% 0 0;
+    background:
+        linear-gradient(180deg, #0b111500, #080b0ddd 24%, #050708f2),
+        linear-gradient(105deg, #50362070, #171310b8 52%, #533a2470);
+    border-top: 1px solid #b68b5540;
+    pointer-events: none;
+    transition: opacity 450ms ease;
+}
+
+.book-wrap {
+    transform-origin: 50% 58%;
+    transition:
+        transform 450ms cubic-bezier(.22,.72,.3,1),
+        filter 450ms ease;
+}
+
+.logbook-desk.is-desk-view .book-wrap {
+    transform: perspective(1100px) translateY(6%) rotateX(13deg) rotateZ(-1.8deg) scale(0.64);
+    filter: drop-shadow(0 34px 24px #000b);
+}
+
+.logbook-desk.is-reading-view::before {
+    opacity: 0.34;
+}
+
+.book-pickup {
+    position: absolute;
+    z-index: 130;
+    inset: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.book-pickup span {
+    position: absolute;
+    left: 50%;
+    bottom: -3.3rem;
+    transform: translateX(-50%);
+    padding: 0.6rem 0.9rem;
+    border: 1px solid #d3aa5899;
+    border-radius: 7px;
+    background: #101820e8;
+    box-shadow: 0 8px 18px #0007;
+    font-size: 0.78rem;
+    letter-spacing: 0.025em;
+    white-space: nowrap;
+}
+
+.book-pickup:hover span,
+.book-pickup:focus-visible span {
+    border-color: #e4c47d;
+    background: #1a2933f2;
+}
+
+.logbook-desk.is-reading-view .book-pickup {
+    display: none;
+}
+
+.logbook-desk.is-desk-view .book-controls,
+.logbook-desk.is-desk-view .book-data-status {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.book-controls,
+.book-data-status {
+    transition: opacity 220ms ease;
+}
+
+#book-desk-return {
+    color: #cfbd98;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .book-wrap,
+    .logbook-desk::before {
+        transition: none;
+    }
+}
+
+@media (max-width:700px) {
+    .logbook-desk.is-desk-view .book-wrap {
+        transform: perspective(900px) translateY(5%) rotateX(10deg) rotateZ(-1.2deg) scale(0.72);
+    }
+}
+
+.logbook-desk.is-desk-view .book {
+    pointer-events: none;
+}
+
+/* Fondo nítido del shack; se desenfoca sólo al acercar la libreta. */
+.logbook-desk {
+    isolation: isolate;
+    background: #0c1318;
+}
+
+.shack-backdrop {
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    border-radius: inherit;
+    background: url('../images/logbook/shack-escritorio.webp') center / cover no-repeat;
+    filter: brightness(0.78) saturate(0.94);
+    transform: scale(1.002);
+    transition:
+        filter 450ms ease,
+        transform 450ms ease;
+    pointer-events: none;
+}
+
+.logbook-desk::before {
+    z-index: 1;
+    inset: 0;
+    border-top: 0;
+    background: linear-gradient(180deg, #06101710 0%, #06101718 48%, #05090c4d 100%);
+    opacity: 1;
+}
+
+.logbook-desk.is-reading-view .shack-backdrop {
+    filter: blur(8px) brightness(0.42) saturate(0.78);
+    transform: scale(1.035);
+}
+
+.logbook-desk.is-reading-view::before {
+    opacity: 1;
+    background: linear-gradient(180deg, #0710166e, #07101694);
+}
+
+.logbook-desk.is-desk-view .book-wrap {
+    transform: perspective(1100px) translateY(30%) rotateX(48deg) rotateZ(-1.4deg) scale(0.56);
+    filter: drop-shadow(0 38px 24px #000c);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .shack-backdrop {
+        transition: none;
+    }
+}
+
+@media (max-width:700px) {
+    .logbook-desk.is-desk-view .book-wrap {
+        transform: perspective(900px) translateY(25%) rotateX(42deg) rotateZ(-1deg) scale(0.64);
+    }
+}
+
+/* Navegación del libro completo. */
+.book-page-jump {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding-left: 0.25rem;
+    color: #bfcbd1;
+    font-size: 0.72rem;
+}
+
+.book-page-jump input {
+    width: 4.6rem;
+    min-height: 34px;
+    padding: 0.35rem 0.45rem;
+    border: 1px solid #667983;
+    border-radius: 6px;
+    outline: 0;
+    background: #0e1a21;
+    color: #f0d58f;
+    font: 1rem "Logbook Hand", cursive;
+    text-align: center;
+}
+
+.book-page-jump input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 2px #d3aa5826;
+}
+
+.book-page-jump button {
+    min-height: 34px;
+}
+
+/* Ficha de índice y búsqueda. */
+.logbook-tools[hidden],
+.logbook-tools-panel[hidden] {
+    display: none;
+}
+
+.logbook-tools {
+    position: absolute;
+    z-index: 220;
+    top: 70px;
+    right: 24px;
+    bottom: 72px;
+    width: min(430px, calc(100% - 48px));
+    overflow: hidden;
+    border: 1px solid #b9aa8b;
+    border-radius: 10px 5px 5px 10px;
+    background:
+        linear-gradient(90deg, #c9bfae 0 8px, transparent 8px),
+        #f3efe4;
+    color: #26313a;
+    box-shadow: -16px 18px 35px #0008, inset 9px 0 13px #5e514521;
+}
+
+.logbook-tools-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 17px 17px 11px 25px;
+    border-bottom: 1px solid #b8ad99;
+}
+
+.logbook-tools-kicker {
+    color: #8a6b31;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.logbook-tools h2 {
+    margin: 0.15rem 0 0;
+    font: 400 1.4rem "Logbook Hand", cursive;
+}
+
+.logbook-tools-header button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid #a79a83;
+    border-radius: 50%;
+    background: #e6dfd1;
+    color: #39444b;
+    font-size: 1.35rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.logbook-tools-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 17px 0 25px;
+    border-bottom: 1px solid #b8ad99;
+}
+
+.logbook-tools-tabs button {
+    padding: 9px 7px 7px;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    background: transparent;
+    color: #667078;
+    font: inherit;
+    font-size: 0.72rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logbook-tools-tabs button[aria-selected="true"] {
+    border-bottom-color: #b78937;
+    color: #26313a;
+}
+
+.logbook-tools-panel {
+    height: calc(100% - 111px);
+    overflow: auto;
+    padding: 14px 17px 18px 25px;
+}
+
+.logbook-search-field,
+.logbook-search-filters label {
+    display: grid;
+    gap: 0.3rem;
+    color: #59636a;
+    font-size: 0.65rem;
+    font-weight: 700;
+}
+
+.logbook-search-field input,
+.logbook-search-filters select {
+    min-width: 0;
+    height: 36px;
+    padding: 0 0.6rem;
+    border: 1px solid #aaa18f;
+    border-radius: 5px;
+    outline: 0;
+    background: #fffdf8;
+    color: #26313a;
+    font: inherit;
+    font-size: 0.78rem;
+}
+
+.logbook-search-field input:focus,
+.logbook-search-filters select:focus {
+    border-color: #a97e2e;
+    box-shadow: 0 0 0 2px #d3aa5833;
+}
+
+.logbook-search-filters {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.55rem;
+    margin-top: 0.75rem;
+}
+
+.logbook-search-summary,
+.logbook-index-help {
+    margin: 0.8rem 0 0.55rem;
+    color: #6d757a;
+    font-size: 0.68rem;
+}
+
+.logbook-search-results,
+.logbook-year-index {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.logbook-search-result,
+.logbook-year-index button {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.1rem 0.65rem;
+    width: 100%;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid #c6bdad;
+    border-radius: 5px;
+    background: #fffdf8b8;
+    color: #2d383f;
+    text-align: left;
+    cursor: pointer;
+}
+
+.logbook-search-result:hover,
+.logbook-year-index button:hover {
+    border-color: #b58b3d;
+    background: #fffdf8;
+}
+
+.logbook-search-result strong,
+.logbook-year-index strong {
+    color: #725018;
+    font-size: 0.78rem;
+}
+
+.logbook-search-result span,
+.logbook-year-index span {
+    font-size: 0.67rem;
+}
+
+.logbook-search-result small,
+.logbook-year-index small {
+    grid-column: 1;
+    color: #737b80;
+    font-size: 0.62rem;
+}
+
+.logbook-search-result b {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+    color: #59636a;
+    font-size: 0.62rem;
+}
+
+.logbook-year-index button span,
+.logbook-year-index button small {
+    text-align: right;
+}
+
+.logbook-year-index button small {
+    grid-column: 2;
+}
+
+.log-row.is-search-hit {
+    z-index: 5;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #f4cc3a26, #f4cc3a8c 15%, #f4cc3a62 88%, transparent);
+    box-shadow: inset 0 -2px #c99320a8;
+    animation: logbook-search-pulse 900ms ease 2;
+}
+
+@keyframes logbook-search-pulse {
+    50% {
+        background-color: #f0c43e80;
+    }
+}
+
+@media (max-width:700px) {
+    .logbook-tools {
+        left: 118px;
+        right: auto;
+        width: 410px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .log-row.is-search-hit {
+        animation: none;
+    }
+}
+
+/* Proporción de la ficha respecto de la libreta. */
+.logbook-tools {
+    top: 50%;
+    right: 6px;
+    bottom: auto;
+    height: min(560px, calc(100% - 150px));
+    transform: translateY(-48%);
+}
+
+@media (max-width:700px) {
+    .logbook-tools {
+        top: 50%;
+        left: 136px;
+        right: auto;
+        height: min(540px, calc(100% - 130px));
+        transform: translateY(-48%);
+    }
+}
+
+/* La ficha se posiciona respecto de la libreta, no del escritorio completo. */
+.logbook-tools {
+    top: 50%;
+    left: calc(50% + 25px);
+    right: auto;
+    bottom: auto;
+    height: min(560px, calc(100% - 40px));
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:700px) {
+    .logbook-tools {
+        top: 50%;
+        left: calc(50% + 18px);
+        right: auto;
+        height: min(540px, calc(100% - 32px));
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Tintas manuscritas de la libreta. */
+.sheet-overlay {
+    color: #28577f;
+}
+
+.log-row .new-dxcc {
+    color: #a23b35;
+}
+
+/* Vista móvil de presentación: toda la experiencia entra en pantalla. */
+.logbook-mobile-note {
+    display: none;
+}
+
+@media (max-width:700px) {
+    .logbook-desk {
+        padding: 20px 8px 18px;
+        overflow: hidden;
+    }
+
+    .shack-backdrop {
+        background-color: #0c1318;
+        background-position: center top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .book-instructions,
+    .book-controls,
+    .book-data-status {
+        min-width: 0;
+    }
+
+    .book-wrap {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .logbook-desk.is-desk-view .book-wrap {
+        transform: perspective(700px) translateY(18%) rotateX(42deg) rotateZ(-1deg) scale(0.64);
+    }
+
+    .spiral {
+        left: -5px;
+    }
+
+    .spiral span {
+        width: 18px;
+        height: 8px;
+        border-width: 2px;
+    }
+
+    .book-controls {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        gap: 6px;
+        padding: 6px;
+    }
+
+    .book-controls button {
+        padding: 7px 8px;
+        font-size: 0.68rem;
+    }
+
+    .book-controls span {
+        min-width: 90px;
+        font-size: 0.9rem;
+    }
+
+    #book-first,
+    #book-last,
+    .book-page-jump,
+    #book-tools-toggle {
+        display: none;
+    }
+
+    .book-data-status {
+        margin-top: 10px;
+    }
+
+    .logbook-mobile-note {
+        position: relative;
+        z-index: 2;
+        display: block;
+        max-width: 32rem;
+        margin: 9px auto 2px;
+        color: #bdc9cf;
+        font-size: 0.68rem;
+        line-height: 1.45;
+        text-align: center;
+    }
+}
+
+/* La libreta móvil permanece dentro de la superficie visible de la mesa. */
+@media (max-width:700px) {
+    .logbook-desk.is-desk-view .book-wrap {
+        transform-origin: 50% 35%;
+        transform: perspective(700px) translateY(-15%) rotateX(42deg) rotateZ(-1deg) scale(0.54);
+    }
+}
+
+/* La escena móvil cerrada no reserva espacio para controles invisibles. */
+@media (max-width:700px) {
+    .logbook-desk.is-desk-view .book-controls,
+    .logbook-desk.is-desk-view .book-data-status {
+        display: none;
+    }
+
+    .logbook-desk.is-desk-view .book-wrap {
+        margin-bottom: -72px;
+    }
+}

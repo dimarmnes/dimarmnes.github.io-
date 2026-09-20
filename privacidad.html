@@ -1,28 +1,89 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Política de Privacidad</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 2em; max-width: 800px; margin: auto; }
-        h1, h2 { color: #333; }
-        code { background-color: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LU1IDC · Privacidad</title>
+<meta name="description" content="Información sobre privacidad, almacenamiento local y datos del libro de guardia publicados en el sitio de LU1IDC.">
+<link rel="stylesheet" href="css/cabecera.css">
+<link rel="stylesheet" href="css/pie.css">
+<link rel="stylesheet" href="css/navegacion.css">
+<link rel="stylesheet" href="css/privacidad.css">
 </head>
-<body>
-    <h1>Política de Privacidad</h1>
-    <p>Esta es una política de privacidad para una aplicación de escritorio de uso exclusivamente personal.</p>
+<body id="top">
+<div class="privacy-site">
+<header class="global-header">
+  <a class="global-brand" href="index.html" aria-label="LU1IDC, inicio">LU1IDC</a>
+  <p class="global-meta">San Javier, Misiones · GG22KD · ITU 14 · CQ 13</p>
+  <button class="global-menu" type="button" aria-expanded="false" aria-controls="global-nav">Menú</button>
+  <nav class="global-nav" id="global-nav" aria-label="Navegación principal">
+    <a href="index.html">Inicio</a><a href="estacion.html">La estación</a><a href="software.html">Software</a><a href="en-el-aire.html">En el aire</a><a href="concursos.html">Concursos</a><a href="diplomas.html">Diplomas</a><a href="qsl.html">QSLs</a><a href="cositas-utiles.html">Cositas útiles</a>
+  </nav>
+</header>
 
-    <h2>Almacenamiento de Datos</h2>
-    <p>
-        Los datos de autenticación (tokens de OAuth 2.0) generados por Google se guardan localmente en la máquina del usuario dentro de un archivo llamado <code>token.json</code>.
-    </p>
-    <p>
-        Esta información no se transmite, comparte, ni almacena en ningún otro lugar fuera del ordenador personal del usuario.
-    </p>
+<main>
+  <header class="privacy-heading">
+    <nav class="breadcrumbs" aria-label="Ruta de navegación"><ol><li><a href="index.html">Inicio</a></li><li><span aria-current="page">Privacidad</span></li></ol></nav>
+    <div class="privacy-eyebrow">Información del sitio</div>
+    <h1>Privacidad</h1>
+    <p>Cómo se presentan los datos de radio y qué información permanece en el navegador de quienes visitan LU1IDC.</p>
+    <time datetime="2026-09-20">Actualizada el 20 de septiembre de 2026</time>
+  </header>
 
-    <h2>Uso de Datos</h2>
-    <p>
-        La aplicación utiliza estos tokens de autenticación únicamente para acceder a los datos de Google Calendar y Google Tasks del propio usuario, según las solicitudes que el mismo usuario realiza a través de la ejecución del script. Los datos no se utilizan para ningún otro propósito.
-    </p>
+  <article class="privacy-card">
+    <section>
+      <h2>Un sitio personal y estático</h2>
+      <p>LU1IDC es un sitio personal dedicado a la radioafición. No ofrece cuentas de usuario, formularios de registro, publicidad ni herramientas propias de analítica. El sitio no instala cookies propias.</p>
+    </section>
+
+    <section>
+      <h2>Datos del libro de guardia</h2>
+      <p>El sitio publica una versión acotada del libro de guardia de LU1IDC para mostrar su actividad de radio. Según el registro disponible, pueden aparecer indicativos, fecha y hora UTC, banda, modo, reportes de señal, grilla Maidenhead y estado de confirmación.</p>
+      <p>Estos datos se muestran con fines de documentación de la actividad de radioafición, elaboración del Álbum DXCC, visualización de grillas trabajadas y consulta del Libro de Guardia.</p>
+    </section>
+
+    <section>
+      <h2>Archivos ADIF cargados por visitantes</h2>
+      <p>El Álbum DXCC permite elegir un archivo ADIF propio para probar la colección con otros contactos. El archivo se procesa en el navegador y el sitio no lo envía a un servidor.</p>
+      <p>Si se decide conservar esa carga, el contenido del ADIF y su nombre se guardan en el almacenamiento local del navegador. Pueden eliminarse borrando los datos del sitio desde la configuración del navegador.</p>
+    </section>
+
+    <section>
+      <h2>Preferencias locales</h2>
+      <p>Algunas preferencias visuales, como el aspecto de los paneles de Grillas trabajadas, también pueden guardarse mediante <code>localStorage</code>. Esta información permanece en el dispositivo y no identifica al visitante ante LU1IDC.</p>
+    </section>
+
+    <section>
+      <h2>Alojamiento en GitHub Pages</h2>
+      <p>El sitio se aloja en GitHub Pages. GitHub informa que registra y almacena la dirección IP de quienes visitan un sitio de Pages por motivos de seguridad, incluso cuando no han iniciado sesión. Ese tratamiento depende de GitHub y se describe en su documentación y política de privacidad.</p>
+      <p class="privacy-links"><a href="https://docs.github.com/es/pages/getting-started-with-github-pages/what-is-github-pages">Datos recopilados por GitHub Pages ↗</a><a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement">Declaración de privacidad de GitHub ↗</a></p>
+    </section>
+
+    <section>
+      <h2>Enlaces externos</h2>
+      <p>Algunos enlaces llevan a servicios ajenos a LU1IDC. Al abrirlos, el tratamiento de datos se rige por las condiciones y políticas del sitio de destino.</p>
+    </section>
+
+    <section>
+      <h2>Correcciones</h2>
+      <p>Si un dato del libro de guardia necesita corrección o revisión, puede solicitarse mediante las vías de contacto públicas asociadas al indicativo LU1IDC.</p>
+    </section>
+  </article>
+</main>
+
+<footer class="global-footer">
+  <div class="footer-mark">
+    <img src="images/LU1IDC_logo.png" alt="Logo de LU1IDC">
+    <p><b>LU1IDC</b><span>Radioaficionado argentino</span></p>
+  </div>
+  <p class="footer-station">San Javier · Misiones · Argentina<br>GG22KD · ITU 14 · CQ 13</p>
+  <p class="footer-motto">Inspirado por Guerrero y Sídoli<br>y por la curiosidad de hacer.</p>
+  <nav class="footer-links" aria-label="Enlaces del pie">
+    <a href="privacidad.html" aria-current="page">Privacidad</a>
+    <a href="#top">↑ Volver arriba</a>
+  </nav>
+</footer>
+</div>
+<script src="js/cabecera.js"></script>
 </body>
 </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LU1IDC · Álbum DXCC</title>
+
+<link rel="stylesheet" href="css/cabecera.css">
+<link rel="stylesheet" href="css/pie.css">
+<link rel="stylesheet" href="css/navegacion.css">
+
+<link rel="stylesheet" href="css/album-dxcc.css">
+</head>
+<body id="top">
+<div class="album-shell"><header class="global-header">
+<a class="global-brand" href="index.html" aria-label="LU1IDC, inicio">LU1IDC</a>
+<p class="global-meta">San Javier, Misiones · GG22KD · ITU 14 · CQ 13</p>
+<button class="global-menu" type="button" aria-expanded="false" aria-controls="global-nav">Menú</button>
+<nav class="global-nav" id="global-nav" aria-label="Navegación principal">
+<a class="" href="index.html">Inicio</a><a href="estacion.html">La estación</a><a href="software.html">Software</a><a class="active" href="en-el-aire.html">En el aire</a><a href="concursos.html">Concursos</a><a href="diplomas.html">Diplomas</a><a href="qsl.html">QSLs</a><a href="cositas-utiles.html">Cositas útiles</a>
+</nav>
+</header></div>
+
+<header class="site-strip">
+  <nav class="breadcrumbs" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="en-el-aire.html">En el aire</a></li>
+      <li><span aria-current="page">Álbum DXCC</span></li>
+    </ol>
+  </nav>
+  <h1>Álbum DXCC</h1>
+  <p class="intro">
+    Las entidades vigentes del DXCC reunidas como una colección de estampillas.
+    Los matasellos muestran los modos trabajados y su estado de confirmación.
+  </p>
+</header>
+
+<main class="album">
+  <section class="album-sheet">
+    <div class="album-head">
+      <div class="album-title">
+        <p>LU1IDC · San Javier, Misiones · GG22KD</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b id="workedCount">0</b><span>Trabajadas</span></div>
+        <div class="stat"><b id="confirmedCount">0</b><span>Confirmadas</span></div>
+        <div class="stat"><b id="visibleCount">0</b><span>En vista</span></div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="filters" aria-label="Filtrar por estado">
+        <button class="filter active" data-status="workedplus">Trabajadas</button>
+        <button class="filter" data-status="confirmed">Confirmadas</button>
+        <button class="filter" data-status="all">Todas</button>
+        <button class="filter" data-status="needed">Pendientes</button>
+      </div>
+
+      <select id="continent" class="continent-select" aria-label="Filtrar por continente">
+        <option value="ALL">Todos los continentes</option>
+        <option value="SA">América del Sur</option>
+        <option value="NA">América del Norte</option>
+        <option value="EU">Europa</option>
+        <option value="AS">Asia</option>
+        <option value="AF">África</option>
+        <option value="OC">Oceanía</option>
+        <option value="AN">Antártida</option>
+      </select>
+
+      <label class="adif-upload" title="Tu archivo se procesa únicamente en este navegador; no se envía ni modifica el ADIF publicado.">
+        <input id="adifFile" type="file" accept=".adi,.adif,text/plain">
+        Cargar ADIF
+      </label>
+
+      <div class="legend">
+        <span><i class="dot c"></i> Confirmada</span>
+        <span><i class="dot w"></i> Trabajada</span>
+        <span><i class="dot n"></i> Pendiente</span>
+        <span>doble = confirmado · punteado = trabajado</span>
+      </div>
+    </div>
+
+    <p class="data-status" id="dataStatus" role="status">Cargando catálogo y libro de guardia…</p>
+    <div class="grid" id="grid"></div>
+
+    <div class="album-foot">
+      <span>Catálogo ADIF 3.1.7 · 340 entidades vigentes</span>
+      <span>DXCC · CW / SSB / DIGI</span>
+    </div>
+  </section>
+</main>
+
+<div class="footer-shell">
+<footer class="global-footer">
+  <div class="footer-mark">
+    <img src="images/LU1IDC_logo.png" alt="Logo de LU1IDC">
+    <p><b>LU1IDC</b><span>Radioaficionado argentino</span></p>
+  </div>
+  <p class="footer-station">San Javier · Misiones · Argentina<br>GG22KD · ITU 14 · CQ 13</p>
+  <p class="footer-motto">Inspirado por Guerrero y Sídoli<br>y por la curiosidad de hacer.</p>
+  <nav class="footer-links" aria-label="Enlaces del pie">
+    <a href="privacidad.html">Privacidad</a>
+    <a href="#top">↑ Volver arriba</a>
+  </nav>
+</footer>
+</div>
+
+<script src="js/dxcc-data.js"></script>
+<script src="js/album-dxcc.js"></script>
+<script src="js/cabecera.js"></script>
+</body>
+</html>

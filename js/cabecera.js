@@ -1,0 +1,1 @@
+const globalMenu=document.querySelector('.global-menu');const globalNav=document.querySelector('#global-nav');if(globalMenu&&globalNav){globalMenu.addEventListener('click',()=>{const open=globalNav.classList.toggle('open');globalMenu.setAttribute('aria-expanded',String(open))})}

@@ -1,0 +1,73 @@
+.global-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "brand button" "meta meta" "nav nav";
+  align-items: center;
+  padding: 26px 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.global-brand {
+  grid-area: brand;
+  justify-self: start;
+  color: #edf3f6;
+  font: 900 2rem/1.2 Inter, system-ui, sans-serif;
+  letter-spacing: .08em;
+  text-decoration: none;
+}
+
+.global-meta {
+  grid-area: meta;
+  margin: 5px 0 0;
+  color: #a5b4bd;
+  font: 400 .82rem/1.5 Inter, system-ui, sans-serif;
+}
+
+.global-nav {
+  grid-area: nav;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-top: 18px;
+}
+
+.global-nav a {
+  padding: 7px 10px;
+  border-radius: 7px;
+  color: #b8c4cc;
+  font: 800 .73rem/1.2 Inter, system-ui, sans-serif;
+  letter-spacing: .06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.global-nav a:hover,
+.global-nav a.active {
+  color: #16222c;
+  background: #e9edf0;
+}
+
+.global-menu {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .global-menu {
+    grid-area: button;
+    display: block;
+    padding: 7px 10px;
+    border: 1px solid #344957;
+    border-radius: 6px;
+    color: #eef3f6;
+    background: transparent;
+  }
+
+  .global-nav {
+    display: none;
+  }
+
+  .global-nav.open {
+    display: flex;
+  }
+}

@@ -1,196 +1,376 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LU1IDC - Radioaficionado Argentino</title>
-    <link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet"> 
-	<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-	<link rel="shortcut icon" href="/images/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
-	<link rel="manifest" href="/images/site.webmanifest" />	
-</head>
-<body>
-
-       <header>
-		    <img src="images/lu1idc_lupin_logo_100.png" alt="Logo Lu1idc">
-			<p>Lic. desde 2003 - En el aire desde 2024</p>
-			<p>San Javier, Misiones, Argentina - GG22KD - ITU Zone 14 - CQ Zone 13</p>
-	</header>
-   
-	<main>
-
-
-    <div class="row-1">
-	    <nav class="sidebar">
-            <ul>
-                <li><a href="rig.html">LA ESTACIÓN</a></li>
-                <li><a href="soft.html">MI SOFTWARE</a></li>
-				<li><a href="onair.html">EN EL AIRE</a></li>
-				<li><a href="contests.html">CONCURSOS</a></li>
-				<li><a href="awards.html">DIPLOMAS</a></li>
-				<li><a href="qsl-1.html">QSLs</a></li>
-				<li><a href="useful.html">COSITAS ÚTILES</a></li>
-		    </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="LU1IDC, estación de radioaficionado de San Javier, Misiones">
+    <title>
+      LU1IDC · Radioaficionado argentino
+    </title>
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/alternativo.css">
+    <link rel="stylesheet" href="css/cabecera.css">
+    <link rel="stylesheet" href="css/pie.css">
+  </head>
+  <body id="top">
+    <div class="site">
+      <header class="global-header">
+        <a class="global-brand" href="index.html" aria-label="LU1IDC, inicio">LU1IDC</a>
+        <p class="global-meta">San Javier, Misiones · GG22KD · ITU 14 · CQ 13</p>
+        <button class="global-menu" type="button" aria-expanded="false" aria-controls="global-nav">
+          Menú
+        </button>
+        <nav class="global-nav" id="global-nav" aria-label="Navegación principal">
+          <a class="active" href="index.html">Inicio</a>
+          <a href="estacion.html">La estación</a>
+          <a href="software.html">Software</a>
+          <a class="" href="en-el-aire.html">En el aire</a>
+          <a href="concursos.html">Concursos</a>
+          <a href="diplomas.html">Diplomas</a>
+          <a href="qsl.html">QSLs</a>
+          <a href="cositas-utiles.html">Cositas útiles</a>
         </nav>
-
-	    <section id="acerca">
-        <h2>Acerca de mí</h2>
-    				<p>Pues aquí estoy, "lupinero" desde los años '80, la revistucha me llevó a conocer y recorrer varias actividades. Aeromodelismo, astronomía y campismo son actividades que aún practico. Incursioné en cohetería, electrónica, filatelia y en coleccionar lo que se cruzara. Apasionado de los aviones y la astronáutica, utilizo la impresión 3d para recrear modelos. Además practico el kayakismo recreativo. <br>Pero si algo me quedaba pendiente de las enseñanzas de la revista Lúpin, era entrar en el mundo de los radioaficionados. Hace ya 20 años tuve la oportunidad de obtener mi licencia, pero por una razón u otra, no pude hacerme de una estación operativa hasta ahora. Pues aquí estoy...sueño cumplido.
-    				</p> <p class="alinear-derecha">Diciembre 2023</p>
-		</section>
-		  
-		<section id="about" class="section-inverted">
-		    <h2 class="h2-inverted">Rauchen verboten ;)</h2>
-			<img src="images/lu1idc.jpg" data-modal-imagen="images/lu1idc.jpg"  alt="JUST ME">
-		    <p class="alinear-centro">salute muchachos!!</p>
-		</section>
+      </header>
+      <main>
+        <section class="hero">
+          <div>
+            <p class="eyebrow">
+              Radioafición desde Misiones
+            </p>
+            <h1>
+              Experimentar.
+              <br>
+              Construir.
+              <br>
+              <em>Salir al aire.</em>
+            </h1>
+            <p class="lead">
+              Licenciado desde 2003 y finalmente en el aire desde 2024. Esta es la bitácora de mi estación, mis contactos y todo lo que sigo aprendiendo.
+            </p>
+            <p class="actions">
+              <a class="button" href="en-el-aire.html">Ver mi actividad →</a>
+              <a href="#historia">Conocer la historia</a>
+            </p>
+            <ul class="facts">
+              <li>
+                <b>GG22KD</b>
+                <span>Locator</span>
+              </li>
+              <li>
+                <b>14</b>
+                <span>Zona ITU</span>
+              </li>
+              <li>
+                <b>13</b>
+                <span>Zona CQ</span>
+              </li>
+            </ul>
+          </div>
+          <figure class="lupin">
+            <img src="images/lu1idc.jpg" alt="Ilustración de LU1IDC operando su estación">
+            <figcaption>
+              <b>¡Aquí LU1IDC!</b>
+              <span>Desde San Javier para el mundo.</span>
+            </figcaption>
+          </figure>
+        </section>
+        <section class="story" id="historia">
+          <header>
+            <p class="label">
+              Acerca de mí
+            </p>
+            <h2>
+              Un sueño que empezó con una revista
+            </h2>
+          </header>
+          <div>
+            <p>
+              “Lupinero” desde los años 80, la revista me llevó al aeromodelismo, la astronomía, el campismo, la electrónica y muchas otras actividades. Pero algo había quedado pendiente: entrar en el mundo de los radioaficionados.
+            </p>
+            <p>
+              Obtuve mi licencia en 2003. Veinte años después pude armar una estación operativa y salir al aire. Este sitio reúne ese camino, los contactos y las cosas que voy descubriendo.
+            </p>
+            <small>Sueño cumplido · Diciembre de 2023</small>
+          </div>
+        </section>
+        <section class="onair">
+          <div>
+            <p class="eyebrow">
+              La estación activa
+            </p>
+            <h2>
+              En el aire
+            </h2>
+            <p>
+              La actividad de LU1IDC como una colección: entidades DXCC en un álbum de estampillas, grillas Maidenhead y contactos recientes.
+            </p>
+            <a class="button" href="en-el-aire.html">Entrar a En el aire →</a>
+          </div>
+          <a class="album" href="album-dxcc.html">
+            <b>Álbum DXCC · Selección</b>
+            <span class="stamps">
+              <i>
+                🇦🇷
+                <strong>LU</strong>
+                <small>Argentina</small>
+              </i>
+              <i>
+                🇧🇷
+                <strong>PY</strong>
+                <small>Brasil</small>
+              </i>
+              <i>
+                🇯🇵
+                <strong>JA</strong>
+                <small>Japón</small>
+              </i>
+              <i>
+                🇩🇪
+                <strong>DL</strong>
+                <small>Alemania</small>
+              </i>
+            </span>
+            <em>Abrir álbum →</em>
+          </a>
+        </section>
+        <section class="block">
+          <header class="heading">
+            <p class="label">
+              El cuarto de radio
+            </p>
+            <h2>
+              La estación
+            </h2>
+          </header>
+          <div class="station">
+            <a class="photo" href="estacion.html">
+              <img src="images/rig/sh_station_01.jpg" alt="Estación de radio LU1IDC">
+              <span>
+                <b>El shack</b>
+                Equipos, antenas y proyectos
+              </span>
+            </a>
+            <article>
+              <p class="label">
+                RX / TX
+              </p>
+              <h3>
+                Equipos
+              </h3>
+              <ul>
+                <li>
+                  Icom IC-728
+                </li>
+                <li>
+                  Yaesu FT-747 GX
+                </li>
+                <li>
+                  Yaesu FT-1802M
+                </li>
+                <li>
+                  Baofeng UV-5R
+                </li>
+              </ul>
+              <a href="estacion.html">Ver estación completa →</a>
+            </article>
+            <article class="paper">
+              <p class="label">
+                Antenas
+              </p>
+              <h3>
+                Al aire
+              </h3>
+              <ul>
+                <li>
+                  Walmar MA1140
+                </li>
+                <li>
+                  Ringo VHF doble 5/8
+                </li>
+                <li>
+                  Moxon Yagi VHF/UHF
+                </li>
+              </ul>
+              <i>CQ CQ CQ…</i>
+            </article>
+          </div>
+        </section>
+        <section class="software">
+          <div>
+            <p class="label">
+              Herramientas
+            </p>
+            <h2>
+              Mi software
+            </h2>
+            <p>
+              Linux y programas libres para registrar, decodificar, mapear y seguir satélites.
+            </p>
+          </div>
+          <ul>
+            <li>
+              Manjaro
+            </li>
+            <li>
+              QLog
+            </li>
+            <li>
+              JTDX
+            </li>
+            <li>
+              QSSTV
+            </li>
+            <li>
+              GridTracker
+            </li>
+            <li>
+              Gpredict
+            </li>
+          </ul>
+          <a href="software.html">→</a>
+        </section>
+        <section class="block">
+          <header class="heading split">
+            <div>
+              <p class="label">
+                GG22KD
+              </p>
+              <h2>
+                Postales de mi pueblo
+              </h2>
+            </div>
+            <p>
+              San Javier, a orillas del río Uruguay, es el lugar desde donde salen todas estas señales.
+            </p>
+          </header>
+          <div class="town">
+            <figure class="wide">
+              <button type="button" class="postales-open" data-postal="images/postales/ph_rio_uruguay_atardecer.jpg" aria-label="Ampliar: Atardecer sobre el río Uruguay"><img src="images/postales/ph_rio_uruguay_atardecer.jpg" alt="Atardecer sobre el río Uruguay" loading="lazy"></button>
+              <figcaption>
+                Río Uruguay · Atardecer
+              </figcaption>
+            </figure>
+            <figure>
+              <button type="button" class="postales-open" data-postal="images/postales/ph_san_javier_letras.jpg" aria-label="Ampliar: San Javier"><img src="images/postales/ph_san_javier_letras.jpg" alt="San Javier" loading="lazy"></button>
+              <figcaption>
+                San Javier
+              </figcaption>
+            </figure>
+            <figure>
+              <button type="button" class="postales-open" data-postal="images/postales/ph_guerrero_01.jpg" aria-label="Ampliar: Arroyo Guerrero"><img src="images/postales/ph_guerrero_01.jpg" alt="Arroyo Guerrero" loading="lazy"></button>
+              <figcaption>
+                Arroyo Guerrero
+              </figcaption>
+            </figure>
+            <figure>
+              <button type="button" class="postales-open" data-postal="images/postales/ph_arbol.jpg" aria-label="Ampliar: Árbol"><img src="images/postales/ph_arbol.jpg" alt="Árbol" loading="lazy"></button>
+              <figcaption>
+                El paisaje
+              </figcaption>
+            </figure>
+            <figure>
+              <button type="button" class="postales-open" data-postal="images/postales/ph_rio_uruguay_luna.jpg" aria-label="Ampliar: Luna sobre el río Uruguay"><img src="images/postales/ph_rio_uruguay_luna.jpg" alt="Luna sobre el río Uruguay" loading="lazy"></button>
+              <figcaption>
+                Luz de luna
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="block">
+          <header class="heading split">
+            <div>
+              <p class="label">
+                La colección crece
+              </p>
+              <h2>
+                Concursos y diplomas
+              </h2>
+            </div>
+            <p>
+              Experiencias, participaciones y logros obtenidos desde que la estación volvió al aire.
+            </p>
+          </header>
+          <div class="collections">
+            <a href="concursos.html">
+              <img src="images/contests/2024-CVA-DX-HF-Contest.jpg" alt="Concurso Verde Amarelo">
+              <span>
+                <small>Concursos</small>
+                <b>Competir para aprender</b>
+                <em>Ver participaciones →</em>
+              </span>
+            </a>
+            <a class="paperframe" href="diplomas.html">
+              <img src="images/awards/rca/20260522_RCA_101_10M_MIXTO.jpg" alt="Diploma 101 Paíse RCA">
+              <span>
+                <small>Diplomas</small>
+                <b>Historias confirmadas</b>
+                <em>Ver colección →</em>
+              </span>
+            </a>
+            <a href="qsl.html">
+              <img src="images/qsl/recibidas/2024/20240204_HC3RJ_10M_FT4.jpg" alt="Tarjeta QSL">
+              <span>
+                <small>QSL</small>
+                <b>Señales que dejan huella</b>
+                <em>Ver tarjetas →</em>
+              </span>
+            </a>
+          </div>
+        </section>
+        <section class="activations">
+          <header>
+            <p class="label">
+              Archivo
+            </p>
+            <h2>
+              Activaciones
+            </h2>
+          </header>
+          <ol>
+            <li>
+              <time>02.07.2025</time>
+              <span>Conmemoración Batalla de Apóstoles</span>
+              <a href="https://qsolog.ar/certificados">QSL ↗</a>
+            </li>
+            <li>
+              <time>06–09.07.2024</time>
+              <span>Día de la Independencia Argentina</span>
+              <a href="https://qsolog.ar/certificados">QSL ↗</a>
+            </li>
+            <li>
+              <time>22–23.06.2024</time>
+              <span>Todos unidos bajo el mismo manto patrio</span>
+              <a href="https://qsolog.ar/certificados">QSL ↗</a>
+            </li>
+          </ol>
+        </section>
+      </main>
+      <footer class="global-footer">
+        <div class="footer-mark">
+          <img src="images/LU1IDC_logo.png" alt="Logo de LU1IDC">
+          <p><b>LU1IDC</b><span>Radioaficionado argentino</span></p>
+        </div>
+        <p class="footer-station">San Javier · Misiones · Argentina<br>GG22KD · ITU 14 · CQ 13</p>
+        <p class="footer-motto">Inspirado por Guerrero y Sídoli<br>y por la curiosidad de hacer.</p>
+        <nav class="footer-links" aria-label="Enlaces del pie">
+          <a href="privacidad.html">Privacidad</a>
+          <a href="#top">↑ Volver arriba</a>
+        </nav>
+      </footer>
     </div>
-    
-    <div class="row-2">
-        <section id="activations">
-            <h2>Activaciones</h2>
-            <p><a href="#old-activations">Activaciones pasadas</a></p>
-        </section>
-    </div>
-    
-	<div class="row-3">
-		<section class="image-container">
-			<img src="images/rig/sh_radio_lupin.jpg" data-modal-imagen="images/rig/sh_radio_lupin.jpg"  alt="Radio Lupin">		
-		</section>		
-		
-		<section id="my-rig" class="section-inverted">
-        <h2 class="h2-inverted">La estación</h2>
-				<p>RX/TX</p>
-				<ul>
-					<li>Icom IC-728</li>
-					<li>Yaesu FT747 GX</li>
-					<li>Yaesu FT1802M</li>
-					<li>Baofeng UV5R</li>
-				</ul>
-				<p>Antenas</p>
-				<ul>
-					<li>Walmar MA1140</li>
-					<li><s>Bigote de gato 40/20/10 m.</s></li>
-					<li>Ringo VHF doble 5/8</li>
-					<li>Moxon yagi VHF/UHF portable</li>
-				</ul>
-				<br><a class="more-inverted" href="rig.html">continúa...</a>
-		</section>
-		
-		<section id="my-soft">
-            <h2>Mi software</h2>
-			<ul>
-				<li><a href="https://manjaro.org/" target="_blank" rel="noopener noreferrer">Manjaro Linux</a> (Gnome) - OS</li>
-				<li><a href="https://github.com/foldynl/QLog" target="_blank" rel="noopener noreferrer">QLog</a> - Libro de Guardia. ¡Ahora en español ;)!</li>
-				<li><a href="https://sourceforge.net/projects/jtdx/" target="_blank" rel="noopener noreferrer">JTDX</a> - FT4, FT8,JT4, JT9, JT65, QRA64, ISCAT, MSK144</li>
-				<li><a href="https://www.qsl.net/on4qz/" target="_blank" rel="noopener noreferrer">QSSTV</a> - Recepción y transmisión SSTV</li>
-				<li><a href="https://gridtracker.org/" target="_blank" rel="noopener noreferrer">GridTracker</a> - Mucha información para el radioaficionado</li>
-				<li><a href="https://oz9aec.dk/gpredict/" target="_blank" rel="noopener noreferrer">Gpredict</a> - Rastreador de satélites</li>
-			</ul>
-			<br><a class="more" href="soft.html">continúa...</a>
-        </section>
-	</div>
-		
-	<div class="row-4">
-		<section id="on-air" class="alinear-centro">
-	        <h2>En el Aire</h2>
-            <iframe frameborder="0" height="320" name="iframe" scrolling="yes" src="https://clublog.org/last10_iframe.php?call=LU1IDC" width="500"></iframe>
-			<br><a class="more" href="onair.html">continúa...</a>
-		</section>
-        
-        <section id="sufix" class="image-container section-inverted">
-        	<img src="images/LU1IDC_Argentina_Map_png.jpg" data-modal-imagen="images/LU1IDC_Argentina_Map_png.jpg" alt="Sufijos de provincias argentinas"/>
-		</section>
-		
-	</div>
-
-	<section id="my-town" class="section-gallery">
-		<h2>Postales de mi pueblo</h2>
-         	<img src="images/ph_san_javier_letras.jpg" data-modal-imagen="images/ph_san_javier_letras.jpg"  alt="LETRAS DE BIENVENIDA A SAN JAVIER"/>
-			<img src="images/ph_rio_uruguay_luna.jpg" data-modal-imagen="images/ph_rio_uruguay_luna.jpg" alt="LUZ DE LUNA SOBRE EL RÍO URUGUAY" />
-			<img src="images/ph_avenida_nubes.jpg" data-modal-imagen="images/ph_avenida_nubes.jpg" alt="PINCELADAS DE NUBES"/>
-			<img src="images/ph_guerrero_01.jpg"  data-modal-imagen="images/ph_guerrero_01.jpg" alt="ARROYO GUERRERO"/>
-			<img src="images/ph_guerrero_02.jpg"  data-modal-imagen="images/ph_guerrero_02.jpg" alt="ARROYO GUERRERO"/>
-			<img src="images/ph_escuela_603.jpg" data-modal-imagen="images/ph_escuela_603.jpg" alt="ESCUELA DE FRONTERA No. 603"/>
-			<img src="images/ph_puerto_arena.jpg" data-modal-imagen="images/ph_puerto_arena.jpg" alt="ISLA SOBRE EL RÍO URUGUAY" />
-			<img src="images/ph_rio_uruguay_correderas.jpg" data-modal-imagen="images/ph_rio_uruguay_correderas.jpg" alt="CORREDERAS EN EL RÍO URUGUAY"/>
-			<img src="images/ph_arbol.jpg" data-modal-imagen="images/ph_arbol.jpg"  alt="UN LINDO ÁRBOL"/>
-			<img src="images/ph_rio_uruguay_atardecer.jpg" data-modal-imagen="images/ph_rio_uruguay_atardecer.jpg" alt="ATARDECER SOBRE EL RÍO URUGUAY"/>
-    </section>
-		
-	<div class="row-5">
-		<section id="contests" class="section-gallery-100">
-            <h2>Concursos</h2>
-				<img src="images/contests/2025-SA10M-contest.jpg" data-modal-imagen="images/contests/2025-SA10M-contest.jpg" alt="2025 SA10M CONTEST" />
-				<img src="images/contests/2025-CQWPX-SSB.jpg" data-modal-imagen="images/contests/2025-CQWPX-SSB.jpg" alt="2025 CQWPX SSB" />
-				<img src="images/contests/2024-CVA-DX-HF-Contest.jpg" data-modal-imagen="images/contests/2024-CVA-DX-HF-Contest.jpg" alt="2024 CVA DX HF CONTEST" />
-            	<img src="images/contests/2024-Concurso-Regional-IARU2G_SSB.jpg" data-modal-imagen="images/contests/2024-Concurso-Regional-IARU2G_SSB.jpg" alt="2024 CONCURSO REGIONAL IARU2G SSB"  />
-				<img src="images/contests/2024-RCA-Concurso-Nacional-40M.jpg" data-modal-imagen="images/contests/2024-RCA-Concurso-Nacional-40M.jpg"  alt="2024 RCA CONCURSO NACIONAL 40M" />
-				<img src="images/contests/2024-Concurso-Gendarmería-Nacional.jpg" data-modal-imagen="images/contests/2024-Concurso-Gendarmería-Nacional.jpg"  alt="2024 CONCURSO GENDARMERÍA NACIONAL" />
-				<img src="images/contests/2024-CQWW-SSB.jpg" data-modal-imagen="images/contests/2024-CQWW-SSB.jpg"alt="2024 CQWW SSB"  />
-				<br><a class="more" href="contests.html">continúa...</a>
-        </section>
-		
-		<section id="awards" class="section-gallery-100">
-            <h2>Diplomas</h2>
-	            <img src="images/awards/rca/20260522_RCA_101_10M_MIXTO.jpg" data-modal-imagen="images/awards/rca/20260522_RCA_101_10M_MIXTO.jpg" alt="20260522 RCA 101 10M MIXTO" />
-				<img src="images/awards/rca/20260522_RCA_TRA_MIXTO.jpg" data-modal-imagen="images/awards/rca/20260522_RCA_TRA_MIXTO.jpg" alt="20260522 RCA TRA MIXTO" />
-            	<img src="images/awards/rca/20241226-Cert-Estaciones-ferroviarias-Clase-I.jpg" data-modal-imagen="images/awards/rca/20241226-Cert-Estaciones-ferroviarias-Clase-I.jpg" alt="Estaciones Ferroviarias" />
-				<img src="images/awards/pota/20250120-POTA-Silver-Hunter.jpg" data-modal-imagen="images/awards/pota/20250120-POTA-Silver-Hunter.jpg" alt="Pota Silver Hunter award"  />
-				<img src="images/awards/20250202_Certificado_Bicentenario_Junin_Ayacucho.jpg" data-modal-imagen="images/awards/20250202_Certificado_Bicentenario_Junin_Ayacucho.jpg" alt="Bicentenario batallas Junin y Ayacucho"  />
-				<img src="images/awards/sstv/20250103_ARISS_SSTV_DIPLOMA_AMASAT_ARGENTINA.jpg" data-modal-imagen="images/awards/sstv/20250103_ARISS_SSTV_DIPLOMA_AMASAT_ARGENTINA.jpg" alt="Amsat Argentina SSTV"  />
-				<img src="images/awards/20250130_GrillasArgentinas_75_LDA.jpg" data-modal-imagen="images/awards/20250130_GrillasArgentinas_75_LDA.jpg"  alt="75 Grillas Argentinas"  />
-				<br><a class="more" href="awards.html">continúa...</a>
-        </section>
-	</div>
-		
-	<div class="row-6">
-		<section id="old-activations">
-            <h2>Activaciones pasadas</h2>
-            <ul> 
-				<li>02/07/2025 - "CONMEMORACIÓN BATALLA DE PÓSTOLES" - <a href="https://qsolog.ar/certificados" target="_blank" rel="noopener noreferrer">Descargar QSL</a></li>
-				<li>06/07/2024 - 09/07/2024&nbsp; &quot;D&Iacute;A DE LA INDEPENDENCIA ARGENTINA&quot; -&nbsp; <a href="https://qsolog.ar/certificados" target="_blank" rel="noopener noreferrer">Descargar QSL</a></li>
-				<li>22/06/2024 - 23/06/2024&nbsp; &quot;TODOS UNIDOS BAJO EL MISMO MANTO PATRIO&quot; - <a href="https://qsolog.ar/certificados" target="_blank" rel="noopener noreferrer">Descargar QSL</a></li>
-			</ul>
-        </section>
-
-		<section id="logos">
-			<img src="images/LU1IDC_logo.png" alt="Logo LU1IDC" />
-			<a href="https://www.facebook.com/radioclubmisiones/"><img src="images/lu1ig_logo.png" alt="Logo LU1IG Radio Club Misiones" /></a>
-			<a href="https://radioaficionadosmisiones.org/"><img src="images/o_radioaficionados_misiones_logo.png" alt="Logo Grupo Radioaficionados Misiones" /></a>
-			<img src="images/eqsl_authenticity.jpg" alt="eQSL Authenticity" />
-		</section>
-	</div>
-
-		<section id="pie">
-			<!--<span class="texto-resaltado">© 2024 LU1IDC inspirado por Guerrero y Sídoli</span>-->
-		</section>
-	
-
-	<footer>
-		<p class="texto-resaltado">© 2024 LU1IDC inspirado por Guerrero y Sídoli</p>
-	</footer>
-
-	<a href="#" id="volver-arriba" title="Volver arriba">
-		<img src="images/up-arrow.png" alt="Volver arriba">
-	</a>
-
-	</main>
-
-	<div id="modal-imagen" class="modal">
-		<a class="anterior">&#10094;</a>
-		<img class="modal-contenido" id="img01">
-		<span class="cerrar">&times;</span>
-		<a class="siguiente">&#10095;</a>
-		<p id="caption"></p>
-	</div>  
-
-<script src="script.js"></script>
-
-</body>
+    <dialog id="postales-dialog" aria-label="Postales de mi pueblo">
+      <div class="postales-controls">
+        <button type="button" id="postales-prev" aria-label="Foto anterior">←</button>
+        <button type="button" id="postales-next" aria-label="Foto siguiente">→</button>
+        <button type="button" id="postales-close">Cerrar ×</button>
+      </div>
+      <img id="postales-image" alt="">
+      <p id="postales-caption" aria-live="polite"></p>
+    </dialog>
+    <script src="js/postales-data.js"></script>
+  <script src="js/galeria-swipe.js?v=1"></script>
+    <script src="js/postales.js?v=1"></script>
+    <script src="js/cabecera.js">
+    </script>
+  </body>
 </html>

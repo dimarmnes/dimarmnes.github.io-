@@ -1,0 +1,79 @@
+
+:root{--bg:#101820;--text:#edf3f6;--muted:#a5b4bd;--line:#314856;--gold:#d3aa58}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(#182530,#101820);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}.grids-site{max-width:1180px;margin:auto;padding:0 22px}
+.grids-heading{padding:28px 0 18px}.grids-heading h1{margin:0;font-size:clamp(1.65rem,3vw,2.45rem);font-weight:750;letter-spacing:-.025em}.grids-heading .intro{max-width:760px;margin:.55rem 0 0;color:#b9c4cc;font-size:.95rem;line-height:1.55}.grids-kicker{font-size:.69rem;text-transform:uppercase;letter-spacing:.18em}
+.grids-exhibit{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.8fr);overflow:hidden;border:1px solid #cad8df;border-radius:18px;background:#eef5f8;color:#102b43;box-shadow:0 22px 50px #0004}
+.grids-stage{position:relative;height:620px;min-width:0;background:linear-gradient(to right,#eff6f887,#eef5f8),url('../images/grids/shack-blur.png') center/cover}
+#globe-c{position:absolute;inset:0}#globe-c canvas{display:block;width:100%;height:100%;touch-action:none}
+#loading{position:absolute;top:20px;left:20px;pointer-events:none}#tooltip{position:absolute;z-index:2;max-width:180px;padding:8px;border-radius:6px;background:#102b43ed;color:white;font-size:.7rem;pointer-events:none}
+.grids-hint{position:absolute;bottom:15px;left:20px;font-size:.7rem;color:#526c7e;pointer-events:none}
+.grids-info{padding:55px 30px;background:linear-gradient(120deg,#eef5f8bb,#f7fafc)}.grids-info h2{font-size:3rem;margin:8px 0}.grids-qth{font-size:.72rem;letter-spacing:.1em}.grids-metrics{display:flex;gap:25px;padding:28px 0;border-block:1px solid #bacbd5;margin-top:25px}.grids-metrics strong,.grids-metrics span{display:block}.grids-metrics strong{font-size:2rem}.grids-metrics span{font-size:.75rem;color:#607b8d}.grids-motto{font:italic 1.3rem Georgia,serif;color:#728c9c;margin:25px 0}
+.grids-controls{display:grid;gap:14px;font-size:.8rem}.grids-controls input{accent-color:#137f9a}.grids-controls button{padding:9px 11px;margin:3px;border:1px solid #b6cbd7;border-radius:7px;background:#fff8;color:#102b43;cursor:pointer}.grids-controls button:focus-visible{outline:2px solid #137f9a}.grids-legend{display:flex;flex-wrap:wrap;gap:15px;margin-top:25px;font-size:.7rem}.grids-legend i{display:inline-block;width:9px;height:9px;margin-right:5px}.worked{background:#ff7138}.confirmed{background:#23c8ba}
+.grids-detail{display:flex;justify-content:space-between;gap:25px;background:#eee5d6;color:#302b26;padding:25px;margin-top:20px;border-radius:12px}.grids-detail h2{margin:7px 0;font:700 2rem monospace}#selected-place{max-width:550px;max-height:6em;overflow:auto;font-size:.8rem;line-height:1.5;overflow-wrap:anywhere}.grids-detail dl{min-width:180px}.grids-detail dt{font-size:.7rem;color:#766b5d}.grids-detail dd{margin:5px 0 15px;font-size:.8rem}.grids-note{font-size:.75rem;color:var(--muted);line-height:1.5}
+@media(max-width:800px){.grids-exhibit{grid-template-columns:1fr}.grids-stage{height:520px}.grids-info{padding:25px}.grids-info h2{font-size:2.2rem}.grids-metrics{padding:15px 0}.grids-detail{flex-direction:column;gap:0}}@media(max-width:480px){.grids-site{padding:0 14px}.grids-stage{height:450px}.grids-hint{font-size:.6rem}.grids-info{padding:20px}.grids-detail{padding:20px}}
+
+
+/* Variante oscura aplicada únicamente a las tarjetas de contenido. */
+.grids-exhibit,
+.grids-stage,
+.grids-info,
+.grids-detail,
+.grids-controls button,
+.grids-metrics span,
+.grids-motto,
+.grids-detail dt,
+.grids-hint {
+  transition: background-color .2s ease, background-image .2s ease, border-color .2s ease, color .2s ease;
+}
+.panels-dark .grids-exhibit {
+  border-color: #3b5261;
+  background:
+    linear-gradient(rgba(10,25,36,.28), rgba(10,25,36,.42)),
+    url('../images/grids/shack-blur.png') center/cover;
+  color: #edf3f6;
+}
+.panels-dark .grids-stage {
+  background: linear-gradient(to right, rgba(10,25,36,.42), rgba(14,28,38,.18));
+}
+.panels-dark .grids-info {
+  background: linear-gradient(
+    to left,
+    rgba(23,37,47,.99) 0%,
+    rgba(23,37,47,.93) 52%,
+    rgba(23,37,47,.18) 100%
+  );
+  text-shadow: 0 1px 2px rgba(4,12,18,.85);
+}
+.panels-dark .grids-metrics {
+  border-color: #49606e;
+}
+.panels-dark .grids-metrics span,
+.panels-dark .grids-qth,
+.panels-dark .grids-hint {
+  color: #a9bbc6;
+}
+.panels-dark .grids-motto {
+  color: #b8c7cf;
+}
+.panels-dark .grids-controls button {
+  border-color: #526a79;
+  background: #172630;
+  color: #edf3f6;
+}
+.panels-dark .grids-detail {
+  border: 1px solid #3b5261;
+  background: linear-gradient(145deg, #243744, #192833);
+  color: #edf3f6;
+}
+.panels-dark .grids-detail dt {
+  color: #9cafba;
+}
+.panels-dark #loading {
+  color: #edf3f6;
+}
+
+@media(max-width:800px){
+  .panels-dark .grids-info{
+    background:linear-gradient(to bottom,rgba(23,37,47,.32),rgba(23,37,47,.96) 30%);
+  }
+}

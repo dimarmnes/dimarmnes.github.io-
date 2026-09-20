@@ -1,0 +1,125 @@
+:root {
+  --app-bg: #f4f6f8;
+  --app-text: #263740;
+  --app-muted: #63747d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 0;
+}
+
+body {
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--app-text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 5.5rem;
+}
+
+section > h3 {
+  margin: 2rem 0 0.7rem;
+  color: #304852;
+  font-size: 1rem;
+}
+
+section > p {
+  max-width: 900px;
+  margin: 2rem 0 0;
+  color: var(--app-muted);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+.band-chart {
+  box-shadow: 0 4px 13px #0000000c;
+}
+
+.legend {
+  position: sticky;
+  bottom: 0;
+  width: max-content;
+  max-width: calc(100% - 1rem);
+  margin: 2rem auto -4.5rem;
+}
+
+.band-scroll {
+  width: 100%;
+}
+
+.scroll-hint {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  main {
+    padding: 1rem 0.65rem 5.5rem;
+  }
+
+  section > h3 {
+    margin-top: 1.6rem;
+    font-size: 0.9rem;
+  }
+
+  .band-scroll {
+    overflow-x: auto;
+    padding: 0 0 8px;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: thin;
+  }
+
+  .band-scroll .band-chart {
+    width: 720px;
+    min-width: 720px;
+    margin-bottom: 0.25rem;
+  }
+
+  .scroll-hint {
+    display: block;
+    margin: 0 0 0.4rem;
+    color: #7a8990;
+    font-size: 0.62rem;
+    text-align: right;
+  }
+
+  .legend {
+    justify-content: flex-start;
+    overflow-x: auto;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    white-space: nowrap;
+  }
+}
+
+/* Ajustes finales de presentación */
+.legend {
+  left: auto;
+  transform: none;
+}
+
+@media (max-width: 760px) and (orientation: portrait) {
+  .band-scroll {
+    overflow-x: visible;
+  }
+
+  .band-scroll .band-chart {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .scroll-hint {
+    text-align: center;
+  }
+}

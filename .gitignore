@@ -1,0 +1,7 @@
+# Bocetos y archivos de trabajo locales
+/propuesta/
+
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]

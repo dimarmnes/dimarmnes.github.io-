@@ -1,0 +1,161 @@
+:root {
+  --bg: #0d151b;
+  --bg2: #172630;
+  --paper: #e9e2d3;
+  --ink: #182a34;
+  --text: #edf3f6;
+  --muted: #a7b6bf;
+  --gold: #d3aa58;
+  --cyan: #55c8ed;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 12% 0%, #36526338, transparent 34rem), linear-gradient(180deg, var(--bg2), var(--bg));
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.station-site { width: 100%; max-width: 1180px; margin: auto; padding: 0 22px; }
+.station-heading { max-width: 790px; padding: 40px 0 30px; }
+
+.section-kicker,
+.issue-number {
+  margin: 0 0 0.7rem;
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.station-heading h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: 0.95; letter-spacing: -0.045em; }
+.station-heading > p:last-child { max-width: 720px; margin: 1rem 0 0; color: #bdc8cf; font-size: 0.95rem; line-height: 1.65; }
+
+.station-cover {
+  position: relative;
+  min-height: min(68vw, 700px);
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid #6c7c84;
+  border-radius: 4px;
+  background: #111b21;
+  box-shadow: 0 28px 65px #0007;
+}
+
+.station-cover > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cover-shade { position: absolute; inset: 0; background: linear-gradient(90deg, #071015de 0, #0710158e 30%, transparent 62%), linear-gradient(0deg, #071015b8, transparent 35%); }
+.cover-copy { position: absolute; top: 9%; left: 6%; max-width: 480px; text-shadow: 0 3px 18px #000b; }
+.cover-copy p,
+.cover-copy span { margin: 0; color: #d8e3e8; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; }
+.cover-copy h2 { margin: 1rem 0 1.2rem; font: 700 clamp(2.6rem, 7.5vw, 6.4rem)/0.86 Georgia, "Times New Roman", serif; letter-spacing: -0.065em; }
+.cover-copy h2::after { display: block; width: 74px; height: 4px; margin-top: 24px; background: var(--cyan); content: ""; }
+.cover-caption { position: absolute; right: 22px; bottom: 18px; margin: 0; color: #d9e2e6; font-size: 0.6rem; letter-spacing: 0.08em; }
+
+.station-story { display: grid; grid-template-columns: 1fr 0.9fr; gap: 0; margin-top: 72px; color: var(--ink); box-shadow: 0 22px 50px #0005; }
+.story-copy { padding: clamp(32px, 6vw, 72px); background: linear-gradient(90deg, transparent 96%, #b7aa8c22), var(--paper); }
+.story-copy h2,
+.editorial-heading h2,
+.history-heading h2 { margin: 0; font: 700 clamp(2rem, 5vw, 4.1rem)/0.95 Georgia, "Times New Roman", serif; letter-spacing: -0.045em; }
+.story-lead { margin: 1.5rem 0; font: 700 1.05rem/1.55 Georgia, "Times New Roman", serif; }
+.story-columns { columns: 2 190px; column-gap: 30px; color: #43535a; font-size: 0.8rem; line-height: 1.72; }
+.story-columns p { margin: 0 0 1rem; }
+.story-copy blockquote { margin: 2rem 0 0; padding: 1.1rem 0 0 1.3rem; border-top: 1px solid #9d927a; border-left: 4px solid #bd8b37; color: #263a43; font: italic 700 1.05rem/1.45 Georgia, "Times New Roman", serif; }
+.story-photo { display: grid; grid-template-rows: 1fr auto; min-width: 0; margin: 0; background: #17242c; }
+.story-photo img { width: 100%; height: 100%; min-height: 500px; object-fit: cover; }
+.story-photo figcaption { padding: 15px 18px; color: #aebcc3; font-size: 0.66rem; line-height: 1.55; }
+
+.station-details,
+.station-history { margin-top: 90px; }
+.editorial-heading { display: grid; grid-template-columns: 1fr minmax(270px, 0.72fr); gap: 45px; align-items: end; margin-bottom: 30px; }
+.editorial-heading > p { margin: 0; color: var(--muted); font-size: 0.8rem; line-height: 1.65; }
+.detail-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+.detail-card { display: grid; grid-template-columns: 0.85fr 1fr; overflow: hidden; border: 1px solid #445760; background: #17242c; box-shadow: 0 16px 38px #0004; }
+.detail-main { grid-column: 1 / -1; grid-template-columns: 1.55fr 0.8fr; }
+.detail-card img { width: 100%; height: 100%; min-height: 260px; object-fit: cover; }
+.detail-card > div { align-self: center; padding: clamp(22px, 4vw, 42px); }
+.detail-card span { color: var(--gold); font-size: 0.58rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; }
+.detail-card h3 { margin: 0.65rem 0 0.85rem; font: 700 clamp(1.5rem, 3vw, 2.5rem)/1 Georgia, "Times New Roman", serif; }
+.detail-card p { margin: 0; color: #adbbc2; font-size: 0.76rem; line-height: 1.65; }
+
+.station-history { padding: clamp(28px, 5vw, 58px); background: var(--paper); color: var(--ink); box-shadow: 0 20px 50px #0004; }
+.history-heading { display: grid; grid-template-columns: 0.6fr 1fr; gap: 8px 40px; align-items: end; margin-bottom: 30px; }
+.history-heading .issue-number { grid-column: 1 / -1; }
+.history-heading > p:last-child { margin: 0; color: #59676d; font-size: 0.78rem; line-height: 1.65; }
+.history-strip { display: grid; grid-template-columns: 1.25fr 0.8fr 0.8fr; gap: 18px; padding-top: 24px; border-top: 1px solid #a99e87; }
+.history-strip figure { margin: 0; }
+.history-strip img { display: block; width: 100%; aspect-ratio: 1.2; object-fit: cover; filter: saturate(0.78) contrast(1.04); }
+.history-strip figcaption { padding-top: 9px; color: #57666c; font-size: 0.64rem; line-height: 1.45; }
+
+@media (max-width: 760px) {
+  .station-site { padding: 0 14px; }
+  .station-heading { padding-top: 28px; }
+  .station-cover { min-height: 620px; }
+  .station-cover > img { object-position: 42% center; }
+  .cover-copy { top: 7%; }
+  .cover-caption { right: 14px; left: 14px; }
+  .station-story,
+  .editorial-heading,
+  .history-heading { grid-template-columns: 1fr; }
+  .story-photo img { min-height: 360px; }
+  .detail-grid,
+  .history-strip { grid-template-columns: 1fr; }
+  .detail-card,
+  .detail-main { grid-column: auto; grid-template-columns: 1fr; }
+  .detail-card img { min-height: 0; aspect-ratio: 4 / 3; }
+  .history-strip img { aspect-ratio: 4 / 3; }
+}
+
+/* Contenido definitivo de la recorrida */
+.detail-grid { grid-template-columns: repeat(3, 1fr); }
+.detail-card { grid-template-columns: 1fr; }
+.detail-main { grid-template-columns: 1.55fr 0.8fr; }
+.detail-card:not(.detail-main) img { min-height: 0; aspect-ratio: 4 / 3; }
+.detail-card p + p { margin-top: 0.8rem; }
+.detail-link { display: inline-block; margin-top: 1.1rem; color: #69d2f2; font-size: 0.7rem; font-weight: 800; text-decoration: none; }
+.detail-link:hover { text-decoration: underline; }
+.history-strip figcaption strong { color: #263a43; }
+
+@media (max-width: 920px) and (min-width: 761px) {
+  .detail-grid { grid-template-columns: repeat(2, 1fr); }
+  .detail-card:last-child { grid-column: 1 / -1; grid-template-columns: 0.7fr 1fr; }
+  .detail-card:last-child img { height: 100%; aspect-ratio: auto; }
+}
+
+@media (max-width: 760px) {
+  .detail-grid { grid-template-columns: 1fr; }
+  .detail-main { grid-template-columns: 1fr; }
+}
+
+/* Visor integrado de fotografías */
+.station-gallery-image { cursor: zoom-in; }
+.station-gallery-image:focus-visible { outline: 3px solid var(--cyan); outline-offset: -3px; }
+
+.history-strip { grid-template-columns: repeat(3, 1fr); }
+.history-strip figure:first-child { grid-column: span 2; }
+.history-strip figure:first-child img { aspect-ratio: 2 / 1; }
+
+#station-dialog {
+  max-width: 95vw;
+  max-height: 94vh;
+  padding: 14px;
+  border: 1px solid #435866;
+  border-radius: 12px;
+  background: #101820;
+  color: var(--text);
+}
+
+#station-dialog::backdrop { background: #081016ed; }
+#station-dialog-image { display: block; width: min(1200px, 88vw); height: 76vh; margin: auto; object-fit: contain; }
+#station-caption { max-width: 1000px; margin: 12px auto 0; text-align: center; font-size: 0.8rem; }
+.dialog-controls { display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 12px; }
+.dialog-controls button { padding: 8px 12px; border: 1px solid #435866; border-radius: 6px; background: #1d2b36; color: white; cursor: pointer; }
+
+@media (max-width: 760px) {
+  .history-strip figure:first-child { grid-column: auto; }
+  .history-strip figure:first-child img { aspect-ratio: 4 / 3; }
+  #station-dialog { padding: 10px; }
+  #station-dialog-image { width: 90vw; height: 72vh; }
+}

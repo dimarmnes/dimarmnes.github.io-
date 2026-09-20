@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LU1IDC · Software</title>
+  <meta name="description" content="Programas que uso para registrar, decodificar, visualizar y experimentar con radio, junto con mis proyectos propios.">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/cabecera.css">
+  <link rel="stylesheet" href="css/pie.css">
+  <link rel="stylesheet" href="css/software.css">
+</head>
+<body id="top">
+  <div class="software-site">
+    <header class="global-header">
+      <a class="global-brand" href="index.html" aria-label="LU1IDC, inicio">LU1IDC</a>
+      <p class="global-meta">San Javier, Misiones · GG22KD · ITU 14 · CQ 13</p>
+      <button class="global-menu" type="button" aria-expanded="false" aria-controls="global-nav">Menú</button>
+      <nav class="global-nav" id="global-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a><a href="estacion.html">La estación</a><a class="active" href="software.html">Software</a><a href="en-el-aire.html">En el aire</a><a href="concursos.html">Concursos</a><a href="diplomas.html">Diplomas</a><a href="qsl.html">QSLs</a><a href="cositas-utiles.html">Cositas útiles</a>
+      </nav>
+    </header>
+
+    <main>
+      <header class="software-heading">
+        <p class="section-kicker">Linux · Radio · Experimentación</p>
+        <h1>Software</h1>
+        <p>Programas que uso para registrar, decodificar, visualizar y experimentar con radio. Una referencia para quien esté buscando con qué empezar o cómo resolver una tarea.</p>
+      </header>
+
+      <section class="terminal-intro" aria-label="Entorno de trabajo">
+        <div class="window-bar">
+          <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <p>diego@lu1idc: ~</p>
+          <span class="window-kind">terminal</span>
+        </div>
+        <div class="terminal-screen">
+          <p><span class="prompt">diego@lu1idc:~$</span> cat radio/software.txt</p>
+          <p class="terminal-output"><b>entorno</b> Manjaro Linux<br><b>objetivo</b> registrar · decodificar · mapear · seguir satélites<br><b>criterio</b> herramientas que uso y experiencias que puedo compartir</p>
+          <p><span class="prompt">diego@lu1idc:~$</span> <span class="cursor" aria-hidden="true"></span></p>
+        </div>
+      </section>
+
+      <section class="software-tools" aria-labelledby="tools-title">
+        <header class="section-heading">
+          <div>
+            <p class="section-kicker">Mi escritorio de radio</p>
+            <h2 id="tools-title">Aplicaciones que uso</h2>
+          </div>
+          <p>No pretende ser una lista exhaustiva. Son herramientas que forman parte de mi estación y que puedo tomar como punto de partida para futuras notas.</p>
+        </header>
+
+        <div class="windows-grid">
+          <article class="app-window window-wide">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <p>QLog · Libro de guardia</p>
+              <span class="window-kind">registro</span>
+            </div>
+            <button class="app-shot" type="button" data-software-image="images/software/qlog.jpg" data-software-title="QLog · Libro de guardia">
+              <img src="images/software/qlog.jpg" alt="Captura de QLog" loading="lazy">
+            </button>
+            <div class="app-copy">
+              <h3>QLog</h3>
+              <p>Mi aplicación de registro. Es sencilla, funciona en Linux y Windows y utiliza una base de datos SQLite.</p>
+              <p class="app-use"><b>Lo uso para</b> registrar y consultar los contactos de la estación.</p>
+              <a href="https://github.com/foldynl/QLog" target="_blank" rel="noopener noreferrer">Proyecto oficial ↗</a>
+            </div>
+          </article>
+
+          <article class="app-window">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <p>JTDX</p>
+              <span class="window-kind">digital</span>
+            </div>
+            <button class="app-shot" type="button" data-software-image="images/software/jtdx.jpg" data-software-title="JTDX · Modos digitales">
+              <img src="images/software/jtdx.jpg" alt="Captura de JTDX" loading="lazy">
+            </button>
+            <div class="app-copy">
+              <h3>JTDX</h3>
+              <p>Una variante de WSJT-X orientada al trabajo con señales débiles y modos digitales.</p>
+              <p class="app-use"><b>Lo uso para</b> operar principalmente FT8 y FT4.</p>
+              <a href="https://sourceforge.net/projects/jtdx/" target="_blank" rel="noopener noreferrer">Proyecto oficial ↗</a>
+            </div>
+          </article>
+
+          <article class="app-window">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <p>GridTracker</p>
+              <span class="window-kind">mapa</span>
+            </div>
+            <button class="app-shot" type="button" data-software-image="images/software/gridtracker.jpg" data-software-title="GridTracker · Actividad y mapas">
+              <img src="images/software/gridtracker.jpg" alt="Captura de GridTracker" loading="lazy">
+            </button>
+            <div class="app-copy">
+              <h3>GridTracker</h3>
+              <p>Reúne decodificaciones, contactos, reportes y otra información en una interfaz visual.</p>
+              <p class="app-use"><b>Lo uso para</b> seguir la actividad y ubicar contactos sobre el mapa.</p>
+              <a href="https://gridtracker.org/" target="_blank" rel="noopener noreferrer">Proyecto oficial ↗</a>
+            </div>
+          </article>
+
+          <article class="app-window">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <p>QSSTV</p>
+              <span class="window-kind">imagen</span>
+            </div>
+            <button class="app-shot" type="button" data-software-image="images/software/qsstv.jpg" data-software-title="QSSTV · Televisión de barrido lento">
+              <img src="images/software/qsstv.jpg" alt="Captura de QSSTV" loading="lazy">
+            </button>
+            <div class="app-copy">
+              <h3>QSSTV</h3>
+              <p>Programa para recibir y transmitir imágenes mediante televisión de barrido lento.</p>
+              <p class="app-use"><b>Lo uso para</b> recibir actividades SSTV terrestres y de satélites.</p>
+              <a href="https://www.qsl.net/on4qz/" target="_blank" rel="noopener noreferrer">Proyecto oficial ↗</a>
+            </div>
+          </article>
+
+          <article class="app-window window-wide">
+            <div class="window-bar">
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <p>Gpredict</p>
+              <span class="window-kind">satélites</span>
+            </div>
+            <button class="app-shot" type="button" data-software-image="images/software/gpredict.jpg" data-software-title="Gpredict · Seguimiento de satélites">
+              <img src="images/software/gpredict.jpg" alt="Captura de Gpredict" loading="lazy">
+            </button>
+            <div class="app-copy">
+              <h3>Gpredict</h3>
+              <p>Permite seguir satélites en tiempo real, consultar órbitas y anticipar próximos pases.</p>
+              <p class="app-use"><b>Lo uso para</b> planificar recepciones y observar cada pase.</p>
+              <a href="https://oz9aec.dk/gpredict/" target="_blank" rel="noopener noreferrer">Proyecto oficial ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="own-projects" aria-labelledby="projects-title">
+        <header class="section-heading">
+          <div>
+            <p class="section-kicker">~/proyectos</p>
+            <h2 id="projects-title">Desarrollos propios</h2>
+          </div>
+          <p>Herramientas nacidas de necesidades concretas de mi actividad y construidas para poder compartirlas.</p>
+        </header>
+
+        <article class="qslet-window">
+          <div class="window-bar">
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <p>QSLet · v0.9.0</p>
+            <span class="window-kind project-status">en desarrollo</span>
+          </div>
+
+          <div class="qslet-layout">
+            <div class="qslet-copy">
+              <img class="qslet-icon" src="images/software/qslet/icono.png" alt="Icono de QSLet">
+              <p class="section-kicker">Linux · Windows · Software libre</p>
+              <h3>QSLet</h3>
+              <p class="qslet-lead">Diseña, genera y envía tus propias QSL electrónicas.</p>
+              <p>QSLet importa contactos ADIF y permite crear tarjetas individualmente o por lotes. Incluye editor visual, perfiles de estación, plantillas de correo, vista previa y una bandeja de salida persistente.</p>
+              <ul class="tech-list" aria-label="Tecnologías y características">
+                <li>Python</li>
+                <li>PyQt6</li>
+                <li>ADIF</li>
+                <li>GPL v3</li>
+              </ul>
+              <div class="project-links">
+                <a class="primary-link" href="https://github.com/dimarmnes/QSLet" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a>
+                <a href="https://github.com/dimarmnes/QSLet/releases" target="_blank" rel="noopener noreferrer">Descargar v0.9.0 ↗</a>
+              </div>
+            </div>
+
+            <div class="qslet-gallery">
+              <button class="qslet-main-shot" type="button" data-software-image="images/software/qslet/principal.png" data-software-title="QSLet · Ventana principal">
+                <img src="images/software/qslet/principal.png" alt="Ventana principal de QSLet" loading="lazy">
+              </button>
+              <button type="button" data-software-image="images/software/qslet/editor.png" data-software-title="QSLet · Editor visual">
+                <img src="images/software/qslet/editor.png" alt="Editor visual de QSLet" loading="lazy">
+              </button>
+              <button type="button" data-software-image="images/software/qslet/bandeja.png" data-software-title="QSLet · Bandeja de salida">
+                <img src="images/software/qslet/bandeja.png" alt="Bandeja de salida de QSLet" loading="lazy">
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="future-notes">
+        <p class="section-kicker">Próximamente</p>
+        <h2>Notas y soluciones</h2>
+        <p>Este espacio crecerá con configuraciones, problemas resueltos y procedimientos que puedan servir como referencia a otros radioaficionados.</p>
+        <span aria-hidden="true">_</span>
+      </section>
+    </main>
+
+    <footer class="global-footer">
+      <div class="footer-mark">
+        <img src="images/LU1IDC_logo.png" alt="Logo de LU1IDC">
+        <p><b>LU1IDC</b><span>Radioaficionado argentino</span></p>
+      </div>
+      <p class="footer-station">San Javier · Misiones · Argentina<br>GG22KD · ITU 14 · CQ 13</p>
+      <p class="footer-motto">Inspirado por Guerrero y Sídoli<br>y por la curiosidad de hacer.</p>
+      <nav class="footer-links" aria-label="Enlaces del pie">
+        <a href="privacidad.html">Privacidad</a>
+        <a href="#top">↑ Volver arriba</a>
+      </nav>
+    </footer>
+  </div>
+
+  <dialog id="software-dialog" aria-label="Captura de software ampliada">
+    <div class="dialog-controls">
+      <button type="button" id="software-prev" aria-label="Captura anterior">←</button>
+      <button type="button" id="software-next" aria-label="Captura siguiente">→</button>
+      <button type="button" id="software-close">Cerrar ×</button>
+    </div>
+    <img id="software-image" alt="">
+    <p id="software-caption" aria-live="polite"></p>
+  </dialog>
+
+  <script src="js/cabecera.js"></script>
+  <script src="js/galeria-swipe.js?v=1"></script>
+  <script src="js/software.js?v=1"></script>
+</body>
+</html>

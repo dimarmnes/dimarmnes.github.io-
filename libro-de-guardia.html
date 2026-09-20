@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Libro de Guardia de LU1IDC, presentado como una libreta de radio.">
+  <title>LU1IDC · Libro de Guardia</title>
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/cabecera.css">
+  <link rel="stylesheet" href="css/pie.css">
+  <link rel="stylesheet" href="css/navegacion.css">
+  <link rel="stylesheet" href="css/logbook.css">
+</head>
+<body id="top"><div class="logbook-site">
+<header class="global-header">
+        <a class="global-brand" href="index.html" aria-label="LU1IDC, inicio">LU1IDC</a>
+        <p class="global-meta">San Javier, Misiones · GG22KD · ITU 14 · CQ 13</p>
+        <button class="global-menu" type="button" aria-expanded="false" aria-controls="global-nav">
+          Menú
+        </button>
+        <nav class="global-nav" id="global-nav" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a>
+          <a href="estacion.html">La estación</a>
+          <a href="software.html">Software</a>
+          <a class="active" href="en-el-aire.html">En el aire</a>
+          <a href="concursos.html">Concursos</a>
+          <a href="diplomas.html">Diplomas</a>
+          <a href="qsl.html">QSLs</a>
+          <a href="cositas-utiles.html">Cositas útiles</a>
+        </nav>
+      </header>
+<main>
+  <header class="logbook-heading">
+    <nav class="breadcrumbs" aria-label="Ruta de navegación"><ol><li><a href="index.html">Inicio</a></li><li><a href="en-el-aire.html">En el aire</a></li><li><span aria-current="page">Libro de Guardia</span></li></ol></nav>
+    <h1>Libro de Guardia</h1>
+    <p>Los contactos de LU1IDC reunidos en la libreta de la estación.</p>
+  </header>
+  <section class="logbook-desk is-desk-view" id="logbook-desk" aria-labelledby="book-instructions">
+    <div class="shack-backdrop" aria-hidden="true"></div>
+    <p class="book-instructions" id="book-instructions">Seleccioná la libreta para recogerla del escritorio.</p>
+    <div class="book-wrap" id="book-wrap">
+      <div class="book" id="book" aria-label="Libro de Guardia interactivo"></div>
+      <div class="spiral spiral-back" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="spiral spiral-front" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <button class="book-pickup" id="book-pickup" type="button"><span>Recoger el libro</span></button>
+      <aside class="logbook-tools" id="logbook-tools" aria-label="Índice y búsqueda del Libro de Guardia" hidden>
+      <header class="logbook-tools-header">
+        <div>
+          <span class="logbook-tools-kicker">Ficha de consulta</span>
+          <h2>Índice del Libro de Guardia</h2>
+        </div>
+        <button type="button" id="book-tools-close" aria-label="Cerrar índice">×</button>
+      </header>
+      <div class="logbook-tools-tabs" role="tablist" aria-label="Opciones de consulta">
+        <button type="button" role="tab" id="logbook-search-tab" aria-controls="logbook-search-panel" aria-selected="true">Buscar</button>
+        <button type="button" role="tab" id="logbook-index-tab" aria-controls="logbook-index-panel" aria-selected="false">Por año</button>
+      </div>
+      <section class="logbook-tools-panel" id="logbook-search-panel" role="tabpanel" aria-labelledby="logbook-search-tab">
+        <label class="logbook-search-field">Indicativo, entidad, fecha o grid
+          <input type="search" id="logbook-search-query" placeholder="Ej.: TN8GD, Congo, 2026, GG22…" autocomplete="off">
+        </label>
+        <div class="logbook-search-filters">
+          <label>Año<select id="logbook-search-year"><option value="">Todos</option></select></label>
+          <label>Banda<select id="logbook-search-band"><option value="">Todas</option></select></label>
+          <label>Modo<select id="logbook-search-mode"><option value="">Todos</option></select></label>
+        </div>
+        <p class="logbook-search-summary" id="logbook-search-summary">Escribí un dato o elegí un filtro.</p>
+        <div class="logbook-search-results" id="logbook-search-results"></div>
+      </section>
+      <section class="logbook-tools-panel" id="logbook-index-panel" role="tabpanel" aria-labelledby="logbook-index-tab" hidden>
+        <p class="logbook-index-help">Seleccioná un año para ir a su primera hoja.</p>
+        <div class="logbook-year-index" id="logbook-year-index"></div>
+      </section>
+      </aside>
+    </div>
+    <nav class="book-controls" id="book-controls" aria-label="Hojas del Libro de Guardia">
+      <button type="button" id="book-first">« Primera</button>
+      <button type="button" id="book-prev">← Anterior</button>
+      <span id="book-status" role="status">Portada</span>
+      <button type="button" id="book-next">Siguiente →</button>
+      <button type="button" id="book-last">Última »</button>
+      <label class="book-page-jump" for="book-page-number">Hoja
+        <input type="number" id="book-page-number" min="1" step="1" inputmode="numeric" aria-label="Número de hoja">
+        <button type="button" id="book-page-go">Ir</button>
+      </label>
+      <button type="button" id="book-tools-toggle" aria-expanded="false" aria-controls="logbook-tools">Índice / Buscar</button>
+      <button type="button" id="book-close">Cerrar libreta</button>
+      <button type="button" id="book-desk-return">Volver al escritorio</button>
+    </nav>
+
+    <p class="book-data-status" id="book-data-status" role="status">Preparando las hojas…</p>
+    <p class="logbook-mobile-note">Vista reducida. Girá el dispositivo o abrí esta sección en una pantalla grande para consultar el libro completo.</p>
+  </section>
+</main>
+<footer class="global-footer">
+        <div class="footer-mark">
+          <img src="images/LU1IDC_logo.png" alt="Logo de LU1IDC">
+          <p><b>LU1IDC</b><span>Radioaficionado argentino</span></p>
+        </div>
+        <p class="footer-station">San Javier · Misiones · Argentina<br>GG22KD · ITU 14 · CQ 13</p>
+        <p class="footer-motto">Inspirado por Guerrero y Sídoli<br>y por la curiosidad de hacer.</p>
+        <nav class="footer-links" aria-label="Enlaces del pie">
+          <a href="privacidad.html">Privacidad</a>
+          <a href="#top">↑ Volver arriba</a>
+        </nav>
+      </footer>
+</div>
+<script src="js/cabecera.js"></script>
+<script src="js/vendor/page-flip/page-flip.browser.js"></script>
+<script src="js/dxcc-data.js"></script>
+<script src="js/logbook-data.js"></script>
+<script src="js/logbook.js"></script>
+</body></html>

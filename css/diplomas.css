@@ -1,0 +1,36 @@
+:root{--bg:#101820;--bg2:#182530;--panel:#1d2b36;--panel2:#243744;--line:#314856;--text:#edf3f6;--muted:#a7b5be;--gold:#d3aa58;--paper:#eee5d5}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,#ffffff0a,transparent 30rem),linear-gradient(180deg,var(--bg2),var(--bg));color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.awards-site{max-width:1180px;margin:auto;padding:0 22px}.kicker,.section-kicker{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:800}.kicker{margin:0}.section-kicker{margin:30px 0 15px;color:#8fa2ae}h1{font-size:clamp(2.2rem,5vw,4.4rem);line-height:.95;letter-spacing:-.045em;margin:8px 0 12px}h2{font-size:1.4rem;margin:6px 0 9px}.awards-hero{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:40px 0 30px;align-items:center}.awards-hero p:not(.kicker){color:#b7c4cc;line-height:1.65}.awards-hero .hero-phrase{color:var(--text);font:italic 1.3rem Georgia,serif}.collection-links{display:flex;gap:7px;flex-wrap:wrap;margin-top:22px}.collection-link{padding:7px 9px;border:1px solid #394e5b;border-radius:8px;color:#bdcbd3;font-size:.66rem;text-decoration:none}.collection-link span{margin-left:6px;color:var(--gold)}.vitrina{display:flex;align-items:center;justify-content:center;gap:12px;min-height:300px;padding:25px;border:1px solid var(--line);border-radius:18px;background:radial-gradient(circle at 50% 15%,#d3aa5820,transparent 42%),linear-gradient(150deg,#263742,#17252e)}.award-piece{display:block;width:100%;min-width:0;padding:10px;border:1px solid #354b58;border-radius:12px;background:linear-gradient(155deg,#223440,#192730);color:inherit;text-align:left;font:inherit;cursor:pointer}.award-piece:hover{border-color:#a18450}.award-piece:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.document{display:block;aspect-ratio:1.35;background:#10191f;border-radius:5px;overflow:hidden;padding:4px}.document img{display:block;width:100%;height:100%;object-fit:contain}.piece-title{display:block;margin:9px 2px 3px;font-size:.72rem;line-height:1.35;overflow-wrap:anywhere}.award-piece small{color:#96a9b4;font-size:.6rem}.wall-frame{width:29%;padding:5px;border:7px solid #40352a;border-radius:0;background:var(--paper);box-shadow:0 18px 28px #0006}.wall-frame:nth-child(2){width:36%;margin-top:-25px}.wall-frame .document{background:var(--paper);padding:0;border-radius:0}.wall-frame .piece-title,.wall-frame small{display:none}.featured{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.award-panel{padding:22px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,var(--panel2),var(--panel));box-shadow:0 18px 40px #0002}.award-panel>p{color:#afbdc6;line-height:1.55;font-size:.84rem}.featured-side{display:grid;gap:18px}.rca-feature>.award-piece{margin:20px 0 17px}.rca-feature .document{aspect-ratio:auto;height:350px}.mini-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:17px 0}.mini-gallery .piece-title{font-size:.62rem}.mini-gallery .award-piece{padding:5px}.mini-gallery small{display:none}.more{display:inline-block;color:#dcc28a;font-size:.73rem;text-decoration:none}.awards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.archive-invite{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:25px}.archive-invite p{color:#afbdc6;font-size:.82rem;margin:0}.archive-button{padding:10px 14px;border:1px solid #66573b;border-radius:9px;background:#d3aa5817;color:#e4c985;font-size:.74rem;font-weight:800;text-decoration:none;white-space:nowrap}.archive-heading{padding:32px 0 25px}.archive-heading>p{color:var(--muted);line-height:1.6}.archive-toolbar{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-end;padding:18px;margin-bottom:24px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}.archive-toolbar label{display:grid;gap:6px;color:var(--muted);font-size:.72rem}.archive-toolbar select,.archive-toolbar input{padding:9px 11px;border:1px solid #435866;border-radius:7px;background:#15232c;color:var(--text);font:inherit}.search-label{flex:1}.archive-toolbar p{color:var(--gold);font-size:.72rem}.empty{text-align:center;color:var(--muted)}.award-dialog{max-width:95vw;max-height:94vh;padding:14px;border:1px solid #435866;border-radius:12px;background:#101820;color:var(--text)}.award-dialog::backdrop{background:#081016ed}.award-dialog>img{display:block;width:min(1100px,88vw);height:75vh;object-fit:contain;margin:auto}.award-dialog>p{max-width:1000px;text-align:center;font-size:.8rem}.dialog-controls{display:flex;justify-content:flex-end;gap:8px;margin-bottom:12px}.dialog-controls button{padding:8px 12px;border:1px solid #435866;border-radius:6px;background:#1d2b36;color:white;cursor:pointer}.archive-grid [hidden]{display:none}@media(max-width:900px){.awards-hero,.featured{grid-template-columns:1fr}.awards-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:620px){.awards-site{padding:0 14px}.awards-grid{grid-template-columns:repeat(2,1fr)}.vitrina{min-height:220px;padding:16px;gap:8px}.wall-frame{border-width:5px}.rca-feature .document{height:240px}.archive-invite{align-items:flex-start;flex-direction:column}.archive-toolbar label{flex:1;min-width:110px}.search-label{flex-basis:100%!important}.mini-gallery{gap:5px}}
+
+/* Colecciones adicionales de la vitrina. */
+.collection-section{margin-top:24px}
+.collection-heading{display:flex;justify-content:space-between;gap:24px;align-items:center;margin-bottom:20px}
+.collection-heading p:not(.kicker){margin:0;color:var(--muted);font-size:.84rem;line-height:1.55}
+.collection-heading .more{flex-shrink:0}
+.collection-pieces{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.collection-logros{border-color:#66573b;background:radial-gradient(circle at 12% 0,#d3aa5812,transparent 30rem),linear-gradient(150deg,var(--panel2),var(--panel))}
+.collection-logros .collection-pieces{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));max-width:940px}
+.collection-logros .document{height:300px;aspect-ratio:auto}
+.collection-eqsl .collection-pieces{max-width:800px}
+@media(max-width:620px){.collection-heading{align-items:flex-start;flex-direction:column;gap:12px}.collection-pieces{grid-template-columns:1fr}.collection-logros .collection-pieces{grid-template-columns:1fr}.collection-logros .document{height:240px}}
+
+
+/* Cabecera común de las páginas de archivo. */
+body.archive-page {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.archive-page .archive-heading {
+  padding: 28px 0 18px;
+}
+.archive-page .archive-heading h1 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+  font-weight: 750;
+  line-height: normal;
+  letter-spacing: -.025em;
+}
+.archive-page .archive-heading > p {
+  max-width: 760px;
+  margin: .55rem 0 0;
+  color: #b9c4cc;
+  font-size: .95rem;
+  line-height: 1.55;
+}

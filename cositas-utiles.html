@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LU1IDC · Cositas útiles</title>
+  <meta name="description" content="Herramientas y referencias que fui creando para resolver necesidades concretas de mi actividad de radio.">
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/cabecera.css">
+  <link rel="stylesheet" href="css/pie.css">
+  <link rel="stylesheet" href="css/cositas-utiles.css">
+</head>
+<body id="top">
+  <div class="useful-site">
+    <header class="global-header">
+      <a class="global-brand" href="index.html" aria-label="LU1IDC, inicio">LU1IDC</a>
+      <p class="global-meta">San Javier, Misiones · GG22KD · ITU 14 · CQ 13</p>
+      <button class="global-menu" type="button" aria-expanded="false" aria-controls="global-nav">Menú</button>
+      <nav class="global-nav" id="global-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a><a href="estacion.html">La estación</a><a href="software.html">Software</a><a href="en-el-aire.html">En el aire</a><a href="concursos.html">Concursos</a><a href="diplomas.html">Diplomas</a><a href="qsl.html">QSLs</a><a class="active" href="cositas-utiles.html">Cositas útiles</a>
+      </nav>
+    </header>
+
+    <main>
+      <header class="useful-heading">
+        <p class="section-kicker">Ideas · Recursos · Curiosidades</p>
+        <h1>Cositas útiles</h1>
+        <p>Herramientas que fui necesitando y terminé creando para que me resultaran útiles en la actividad. Este rincón irá creciendo a medida que aparezcan nuevos problemas para resolver.</p>
+      </header>
+
+      <section class="lupin-intro" aria-label="Presentación">
+        <div class="halftone" aria-hidden="true"></div>
+        <div class="speech-bubble">
+          <span>Como en la</span>
+          <strong>Lúpin,</strong>
+          <em>¿vio?</em>
+        </div>
+        <div class="intro-copy">
+          <p class="scribble">Hecho en casa · probado al aire</p>
+          <h2>Un cajón de recursos para tener a mano.</h2>
+          <p>No son grandes productos ni pretenden resolverlo todo. Son mapas, tablas y ayudas que surgieron de una necesidad concreta y quizás también puedan servirle a alguien más.</p>
+        </div>
+        <span class="doodle-arrow" aria-hidden="true">↙</span>
+      </section>
+
+      <section class="useful-board" aria-labelledby="tools-title">
+        <header class="board-heading">
+          <p class="section-kicker">Archivo abierto</p>
+          <h2 id="tools-title">Las cositas</h2>
+          <p>Las versiones actuales se abrirán en otra pestaña. Luego iremos incorporando cada herramienta al nuevo sitio.</p>
+        </header>
+
+        <div class="useful-grid">
+          <article class="utility-card argentina-card">
+            <span class="tape tape-left" aria-hidden="true"></span>
+            <div class="card-number">C.U. 003</div>
+            <div class="argentina-layout">
+              <div class="argentina-visual">
+                <img src="images/cositas/argentina-mapa.jpg" alt="Mapa de la República Argentina" loading="lazy">
+                <span>23 provincias<br>+ CABA</span>
+              </div>
+              <div class="card-copy">
+                <p class="card-tag">ADIF · Provincias · Bandas</p>
+                <h3>Argentina en Frecuencia</h3>
+                <p>Cargá tu libro de guardia y comprobá qué provincias argentinas trabajaste en cada banda y modo. El archivo se procesa localmente en el navegador.</p>
+                <a href="argentina-en-frecuencia.html">Abrir herramienta →</a>
+              </div>
+            </div>
+            <p class="margin-note">Trabajá todas las provincias ★</p>
+          </article>
+
+          <article class="utility-card bands-card">
+            <span class="tape tape-right" aria-hidden="true"></span>
+            <div class="card-number">C.U. 001</div>
+            <div class="band-preview" aria-hidden="true">
+              <span class="band-cw">CW</span>
+              <span class="band-digital">DIGI</span>
+              <span class="band-ssb">SSB</span>
+              <span class="band-other">OTROS</span>
+            </div>
+            <div class="card-copy">
+              <p class="card-tag">Frecuencias · Modos · Categorías</p>
+              <h3>Plan de bandas argentino</h3>
+              <p>Una representación gráfica para consultar de manera rápida segmentos, modos y categorías del plan de bandas.</p>
+              <div class="card-links">
+                <a href="plan-bandas.html">Abrir gráfico →</a>
+                <a href="https://docs.google.com/spreadsheets/d/1Ng-4h1Amu7jnD431P5ZCtrGIomMtHkeaf8iBnv2-nhk/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Ver planilla ↗</a>
+              </div>
+            </div>
+            <p class="margin-note">Más colores, menos reglamento doblado.</p>
+          </article>
+
+          <article class="utility-card satellites-card">
+            <span class="tape tape-left" aria-hidden="true"></span>
+            <div class="card-number">C.U. 002</div>
+            <div class="satellite-preview">
+              <img src="images/cositas/satelites/iss-frecuencias.jpg" alt="Tarjeta de frecuencias de la ISS" loading="lazy">
+              <img src="images/cositas/satelites/so50-frecuencias.jpg" alt="Tarjeta de frecuencias de SO-50" loading="lazy">
+              <span class="orbit" aria-hidden="true"></span>
+            </div>
+            <div class="card-copy">
+              <p class="card-tag">Satélites · Frecuencias</p>
+              <h3>Frecuencias de satélites</h3>
+              <p>Tarjetas de consulta rápida para tener cerca al preparar una recepción o un contacto por satélite.</p>
+              <button class="card-action" type="button" id="open-satellites">Abrir galería →</button>
+            </div>
+            <p class="margin-note">A la manera de la revistucha.</p>
+          </article>
+
+          <article class="utility-card empty-card">
+            <div class="card-number">C.U. 004</div>
+            <div class="empty-sketch" aria-hidden="true">
+              <span>?</span>
+            </div>
+            <div class="card-copy">
+              <p class="card-tag">Lugar disponible</p>
+              <h3>La próxima ...</h3>
+              <p>Este espacio se ocupará cuando aparezca otro problema que valga la pena resolver.</p>
+            </div>
+            <p class="margin-note">Primero la necesidad; después, el invento.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="global-footer">
+      <div class="footer-mark">
+        <img src="images/LU1IDC_logo.png" alt="Logo de LU1IDC">
+        <p><b>LU1IDC</b><span>Radioaficionado argentino</span></p>
+      </div>
+      <p class="footer-station">San Javier · Misiones · Argentina<br>GG22KD · ITU 14 · CQ 13</p>
+      <p class="footer-motto">Inspirado por Guerrero y Sídoli<br>y por la curiosidad de hacer.</p>
+      <nav class="footer-links" aria-label="Enlaces del pie">
+        <a href="privacidad.html">Privacidad</a>
+        <a href="#top">↑ Volver arriba</a>
+      </nav>
+    </footer>
+  </div>
+
+  <dialog id="satellite-dialog" aria-label="Ficha de frecuencias de satélite ampliada">
+    <div class="dialog-controls">
+      <button type="button" id="satellite-prev" aria-label="Ficha anterior">←</button>
+      <button type="button" id="satellite-next" aria-label="Ficha siguiente">→</button>
+      <button type="button" id="satellite-close">Cerrar ×</button>
+    </div>
+    <img id="satellite-image" alt="">
+    <p id="satellite-caption" aria-live="polite"></p>
+  </dialog>
+
+  <script src="js/cabecera.js"></script>
+  <script src="js/satelites-data.js"></script>
+  <script src="js/galeria-swipe.js?v=1"></script>
+  <script src="js/satelites.js?v=1"></script>
+</body>
+</html>
