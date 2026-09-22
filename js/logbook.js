@@ -13,19 +13,7 @@ const originalBookPages = new WeakSet();
 const dxccNames = new Map((typeof DXCC_DATA !== 'undefined' ? DXCC_DATA.entities : []).map(entity => [String(entity.id),entity.name]));
 
 function parseLogbookAdif(text) {
-  const records = [];
-  const body = text.split(/<eoh\s*>/i).pop();
-  for (const part of body.split(/<eor\s*>/i)) {
-    const record = {};
-    const pattern = /<([^:>]+):(\d+)(?::[^>]*)?>/gi;
-    let match;
-    while ((match = pattern.exec(part))) {
-      const end = pattern.lastIndex + Number(match[2]);
-      record[match[1].toLowerCase()] = part.slice(pattern.lastIndex, end).trim();
-      pattern.lastIndex = end;
-    }
-    if (record.call) records.push(record);
-  }
+  const records = parseAdifRecords(text);
   records.sort((a,b) => `${a.qso_date || ''}${a.time_on || ''}${a.call || ''}`.localeCompare(`${b.qso_date || ''}${b.time_on || ''}${b.call || ''}`));
   const seenDxcc = new Set();
   for (const record of records) {

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LU1IDC · Últimos 5 QSO</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; margin: 0; }
+    body { background: #fffdf7; color: #172433; font: 12px/1.25 Arial, Helvetica, sans-serif; }
+    .log { width: 100%; overflow: hidden; border: 1px solid #d8cfbd; }
+    .log-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 35px; padding: 7px 10px; background: #092f50; color: #fffdf7; white-space: nowrap; }
+    .log-heading strong { flex: none; font-size: 12px; letter-spacing: .04em; }
+    .log-heading span { overflow: hidden; font-size: 10px; font-weight: 700; letter-spacing: .035em; text-align: right; text-overflow: ellipsis; }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    col.date { width: 27%; }
+    col.call { width: 18%; }
+    col.band { width: 11%; }
+    col.mode { width: 14%; }
+    col.country { width: 30%; }
+    thead { background: #f4f0e7; color: #092f50; }
+    th, td { overflow: hidden; padding: 0 8px; border-bottom: 1px solid #e5dfd3; text-align: left; text-overflow: ellipsis; white-space: nowrap; }
+    th { height: 25px; font-size: 10px; font-weight: 700; }
+    td { height: 30px; }
+    tbody tr:last-child td { border-bottom: 0; }
+    td.call { color: #092f50; font-weight: 700; }
+    td.message { color: #59636d; font-size: 11px; }
+    .log-footer { display: block; min-height: 32px; padding: 8px 10px; border-top: 1px solid #d8cfbd; color: #092f50; font-size: 11px; font-weight: 700; text-decoration: none; }
+    .log-footer:hover, .log-footer:focus-visible { text-decoration: underline; }
+    @media (max-width: 480px) {
+      body { font-size: 10px; }
+      .log-heading { padding-inline: 7px; }
+      .log-heading strong { font-size: 11px; }
+      .log-heading span { font-size: 8px; }
+      th, td { padding-inline: 4px; }
+      col.date { width: 32%; }
+      col.call { width: 20%; }
+      col.band { width: 11%; }
+      col.mode { width: 13%; }
+      col.country { width: 24%; }
+    }
+  </style>
+</head>
+<body>
+  <section class="log" aria-label="Últimos cinco contactos de LU1IDC">
+    <div class="log-heading"><strong>LU1IDC LOG</strong><span>ÚLTIMOS CONTACTOS / LAST QSOs</span></div>
+    <table aria-label="Últimos cinco QSO">
+      <colgroup><col class="date"><col class="call"><col class="band"><col class="mode"><col class="country"></colgroup>
+      <thead><tr><th scope="col">Fecha UTC</th><th scope="col">CALL</th><th scope="col">Banda</th><th scope="col">Modo</th><th scope="col">País</th></tr></thead>
+      <tbody id="last5-rows">
+        <tr><td class="message" colspan="5">Cargando contactos…</td></tr>
+        <tr><td colspan="5"></td></tr><tr><td colspan="5"></td></tr><tr><td colspan="5"></td></tr><tr><td colspan="5"></td></tr>
+      </tbody>
+    </table>
+    <a class="log-footer" href="https://lu1idc.com.ar/libro-de-guardia.html" target="_blank" rel="noopener noreferrer">Ver libro de guardia completo / Full logbook →</a>
+  </section>
+  <script src="js/dxcc-data.js"></script>
+  <script src="js/adif-records.js"></script>
+  <script src="js/last5.js"></script>
+</body>
+</html>
