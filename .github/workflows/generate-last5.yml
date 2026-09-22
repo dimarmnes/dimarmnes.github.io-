@@ -1,0 +1,53 @@
+name: Actualizar últimos QSO
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - datos/contactos.adi
+      - js/dxcc-data.js
+      - scripts/generate_last5.py
+      - templates/last5.html
+      - .github/workflows/generate-last5.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: generate-last5-main
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Generar last5.html
+        run: python3 scripts/generate_last5.py
+      - name: Confirmar y enviar si cambió
+        id: publish
+        run: |
+          if git diff --quiet -- last5.html; then
+            echo "last5.html ya está actualizado"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add last5.html
+          git commit -m "Update last five QSOs from ADIF"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Solicitar publicación de GitHub Pages
+        if: steps.publish.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          curl --fail-with-body --silent --show-error -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/$GITHUB_REPOSITORY/pages/builds"

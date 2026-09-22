@@ -1,4 +1,4 @@
-// Lector de registros ADIF compartido por el Libro de Guardia y last5.html.
+// Lector de registros ADIF del Libro de Guardia.
 function parseAdifRecords(text) {
   const records = [];
   const body = text.split(/<eoh\s*>/i).pop();
