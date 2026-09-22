@@ -54,8 +54,107 @@
     </table>
     <a class="log-footer" href="https://lu1idc.com.ar/libro-de-guardia.html" target="_blank" rel="noopener noreferrer">Ver libro de guardia completo / Full logbook →</a>
   </section>
-  <script src="js/dxcc-data.js"></script>
-  <script src="js/adif-records.js"></script>
-  <script src="https://lu1idc.com.ar/js/last5.js"></script>
+  <script>
+const DXCC_DATA = {entities: [{"id":3,"name":"Afganistán"},{"id":4,"name":"Agalega y San Brandón"},{"id":6,"name":"Alaska"},{"id":7,"name":"Albania"},{"id":400,"name":"Argelia"},{"id":9,"name":"Samoa Americana"},{"id":10,"name":"Islas de Ámsterdam y San Pablo"},{"id":11,"name":"Islas Andamán y Nicobar"},{"id":203,"name":"Andorra"},{"id":401,"name":"Angola"},{"id":12,"name":"Anguila"},{"id":195,"name":"Annobón"},{"id":13,"name":"Antártida"},{"id":94,"name":"Antigua y Barbuda"},{"id":100,"name":"Argentina"},{"id":14,"name":"Armenia"},{"id":91,"name":"Aruba"},{"id":205,"name":"Isla Ascensión"},{"id":15,"name":"Rusia asiática"},{"id":508,"name":"Islas Australes"},{"id":150,"name":"Australia"},{"id":206,"name":"Austria"},{"id":18,"name":"Azerbaiyán"},{"id":149,"name":"Azores"},{"id":60,"name":"Bahamas"},{"id":304,"name":"Baréin"},{"id":21,"name":"Islas Baleares"},{"id":490,"name":"Banaba"},{"id":305,"name":"Bangladés"},{"id":62,"name":"Barbados"},{"id":27,"name":"Bielorrusia"},{"id":209,"name":"Bélgica"},{"id":66,"name":"Belice"},{"id":416,"name":"Benín"},{"id":64,"name":"Bermudas"},{"id":306,"name":"Bután"},{"id":104,"name":"Bolivia"},{"id":520,"name":"Bonaire"},{"id":501,"name":"Bosnia y Herzegovina"},{"id":402,"name":"Botsuana"},{"id":24,"name":"Isla Bouvet"},{"id":108,"name":"Brasil"},{"id":65,"name":"Islas Vírgenes Británicas"},{"id":345,"name":"Brunéi"},{"id":212,"name":"Bulgaria"},{"id":480,"name":"Burkina Faso"},{"id":404,"name":"Burundi"},{"id":312,"name":"Camboya"},{"id":406,"name":"Camerún"},{"id":1,"name":"Canadá"},{"id":29,"name":"Islas Canarias"},{"id":409,"name":"Cabo Verde"},{"id":69,"name":"Islas Caimán"},{"id":408,"name":"República Centroafricana"},{"id":32,"name":"Ceuta y Melilla"},{"id":410,"name":"Chad"},{"id":33,"name":"Territorio Británico del Océano Índico"},{"id":34,"name":"Islas Chatham"},{"id":512,"name":"Islas Chesterfield"},{"id":112,"name":"Chile"},{"id":318,"name":"China"},{"id":35,"name":"Isla de Navidad"},{"id":36,"name":"Isla Clipperton"},{"id":38,"name":"Islas Cocos"},{"id":37,"name":"Isla del Coco"},{"id":116,"name":"Colombia"},{"id":411,"name":"Comoras"},{"id":489,"name":"Arrecife Conway"},{"id":214,"name":"Córcega"},{"id":308,"name":"Costa Rica"},{"id":40,"name":"Creta"},{"id":497,"name":"Croacia"},{"id":41,"name":"Islas Crozet"},{"id":70,"name":"Cuba"},{"id":517,"name":"Curazao"},{"id":215,"name":"Chipre"},{"id":503,"name":"Chequia"},{"id":428,"name":"Côte d’Ivoire"},{"id":344,"name":"Corea del Norte"},{"id":414,"name":"República Democrática del Congo"},{"id":221,"name":"Dinamarca"},{"id":43,"name":"Isla Desecheo"},{"id":217,"name":"Islas Desventuradas"},{"id":382,"name":"Yibuti"},{"id":45,"name":"Dodecaneso"},{"id":95,"name":"Dominica"},{"id":72,"name":"República Dominicana"},{"id":513,"name":"Isla Ducie"},{"id":46,"name":"Malasia Oriental"},{"id":47,"name":"Isla de Pascua"},{"id":120,"name":"Ecuador"},{"id":478,"name":"Egipto"},{"id":74,"name":"El Salvador"},{"id":223,"name":"Inglaterra"},{"id":49,"name":"Guinea Ecuatorial"},{"id":51,"name":"Eritrea"},{"id":52,"name":"Estonia"},{"id":468,"name":"Esuatini"},{"id":53,"name":"Etiopía"},{"id":54,"name":"Rusia europea"},{"id":141,"name":"Islas Malvinas"},{"id":222,"name":"Islas Feroe"},{"id":56,"name":"Fernando de Noronha"},{"id":176,"name":"Fiyi"},{"id":224,"name":"Finlandia"},{"id":227,"name":"Francia"},{"id":61,"name":"Tierra de Francisco José"},{"id":63,"name":"Guayana Francesa"},{"id":175,"name":"Polinesia Francesa"},{"id":420,"name":"Gabón"},{"id":71,"name":"Islas Galápagos"},{"id":75,"name":"Georgia"},{"id":230,"name":"Alemania"},{"id":424,"name":"Ghana"},{"id":233,"name":"Gibraltar"},{"id":301,"name":"Islas Gilbert"},{"id":99,"name":"Islas Gloriosas"},{"id":236,"name":"Grecia"},{"id":237,"name":"Groenlandia"},{"id":77,"name":"Granada"},{"id":79,"name":"Guadalupe"},{"id":103,"name":"Guam"},{"id":105,"name":"Bahía de Guantánamo"},{"id":76,"name":"Guatemala"},{"id":106,"name":"Guernesey"},{"id":107,"name":"Guinea"},{"id":109,"name":"Guinea-Bisáu"},{"id":129,"name":"Guyana"},{"id":78,"name":"Haití"},{"id":110,"name":"Hawái"},{"id":111,"name":"Islas Heard y McDonald"},{"id":80,"name":"Honduras"},{"id":321,"name":"RAE de Hong Kong (China)"},{"id":20,"name":"Islas menores alejadas de EE. UU."},{"id":239,"name":"Hungría"},{"id":242,"name":"Islandia"},{"id":324,"name":"India"},{"id":327,"name":"Indonesia"},{"id":117,"name":"Sede de la Unión Internacional de Telecomunicaciones"},{"id":330,"name":"Irán"},{"id":333,"name":"Irak"},{"id":245,"name":"Irlanda"},{"id":17,"name":"Isla de Aves"},{"id":114,"name":"Isla de Man"},{"id":336,"name":"Israel"},{"id":248,"name":"Italia"},{"id":82,"name":"Jamaica"},{"id":118,"name":"Jan Mayen"},{"id":339,"name":"Japón"},{"id":122,"name":"Jersey"},{"id":123,"name":"Atolón Johnston"},{"id":342,"name":"Jordania"},{"id":125,"name":"Islas Juan Fernández"},{"id":124,"name":"Islas Juan de Nova y Europa"},{"id":126,"name":"Kaliningrado"},{"id":130,"name":"Kazajistán"},{"id":430,"name":"Kenia"},{"id":131,"name":"Islas Kerguelen"},{"id":133,"name":"Islas Kermadec"},{"id":522,"name":"Kosovo"},{"id":138,"name":"Atolón Kure"},{"id":348,"name":"Kuwait"},{"id":135,"name":"Kirguistán"},{"id":142,"name":"Laquedivas"},{"id":143,"name":"Laos"},{"id":145,"name":"Letonia"},{"id":354,"name":"Líbano"},{"id":432,"name":"Lesoto"},{"id":434,"name":"Liberia"},{"id":436,"name":"Libia"},{"id":251,"name":"Liechtenstein"},{"id":48,"name":"Islas de la Línea"},{"id":146,"name":"Lituania"},{"id":147,"name":"Isla Lord Howe"},{"id":254,"name":"Luxemburgo"},{"id":152,"name":"RAE de Macao (China)"},{"id":153,"name":"Isla Macquarie"},{"id":438,"name":"Madagascar"},{"id":256,"name":"Madeira"},{"id":440,"name":"Malaui"},{"id":159,"name":"Maldivas"},{"id":442,"name":"Mali"},{"id":161,"name":"Isla Malpelo"},{"id":257,"name":"Malta"},{"id":166,"name":"Islas Marianas del Norte"},{"id":509,"name":"Islas Marquesas"},{"id":168,"name":"Islas Marshall"},{"id":84,"name":"Martinica"},{"id":444,"name":"Mauritania"},{"id":165,"name":"Mauricio"},{"id":169,"name":"Mayotte"},{"id":171,"name":"Arrecife Mellish"},{"id":50,"name":"México"},{"id":173,"name":"Micronesia"},{"id":174,"name":"Atolón Midway"},{"id":177,"name":"Minami Torishima"},{"id":179,"name":"Moldavia"},{"id":260,"name":"Mónaco"},{"id":363,"name":"Mongolia"},{"id":514,"name":"Montenegro"},{"id":96,"name":"Montserrat"},{"id":446,"name":"Marruecos"},{"id":180,"name":"Monte Athos"},{"id":181,"name":"Mozambique"},{"id":309,"name":"Myanmar (Birmania)"},{"id":167,"name":"Isla Märket"},{"id":464,"name":"Namibia"},{"id":157,"name":"Nauru"},{"id":182,"name":"Isla Navassa"},{"id":369,"name":"Nepal"},{"id":263,"name":"Países Bajos"},{"id":162,"name":"Nueva Caledonia"},{"id":170,"name":"Nueva Zelanda"},{"id":16,"name":"Islas subantárticas de Nueva Zelanda"},{"id":86,"name":"Nicaragua"},{"id":187,"name":"Níger"},{"id":450,"name":"Nigeria"},{"id":188,"name":"Niue"},{"id":189,"name":"Isla Norfolk"},{"id":191,"name":"Islas Cook del Norte"},{"id":502,"name":"Macedonia del Norte"},{"id":265,"name":"Irlanda del Norte"},{"id":266,"name":"Noruega"},{"id":192,"name":"Islas Ogasawara"},{"id":370,"name":"Omán"},{"id":372,"name":"Pakistán"},{"id":22,"name":"Palaos"},{"id":510,"name":"Territorios Palestinos"},{"id":197,"name":"Islas Palmyra y Jarvis"},{"id":88,"name":"Panamá"},{"id":163,"name":"Papúa Nueva Guinea"},{"id":132,"name":"Paraguay"},{"id":136,"name":"Perú"},{"id":199,"name":"Isla Pedro I"},{"id":375,"name":"Filipinas"},{"id":31,"name":"Islas Fénix"},{"id":172,"name":"Islas Pitcairn"},{"id":269,"name":"Polonia"},{"id":272,"name":"Portugal"},{"id":505,"name":"Isla Pratas"},{"id":201,"name":"Islas del Príncipe Eduardo y Marion"},{"id":202,"name":"Puerto Rico"},{"id":376,"name":"Catar"},{"id":412,"name":"Congo"},{"id":204,"name":"Islas Revillagigedo"},{"id":207,"name":"Isla Rodrigues"},{"id":275,"name":"Rumanía"},{"id":460,"name":"Isla Rotuma"},{"id":454,"name":"Ruanda"},{"id":453,"name":"Reunión"},{"id":519,"name":"Saba y San Eustaquio"},{"id":211,"name":"Isla Sable"},{"id":516,"name":"San Bartolomé"},{"id":249,"name":"San Cristóbal y Nieves"},{"id":97,"name":"Santa Lucía"},{"id":213,"name":"San Martín"},{"id":253,"name":"Archipiélago de San Pedro y San Pablo"},{"id":277,"name":"San Pedro y Miquelón"},{"id":98,"name":"San Vicente y las Granadinas"},{"id":190,"name":"Samoa"},{"id":216,"name":"San Andrés y Providencia"},{"id":278,"name":"San Marino"},{"id":219,"name":"Santo Tomé y Príncipe"},{"id":225,"name":"Cerdeña"},{"id":378,"name":"Arabia Saudí"},{"id":506,"name":"Arrecife de Scarborough"},{"id":279,"name":"Escocia"},{"id":456,"name":"Senegal"},{"id":296,"name":"Serbia"},{"id":379,"name":"Seychelles"},{"id":458,"name":"Sierra Leona"},{"id":381,"name":"Singapur"},{"id":518,"name":"San Martín (parte neerlandesa)"},{"id":504,"name":"Eslovaquia"},{"id":499,"name":"Eslovenia"},{"id":185,"name":"Islas Salomón"},{"id":232,"name":"Somalia"},{"id":462,"name":"Sudáfrica"},{"id":234,"name":"Islas Cook del Sur"},{"id":235,"name":"Isla Georgia del Sur"},{"id":137,"name":"Corea del Sur"},{"id":238,"name":"Islas Orcadas del Sur"},{"id":240,"name":"Islas Sandwich del Sur"},{"id":241,"name":"Islas Shetland del Sur"},{"id":521,"name":"Sudán del Sur"},{"id":283,"name":"Bases soberanas de Acrotiri y Dhekelia"},{"id":246,"name":"Soberana Orden Militar de Malta"},{"id":281,"name":"España"},{"id":247,"name":"Islas Spratly"},{"id":315,"name":"Sri Lanka"},{"id":250,"name":"Santa Elena"},{"id":252,"name":"Isla de San Pablo"},{"id":466,"name":"Sudán"},{"id":140,"name":"Surinam"},{"id":259,"name":"Svalbard"},{"id":515,"name":"Isla Swains"},{"id":284,"name":"Suecia"},{"id":287,"name":"Suiza"},{"id":384,"name":"Siria"},{"id":386,"name":"Taiwán"},{"id":262,"name":"Tayikistán"},{"id":470,"name":"Tanzania"},{"id":507,"name":"Provincia de Temotu"},{"id":387,"name":"Tailandia"},{"id":422,"name":"Gambia"},{"id":511,"name":"Timor-Leste"},{"id":483,"name":"Togo"},{"id":270,"name":"Tokelau"},{"id":160,"name":"Tonga"},{"id":273,"name":"Trindade y Martín Vaz"},{"id":90,"name":"Trinidad y Tobago"},{"id":274,"name":"Tristán de Acuña e islas Gough"},{"id":276,"name":"Isla Tromelin"},{"id":474,"name":"Túnez"},{"id":390,"name":"Turquía"},{"id":280,"name":"Turkmenistán"},{"id":89,"name":"Islas Turcas y Caicos"},{"id":282,"name":"Tuvalu"},{"id":285,"name":"Islas Vírgenes de EE. UU."},{"id":286,"name":"Uganda"},{"id":288,"name":"Ucrania"},{"id":391,"name":"Emiratos Árabes Unidos"},{"id":289,"name":"Sede de las Naciones Unidas"},{"id":291,"name":"Estados Unidos"},{"id":144,"name":"Uruguay"},{"id":292,"name":"Uzbekistán"},{"id":158,"name":"Vanuatu"},{"id":295,"name":"Ciudad del Vaticano"},{"id":148,"name":"Venezuela"},{"id":293,"name":"Vietnam"},{"id":297,"name":"Isla Wake"},{"id":294,"name":"Gales"},{"id":298,"name":"Wallis y Futuna"},{"id":299,"name":"Malasia Occidental"},{"id":302,"name":"Sáhara Occidental"},{"id":303,"name":"Isla Willis"},{"id":492,"name":"Yemen"},{"id":482,"name":"Zambia"},{"id":452,"name":"Zimbabue"},{"id":5,"name":"Islas Aland"}]};
+
+// Lector de registros ADIF compartido por el Libro de Guardia y last5.html.
+function parseAdifRecords(text) {
+  const records = [];
+  const body = text.split(/<eoh\s*>/i).pop();
+  for (const part of body.split(/<eor\s*>/i)) {
+    const record = {};
+    const pattern = /<([^:>]+):(\d+)(?::[^>]*)?>/gi;
+    let match;
+    while ((match = pattern.exec(part))) {
+      const end = pattern.lastIndex + Number(match[2]);
+      record[match[1].toLowerCase()] = part.slice(pattern.lastIndex, end).trim();
+      pattern.lastIndex = end;
+    }
+    if (record.call) records.push(record);
+  }
+  return records;
+}
+
+const last5Rows = document.querySelector('#last5-rows');
+const adifUrl = 'https://lu1idc.com.ar/datos/contactos.adi';
+const last5Countries = new Map(DXCC_DATA.entities.map(entity => [String(entity.id), entity.name]));
+
+function qsoTimestamp(record) {
+  const date = record.qso_date || '';
+  const time = record.time_on || '';
+  if (!/^\d{8}$/.test(date) || !/^\d{4}(?:\d{2})?$/.test(time)) return null;
+  const year = Number(date.slice(0, 4));
+  const month = Number(date.slice(4, 6));
+  const day = Number(date.slice(6, 8));
+  const hour = Number(time.slice(0, 2));
+  const minute = Number(time.slice(2, 4));
+  const second = Number(time.slice(4, 6) || 0);
+  const timestamp = Date.UTC(year, month - 1, day, hour, minute, second);
+  const parsed = new Date(timestamp);
+  return parsed.getUTCFullYear() === year && parsed.getUTCMonth() + 1 === month &&
+    parsed.getUTCDate() === day && parsed.getUTCHours() === hour &&
+    parsed.getUTCMinutes() === minute && parsed.getUTCSeconds() === second ? timestamp : null;
+}
+
+function qsoRow(record) {
+  const row = document.createElement('tr');
+  const date = record.qso_date;
+  const time = record.time_on;
+  const values = [
+    `${date.slice(6, 8)}/${date.slice(4, 6)}/${date.slice(0, 4)} ${time.slice(0, 2)}:${time.slice(2, 4)}`,
+    record.call || '—',
+    (record.band || '—').toUpperCase(),
+    (record.mode || '—').toUpperCase(),
+    last5Countries.get(String(record.dxcc)) || '—'
+  ];
+  values.forEach((value, index) => {
+    const cell = row.insertCell();
+    cell.textContent = value;
+    cell.title = value;
+    if (index === 1) cell.className = 'call';
+  });
+  return row;
+}
+
+function showLast5Message(message) {
+  last5Rows.replaceChildren();
+  for (let index = 0; index < 5; index++) {
+    const row = last5Rows.insertRow();
+    const cell = row.insertCell();
+    cell.colSpan = 5;
+    if (index === 0) {
+      cell.className = 'message';
+      cell.textContent = message;
+    }
+  }
+}
+
+async function loadLast5() {
+  try {
+    const response = await fetch(adifUrl, {cache: 'no-store'});
+    if (!response.ok) throw new Error(`ADIF HTTP ${response.status}`);
+    const records = parseAdifRecords(await response.text())
+      .map(record => ({record, timestamp: qsoTimestamp(record)}))
+      .filter(item => item.timestamp !== null)
+      .sort((a, b) => b.timestamp - a.timestamp)
+      .slice(0, 5);
+    if (!records.length) {
+      showLast5Message('Aún no hay contactos disponibles.');
+      return;
+    }
+    last5Rows.replaceChildren(...records.map(item => qsoRow(item.record)));
+    for (let index = records.length; index < 5; index++) {
+      const row = last5Rows.insertRow();
+      const cell = row.insertCell();
+      cell.colSpan = 5;
+    }
+  } catch (error) {
+    showLast5Message('No se pudieron cargar los contactos en este momento.');
+    console.error('Error cargando ADIF:', error);
+  }
+}
+
+loadLast5();
+  </script>
 </body>
 </html>
