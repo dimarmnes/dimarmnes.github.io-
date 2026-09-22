@@ -1,5 +1,5 @@
 {
-  "total": 5093,
+  "total": 5095,
   "totalPages": 392,
   "pages": [
     {
@@ -21,11 +21,11 @@
         {
           "gridsquare": "GG66TA",
           "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "+01",
           "mode": "FT8",
           "rst_sent": "-10",
           "dxcc": "108",
-          "eqsl_qsl_rcvd": "Y",
           "call": "PY2DPM",
           "band": "40m",
           "qso_date": "20260908",
@@ -58,6 +58,7 @@
         },
         {
           "gridsquare": "GF05SJ",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "-15",
           "mode": "FT8",
           "rst_sent": "-15",
@@ -70,11 +71,11 @@
         },
         {
           "gridsquare": "FF57NA",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "-13",
           "mode": "FT8",
           "rst_sent": "-06",
           "dxcc": "100",
-          "eqsl_qsl_rcvd": "Y",
           "call": "LU7MFB",
           "band": "40m",
           "qso_date": "20260908",
@@ -83,11 +84,11 @@
         },
         {
           "gridsquare": "GF12AF",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "-13",
           "mode": "FT8",
           "rst_sent": "-09",
           "dxcc": "100",
-          "eqsl_qsl_rcvd": "Y",
           "call": "LW7ECN",
           "band": "40m",
           "qso_date": "20260909",
@@ -110,12 +111,12 @@
         {
           "gridsquare": "FF95NF",
           "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "59",
           "submode": "LSB",
           "mode": "SSB",
           "rst_sent": "59",
           "dxcc": "100",
-          "eqsl_qsl_rcvd": "Y",
           "call": "LW8DLF",
           "band": "40m",
           "qso_date": "20260910",
@@ -124,12 +125,12 @@
         },
         {
           "gridsquare": "GF01KW",
+          "qsl_rcvd": "Y",
           "rst_rcvd": "-08",
           "mode": "FT8",
           "rst_sent": "-11",
           "dxcc": "100",
           "call": "LP2E",
-          "qsl_rcvd": "Y",
           "band": "40m",
           "qso_date": "20260910",
           "time_on": "213532",
@@ -150,6 +151,8 @@
         },
         {
           "gridsquare": "GF11BR",
+          "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "-05",
           "mode": "FT8",
           "rst_sent": "-12",
@@ -191,14 +194,14 @@
         },
         {
           "gridsquare": "GF15",
+          "qsl_rcvd": "Y",
           "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "-12",
           "mode": "FT8",
           "rst_sent": "-07",
           "dxcc": "100",
-          "eqsl_qsl_rcvd": "Y",
           "call": "LW3ESC",
-          "qsl_rcvd": "Y",
           "band": "40m",
           "qso_date": "20260910",
           "time_on": "214615",
@@ -206,11 +209,11 @@
         },
         {
           "gridsquare": "GF05TE",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "-08",
           "mode": "FT8",
           "rst_sent": "-11",
           "dxcc": "100",
-          "eqsl_qsl_rcvd": "Y",
           "call": "L64D",
           "band": "40m",
           "qso_date": "20260910",
@@ -231,11 +234,11 @@
         },
         {
           "gridsquare": "FF45NO",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "-13",
           "mode": "FT8",
           "rst_sent": "-16",
           "dxcc": "112",
-          "eqsl_qsl_rcvd": "Y",
           "call": "CE4JVU",
           "band": "40m",
           "qso_date": "20260910",
@@ -283,6 +286,8 @@
         },
         {
           "gridsquare": "FF95MK",
+          "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "59",
           "submode": "LSB",
           "mode": "SSB",
@@ -353,6 +358,8 @@
       "records": [
         {
           "gridsquare": "FF97NC",
+          "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "59",
           "submode": "LSB",
           "mode": "SSB",
@@ -431,6 +438,7 @@
         },
         {
           "gridsquare": "GF25DF",
+          "lotw_qsl_rcvd": "Y",
           "rst_rcvd": "59",
           "submode": "LSB",
           "mode": "SSB",
@@ -444,6 +452,8 @@
         },
         {
           "gridsquare": "GF05RJ",
+          "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "59",
           "submode": "LSB",
           "mode": "SSB",
@@ -526,7 +536,8 @@
       "number": 392,
       "records": [
         {
-          "gridsquare": "GF37MC",
+          "gridsquare": "GF38WE",
+          "lotw_qsl_rcvd": "Y",
           "rst_rcvd": "59",
           "submode": "LSB",
           "mode": "SSB",
@@ -566,6 +577,7 @@
         },
         {
           "gridsquare": "FF93KS",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "59",
           "submode": "LSB",
           "mode": "SSB",
@@ -630,6 +642,7 @@
         },
         {
           "gridsquare": "FG92PK",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "-15",
           "mode": "FT8",
           "rst_sent": "-08",
@@ -642,6 +655,8 @@
         },
         {
           "gridsquare": "FF77TN",
+          "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "-12",
           "mode": "FT8",
           "rst_sent": "-04",
@@ -650,6 +665,34 @@
           "band": "40m",
           "qso_date": "20260914",
           "time_on": "010131",
+          "new_dxcc": false
+        },
+        {
+          "gridsquare": "GF05TJ",
+          "rst_rcvd": "59",
+          "submode": "LSB",
+          "mode": "SSB",
+          "rst_sent": "59",
+          "dxcc": "100",
+          "call": "LU2CN",
+          "band": "40m",
+          "qso_date": "20260920",
+          "time_on": "213400",
+          "new_dxcc": false
+        },
+        {
+          "gridsquare": "FF93KS",
+          "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
+          "rst_rcvd": "59",
+          "submode": "LSB",
+          "mode": "SSB",
+          "rst_sent": "59",
+          "dxcc": "100",
+          "call": "LW6DIV",
+          "band": "40m",
+          "qso_date": "20260921",
+          "time_on": "220944",
           "new_dxcc": false
         }
       ]
