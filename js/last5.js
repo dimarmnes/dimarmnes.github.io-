@@ -1,4 +1,5 @@
 const last5Rows = document.querySelector('#last5-rows');
+const adifUrl = 'https://lu1idc.com.ar/datos/contactos.adi';
 const last5Countries = new Map(DXCC_DATA.entities.map(entity => [String(entity.id), entity.name]));
 
 function qsoTimestamp(record) {
@@ -53,7 +54,7 @@ function showLast5Message(message) {
 
 async function loadLast5() {
   try {
-    const response = await fetch('datos/contactos.adi', {cache: 'no-store'});
+    const response = await fetch(adifUrl, {cache: 'no-store'});
     if (!response.ok) throw new Error(`ADIF HTTP ${response.status}`);
     const records = parseAdifRecords(await response.text())
       .map(record => ({record, timestamp: qsoTimestamp(record)}))
@@ -72,7 +73,7 @@ async function loadLast5() {
     }
   } catch (error) {
     showLast5Message('No se pudieron cargar los contactos en este momento.');
-    console.warn('last5: error al cargar el ADIF', error);
+    console.error('Error cargando ADIF:', error);
   }
 }
 
