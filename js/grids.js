@@ -427,7 +427,7 @@ function initDeskC() {
     frame = 0;
     if (disposed || !visible || document.hidden) { previousTime = 0; return; }
     const delta = Math.min((time-previousTime)/1000 || 0, .05); previousTime = time;
-    if (state.rotate && !reducedMotion.matches && !dragging) spinGroup.rotation.y += delta * .1;
+    if (state.rotate && !dragging) spinGroup.rotation.y += delta * .1;
     renderer.render(scene, camera);
     frame = requestAnimationFrame(animate);
   }
@@ -470,8 +470,7 @@ const observer = new IntersectionObserver(entries => {
   if (visible) deskC?.resume(); else {cancelAnimationFrame(frame);frame=0;}
 });
 nativeListen(document,'visibilitychange',()=> {if(!document.hidden) deskC?.resume();});
-nativeListen(document.querySelector('#rotate-toggle'),'change',event=> {state.rotate=event.target.checked;});
-nativeListen(reducedMotion,'change',()=> {if(reducedMotion.matches){state.rotate=false;document.querySelector('#rotate-toggle').checked=false;}});
+nativeListen(document.querySelector('#rotate-toggle'),'change',event=> {state.rotate=event.target.checked;if(state.rotate)deskC?.resume();});
 nativeListen(document.querySelector('#confirmed-toggle'),'change',event=> {state.confirmedOnly=event.target.checked;deskC?.rebuild();});
 const panelsThemeToggle = document.querySelector('#panels-theme-toggle');
 function setPanelsTheme(dark) {

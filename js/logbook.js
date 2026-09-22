@@ -6,6 +6,7 @@ const rowsPerPage = LOGBOOK_PAGE_SIZE;
 let logbookData = buildLocalNewestSample(window.LOGBOOK_SAMPLE);
 let pageFlip;
 let pageCopyObserver;
+let returnToDeskAfterFlip = false;
 let searchEntries=[];
 let pendingSearchHit=null;
 let searchHighlightTimer;
@@ -81,11 +82,15 @@ function sheetHtml(page){return `<article class="book-page"><div class="paper-sh
 function buildBook(){
   bookElement.innerHTML=`<div class="book-page book-cover" data-density="hard" role="button" tabindex="0" aria-label="Abrir el Libro de Guardia"><img src="images/logbook/lu1idc-portada-logbook.svg" alt="Portada del Libro de Guardia de LU1IDC"></div>${logbookData.pages.map(sheetHtml).join('')}`;
   const compactView=matchMedia('(max-width:700px)').matches;
-  pageFlip=new St.PageFlip(bookElement,{width:794,height:559,size:'stretch',minWidth:compactView?260:460,maxWidth:900,minHeight:compactView?183:324,maxHeight:634,drawShadow:true,maxShadowOpacity:.42,flippingTime:matchMedia('(prefers-reduced-motion: reduce)').matches?80:900,usePortrait:true,showCover:true,autoSize:true,mobileScrollSupport:false,clickEventForward:true});
+  pageFlip=new St.PageFlip(bookElement,{width:794,height:559,size:'stretch',minWidth:compactView?260:460,maxWidth:900,minHeight:compactView?183:324,maxHeight:634,drawShadow:true,maxShadowOpacity:.42,flippingTime:matchMedia('(prefers-reduced-motion: reduce)').matches?280:900,usePortrait:true,showCover:true,autoSize:true,mobileScrollSupport:false,clickEventForward:true});
   pageFlip.on('flip', event => {
     document.querySelector('#book-wrap').classList.remove('is-turning');
     updateControls(event);
     revealPendingSearchHit();
+    if (returnToDeskAfterFlip && pageFlip.getCurrentPageIndex() === 0) {
+      returnToDeskAfterFlip = false;
+      showDeskView();
+    }
   });
   pageFlip.on('changeState', event => {
     const moving = event.data === 'user_fold' || event.data === 'flipping';
@@ -244,9 +249,8 @@ document.querySelector('#book-pickup').addEventListener('click',showReadingView)
 document.querySelector('#book-desk-return').addEventListener('click',()=>{
   if(!pageFlip)return;
   if(pageFlip.getCurrentPageIndex()===0){showDeskView();return;}
+  returnToDeskAfterFlip = true;
   pageFlip.flip(0,'top');
-  const delay=matchMedia('(prefers-reduced-motion: reduce)').matches?120:950;
-  setTimeout(showDeskView,delay);
 });
 function goToLogicalPage(number){
   const pageIndex=logbookData.pages.findIndex(page=>page.number===Number(number));
