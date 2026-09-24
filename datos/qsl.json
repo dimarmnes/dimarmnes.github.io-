@@ -20,6 +20,26 @@
     "mode": "FT8"
   },
   {
+    "src": "images/qsl/recibidas/2026/20260830_LU7FL_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20260830",
+    "year": "2026",
+    "title": "LU7FL",
+    "call": "LU7FL",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20260830_LU8AJM_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20260830",
+    "year": "2026",
+    "title": "LU8AJM",
+    "call": "LU8AJM",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
     "src": "images/qsl/recibidas/2026/20260824_LU2FBD_40M_FT8.jpg",
     "type": "recibidas",
     "date": "20260824",

@@ -3424,7 +3424,7 @@
     {
       "locator": "FF75",
       "place": "FF75",
-      "qsos": 63,
+      "qsos": 64,
       "confirmed": true,
       "calls": [
         "LU9SMG",
@@ -3472,7 +3472,8 @@
         "LU3JGA",
         "LU5ELY",
         "LT5K",
-        "LW9HZI"
+        "LW9HZI",
+        "LU9ESA"
       ],
       "modes": [
         "SSB",
@@ -15449,8 +15450,20 @@
       "modes": [
         "FT8"
       ]
+    },
+    {
+      "locator": "GF48",
+      "place": "GF48",
+      "qsos": 1,
+      "confirmed": false,
+      "calls": [
+        "ZW3DIB"
+      ],
+      "modes": [
+        "SSB"
+      ]
     }
   ],
-  "total": 5095,
-  "located": 5014
+  "total": 5097,
+  "located": 5016
 }
