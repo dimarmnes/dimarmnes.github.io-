@@ -1,0 +1,80 @@
+[
+  {
+    "fecha": "2026-09",
+    "categoria": "Web",
+    "titulo": "Una nueva casa para LU1IDC",
+    "texto": "Publiqué una nueva versión del sitio. El álbum DXCC, el globo de grillas y el libro de guardia forman ahora parte de una página renovada que conserva su espíritu lupinero."
+  },
+  {
+    "fecha": "2026-09-22",
+    "categoria": "Estación",
+    "titulo": "Un rincón para salir al aire",
+    "texto": "Entre cables, radio y proyectos, la estación va tomando forma. Cada cambio trae una excusa para seguir experimentando.",
+    "imagen": "images/estacion/puesto-operacion.png",
+    "pie_imagen": "Una vista del shack",
+    "enlace": "estacion.html",
+    "texto_enlace": "Recorrer la estación"
+  },
+  {
+    "fecha": "2026-09-10",
+    "categoria": "Software",
+    "titulo": "Conversaciones con el libro de guardia",
+    "texto": "Probé el servidor MCP de QLog: ahora puedo hacerle preguntas al log y descubrir detalles que antes se perdían entre los registros.",
+    "enlace": "software.html",
+    "texto_enlace": "Ver el software"
+  },
+  {
+    "fecha": "2026-08-10",
+    "categoria": "Proyectos",
+    "titulo": "Una QSL después del contacto",
+    "texto": "QSLet sigue creciendo para que cada QSO pueda tener su saludo digital, hecho con el estilo de la estación.",
+    "enlace": "software.html#qslet",
+    "texto_enlace": "Conocer QSLet"
+  },
+  {
+    "fecha": "2003-10-26",
+    "categoria": "Estación",
+    "titulo": "Mi primer contacto",
+    "texto": "Con mi licencia recién obtenida y una radio prestada, hice mi primer contacto como radioaficionado en la banda de 2 metros. Fue una salida al aire modesta, pero para mí significó empezar por fin a usar mi propia distintiva."
+  },
+  {
+    "fecha": "2024-01-08",
+    "categoria": "Estación",
+    "titulo": "Primera vez en HF",
+    "texto": "Después de tantos años, llegó mi primer contacto en HF. Fue en la banda de 40 metros: una nueva etapa de la radioafición que había esperado mucho tiempo para vivir."
+  },
+  {
+    "fecha": "2024-01-24",
+    "categoria": "Estación",
+    "titulo": "Mi primer DX",
+    "texto": "En 10 metros hice mi primer contacto con Rusia y, con él, mi primer DX. Hasta entonces esa distancia era algo que veía en mapas y registros; ese día hubo otra estación al otro lado."
+  },
+  {
+    "fecha": "2024-01-12",
+    "categoria": "Estación",
+    "titulo": "Primer contacto por satélite",
+    "texto": "Mi primer contacto por satélite llegó a través del SO-50. Una forma distinta de salir al aire, siguiendo el paso del satélite y aprovechando esos minutos en que las estaciones pueden encontrarse."
+  },
+  {
+    "fecha": "2023-11",
+    "categoria": "Estación",
+    "titulo": "Llega el FT-747GX",
+    "texto": "Veinte años después de obtener mi licencia, llegó a la estación mi primer equipo de HF: un Yaesu FT-747GX. Con la radio en casa, el regreso al aire empezaba a tomar forma. Faltaba preparar la antena y hacer el primer contacto.",
+    "imagen": "images/estacion/FT747-llega.jpg",
+    "pie_imagen": "Yaesu FT-747"
+  },
+  {
+    "fecha": "2023-12",
+    "categoria": "Estación",
+    "titulo": "Preparando la antena",
+    "texto": "El FT-747GX ya estaba en casa, pero faltaba preparar la antena para salir en HF. En diciembre tocó trabajar en el patio: mástil, cables y todo lo necesario para empezar a montar la estación. El primer contacto llegaría al mes siguiente.",
+    "imagen": "images/estacion/preparando-mastil.jpg"
+  },
+  {
+    "fecha": "2024-01-03",
+    "categoria": "Estación",
+    "titulo": "Mi primera antena de HF",
+    "texto": "Quedó lista mi primera antena de HF: un fan dipolo que construí para las bandas de 40, 20 y 10 metros. Después de preparar el mástil y trabajar en el patio, por fin tenía cómo poner el FT-747GX en el aire. Faltaba hacer el primer contacto.",
+    "imagen": "images/estacion/sh_fan_dipole.jpg"
+  }
+]

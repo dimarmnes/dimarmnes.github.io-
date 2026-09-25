@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/alternativo.css">
     <link rel="stylesheet" href="css/cabecera.css">
     <link rel="stylesheet" href="css/pie.css">
+    <link rel="stylesheet" href="css/bitacora.css">
   </head>
   <body id="top">
     <div class="site">
@@ -74,25 +75,68 @@
             </figcaption>
           </figure>
         </section>
-        <section class="story" id="historia">
-          <header>
-            <p class="label">
-              Acerca de mí
-            </p>
-            <h2>
-              Un sueño que empezó con una revista
-            </h2>
-          </header>
-          <div>
-            <p>
-              “Lupinero” desde los años 80, la revista me llevó al aeromodelismo, la astronomía, el campismo, la electrónica y muchas otras actividades. Pero algo había quedado pendiente: entrar en el mundo de los radioaficionados.
-            </p>
-            <p>
-              Obtuve mi licencia en 2003. Veinte años después pude armar una estación operativa y salir al aire. Este sitio reúne ese camino, los contactos y las cosas que voy descubriendo.
-            </p>
-            <small>Sueño cumplido · Diciembre de 2023</small>
-          </div>
-        </section>
+        <div class="story-notebook">
+          <section class="story" id="historia">
+            <header>
+              <p class="label">
+                Acerca de mí
+              </p>
+              <h2>
+                Un sueño que empezó con una revista
+              </h2>
+            </header>
+            <div>
+              <p>
+                “Lupinero” desde los años 80, la revista me llevó al aeromodelismo, la astronomía, el campismo, la electrónica y muchas otras actividades. Pero algo había quedado pendiente: entrar en el mundo de los radioaficionados.
+              </p>
+              <p>
+                Obtuve mi licencia en 2003. Veinte años después pude armar una estación operativa y salir al aire. Este sitio reúne ese camino, los contactos y las cosas que voy descubriendo.
+              </p>
+              <small>Sueño cumplido · Diciembre de 2023</small>
+            </div>
+          </section>
+          <aside class="notebook" aria-labelledby="notebook-title">
+            <div class="notebook-head">
+              <p class="notebook-kicker">Desde el shack · LU1IDC</p>
+              <h2 id="notebook-title"><a href="bitacora.html">Del cuaderno<br>de LU1IDC</a></h2>
+              <p>Pequeñas historias de la estación.</p>
+            </div>
+            <div class="notebook-list" tabindex="0" role="region" aria-label="Entradas de la bitácora; desplazarse para leer más">
+              <!-- BITACORA_PORTADA_INICIO -->
+              <article class="note">
+                <div class="note-meta"><time datetime="2026-09">SEP 2026</time><span>Web</span></div>
+                <h3>Una nueva casa para LU1IDC</h3>
+                <p>Publiqué una nueva versión del sitio. El álbum DXCC, el globo de grillas y el libro de guardia forman ahora parte de una página renovada que conserva su espíritu lupinero.</p>
+              </article>
+              <article class="note">
+                <div class="note-meta"><time datetime="2026-09-22">22 SEP 2026</time><span>Estación</span></div>
+                <h3>Un rincón para salir al aire</h3>
+                <figure>
+                  <img src="images/estacion/puesto-operacion.png" alt="Una vista del shack" loading="lazy">
+                  <figcaption>Una vista del shack</figcaption>
+                </figure>
+                <p>Entre cables, radio y proyectos, la estación va tomando forma. Cada cambio trae una excusa para seguir experimentando.</p>
+              </article>
+              <article class="note">
+                <div class="note-meta"><time datetime="2026-09-10">10 SEP 2026</time><span>Software</span></div>
+                <h3>Conversaciones con el libro de guardia</h3>
+                <p>Probé el servidor MCP de QLog: ahora puedo hacerle preguntas al log y descubrir detalles que antes se perdían entre los registros.</p>
+              </article>
+              <article class="note">
+                <div class="note-meta"><time datetime="2026-08-10">10 AGO 2026</time><span>Proyectos</span></div>
+                <h3>Una QSL después del contacto</h3>
+                <p>QSLet sigue creciendo para que cada QSO pueda tener su saludo digital, hecho con el estilo de la estación.</p>
+              </article>
+              <article class="note">
+                <div class="note-meta"><time datetime="2024-01-24">24 ENE 2024</time><span>Estación</span></div>
+                <h3>Mi primer DX</h3>
+                <p>En 10 metros hice mi primer contacto con Rusia y, con él, mi primer DX. Hasta entonces esa distancia era algo que veía en mapas y registros; ese día hubo otra estación al otro lado.</p>
+              </article>
+        <!-- BITACORA_PORTADA_FIN -->
+            </div>
+            <p class="notebook-tail"><span>Deslizá para leer más ↓</span><a href="bitacora.html">Ver toda la bitácora →</a></p>
+          </aside>
+        </div>
         <section class="onair">
           <div>
             <p class="eyebrow">
@@ -144,7 +188,7 @@
           </header>
           <div class="station">
             <a class="photo" href="estacion.html">
-              <img src="images/rig/sh_station_01.jpg" alt="Estación de radio LU1IDC">
+              <img src="images/estacion/sh_station_01.jpg" alt="Estación de radio LU1IDC">
               <span>
                 <b>El shack</b>
                 Equipos, antenas y proyectos

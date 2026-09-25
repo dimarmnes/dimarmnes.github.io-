@@ -1,0 +1,219 @@
+/* Cuaderno editorial de la portada. */
+.story-notebook {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(290px, .75fr);
+  gap: clamp(24px, 4vw, 60px);
+  align-items: start;
+  padding: 84px 0 95px;
+  border-top: 1px solid var(--line);
+}
+
+.story-notebook .story {
+  display: block;
+  padding: 12px 0 0;
+  border: 0;
+}
+
+.story-notebook .story h2 {
+  max-width: 660px;
+}
+
+.story-notebook .story > div {
+  max-width: 630px;
+  margin-top: 28px;
+}
+
+.notebook {
+  position: relative;
+  min-width: 0;
+  padding: 23px 27px 18px;
+  color: #26303a;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 30px, #9f8a6750 31px, transparent 32px),
+    #eee5d3;
+  box-shadow: 8px 11px 0 #0c1117, 0 22px 45px #0005;
+  transform: rotate(.45deg);
+}
+
+.notebook::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 11px;
+  width: 1px;
+  background: #b7796475;
+  pointer-events: none;
+}
+
+.notebook::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-top: 1px solid #786e5b50;
+  border-right: 1px solid #786e5b50;
+  pointer-events: none;
+}
+
+.notebook-head {
+  padding: 1px 0 12px;
+  border-bottom: 2px solid #2b3b43;
+}
+
+.notebook-kicker,
+.note-meta {
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.notebook-kicker {
+  margin: 0;
+  color: #956c31;
+  font-size: .59rem;
+}
+
+.notebook h2 {
+  margin: 7px 0 3px;
+  font: italic clamp(1.9rem, 2.7vw, 2.55rem)/1.05 Georgia, serif;
+  letter-spacing: -.035em;
+}
+
+.notebook h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.notebook h2 a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.notebook-head > p:last-child {
+  margin: 0;
+  color: #665b50;
+  font: italic .87rem Georgia, serif;
+}
+
+.notebook-list {
+  height: 305px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 11px 0 0;
+  scrollbar-width: thin;
+  scrollbar-color: #927c5d #e2d6bf;
+}
+
+.notebook-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.notebook-list::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #927c5d;
+}
+
+.notebook-list::-webkit-scrollbar-track {
+  background: #e2d6bf;
+}
+
+.notebook-list:focus-visible {
+  outline: 2px solid #285777;
+  outline-offset: 2px;
+}
+
+.note {
+  padding: 17px 0;
+  border-bottom: 1px solid #8e826d6b;
+}
+
+.note-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #7c6a55;
+  font-size: .55rem;
+}
+
+.note-meta span {
+  color: #2f6076;
+}
+
+.note h3 {
+  margin: 9px 0 8px;
+  font: 700 1.17rem/1.17 Georgia, serif;
+  letter-spacing: -.02em;
+}
+
+.note p {
+  margin: 8px 0 0;
+  color: #3d4344;
+  font: .87rem/1.5 Georgia, serif;
+}
+
+.note figure {
+  margin: 13px 0 10px;
+  padding: 6px 6px 4px;
+  background: #fffaf0;
+  box-shadow: 1px 3px 7px #55483150;
+  transform: rotate(-1deg);
+}
+
+.note img {
+  display: block;
+  width: 100%;
+  max-height: 145px;
+  object-fit: cover;
+}
+
+.note figcaption {
+  padding: 6px 2px 2px;
+  color: #6c6459;
+  font: italic .68rem Georgia, serif;
+}
+
+.notebook-tail {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 0;
+  color: #7f6143;
+  font: italic .75rem Georgia, serif;
+}
+
+.notebook-tail a {
+  color: #315c70;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: .67rem;
+  font-style: normal;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.notebook-tail a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 790px) {
+  .story-notebook {
+    grid-template-columns: 1fr;
+    padding: 65px 0 80px;
+  }
+
+  .story-notebook .story {
+    padding: 0;
+  }
+
+  .story-notebook .story > div {
+    margin-top: 20px;
+  }
+
+  .notebook {
+    width: min(100%, 540px);
+    margin: 0 auto;
+    padding: 25px 27px;
+  }
+}
