@@ -1,5 +1,5 @@
 {
-  "total": 5129,
+  "total": 5132,
   "totalPages": 395,
   "pages": [
     {
@@ -199,6 +199,7 @@
         },
         {
           "gridsquare": "GF05PM",
+          "qsl_rcvd": "Y",
           "rst_rcvd": "-14",
           "mode": "FT8",
           "rst_sent": "-14",
@@ -235,6 +236,7 @@
         },
         {
           "gridsquare": "GF05RM",
+          "qsl_rcvd": "Y",
           "rst_rcvd": "-11",
           "mode": "FT8",
           "rst_sent": "-13",
@@ -547,6 +549,9 @@
         },
         {
           "gridsquare": "FF97SW",
+          "qsl_rcvd": "Y",
+          "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "59",
           "mode": "FM",
           "rst_sent": "59",
@@ -599,6 +604,9 @@
           "new_dxcc": false
         },
         {
+          "gridsquare": "GG22SD",
+          "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
           "rst_rcvd": "59",
           "mode": "FM",
           "rst_sent": "59",
@@ -608,6 +616,48 @@
           "band": "2m",
           "qso_date": "20260927",
           "time_on": "000700",
+          "new_dxcc": false
+        },
+        {
+          "gridsquare": "FF96AG",
+          "rst_rcvd": "59",
+          "mode": "FM",
+          "rst_sent": "59",
+          "dxcc": "100",
+          "sat_name": "AO-123",
+          "call": "LU3FCA",
+          "band": "2m",
+          "qso_date": "20260927",
+          "time_on": "130800",
+          "new_dxcc": false
+        },
+        {
+          "gridsquare": "GF02KQ",
+          "lotw_qsl_rcvd": "Y",
+          "rst_rcvd": "59",
+          "mode": "FM",
+          "rst_sent": "59",
+          "dxcc": "100",
+          "sat_name": "AO-123",
+          "call": "LU4DPO",
+          "band": "2m",
+          "qso_date": "20260927",
+          "time_on": "130800",
+          "new_dxcc": false
+        },
+        {
+          "gridsquare": "GG22IJ",
+          "lotw_qsl_rcvd": "Y",
+          "eqsl_qsl_rcvd": "Y",
+          "rst_rcvd": "59",
+          "mode": "FM",
+          "rst_sent": "59",
+          "dxcc": "100",
+          "sat_name": "AO-123",
+          "call": "LU9IBO",
+          "band": "2m",
+          "qso_date": "20260927",
+          "time_on": "130800",
           "new_dxcc": false
         }
       ]

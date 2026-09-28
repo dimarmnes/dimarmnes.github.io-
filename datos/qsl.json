@@ -1,5 +1,15 @@
 [
   {
+    "src": "images/qsl/recibidas/2026/20260927_LU1JCJ_2M_FM_SAT.jpg",
+    "type": "recibidas",
+    "date": "20260927",
+    "year": "2026",
+    "title": "LU1JCJ",
+    "call": "LU1JCJ",
+    "band": "2M",
+    "mode": "FM"
+  },
+  {
     "src": "images/qsl/recibidas/2026/eQSL/20260926_EA3DYI_10M_FT8.jpg",
     "type": "recibidas",
     "date": "20260926",
@@ -67,6 +77,26 @@
     "title": "TA4SSK",
     "call": "TA4SSK",
     "band": "10M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20260925_LU2EH_40M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20260925",
+    "year": "2026",
+    "title": "LU2EH",
+    "call": "LU2EH",
+    "band": "40M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20260924_LU9DUV_40M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20260924",
+    "year": "2026",
+    "title": "LU9DUV",
+    "call": "LU9DUV",
+    "band": "40M",
     "mode": "FT8"
   },
   {

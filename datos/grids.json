@@ -3,7 +3,7 @@
     {
       "locator": "GG22",
       "place": "GG22",
-      "qsos": 62,
+      "qsos": 64,
       "confirmed": true,
       "calls": [
         "LU5IBR",
@@ -33,7 +33,8 @@
         "LU1IJT",
         "LU1IYL",
         "LU4IDV",
-        "LU7IMC"
+        "LU7IMC",
+        "PY3/LU9IMM"
       ],
       "modes": [
         "FM",
@@ -120,7 +121,7 @@
     {
       "locator": "FF96",
       "place": "FF96",
-      "qsos": 41,
+      "qsos": 42,
       "confirmed": true,
       "calls": [
         "LU3FCA",
@@ -3696,7 +3697,7 @@
     {
       "locator": "GF02",
       "place": "GF02",
-      "qsos": 14,
+      "qsos": 15,
       "confirmed": true,
       "calls": [
         "LU6DAJ",
@@ -3707,11 +3708,13 @@
         "LP1D",
         "LW2EE",
         "LW2DAA",
-        "LU5DF"
+        "LU5DF",
+        "LU4DPO"
       ],
       "modes": [
         "SSB",
-        "FT8"
+        "FT8",
+        "FM"
       ]
     },
     {
@@ -15554,6 +15557,6 @@
       ]
     }
   ],
-  "total": 5129,
-  "located": 5043
+  "total": 5132,
+  "located": 5047
 }
