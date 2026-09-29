@@ -222,6 +222,7 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    transition:filter .18s ease;
   }
 
   .stamp{
@@ -411,20 +412,31 @@
 
 .album-shell{max-width:1180px;margin:auto;padding:0 22px}
 
-/* Borde compatible con Firefox: evita artefactos de mask + filter + transform. */
+/* Dentado compatible con Firefox: la máscara se usa sin filtros ni rotaciones. */
 .stamp{
-  border:5px dotted #d8cdb9;
-  padding:17px 8px 13px;
+  border:0;
+  padding:22px 13px 18px;
   box-shadow:2px 4px 7px rgba(73,58,34,.18);
   filter:none;
-  -webkit-mask:none;
-  mask:none;
-  transition:box-shadow .18s ease,opacity .18s ease;
+  -webkit-mask:
+    linear-gradient(#000 0 0) no-repeat center / calc(100% - 10px) calc(100% - 10px),
+    radial-gradient(circle 3px at 50% 0,#0000 96%,#000 100%) top / 10px 6px repeat-x,
+    radial-gradient(circle 3px at 50% 100%,#0000 96%,#000 100%) bottom / 10px 6px repeat-x,
+    radial-gradient(circle 3px at 0 50%,#0000 96%,#000 100%) left / 6px 10px repeat-y,
+    radial-gradient(circle 3px at 100% 50%,#0000 96%,#000 100%) right / 6px 10px repeat-y;
+  mask:
+    linear-gradient(#000 0 0) no-repeat center / calc(100% - 10px) calc(100% - 10px),
+    radial-gradient(circle 3px at 50% 0,#0000 96%,#000 100%) top / 10px 6px repeat-x,
+    radial-gradient(circle 3px at 50% 100%,#0000 96%,#000 100%) bottom / 10px 6px repeat-x,
+    radial-gradient(circle 3px at 0 50%,#0000 96%,#000 100%) left / 6px 10px repeat-y,
+    radial-gradient(circle 3px at 100% 50%,#0000 96%,#000 100%) right / 6px 10px repeat-y;
+  transition:transform .18s ease,box-shadow .18s ease,opacity .18s ease;
 }
 .stamp-wrap:nth-child(5n+2) .stamp,
 .stamp-wrap:nth-child(7n+3) .stamp,
 .stamp-wrap:nth-child(11n+5) .stamp{transform:none}
-.stamp-wrap:hover .stamp{transform:none;filter:none;box-shadow:4px 8px 12px rgba(73,58,34,.24)}
+.stamp-wrap:hover{z-index:2;filter:drop-shadow(4px 8px 6px rgba(73,58,34,.24))}
+.stamp-wrap:hover .stamp{transform:translateY(-3px) scale(1.035);filter:none;box-shadow:none}
 .stamp.needed{filter:none;opacity:.26}
 .flag{filter:none}
 .adif-upload{padding:6px 11px;border:1px solid #c9bda8;border-radius:8px;background:#fffaf0;color:#5d5549;font-size:.74rem;font-weight:700;cursor:pointer}.adif-upload input{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.adif-upload:focus-within{outline:2px solid #253747;outline-offset:2px}.data-status{position:relative;z-index:1;margin:0;padding:12px 26px 0;color:#746d62;font-size:.73rem}
