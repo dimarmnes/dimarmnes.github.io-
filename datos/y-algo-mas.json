@@ -1,0 +1,266 @@
+[
+  {
+    "id": "seleccion",
+    "titulo": "Para empezar",
+    "descripcion": "Una vuelta breve por las cosas que también suceden en el taller y más allá.",
+    "color": "#b77a3d",
+    "diapositivas": [
+      {
+        "imagen": "images/y-algo-mas/seleccion/aeromodelismo.webp",
+        "descripcion": "Aeromodelismo"
+      },
+      {
+        "descripcion": "Impresión 3D",
+        "imagen": "images/y-algo-mas/seleccion/impresion-3d.webp"
+      },
+      {
+        "descripcion": "Astronomía",
+        "imagen": "images/y-algo-mas/seleccion/astronomia.webp"
+      },
+      {
+        "descripcion": "Camping",
+        "imagen": "images/y-algo-mas/seleccion/camping.webp"
+      },
+      {
+        "descripcion": "Kayak",
+        "imagen": "images/y-algo-mas/seleccion/kayak.webp"
+      },
+      {
+        "descripcion": "Aire Libre",
+        "imagen": "images/y-algo-mas/seleccion/aire-libre.webp"
+      },
+      {
+        "descripcion": "Automovilismo",
+        "imagen": "images/y-algo-mas/seleccion/automovilismo.webp"
+      }
+    ]
+  },
+  {
+    "id": "aeromodelismo",
+    "titulo": "Aeromodelismo",
+    "descripcion": "Modelos, construcciones y algunos vuelos.",
+    "color": "#9b5740",
+    "diapositivas": [
+      {
+        "descripcion": "Essence, mi primer modelo",
+        "imagen": "images/y-algo-mas/aeromodelismo/essence-mi-primer-modelo.webp"
+      },
+      {
+        "descripcion": "Antes de entelar",
+        "imagen": "images/y-algo-mas/aeromodelismo/antes-de-entelar.webp"
+      },
+      {
+        "descripcion": "Elder 40",
+        "imagen": "images/y-algo-mas/aeromodelismo/elder-40.webp"
+      },
+      {
+        "descripcion": "Vuelo de estreno",
+        "imagen": "images/y-algo-mas/aeromodelismo/vuelo-de-estreno.webp"
+      },
+      {
+        "descripcion": "Reunión de amigos",
+        "imagen": "images/y-algo-mas/aeromodelismo/reunion-de-amigos.webp"
+      },
+      {
+        "descripcion": "Condor 40",
+        "imagen": "images/y-algo-mas/aeromodelismo/condor-40.webp"
+      },
+      {
+        "descripcion": "Al aire",
+        "imagen": "images/y-algo-mas/aeromodelismo/al-aire.webp"
+      },
+      {
+        "descripcion": "Hasta que caiga el sol",
+        "imagen": "images/y-algo-mas/aeromodelismo/hasta-que-caiga-el-sol.webp"
+      },
+      {
+        "descripcion": "Aero bici",
+        "imagen": "images/y-algo-mas/aeromodelismo/aero-bici.webp"
+      },
+      {
+        "descripcion": "Experimentando con helis",
+        "imagen": "images/y-algo-mas/aeromodelismo/experimentando-con-helis.webp"
+      }
+    ]
+  },
+  {
+    "id": "astronautica-3d",
+    "titulo": "Astronáutica 3D",
+    "descripcion": "Colección de impresiones 3D relativas a la astronáutica.",
+    "color": "#607080",
+    "diapositivas": [
+      {
+        "descripcion": "ISS 1:100",
+        "imagen": "images/y-algo-mas/astronautica-3d/iss-1-100.webp"
+      },
+      {
+        "descripcion": "Ariane 5 / Ariane 6",
+        "imagen": "images/y-algo-mas/astronautica-3d/ariane-5-ariane-6.webp"
+      },
+      {
+        "descripcion": "CZ-2D / H3-22S",
+        "imagen": "images/y-algo-mas/astronautica-3d/cz-2d-h3-22s.webp"
+      },
+      {
+        "descripcion": "Energia / Soyus",
+        "imagen": "images/y-algo-mas/astronautica-3d/energia-soyus.webp"
+      },
+      {
+        "descripcion": "Falcon 9",
+        "imagen": "images/y-algo-mas/astronautica-3d/falcon-9.webp"
+      },
+      {
+        "descripcion": "Falcon Heavy / Delta IV Heavy",
+        "imagen": "images/y-algo-mas/astronautica-3d/falcon-heavy-delta-iv-heavy.webp"
+      },
+      {
+        "descripcion": "Mercury Redstone",
+        "imagen": "images/y-algo-mas/astronautica-3d/mercury-redstone.webp"
+      },
+      {
+        "descripcion": "N1 / Starship",
+        "imagen": "images/y-algo-mas/astronautica-3d/n1-starship.webp"
+      },
+      {
+        "descripcion": "Saturn 1B / SLS / Saturn V",
+        "imagen": "images/y-algo-mas/astronautica-3d/saturn-1b-sls-satrun-v.webp"
+      },
+      {
+        "descripcion": "Space Shuttle / Titan 3C",
+        "imagen": "images/y-algo-mas/astronautica-3d/space-shuttle-titan-3c.webp"
+      },
+      {
+        "descripcion": "Sputnik / Vostok",
+        "imagen": "images/y-algo-mas/astronautica-3d/sputnik-vostok.webp"
+      },
+      {
+        "descripcion": "V2 / Electron",
+        "imagen": "images/y-algo-mas/astronautica-3d/v2-electron.webp"
+      },
+      {
+        "descripcion": "Black Arrow / Vega",
+        "imagen": "images/y-algo-mas/astronautica-3d/black-arrow-vega.webp"
+      }
+    ]
+  },
+  {
+    "id": "aire-libre",
+    "titulo": "Aire libre",
+    "descripcion": "Caminatas, paisajes y encuentros cercanos.",
+    "color": "#647a46",
+    "diapositivas": [
+      {
+        "imagen": "images/y-algo-mas/aire-libre/atardecer-en-el-ibera.webp",
+        "descripcion": "Atardecer en el Iberá"
+      },
+      {
+        "descripcion": "Un tero curioso",
+        "imagen": "images/y-algo-mas/aire-libre/tero.webp"
+      },
+      {
+        "descripcion": "Convivencia",
+        "imagen": "images/y-algo-mas/aire-libre/convivencia.webp"
+      },
+      {
+        "descripcion": "Remando con Yacarés",
+        "imagen": "images/y-algo-mas/aire-libre/remando-con-yacares.webp"
+      },
+      {
+        "descripcion": "Se cruzó la curiyú",
+        "imagen": "images/y-algo-mas/aire-libre/se-cruzo-la-curiyu.webp"
+      },
+      {
+        "descripcion": "En las correderas del Cumandaí",
+        "imagen": "images/y-algo-mas/aire-libre/en-las-correderas-del-cumandai.webp"
+      },
+      {
+        "descripcion": "Salida en grupo",
+        "imagen": "images/y-algo-mas/aire-libre/salida-en-grupo.webp"
+      },
+      {
+        "descripcion": "Hora del mate",
+        "imagen": "images/y-algo-mas/aire-libre/hora-del-mate.webp"
+      },
+      {
+        "descripcion": "Retornando a casa",
+        "imagen": "images/y-algo-mas/aire-libre/retornando-a-casa.webp"
+      },
+      {
+        "descripcion": "Campamento kayakero",
+        "imagen": "images/y-algo-mas/aire-libre/campamento-kayakero.webp"
+      },
+      {
+        "descripcion": "Cuando las pasiones se juntan",
+        "imagen": "images/y-algo-mas/aire-libre/cuando-las-padiones-se-juntan.webp"
+      }
+    ]
+  },
+  {
+    "id": "taller",
+    "titulo": "Impresión 3D",
+    "descripcion": "Piezas útiles y otras que hice por el gusto de intentarlo.",
+    "color": "#466c78",
+    "diapositivas": [
+      {
+        "imagen": "images/y-algo-mas/taller/litofania-james-webb.webp",
+        "descripcion": "Litofanía James Webb "
+      },
+      {
+        "descripcion": "Bomb girl",
+        "imagen": "images/y-algo-mas/taller/bomb-girl.webp"
+      },
+      {
+        "descripcion": "Betty Boop / Palas Atenea",
+        "imagen": "images/y-algo-mas/taller/betty-boop-palas-atenea.webp"
+      },
+      {
+        "descripcion": "Icaro, el avión de Lúpin",
+        "imagen": "images/y-algo-mas/taller/icaro-el-avion-de-lupin.webp"
+      },
+      {
+        "descripcion": "Soporte Baofeng",
+        "imagen": "images/y-algo-mas/taller/soporte-baofeng.webp"
+      },
+      {
+        "descripcion": "Pequeño manipulador telegráfico",
+        "imagen": "images/y-algo-mas/taller/pequeno-manipulador-telegrafico.webp"
+      },
+      {
+        "descripcion": "Mi nombre es Máximo Décimo Meridio",
+        "imagen": "images/y-algo-mas/taller/mi-nombre-es-maximo-decimo-meridio.webp"
+      }
+    ]
+  },
+  {
+    "id": "astronomia",
+    "titulo": "Astronomía",
+    "descripcion": "Equipos, observaciones y noches mirando el cielo.",
+    "color": "#435a82",
+    "diapositivas": [
+      {
+        "descripcion": "Una mirada al cielo",
+        "imagen": "images/y-algo-mas/astronomia/una-mirada-al-cielo.webp"
+      },
+      {
+        "descripcion": "Mi Skywatcher Heritage 150",
+        "imagen": "images/y-algo-mas/astronomia/mi-skywatcher-heritage-150.webp"
+      },
+      {
+        "descripcion": "X lunar",
+        "imagen": "images/y-algo-mas/astronomia/x-lunar.webp"
+      },
+      {
+        "descripcion": "Dibujo astronómico - Cometa Leonard",
+        "imagen": "images/y-algo-mas/astronomia/dibujo-astronomico-cometa-leonard.webp"
+      },
+      {
+        "descripcion": "Dibujo astronómico - Galaxia M104",
+        "imagen": "images/y-algo-mas/astronomia/digujo-astronomico-galaxia-m104.webp"
+      },
+      {
+        "descripcion": "Dibujo astronómico - Cúmulo NGC6025",
+        "imagen": "images/y-algo-mas/astronomia/diebujo-astronomico-cumulo-ngc6025.webp"
+      }
+    ]
+  }
+]

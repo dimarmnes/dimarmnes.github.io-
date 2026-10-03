@@ -4,9 +4,9 @@ Sitio personal de Diego Marcelo Carratini, LU1IDC, radioaficionado de San Javier
 Misiones, Argentina.
 
 El sitio reúne la estación, actividad en radio, Libro de Guardia, entidades DXCC,
-grillas Maidenhead, QSL, diplomas, concursos, software y pequeñas herramientas para
-la actividad. Está construido como un sitio estático y se publica mediante GitHub
-Pages.
+grillas Maidenhead, QSL, diplomas, concursos, software, pequeñas herramientas para
+la actividad y una colección de otras aficiones presentada como diapositivas. Está
+construido como un sitio estático y se publica mediante GitHub Pages.
 
 ## Estructura
 
