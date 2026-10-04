@@ -6,14 +6,33 @@
   const totalNumber = document.querySelector("#total-number");
   const projectionStage = document.querySelector("#projection-stage");
   const fullscreenToggle = document.querySelector("#fullscreen-toggle");
+  const soundToggle = document.querySelector("#projector-sound-toggle");
   const viewer = document.querySelector("#slide-viewer");
   const viewerImage = document.querySelector("#viewer-image");
   const viewerCaption = document.querySelector("#viewer-caption");
   const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  const projectorSound = new Audio("audio/diapositiva.mp3");
+  const soundPreferenceKey = "lu1idc-sound-enabled";
+  projectorSound.preload = "auto";
+  projectorSound.volume = 0.55;
+  let soundEnabled = true;
+  try { soundEnabled = localStorage.getItem(soundPreferenceKey) !== "false"; } catch (_) {}
   let slides = [];
   let current = 0;
   let touchStart = null;
   let suppressClick = false;
+
+  function updateSoundControl() {
+    soundToggle.setAttribute("aria-pressed", String(soundEnabled));
+    soundToggle.setAttribute("aria-label", soundEnabled ? "Desactivar sonido del proyector" : "Activar sonido del proyector");
+    soundToggle.innerHTML = `<span aria-hidden="true">${soundEnabled ? "🔊" : "🔇"}</span> Sonido`;
+  }
+
+  function playProjectorSound() {
+    if (!soundEnabled) return;
+    projectorSound.currentTime = 0;
+    projectorSound.play().catch(() => {});
+  }
 
   function slideElement(item, index) {
     const article = document.createElement("article");
@@ -60,6 +79,7 @@
     if (!reduceMotion.matches) screen.classList.add("is-changing");
     setTimeout(() => screen.classList.remove("is-changing"), 380);
     if (returnToProjector) {
+      playProjectorSound();
       screen.scrollIntoView({ behavior: reduceMotion.matches ? "auto" : "smooth", block: "center" });
       screen.focus({ preventScroll: true });
     }
@@ -94,6 +114,7 @@
   function show(next) {
     const target = (next + slides.length) % slides.length;
     if (target === current) return;
+    playProjectorSound();
     const change = () => {
       slides[current].hidden = true;
       current = target;
@@ -117,6 +138,11 @@
 
   document.querySelector("#previous").addEventListener("click", () => show(current - 1));
   document.querySelector("#next").addEventListener("click", () => show(current + 1));
+  soundToggle.addEventListener("click", () => {
+    soundEnabled = !soundEnabled;
+    try { localStorage.setItem(soundPreferenceKey, String(soundEnabled)); } catch (_) {}
+    updateSoundControl();
+  });
   if (!projectionStage.requestFullscreen) {
     fullscreenToggle.hidden = true;
   } else {
@@ -151,5 +177,6 @@
   }, { passive: true });
 
   renderBoxes();
+  updateSoundControl();
   renderCollection(0);
 })();

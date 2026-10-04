@@ -3,6 +3,13 @@ const bookElement = document.querySelector('#book');
 const deskElement = document.querySelector('#logbook-desk');
 const instructionElement = document.querySelector('#book-instructions');
 const rowsPerPage = LOGBOOK_PAGE_SIZE;
+const pageTurnSound = new Audio('audio/vuelta-pagina.mp3');
+const soundPreferenceKey = 'lu1idc-sound-enabled';
+const bookSoundToggle = document.querySelector('#book-sound-toggle');
+pageTurnSound.preload='auto';
+pageTurnSound.volume=.55;
+let soundEnabled=true;
+try{soundEnabled=localStorage.getItem(soundPreferenceKey)!=='false';}catch(_){}
 let logbookData = buildLocalNewestSample(window.LOGBOOK_SAMPLE);
 let pageFlip;
 let pageCopyObserver;
@@ -10,8 +17,26 @@ let returnToDeskAfterFlip = false;
 let searchEntries=[];
 let pendingSearchHit=null;
 let searchHighlightTimer;
+let pageTurnSoundStarted=false;
 const originalBookPages = new WeakSet();
 const dxccNames = new Map((typeof DXCC_DATA !== 'undefined' ? DXCC_DATA.entities : []).map(entity => [String(entity.id),entity.name]));
+
+function updateBookSoundControl(){
+  bookSoundToggle.setAttribute('aria-pressed',String(soundEnabled));
+  bookSoundToggle.setAttribute('aria-label',soundEnabled?'Desactivar sonido de las páginas':'Activar sonido de las páginas');
+  bookSoundToggle.textContent=`${soundEnabled?'🔊':'🔇'} Sonido`;
+}
+function playPageTurnSound(){
+  if(!soundEnabled)return;
+  pageTurnSound.currentTime=0;
+  pageTurnSound.play().catch(()=>{});
+}
+bookSoundToggle.addEventListener('click',()=>{
+  soundEnabled=!soundEnabled;
+  try{localStorage.setItem(soundPreferenceKey,String(soundEnabled));}catch(_){}
+  updateBookSoundControl();
+});
+updateBookSoundControl();
 
 function parseLogbookAdif(text) {
   const records = [];
@@ -84,6 +109,7 @@ function buildBook(){
   const compactView=matchMedia('(max-width:700px)').matches;
   pageFlip=new St.PageFlip(bookElement,{width:794,height:559,size:'stretch',minWidth:compactView?260:460,maxWidth:900,minHeight:compactView?183:324,maxHeight:634,drawShadow:true,maxShadowOpacity:.42,flippingTime:matchMedia('(prefers-reduced-motion: reduce)').matches?280:900,usePortrait:true,showCover:true,autoSize:true,mobileScrollSupport:false,clickEventForward:true});
   pageFlip.on('flip', event => {
+    pageTurnSoundStarted=false;
     document.querySelector('#book-wrap').classList.remove('is-turning');
     updateControls(event);
     revealPendingSearchHit();
@@ -93,6 +119,7 @@ function buildBook(){
     }
   });
   pageFlip.on('changeState', event => {
+    if(event.data==='flipping'&&!pageTurnSoundStarted){pageTurnSoundStarted=true;playPageTurnSound();}
     const moving = event.data === 'user_fold' || event.data === 'flipping';
     document.querySelector('#book-wrap').classList.toggle('is-turning', moving);
   });
