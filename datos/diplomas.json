@@ -1,17 +1,45 @@
 [
   {
-    "src": "images/awards/rca/20260522_RCA_101_10M_MIXTO.jpg",
+    "src": "images/awards/sstv/20261007_ARISS_Award_Series_33.webp",
+    "category": "sstv",
+    "year": "2026",
+    "date": "20261007",
+    "title": "ARISS Award Series 33"
+  },
+  {
+    "src": "images/awards/rca/20260522_RCA_101_10M_MIXTO.webp",
     "category": "rca",
     "year": "2026",
     "date": "20260522",
     "title": "RCA 101 10M MIXTO"
   },
   {
-    "src": "images/awards/rca/20260522_RCA_TRA_MIXTO.jpg",
+    "src": "images/awards/rca/20260522_RCA_TRA_MIXTO.webp",
     "category": "rca",
     "year": "2026",
     "date": "20260522",
     "title": "RCA TRA MIXTO"
+  },
+  {
+    "src": "images/awards/sstv/20260414-Remeasat-SSTV-Award.webp",
+    "category": "sstv",
+    "year": "2026",
+    "date": "20260414",
+    "title": "Remeasat-SSTV-Award"
+  },
+  {
+    "src": "images/awards/sstv/20260412_ARISS_Award_Exp 74_Series 31.webp",
+    "category": "sstv",
+    "year": "2026",
+    "date": "20260412",
+    "title": "ARISS Award Exp 74 Series 31"
+  },
+  {
+    "src": "images/awards/sstv/20260412_Gagarins-Week-2026.webp",
+    "category": "sstv",
+    "year": "2026",
+    "date": "20260412",
+    "title": "Gagarins-Week-2026"
   },
   {
     "src": "images/awards/logros/20260318_LABRE_WAB_MIXED.png",
@@ -33,6 +61,20 @@
     "year": "2026",
     "date": "20260000",
     "title": "WWA"
+  },
+  {
+    "src": "images/awards/sstv/20251209_ARISS_SSTV_Award_Series_30.webp",
+    "category": "sstv",
+    "year": "2025",
+    "date": "20251209",
+    "title": "ARISS SSTV Award Series 30"
+  },
+  {
+    "src": "images/awards/sstv/20251209_Diploma_Rusia_SSTV.webp",
+    "category": "sstv",
+    "year": "2025",
+    "date": "20251209",
+    "title": "Diploma Rusia SSTV"
   },
   {
     "src": "images/awards/20251200_Despidiendo_el_2025_oro.jpg",
@@ -63,6 +105,13 @@
     "title": "PX100IARU"
   },
   {
+    "src": "images/awards/sstv/20251005_ARISS_Award_World_Space_Week_2025_Series_29.webp",
+    "category": "sstv",
+    "year": "2025",
+    "date": "20251005",
+    "title": "ARISS Award World Space Week 2025 Series 29"
+  },
+  {
     "src": "images/awards/pota/20250929_POTA_Platinum_Hunter.jpg",
     "category": "pota",
     "year": "2025",
@@ -91,56 +140,56 @@
     "title": "POTA Gold Hunter"
   },
   {
-    "src": "images/awards/rca/20250522_RCA_100_aniv_IARU.jpg",
+    "src": "images/awards/rca/20250522_RCA_100_ANIV_IARU.webp",
     "category": "rca",
     "year": "2025",
     "date": "20250522",
-    "title": "RCA 100 aniv IARU"
+    "title": "RCA 100 ANIV IARU"
   },
   {
-    "src": "images/awards/sstv/20250509_ARISS_SSTV_Award_Expedition 73 -Series 27_80_Ann_end_wwii.jpg",
+    "src": "images/awards/sstv/20250509_ARISS_SSTV_Award_Expedition 73 -Series 27_80_Ann_end_wwii.webp",
     "category": "sstv",
     "year": "2025",
     "date": "20250509",
     "title": "ARISS SSTV Award Expedition 73 -Series 27 80 Ann end wwii"
   },
   {
-    "src": "images/awards/sstv/20250509_B'SATTRAC_SSTV_Award_Expedition 73 -Series 27.jpg",
+    "src": "images/awards/sstv/20250509_B'SATTRAC_SSTV_Award_Expedition 73 -Series 27.webp",
     "category": "sstv",
     "year": "2025",
     "date": "20250509",
     "title": "B'SATTRAC SSTV Award Expedition 73 -Series 27"
   },
   {
-    "src": "images/awards/sstv/20250509_ECRA_SSTV_8_edicion.jpg",
+    "src": "images/awards/sstv/20250509_ECRA_SSTV_8_edicion.webp",
     "category": "sstv",
     "year": "2025",
     "date": "20250509",
     "title": "ECRA SSTV 8 edicion"
   },
   {
-    "src": "images/awards/sstv/20250417_B'SATTRAC_SSTV_AWARD_EXPEDITION_72-SERIES 26.jpg",
+    "src": "images/awards/sstv/20250417_B'SATTRAC_SSTV_AWARD_EXPEDITION_72-SERIES 26.webp",
     "category": "sstv",
     "year": "2025",
     "date": "20250417",
     "title": "B'SATTRAC SSTV AWARD EXPEDITION 72-SERIES 26"
   },
   {
-    "src": "images/awards/sstv/20250417_SANTIC_SPIRITUS_SSTV_AWARD_EXPEDITION_72-SERIES 26.jpg",
+    "src": "images/awards/sstv/20250417_SANTIC_SPIRITUS_SSTV_AWARD_EXPEDITION_72-SERIES 26.webp",
     "category": "sstv",
     "year": "2025",
     "date": "20250417",
     "title": "SANTIC SPIRITUS SSTV AWARD EXPEDITION 72-SERIES 26"
   },
   {
-    "src": "images/awards/sstv/20250415_Diploma_Rusia_SSTV.jpg",
+    "src": "images/awards/sstv/20250415_Diploma_Rusia_SSTV.webp",
     "category": "sstv",
     "year": "2025",
     "date": "20250415",
     "title": "Diploma Rusia SSTV"
   },
   {
-    "src": "images/awards/sstv/20250413_ARISS_SSTV_Award_Exp72.jpg",
+    "src": "images/awards/sstv/20250413_ARISS_SSTV_Award_Exp72.webp",
     "category": "sstv",
     "year": "2025",
     "date": "20250413",
@@ -203,6 +252,13 @@
     "title": "ARISS SSTV DIPLOMA AMSAT ARGENTINA"
   },
   {
+    "src": "images/awards/sstv/20250103_ARISS_SSTV_DIPLOMA_AMASAT_ARGENTINA.webp",
+    "category": "sstv",
+    "year": "2025",
+    "date": "20250103",
+    "title": "ARISS SSTV DIPLOMA AMASAT ARGENTINA"
+  },
+  {
     "src": "images/awards/20250000_WWA.jpg",
     "category": "otros",
     "year": "2025",
@@ -210,28 +266,28 @@
     "title": "WWA"
   },
   {
-    "src": "images/awards/rca/20241226-Cert-Estaciones-ferroviarias-Clase-I.jpg",
+    "src": "images/awards/rca/20241226-Cert-Estaciones-ferroviarias-Clase-I.webp",
     "category": "rca",
     "year": "2024",
     "date": "20241226",
     "title": "Cert-Estaciones-ferroviarias-Clase-I"
   },
   {
-    "src": "images/awards/sstv/20241225_ARISS_SSTV_Award_Exp 72 Series 23.jpg",
+    "src": "images/awards/sstv/20241225_ARISS_SSTV_Award_Exp 72 Series 23.webp",
     "category": "sstv",
     "year": "2024",
     "date": "20241225",
     "title": "ARISS SSTV Award Exp 72 Series 23"
   },
   {
-    "src": "images/awards/sstv/20241225_HAM_SATELITES_PUERTO_RICO_ISS_SSTV.jpg",
+    "src": "images/awards/sstv/20241225_HAM_SATELITES_PUERTO_RICO_ISS_SSTV.webp",
     "category": "sstv",
     "year": "2024",
     "date": "20241225",
     "title": "HAM SATELITES PUERTO RICO ISS SSTV"
   },
   {
-    "src": "images/awards/rca/20241221-RCA-Precalentamiento-Mes-YOTA.jpg",
+    "src": "images/awards/rca/20241221-RCA-Precalentamiento-Mes-YOTA.webp",
     "category": "rca",
     "year": "2024",
     "date": "20241221",
@@ -252,14 +308,14 @@
     "title": "CERTIFICADO DESPIDIENDO EL 2024 ORO"
   },
   {
-    "src": "images/awards/sstv/20241205_B'SATTRAC_SSTV_AWARD_EXPEDITION_72-SERIES 23.jpg",
+    "src": "images/awards/sstv/20241205_B'SATTRAC_SSTV_AWARD_EXPEDITION_72-SERIES 23.webp",
     "category": "sstv",
     "year": "2024",
     "date": "20241205",
     "title": "B'SATTRAC SSTV AWARD EXPEDITION 72-SERIES 23"
   },
   {
-    "src": "images/awards/sstv/20241118_ECRA_SSTV_7_edicion.jpg",
+    "src": "images/awards/sstv/20241118_ECRA_SSTV_7_edicion.webp",
     "category": "sstv",
     "year": "2024",
     "date": "20241118",
@@ -273,14 +329,14 @@
     "title": "ZZ202BR 202 ANOS INDEPENDENCIA BRASIL"
   },
   {
-    "src": "images/awards/sstv/20241115_BSATTRAC SSTV AWARD_Expedition 72 - Series 22 Fortieth Anniversary.jpg",
+    "src": "images/awards/sstv/20241115_BSATTRAC SSTV AWARD_Expedition 72 - Series 22 Fortieth Anniversary.webp",
     "category": "sstv",
     "year": "2024",
     "date": "20241115",
     "title": "BSATTRAC SSTV AWARD Expedition 72 Series 22 Fortieth Anniversary"
   },
   {
-    "src": "images/awards/sstv/20241113_ARISS_SSTV_Award_Exp72.jpg",
+    "src": "images/awards/sstv/20241113_ARISS_SSTV_Award_Exp72.webp",
     "category": "sstv",
     "year": "2024",
     "date": "20241113",
@@ -294,7 +350,7 @@
     "title": "DÍA DEL RADIOAFICIONADO ARGENTINO edición 2024"
   },
   {
-    "src": "images/awards/sstv/20241028_ECRA_SSTV_6_edicion.jpg",
+    "src": "images/awards/sstv/20241028_ECRA_SSTV_6_edicion.webp",
     "category": "sstv",
     "year": "2024",
     "date": "20241028",
@@ -329,14 +385,14 @@
     "title": "CRA 2024 LU7DZV"
   },
   {
-    "src": "images/awards/sstv/20241014_B'SATTRAC_SSTV_AWARD_EXPEDITION_72.jpg",
+    "src": "images/awards/sstv/20241014_B'SATTRAC_SSTV_AWARD_EXPEDITION_72.webp",
     "category": "sstv",
     "year": "2024",
     "date": "20241014",
     "title": "B'SATTRAC SSTV AWARD EXPEDITION 72"
   },
   {
-    "src": "images/awards/sstv/20241014_ISS_SSTV_AWARD_HCD_GROUP_EXP_72.jpg",
+    "src": "images/awards/sstv/20241014_ISS_SSTV_AWARD_HCD_GROUP_EXP_72.webp",
     "category": "sstv",
     "year": "2024",
     "date": "20241014",
@@ -350,7 +406,7 @@
     "title": "SANTA CATARINA INTEGRADA 2024"
   },
   {
-    "src": "images/awards/sstv/20241010_ARISS_SSTV_Award_Exp72.jpg",
+    "src": "images/awards/sstv/20241010_ARISS_SSTV_Award_Exp72.webp",
     "category": "sstv",
     "year": "2024",
     "date": "20241010",
@@ -455,14 +511,14 @@
     "title": "LU1IDC Plata 79 ani BBVV"
   },
   {
-    "src": "images/awards/rca/20240608-RCA-Semana-Mayo-YL.jpg",
+    "src": "images/awards/rca/20240608-RCA-Semana-Mayo-YL.webp",
     "category": "rca",
     "year": "2024",
     "date": "20240608",
     "title": "RCA-Semana-Mayo-YL"
   },
   {
-    "src": "images/awards/rca/20240608-RCA-Semana-Mayo.jpg",
+    "src": "images/awards/rca/20240608-RCA-Semana-Mayo.webp",
     "category": "rca",
     "year": "2024",
     "date": "20240608",
@@ -721,28 +777,28 @@
     "title": "Estacion Amiga del Radio Club Gualeguaychu"
   },
   {
-    "src": "images/awards/sstv/20231207_ECRA SSTV 5ta Edicao.jpg",
+    "src": "images/awards/sstv/20231207_ECRA SSTV 5ta Edicao.webp",
     "category": "sstv",
     "year": "2023",
     "date": "20231207",
     "title": "ECRA SSTV 5ta Edicao"
   },
   {
-    "src": "images/awards/sstv/20231030_Rafflesia SSTV Award_About Gagarin from Space experiment.jpg",
+    "src": "images/awards/sstv/20231030_Rafflesia SSTV Award_About Gagarin from Space experiment.webp",
     "category": "sstv",
     "year": "2023",
     "date": "20231030",
     "title": "Rafflesia SSTV Award About Gagarin from Space experiment"
   },
   {
-    "src": "images/awards/sstv/20231030_Rede Dos Emissores Portugueses -ISS SSTV Award_About Gagarin from Space experiment.jpg",
+    "src": "images/awards/sstv/20231030_Rede Dos Emissores Portugueses -ISS SSTV Award_About Gagarin from Space experiment.webp",
     "category": "sstv",
     "year": "2023",
     "date": "20231030",
     "title": "Rede Dos Emissores Portugueses -ISS SSTV Award About Gagarin from Space experiment"
   },
   {
-    "src": "images/awards/sstv/20231029_B'SATTRAC SSTV AWARD_ISS test 2023-10-27_DIEGO CARRATINI LU1IDC.jpg",
+    "src": "images/awards/sstv/20231029_B'SATTRAC SSTV AWARD_ISS test 2023-10-27_DIEGO CARRATINI LU1IDC.webp",
     "category": "sstv",
     "year": "2023",
     "date": "20231029",
