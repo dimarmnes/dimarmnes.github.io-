@@ -1,11 +1,191 @@
 [
   {
+    "src": "images/qsl/recibidas/2026/20261016_LT12E_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20261016",
+    "year": "2026",
+    "title": "LT12E",
+    "call": "LT12E",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20261014_CX3AS_40M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20261014",
+    "year": "2026",
+    "title": "CX3AS",
+    "call": "CX3AS",
+    "band": "40M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20261014_LW2EKY_40M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20261014",
+    "year": "2026",
+    "title": "LW2EKY",
+    "call": "LW2EKY",
+    "band": "40M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20261010_LT3D_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20261010",
+    "year": "2026",
+    "title": "LT3D",
+    "call": "LT3D",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20261010_LU6DRN_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20261010",
+    "year": "2026",
+    "title": "LU6DRN",
+    "call": "LU6DRN",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20261010_AC8JT_10M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20261010",
+    "year": "2026",
+    "title": "AC8JT",
+    "call": "AC8JT",
+    "band": "10M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20261010_LT3D_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20261010",
+    "year": "2026",
+    "title": "LT3D",
+    "call": "LT3D",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20261010_LU6DRN_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20261010",
+    "year": "2026",
+    "title": "LU6DRN",
+    "call": "LU6DRN",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20261009_NP4VA_10M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20261009",
+    "year": "2026",
+    "title": "NP4VA",
+    "call": "NP4VA",
+    "band": "10M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20261005_LU2DT_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20261005",
+    "year": "2026",
+    "title": "LU2DT",
+    "call": "LU2DT",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20261005_LU1ARW_40M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20261005",
+    "year": "2026",
+    "title": "LU1ARW",
+    "call": "LU1ARW",
+    "band": "40M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20261005_PY2MER_40M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20261005",
+    "year": "2026",
+    "title": "PY2MER",
+    "call": "PY2MER",
+    "band": "40M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20260930_K1MDF_10M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20260930",
+    "year": "2026",
+    "title": "K1MDF",
+    "call": "K1MDF",
+    "band": "10M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20260930_N3FMC_10M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20260930",
+    "year": "2026",
+    "title": "N3FMC",
+    "call": "N3FMC",
+    "band": "10M",
+    "mode": "FT8"
+  },
+  {
     "src": "images/qsl/recibidas/2026/20260927_LU1JCJ_2M_FM_SAT.jpg",
     "type": "recibidas",
     "date": "20260927",
     "year": "2026",
     "title": "LU1JCJ",
     "call": "LU1JCJ",
+    "band": "2M",
+    "mode": "FM"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20260927_PY3-LU8IMM_2M_FM_SAT.jpg",
+    "type": "recibidas",
+    "date": "20260927",
+    "year": "2026",
+    "title": "PY3-LU8IMM",
+    "call": "PY3-LU8IMM",
+    "band": "2M",
+    "mode": "FM"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20260927_LU1JCJ_2M_FM_SAT.jpg",
+    "type": "recibidas",
+    "date": "20260927",
+    "year": "2026",
+    "title": "LU1JCJ",
+    "call": "LU1JCJ",
+    "band": "2M",
+    "mode": "FM"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20260927_LU9IBO_2M_FM_SAT.jpg",
+    "type": "recibidas",
+    "date": "20260927",
+    "year": "2026",
+    "title": "LU9IBO",
+    "call": "LU9IBO",
+    "band": "2M",
+    "mode": "FM"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20260927_PY3-LU9IMM_2M_FM_SAT.jpg",
+    "type": "recibidas",
+    "date": "20260927",
+    "year": "2026",
+    "title": "PY3-LU9IMM",
+    "call": "PY3-LU9IMM",
     "band": "2M",
     "mode": "FM"
   },
@@ -50,6 +230,16 @@
     "mode": "FT8"
   },
   {
+    "src": "images/qsl/recibidas/2026/eQSL/20260926_OD5ZZ_10M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20260926",
+    "year": "2026",
+    "title": "OD5ZZ",
+    "call": "OD5ZZ",
+    "band": "10M",
+    "mode": "FT8"
+  },
+  {
     "src": "images/qsl/recibidas/2026/eQSL/20260926_SV1EQU_10M_FT8.jpg",
     "type": "recibidas",
     "date": "20260926",
@@ -90,6 +280,16 @@
     "mode": "FT8"
   },
   {
+    "src": "images/qsl/recibidas/2026/20260925_LU7KHB_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20260925",
+    "year": "2026",
+    "title": "LU7KHB",
+    "call": "LU7KHB",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
     "src": "images/qsl/recibidas/2026/20260924_LU9DUV_40M_FT8.jpg",
     "type": "recibidas",
     "date": "20260924",
@@ -100,7 +300,27 @@
     "mode": "FT8"
   },
   {
+    "src": "images/qsl/recibidas/2026/20260923_LU9ESA_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20260923",
+    "year": "2026",
+    "title": "LU9ESA",
+    "call": "LU9ESA",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
     "src": "images/qsl/recibidas/2026/20260921_LW6DIV_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20260921",
+    "year": "2026",
+    "title": "LW6DIV",
+    "call": "LW6DIV",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20260921_LW6DIV_40M_SSB_2.jpg",
     "type": "recibidas",
     "date": "20260921",
     "year": "2026",
@@ -116,6 +336,26 @@
     "year": "2026",
     "title": "LW6DIV",
     "call": "LW6DIV",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20260920_LU2CN_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20260920",
+    "year": "2026",
+    "title": "LU2CN",
+    "call": "LU2CN",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20260920_LU2CN_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20260920",
+    "year": "2026",
+    "title": "LU2CN",
+    "call": "LU2CN",
     "band": "40M",
     "mode": "SSB"
   },
@@ -340,12 +580,32 @@
     "mode": "FT8"
   },
   {
+    "src": "images/qsl/recibidas/2026/eQSL/20260908_LU7DUE_40M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20260908",
+    "year": "2026",
+    "title": "LU7DUE",
+    "call": "LU7DUE",
+    "band": "40M",
+    "mode": "FT8"
+  },
+  {
     "src": "images/qsl/recibidas/2026/eQSL/20260908_LU7MFB_40M_FT8.jpg",
     "type": "recibidas",
     "date": "20260908",
     "year": "2026",
     "title": "LU7MFB",
     "call": "LU7MFB",
+    "band": "40M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20260908_LU9DX_40M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20260908",
+    "year": "2026",
+    "title": "LU9DX",
+    "call": "LU9DX",
     "band": "40M",
     "mode": "FT8"
   },
@@ -1037,6 +1297,16 @@
     "title": "HG1DBQ",
     "call": "HG1DBQ",
     "band": "15M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/eQSL/20260801_IK3ABY_10M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20260801",
+    "year": "2026",
+    "title": "IK3ABY",
+    "call": "IK3ABY",
+    "band": "10M",
     "mode": "FT8"
   },
   {
@@ -1787,6 +2057,16 @@
     "title": "TI5RTZ",
     "call": "TI5RTZ",
     "band": "15M",
+    "mode": "FT8"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20260410_PP8RN_10M_FT8.jpg",
+    "type": "recibidas",
+    "date": "20260410",
+    "year": "2026",
+    "title": "PP8RN",
+    "call": "PP8RN",
+    "band": "10M",
     "mode": "FT8"
   },
   {
