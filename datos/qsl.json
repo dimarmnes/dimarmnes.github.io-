@@ -1,5 +1,25 @@
 [
   {
+    "src": "images/qsl/recibidas/2026/20261025_PP7GB_10M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20261025",
+    "year": "2026",
+    "title": "PP7GB",
+    "call": "PP7GB",
+    "band": "10M",
+    "mode": "SSB"
+  },
+  {
+    "src": "images/qsl/recibidas/2026/20261020_LU2AOG_40M_SSB.jpg",
+    "type": "recibidas",
+    "date": "20261020",
+    "year": "2026",
+    "title": "LU2AOG",
+    "call": "LU2AOG",
+    "band": "40M",
+    "mode": "SSB"
+  },
+  {
     "src": "images/qsl/recibidas/2026/20261016_LT12E_40M_SSB.jpg",
     "type": "recibidas",
     "date": "20261016",

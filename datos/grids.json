@@ -157,7 +157,7 @@
     {
       "locator": "GG52",
       "place": "GG52",
-      "qsos": 30,
+      "qsos": 31,
       "confirmed": true,
       "calls": [
         "PU5DDC",
@@ -180,7 +180,8 @@
         "PP5RP",
         "PP5AM",
         "ZV5SC",
-        "PW5T"
+        "PW5T",
+        "PP5NB"
       ],
       "modes": [
         "FM",
@@ -297,7 +298,7 @@
     {
       "locator": "GG14",
       "place": "GG14",
-      "qsos": 19,
+      "qsos": 20,
       "confirmed": true,
       "calls": [
         "ZP6CEA",
@@ -359,7 +360,7 @@
     {
       "locator": "GF05",
       "place": "GF05",
-      "qsos": 578,
+      "qsos": 584,
       "confirmed": true,
       "calls": [
         "LW3EFV",
@@ -670,7 +671,11 @@
         "LU1AAC",
         "LU9DUV",
         "LU1BCG",
-        "LU1ARW"
+        "LU1ARW",
+        "LU6DSF",
+        "LW1DNA",
+        "L76DK",
+        "LU2AOG"
       ],
       "modes": [
         "SSB",
@@ -699,7 +704,7 @@
     {
       "locator": "FF47",
       "place": "FF47",
-      "qsos": 9,
+      "qsos": 11,
       "confirmed": true,
       "calls": [
         "CD2FLM",
@@ -707,7 +712,9 @@
         "XQ2EK",
         "CE2JL",
         "3G2N",
-        "CE2JU"
+        "CE2JU",
+        "CE2YS",
+        "CE2ML"
       ],
       "modes": [
         "SSB",
@@ -964,7 +971,7 @@
     {
       "locator": "FF98",
       "place": "FF98",
-      "qsos": 26,
+      "qsos": 27,
       "confirmed": true,
       "calls": [
         "LU1JKN",
@@ -1095,7 +1102,7 @@
     {
       "locator": "FF46",
       "place": "FF46",
-      "qsos": 63,
+      "qsos": 65,
       "confirmed": true,
       "calls": [
         "CA3TSK",
@@ -1148,7 +1155,8 @@
         "CE3TSK",
         "CE3VJE",
         "CE3RNW",
-        "CE3HXY"
+        "CE3HXY",
+        "XR4A"
       ],
       "modes": [
         "FT8",
@@ -1158,7 +1166,7 @@
     {
       "locator": "GG66",
       "place": "GG66",
-      "qsos": 53,
+      "qsos": 54,
       "confirmed": true,
       "calls": [
         "PY2WC",
@@ -1205,7 +1213,8 @@
         "PY2LGM",
         "PY2DPM",
         "PY2WRA",
-        "PY2MER"
+        "PY2MER",
+        "PR2AO"
       ],
       "modes": [
         "FT8",
@@ -1345,7 +1354,7 @@
     {
       "locator": "FF51",
       "place": "FF51",
-      "qsos": 24,
+      "qsos": 25,
       "confirmed": true,
       "calls": [
         "LU6YR",
@@ -1382,7 +1391,7 @@
     {
       "locator": "GF12",
       "place": "GF12",
-      "qsos": 62,
+      "qsos": 63,
       "confirmed": true,
       "calls": [
         "LW7DYP",
@@ -1431,7 +1440,7 @@
     {
       "locator": "FK68",
       "place": "FK68",
-      "qsos": 18,
+      "qsos": 20,
       "confirmed": true,
       "calls": [
         "KP4CAR",
@@ -1450,7 +1459,9 @@
         "KP4NIN",
         "KP5/NP3VI",
         "KP4QVQ",
-        "NP4VA"
+        "NP4VA",
+        "KP4AA",
+        "WP4RF"
       ],
       "modes": [
         "FT8",
@@ -1762,15 +1773,17 @@
     {
       "locator": "GG89",
       "place": "GG89",
-      "qsos": 3,
+      "qsos": 4,
       "confirmed": true,
       "calls": [
         "PY4EVS",
-        "PU4AUD"
+        "PU4AUD",
+        "PY4RGS"
       ],
       "modes": [
         "FT8",
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -1816,7 +1829,7 @@
     {
       "locator": "JO21",
       "place": "JO21",
-      "qsos": 31,
+      "qsos": 32,
       "confirmed": true,
       "calls": [
         "OT4A",
@@ -1931,7 +1944,7 @@
     {
       "locator": "FF81",
       "place": "FF81",
-      "qsos": 42,
+      "qsos": 43,
       "confirmed": true,
       "calls": [
         "LW6DGI",
@@ -1961,7 +1974,8 @@
         "LU8DCF",
         "LU7DSY",
         "LW8EL",
-        "LU1DNO"
+        "LU1DNO",
+        "LR7DSY"
       ],
       "modes": [
         "FT8",
@@ -2402,17 +2416,19 @@
     {
       "locator": "PM86",
       "place": "PM86",
-      "qsos": 4,
+      "qsos": 5,
       "confirmed": true,
       "calls": [
         "JA7FLK",
         "JN7DOS",
         "JA9LX",
-        "JA9CHI"
+        "JA9CHI",
+        "JA9PPC"
       ],
       "modes": [
         "FT8",
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -3006,16 +3022,18 @@
     {
       "locator": "PM84",
       "place": "PM84",
-      "qsos": 3,
+      "qsos": 4,
       "confirmed": true,
       "calls": [
         "JF2PKL",
         "JA2INL",
-        "JE2KDN"
+        "JE2KDN",
+        "JA3YBK"
       ],
       "modes": [
         "FT8",
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -3037,7 +3055,7 @@
     {
       "locator": "FK52",
       "place": "FK52",
-      "qsos": 7,
+      "qsos": 8,
       "confirmed": true,
       "calls": [
         "PJ2MAN",
@@ -3141,14 +3159,15 @@
     {
       "locator": "GH80",
       "place": "GH80",
-      "qsos": 8,
+      "qsos": 9,
       "confirmed": true,
       "calls": [
         "PY4KS",
         "PY4DY",
         "PY4EK",
         "ZV4MG",
-        "PY4STO"
+        "PY4STO",
+        "PY4AR"
       ],
       "modes": [
         "FT8",
@@ -3159,7 +3178,7 @@
     {
       "locator": "GG87",
       "place": "GG87",
-      "qsos": 24,
+      "qsos": 25,
       "confirmed": true,
       "calls": [
         "PY1EY",
@@ -3176,7 +3195,8 @@
         "PY1ED",
         "PY1NS",
         "PY1JUA",
-        "ZV1RJ"
+        "ZV1RJ",
+        "PY1KA"
       ],
       "modes": [
         "FT8",
@@ -3372,7 +3392,7 @@
     {
       "locator": "IM98",
       "place": "IM98",
-      "qsos": 12,
+      "qsos": 13,
       "confirmed": true,
       "calls": [
         "EC5SP",
@@ -3386,7 +3406,8 @@
         "EA5RR",
         "EA5XA",
         "EA5QE",
-        "EA5QS"
+        "EA5QS",
+        "ED5E"
       ],
       "modes": [
         "SSB",
@@ -3565,13 +3586,14 @@
     {
       "locator": "IM66",
       "place": "IM66",
-      "qsos": 4,
+      "qsos": 5,
       "confirmed": true,
       "calls": [
         "EA7HTE",
         "EA7KJE",
         "EA7JZ",
-        "EA7KJF"
+        "EA7KJF",
+        "EA7ITL"
       ],
       "modes": [
         "FT8",
@@ -3690,7 +3712,7 @@
     {
       "locator": "FN32",
       "place": "FN32",
-      "qsos": 9,
+      "qsos": 11,
       "confirmed": true,
       "calls": [
         "KB2UZY",
@@ -3701,7 +3723,8 @@
         "AA2A",
         "NC1I",
         "W1AW/1",
-        "NU1O"
+        "NU1O",
+        "NK2R"
       ],
       "modes": [
         "SSB",
@@ -3939,7 +3962,7 @@
     {
       "locator": "IL28",
       "place": "IL28",
-      "qsos": 8,
+      "qsos": 9,
       "confirmed": true,
       "calls": [
         "EA8CZ",
@@ -3949,7 +3972,8 @@
         "EA8AOB",
         "EF8R",
         "EA8ATE",
-        "EG8WW"
+        "EG8WW",
+        "EF8BBM"
       ],
       "modes": [
         "MFSK",
@@ -3960,7 +3984,7 @@
     {
       "locator": "JO50",
       "place": "JO50",
-      "qsos": 8,
+      "qsos": 9,
       "confirmed": true,
       "calls": [
         "DL9IU",
@@ -4074,13 +4098,14 @@
     {
       "locator": "FF32",
       "place": "FF32",
-      "qsos": 7,
+      "qsos": 8,
       "confirmed": true,
       "calls": [
         "CA6YUS",
         "XQ5OS",
         "CE5PR",
-        "CE5AUC"
+        "CE5AUC",
+        "CA6OHG"
       ],
       "modes": [
         "SSB",
@@ -4090,7 +4115,7 @@
     {
       "locator": "HI03",
       "place": "HI03",
-      "qsos": 12,
+      "qsos": 13,
       "confirmed": true,
       "calls": [
         "PT7PT",
@@ -4169,7 +4194,7 @@
     {
       "locator": "IN80",
       "place": "IN80",
-      "qsos": 14,
+      "qsos": 15,
       "confirmed": true,
       "calls": [
         "EA4AAI",
@@ -4183,7 +4208,8 @@
         "EG4WWA",
         "EA4AOC",
         "EE4M",
-        "EG30URW"
+        "EG30URW",
+        "EE5R"
       ],
       "modes": [
         "MFSK",
@@ -4358,7 +4384,7 @@
     {
       "locator": "JN85",
       "place": "JN85",
-      "qsos": 7,
+      "qsos": 8,
       "confirmed": true,
       "calls": [
         "9A2AJ",
@@ -4366,7 +4392,8 @@
         "9A5Y",
         "9A1AD",
         "9A3CQL",
-        "9A5GG"
+        "9A5GG",
+        "9A9R"
       ],
       "modes": [
         "MFSK",
@@ -4415,7 +4442,7 @@
     {
       "locator": "JO31",
       "place": "JO31",
-      "qsos": 17,
+      "qsos": 18,
       "confirmed": true,
       "calls": [
         "DF5BF",
@@ -4433,7 +4460,8 @@
         "DG6SA",
         "DA0WWA",
         "DO3ME",
-        "DO5GSH"
+        "DO5GSH",
+        "DR1A"
       ],
       "modes": [
         "FT8",
@@ -4790,13 +4818,14 @@
     {
       "locator": "IM87",
       "place": "IM87",
-      "qsos": 4,
+      "qsos": 5,
       "confirmed": true,
       "calls": [
         "EA1I",
         "AN44SE",
         "AO75AN",
-        "EC7DWP"
+        "EC7DWP",
+        "ED7L"
       ],
       "modes": [
         "SSB",
@@ -5336,11 +5365,12 @@
     {
       "locator": "JN66",
       "place": "JN66",
-      "qsos": 4,
+      "qsos": 5,
       "confirmed": true,
       "calls": [
         "S57AM",
-        "IV3JJO"
+        "IV3JJO",
+        "IW3SOA"
       ],
       "modes": [
         "FT8",
@@ -5586,7 +5616,7 @@
     {
       "locator": "FK86",
       "place": "FK86",
-      "qsos": 4,
+      "qsos": 5,
       "confirmed": true,
       "calls": [
         "VP2MER",
@@ -5962,18 +5992,20 @@
     {
       "locator": "JN18",
       "place": "JN18",
-      "qsos": 5,
+      "qsos": 6,
       "confirmed": true,
       "calls": [
         "F4GTB",
         "F4FLF",
         "F6GCP",
         "F4IZO",
-        "F5DQK"
+        "F5DQK",
+        "F6KOP"
       ],
       "modes": [
         "FT8",
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -6121,7 +6153,7 @@
     {
       "locator": "JN09",
       "place": "JN09",
-      "qsos": 4,
+      "qsos": 5,
       "confirmed": true,
       "calls": [
         "F4GHN",
@@ -6131,7 +6163,8 @@
       ],
       "modes": [
         "FT8",
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -6201,16 +6234,18 @@
     {
       "locator": "JN08",
       "place": "JN08",
-      "qsos": 3,
+      "qsos": 4,
       "confirmed": true,
       "calls": [
         "F6KKR",
         "F5CT",
-        "F1ODM"
+        "F1ODM",
+        "F6ARC"
       ],
       "modes": [
         "FT8",
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -6595,7 +6630,7 @@
     {
       "locator": "FD46",
       "place": "FD46",
-      "qsos": 9,
+      "qsos": 10,
       "confirmed": true,
       "calls": [
         "CD8JVW",
@@ -6726,7 +6761,7 @@
     {
       "locator": "JN89",
       "place": "JN89",
-      "qsos": 5,
+      "qsos": 6,
       "confirmed": true,
       "calls": [
         "OK2BGW",
@@ -6849,11 +6884,12 @@
     {
       "locator": "GH14",
       "place": "GH14",
-      "qsos": 5,
+      "qsos": 6,
       "confirmed": true,
       "calls": [
         "PY9AA",
-        "ZV9MT"
+        "ZV9MT",
+        "PU9PED"
       ],
       "modes": [
         "FT8",
@@ -7359,7 +7395,7 @@
     {
       "locator": "JO11",
       "place": "JO11",
-      "qsos": 2,
+      "qsos": 3,
       "confirmed": true,
       "calls": [
         "ON5UN",
@@ -7580,13 +7616,15 @@
     {
       "locator": "JO56",
       "place": "JO56",
-      "qsos": 1,
+      "qsos": 2,
       "confirmed": true,
       "calls": [
-        "OZ2LC"
+        "OZ2LC",
+        "OZ7X"
       ],
       "modes": [
-        "FT8"
+        "FT8",
+        "SSB"
       ]
     },
     {
@@ -7604,7 +7642,7 @@
     {
       "locator": "JN75",
       "place": "JN75",
-      "qsos": 7,
+      "qsos": 8,
       "confirmed": true,
       "calls": [
         "9A4AA",
@@ -7612,7 +7650,8 @@
         "S53F",
         "S50K",
         "S56B",
-        "9A2CD"
+        "9A2CD",
+        "9A6A"
       ],
       "modes": [
         "FT8",
@@ -7784,11 +7823,12 @@
     {
       "locator": "IN83",
       "place": "IN83",
-      "qsos": 4,
+      "qsos": 5,
       "confirmed": true,
       "calls": [
         "AO75EU",
-        "EH2EUS"
+        "EH2EUS",
+        "EA1YD"
       ],
       "modes": [
         "SSB",
@@ -7841,16 +7881,18 @@
     {
       "locator": "JN79",
       "place": "JN79",
-      "qsos": 3,
+      "qsos": 4,
       "confirmed": true,
       "calls": [
         "OK2UZL",
         "OK2MK",
-        "OK1FCR"
+        "OK1FCR",
+        "OL7J"
       ],
       "modes": [
         "MFSK",
-        "FT8"
+        "FT8",
+        "SSB"
       ]
     },
     {
@@ -8189,12 +8231,13 @@
     {
       "locator": "JM08",
       "place": "JM08",
-      "qsos": 3,
+      "qsos": 4,
       "confirmed": true,
       "calls": [
         "AO75MA",
         "EA5G",
-        "EA5UB"
+        "EA5UB",
+        "ED5D"
       ],
       "modes": [
         "SSB",
@@ -8581,16 +8624,18 @@
     {
       "locator": "QM05",
       "place": "QM05",
-      "qsos": 3,
+      "qsos": 5,
       "confirmed": true,
       "calls": [
         "JE1BMJ",
         "JH1HRJ",
-        "JL1MJD"
+        "JL1MJD",
+        "JK1AKC"
       ],
       "modes": [
         "FT8",
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -8853,13 +8898,14 @@
     {
       "locator": "AA00",
       "place": "AA00",
-      "qsos": 8,
+      "qsos": 9,
       "confirmed": true,
       "calls": [
         "LT4RCA",
         "G0JEI",
         "ZV8PA",
-        "2E0KKY"
+        "2E0KKY",
+        "N6DZ"
       ],
       "modes": [
         "SSB",
@@ -9043,7 +9089,7 @@
     {
       "locator": "JN05",
       "place": "JN05",
-      "qsos": 5,
+      "qsos": 6,
       "confirmed": true,
       "calls": [
         "F5NBX",
@@ -9187,13 +9233,14 @@
     {
       "locator": "KN22",
       "place": "KN22",
-      "qsos": 4,
+      "qsos": 6,
       "confirmed": true,
       "calls": [
         "LZ1WR",
         "LZ2DF",
         "LZ5R",
-        "LZ1ON"
+        "LZ1ON",
+        "LZ4TX"
       ],
       "modes": [
         "SSB",
@@ -9204,7 +9251,7 @@
     {
       "locator": "FE37",
       "place": "FE37",
-      "qsos": 6,
+      "qsos": 8,
       "confirmed": true,
       "calls": [
         "CE7ORS",
@@ -9212,7 +9259,9 @@
         "CE7OKD",
         "CD7LVC",
         "CA7BOD",
-        "CB200C"
+        "CB200C",
+        "CB7A",
+        "CE7BOD"
       ],
       "modes": [
         "SSB",
@@ -9868,7 +9917,7 @@
     {
       "locator": "JO02",
       "place": "JO02",
-      "qsos": 5,
+      "qsos": 6,
       "confirmed": true,
       "calls": [
         "M6T",
@@ -9969,7 +10018,7 @@
     {
       "locator": "EN91",
       "place": "EN91",
-      "qsos": 12,
+      "qsos": 13,
       "confirmed": true,
       "calls": [
         "K3LR",
@@ -10107,7 +10156,7 @@
     {
       "locator": "IM61",
       "place": "IM61",
-      "qsos": 3,
+      "qsos": 4,
       "confirmed": true,
       "calls": [
         "CN3A"
@@ -10146,12 +10195,13 @@
     {
       "locator": "IM57",
       "place": "IM57",
-      "qsos": 3,
+      "qsos": 4,
       "confirmed": true,
       "calls": [
         "CT5KAO",
         "CT2ECS",
-        "CS7BPO"
+        "CS7BPO",
+        "CS2K"
       ],
       "modes": [
         "SSB",
@@ -10161,10 +10211,11 @@
     {
       "locator": "EM55",
       "place": "EM55",
-      "qsos": 1,
+      "qsos": 2,
       "confirmed": true,
       "calls": [
-        "NJ4P"
+        "NJ4P",
+        "WV4P"
       ],
       "modes": [
         "SSB"
@@ -10265,7 +10316,7 @@
     {
       "locator": "KM64",
       "place": "KM64",
-      "qsos": 1,
+      "qsos": 2,
       "confirmed": true,
       "calls": [
         "P33W"
@@ -10418,11 +10469,12 @@
     {
       "locator": "FF41",
       "place": "FF41",
-      "qsos": 3,
+      "qsos": 4,
       "confirmed": false,
       "calls": [
         "LU1YOC",
-        "CA6TYY"
+        "CA6TYY",
+        "CA4BRW"
       ],
       "modes": [
         "SSB"
@@ -10722,7 +10774,7 @@
     {
       "locator": "DM79",
       "place": "DM79",
-      "qsos": 6,
+      "qsos": 7,
       "confirmed": true,
       "calls": [
         "AE0NB",
@@ -10740,18 +10792,20 @@
     {
       "locator": "EL88",
       "place": "EL88",
-      "qsos": 7,
+      "qsos": 8,
       "confirmed": true,
       "calls": [
         "KG4LUL",
         "AI4FR",
         "KO3ZDE",
         "K4EX",
-        "W4CHA"
+        "W4CHA",
+        "N4EXA"
       ],
       "modes": [
         "FT8",
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -10769,7 +10823,7 @@
     {
       "locator": "GG99",
       "place": "GG99",
-      "qsos": 9,
+      "qsos": 10,
       "confirmed": true,
       "calls": [
         "PP1WW",
@@ -11315,7 +11369,7 @@
     {
       "locator": "EM60",
       "place": "EM60",
-      "qsos": 5,
+      "qsos": 6,
       "confirmed": true,
       "calls": [
         "W4ZRQ",
@@ -11435,18 +11489,20 @@
     {
       "locator": "KN10",
       "place": "KN10",
-      "qsos": 5,
+      "qsos": 6,
       "confirmed": true,
       "calls": [
         "SV2HTW",
         "SX0W",
         "SV2SIH",
         "SV2MJY",
-        "SV2JAO"
+        "SV2JAO",
+        "SX37VER"
       ],
       "modes": [
         "FT8",
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -11854,13 +11910,15 @@
     {
       "locator": "CM87",
       "place": "CM87",
-      "qsos": 1,
+      "qsos": 2,
       "confirmed": true,
       "calls": [
-        "W6TJK"
+        "W6TJK",
+        "K6XX"
       ],
       "modes": [
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -11878,7 +11936,7 @@
     {
       "locator": "EL98",
       "place": "EL98",
-      "qsos": 9,
+      "qsos": 10,
       "confirmed": true,
       "calls": [
         "KN1B",
@@ -11889,7 +11947,8 @@
         "K9OM",
         "N3HCN",
         "KQ4OJH",
-        "W4UPD"
+        "W4UPD",
+        "NN7CW"
       ],
       "modes": [
         "MFSK",
@@ -11942,13 +12001,14 @@
     {
       "locator": "EN50",
       "place": "EN50",
-      "qsos": 5,
+      "qsos": 6,
       "confirmed": true,
       "calls": [
         "K9CW",
         "N9IUA",
         "K9CT",
-        "KG9N"
+        "KG9N",
+        "AC9S"
       ],
       "modes": [
         "MFSK",
@@ -12121,14 +12181,16 @@
     {
       "locator": "CN85",
       "place": "CN85",
-      "qsos": 2,
+      "qsos": 3,
       "confirmed": true,
       "calls": [
         "KJ7WLL",
-        "AI9Q"
+        "AI9Q",
+        "WM7A"
       ],
       "modes": [
-        "FT8"
+        "FT8",
+        "SSB"
       ]
     },
     {
@@ -12484,7 +12546,7 @@
     {
       "locator": "EM58",
       "place": "EM58",
-      "qsos": 3,
+      "qsos": 4,
       "confirmed": true,
       "calls": [
         "WD9IQN",
@@ -12548,13 +12610,15 @@
     {
       "locator": "QM09",
       "place": "QM09",
-      "qsos": 1,
+      "qsos": 2,
       "confirmed": true,
       "calls": [
-        "JA7MFL"
+        "JA7MFL",
+        "JG7AMD"
       ],
       "modes": [
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -12572,7 +12636,7 @@
     {
       "locator": "JN27",
       "place": "JN27",
-      "qsos": 3,
+      "qsos": 4,
       "confirmed": true,
       "calls": [
         "F6EAZ",
@@ -12729,13 +12793,15 @@
     {
       "locator": "EN53",
       "place": "EN53",
-      "qsos": 1,
+      "qsos": 2,
       "confirmed": true,
       "calls": [
-        "N2TSQ"
+        "N2TSQ",
+        "K9CE"
       ],
       "modes": [
-        "MFSK"
+        "MFSK",
+        "SSB"
       ]
     },
     {
@@ -13353,7 +13419,7 @@
     {
       "locator": "DM52",
       "place": "DM52",
-      "qsos": 2,
+      "qsos": 3,
       "confirmed": true,
       "calls": [
         "N2IC"
@@ -13451,7 +13517,7 @@
     {
       "locator": "HI20",
       "place": "HI20",
-      "qsos": 2,
+      "qsos": 3,
       "confirmed": true,
       "calls": [
         "PP7GB"
@@ -13464,7 +13530,7 @@
     {
       "locator": "GH84",
       "place": "GH84",
-      "qsos": 2,
+      "qsos": 3,
       "confirmed": true,
       "calls": [
         "PY4JW"
@@ -13530,7 +13596,7 @@
     {
       "locator": "PM51",
       "place": "PM51",
-      "qsos": 1,
+      "qsos": 2,
       "confirmed": false,
       "calls": [
         "JA7OWD"
@@ -14015,7 +14081,7 @@
     {
       "locator": "KN03",
       "place": "KN03",
-      "qsos": 1,
+      "qsos": 2,
       "confirmed": false,
       "calls": [
         "YT9W"
@@ -14417,13 +14483,14 @@
     {
       "locator": "FD38",
       "place": "FD38",
-      "qsos": 1,
+      "qsos": 2,
       "confirmed": true,
       "calls": [
         "CA8CEU"
       ],
       "modes": [
-        "FT8"
+        "FT8",
+        "SSB"
       ]
     },
     {
@@ -15556,7 +15623,7 @@
       "locator": "KM39",
       "place": "KM39",
       "qsos": 1,
-      "confirmed": false,
+      "confirmed": true,
       "calls": [
         "TA1BM"
       ],
@@ -15623,8 +15690,92 @@
       "modes": [
         "FT8"
       ]
+    },
+    {
+      "locator": "JJ30",
+      "place": "JJ30",
+      "qsos": 2,
+      "confirmed": false,
+      "calls": [
+        "S9R"
+      ],
+      "modes": [
+        "FT8"
+      ]
+    },
+    {
+      "locator": "QL17",
+      "place": "QL17",
+      "qsos": 1,
+      "confirmed": true,
+      "calls": [
+        "JD1BQP"
+      ],
+      "modes": [
+        "FT8"
+      ]
+    },
+    {
+      "locator": "EM00",
+      "place": "EM00",
+      "qsos": 1,
+      "confirmed": false,
+      "calls": [
+        "K5TR"
+      ],
+      "modes": [
+        "SSB"
+      ]
+    },
+    {
+      "locator": "KM46",
+      "place": "KM46",
+      "qsos": 1,
+      "confirmed": false,
+      "calls": [
+        "SX5P"
+      ],
+      "modes": [
+        "SSB"
+      ]
+    },
+    {
+      "locator": "JN40",
+      "place": "JN40",
+      "qsos": 1,
+      "confirmed": false,
+      "calls": [
+        "IP0A"
+      ],
+      "modes": [
+        "SSB"
+      ]
+    },
+    {
+      "locator": "EN74",
+      "place": "EN74",
+      "qsos": 1,
+      "confirmed": false,
+      "calls": [
+        "K8GL"
+      ],
+      "modes": [
+        "SSB"
+      ]
+    },
+    {
+      "locator": "DN71",
+      "place": "DN71",
+      "qsos": 1,
+      "confirmed": false,
+      "calls": [
+        "KK7TZP"
+      ],
+      "modes": [
+        "SSB"
+      ]
     }
   ],
-  "total": 5179,
-  "located": 5093
+  "total": 5275,
+  "located": 5187
 }
