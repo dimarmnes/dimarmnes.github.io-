@@ -181,6 +181,37 @@
     font-size:.74rem;
   }
 
+  .catalog-search{flex:1 1 235px;max-width:310px}
+
+  .catalog-search input{
+    width:100%;
+    min-height:32px;
+    border:1px solid #c9bda8;
+    border-radius:8px;
+    padding:6px 10px 6px 32px;
+    color:#4f4a43;
+    background:
+      radial-gradient(circle at 14px 13px,transparent 5px,#746b5d 5.5px 6.5px,transparent 7px),
+      linear-gradient(45deg,transparent 47%,#746b5d 48% 54%,transparent 55%) 19px 19px/7px 7px no-repeat,
+      #fffaf0;
+    font-size:.74rem;
+  }
+
+  .catalog-search input:focus{outline:2px solid #253747;outline-offset:2px}
+  .catalog-search input::placeholder{color:#81796d}
+
+  .visually-hidden{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+  }
+
   .legend{
     display:flex;
     gap:12px;
@@ -223,7 +254,10 @@
     justify-content:center;
     align-items:center;
     transition:filter .18s ease;
+    cursor:pointer;
   }
+
+  .stamp-wrap:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
 
   .stamp{
     width:118px;
@@ -309,6 +343,8 @@
     margin:3px 0 7px;
     filter:saturate(.9);
   }
+
+  .flag-image{display:block;width:42px;height:28px;object-fit:cover;border:1px solid rgba(84,41,35,.28)}
 
   .prefix{
     font:800 1.13rem/1 ui-monospace,SFMono-Regular,Menlo,monospace;
@@ -408,6 +444,7 @@
     }
     .stamp{width:108px;min-height:138px}
     .legend{display:none}
+    .catalog-search{order:3;flex-basis:100%;max-width:none}
   }
 
 .album-shell{max-width:1180px;margin:auto;padding:0 22px}

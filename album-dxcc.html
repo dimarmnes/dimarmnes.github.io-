@@ -10,7 +10,8 @@
 <link rel="stylesheet" href="css/pie.css">
 <link rel="stylesheet" href="css/navegacion.css">
 
-<link rel="stylesheet" href="css/album-dxcc.css">
+<link rel="stylesheet" href="css/album-dxcc.css?v=20261029-2">
+<link rel="stylesheet" href="css/ficha-dxcc.css?v=20261029-1">
 </head>
 <body id="top">
 <div class="album-shell"><header class="global-header">
@@ -34,6 +35,7 @@
   <p class="intro">
     Las entidades vigentes del DXCC reunidas como una colección de estampillas.
     Los matasellos muestran los modos trabajados y su estado de confirmación.
+    Seleccioná una estampilla para consultar su ficha de catálogo.
   </p>
 </header>
 
@@ -70,6 +72,13 @@
         <option value="AN">Antártida</option>
       </select>
 
+      <label class="catalog-search">
+        <span class="visually-hidden">Buscar en el catálogo DXCC</span>
+        <input id="catalogSearch" type="search" autocomplete="off"
+          placeholder="Buscar entidad, prefijo o DXCC…"
+          aria-label="Buscar por entidad, prefijo o número DXCC">
+      </label>
+
       <label class="adif-upload" title="Tu archivo se procesa únicamente en este navegador; no se envía ni modifica el ADIF publicado.">
         <input id="adifFile" type="file" accept=".adi,.adif,text/plain">
         Cargar ADIF
@@ -93,6 +102,51 @@
   </section>
 </main>
 
+<dialog class="catalog-dialog" id="catalog-dialog" aria-labelledby="catalog-title">
+  <article class="catalog-card">
+    <div class="catalog-tab">Catálogo DXCC <i></i> Ficha <strong id="card-number">100</strong></div>
+    <button class="close-card" id="close-card" type="button" aria-label="Cerrar ficha">×</button>
+
+    <section class="stamp-mount" aria-label="Estampilla de la entidad">
+      <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div><div class="corner corner-br"></div>
+      <div id="selected-stamp"></div>
+    </section>
+
+    <section class="globe-panel">
+      <canvas id="orthographic-globe" aria-label="Globo ortográfico de la entidad seleccionada"></canvas>
+      <p id="card-coordinates"></p>
+    </section>
+
+    <section class="entity-information">
+      <div class="entity-heading">
+        <p class="entity-kicker" id="card-region"></p>
+        <h2 id="catalog-title"></h2>
+        <p class="english-name" id="card-name-en" hidden></p>
+      </div>
+      <dl>
+        <div><dt>Entidad DXCC</dt><dd id="card-dxcc"></dd></div>
+        <div><dt>Continente</dt><dd id="card-continent"></dd></div>
+        <div><dt>Zona CQ</dt><dd id="card-cq"></dd></div>
+        <div><dt>Zonas ITU</dt><dd id="card-itu"></dd></div>
+        <div class="prefix-data"><dt>Prefijos</dt><dd id="card-prefixes"></dd></div>
+      </dl>
+    </section>
+
+    <section class="entity-summary">
+      <h3>Sobre la entidad</h3>
+      <p id="card-summary"></p>
+      <a id="card-wikipedia" href="#" target="_blank" rel="noopener">Conocer más en Wikipedia <span>↗</span></a>
+    </section>
+
+    <footer class="catalog-signature">
+      <button class="card-navigation" id="previous-card" type="button" aria-label="Entidad anterior">‹</button>
+      <span></span> LU1IDC · ÁLBUM DXCC <span></span>
+      <button class="card-navigation" id="next-card" type="button" aria-label="Entidad siguiente">›</button>
+    </footer>
+  </article>
+</dialog>
+
 <div class="footer-shell">
 <footer class="global-footer">
   <div class="footer-mark">
@@ -109,7 +163,8 @@
 </div>
 
 <script src="js/dxcc-data.js"></script>
-<script src="js/album-dxcc.js"></script>
+<script src="js/album-dxcc.js?v=20261029-3"></script>
+<script type="module" src="js/album-dxcc-ficha.js?v=20261029-2"></script>
 <script src="js/cabecera.js"></script>
 </body>
 </html>

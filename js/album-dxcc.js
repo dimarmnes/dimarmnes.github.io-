@@ -4,6 +4,28 @@ const ADIF_URL = "datos/contactos.adi";
 let entities = [];
 let statusFilter = "workedplus";
 let continentFilter = "ALL";
+let searchFilter = "";
+
+function normalizeSearch(value) {
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function matchesSearch(entity) {
+  if (!searchFilter) return true;
+  const prefixes = Array.isArray(entity.prefixes) ? entity.prefixes.join(" ") : entity.prefixes;
+  return normalizeSearch([
+    entity.id,
+    entity.name,
+    entity.nameEn,
+    entity.prefix,
+    prefixes
+  ].join(" ")).includes(searchFilter);
+}
 
 function parseAdif(text) {
   const records = [];
@@ -70,16 +92,19 @@ function matchesStatus(entity) {
 }
 
 function render() {
-  const filtered = entities.filter(entity => matchesStatus(entity) &&
+  const filtered = entities.filter(entity => (!searchFilter ? matchesStatus(entity) : true) &&
+    matchesSearch(entity) &&
     (continentFilter === "ALL" || entity.cont === continentFilter));
   const grid = document.getElementById("grid");
   grid.innerHTML = filtered.length ? filtered.map(entity => `
-    <div class="stamp-wrap" title="${entity.name} · ${entity.nameEn} · DXCC ${entity.id}${entity.qsos ? ` · ${entity.qsos} QSO` : ""}">
+    <div class="stamp-wrap" data-dxcc="${entity.id}" role="button" tabindex="0" title="${entity.name} · ${entity.nameEn} · DXCC ${entity.id}${entity.qsos ? ` · ${entity.qsos} QSO` : ""}">
       <article class="stamp ${entity.status}">
         <span class="mini-dxcc">DXCC</span>
         <span class="entity-no">${entity.id}</span>
         ${Object.entries(entity.modes).map(([mode, state]) => postmark(mode, state)).join("")}
-        <span class="flag" aria-hidden="true">${entity.flag}</span>
+        ${entity.flagImage
+          ? `<img class="flag flag-image" src="${entity.flagImage}" alt="" aria-hidden="true">`
+          : `<span class="flag" aria-hidden="true">${entity.flag}</span>`}
         <strong class="prefix">${entity.prefix || "—"}</strong>
         <span class="country">${entity.name}</span>
       </article>
@@ -87,6 +112,11 @@ function render() {
   document.getElementById("workedCount").textContent = entities.filter(e => e.status !== "needed").length;
   document.getElementById("confirmedCount").textContent = entities.filter(e => e.status === "confirmed").length;
   document.getElementById("visibleCount").textContent = filtered.length;
+  window.DXCC_ALBUM_ENTITIES = entities;
+  window.DXCC_ALBUM_VISIBLE_IDS = filtered.map(entity => entity.id);
+  document.dispatchEvent(new CustomEvent("dxccalbumrendered", {
+    detail: {entities, visibleIds: window.DXCC_ALBUM_VISIBLE_IDS}
+  }));
 }
 
 function selectFilter(value) {
@@ -95,13 +125,19 @@ function selectFilter(value) {
 }
 
 async function loadAlbum(adifText, localMessage = "") {
-  const data = typeof DXCC_DATA !== "undefined"
+  const data = location.protocol === "file:" && typeof DXCC_DATA !== "undefined"
     ? DXCC_DATA
     : await fetch(CATALOG_URL).then(response => {
         if (!response.ok) throw new Error("No se pudo cargar el catálogo DXCC.");
         return response.json();
       });
-  entities = data.entities.map(entity => ({...entity, modes: {}, qsos: 0, status: "needed"}));
+  entities = data.entities.map(entity => ({
+    ...entity,
+    cont: entity.cont || entity.continent,
+    modes: {},
+    qsos: 0,
+    status: "needed"
+  }));
   const qsos = parseAdif(adifText);
   applyLog(entities, qsos);
   const validQsos = entities.reduce((total, entity) => total + entity.qsos, 0);
@@ -138,6 +174,10 @@ document.querySelectorAll(".filter").forEach(button => button.addEventListener("
 }));
 document.getElementById("continent").addEventListener("change", event => {
   continentFilter = event.target.value; render();
+});
+document.getElementById("catalogSearch").addEventListener("input", event => {
+  searchFilter = normalizeSearch(event.target.value);
+  render();
 });
 document.getElementById("adifFile").addEventListener("change", async event => {
   const file = event.target.files[0];
