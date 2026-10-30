@@ -498,8 +498,8 @@
       },
       "flag": "🇦🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Aruba",
+      "summary": "Frente a la costa venezolana, Aruba combina playas de arena clara con un interior seco y rocoso. Es una de las islas caribeñas que integran el Reino de los Países Bajos."
     },
     {
       "id": 150,
@@ -926,8 +926,8 @@
       },
       "flag": "🇧🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Bolivia",
+      "summary": "Entre la cordillera de los Andes y las tierras bajas amazónicas, Bolivia reúne altiplanos, salares y bosques tropicales. El salar de Uyuni es uno de sus paisajes más singulares."
     },
     {
       "id": 520,
@@ -952,8 +952,8 @@
       },
       "flag": "🇧🇶",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Bonaire",
+      "summary": "Al norte de Venezuela, Bonaire es una isla caribeña de clima seco, salinas y arrecifes coralinos. Forma parte de los Países Bajos y es especialmente conocida por sus aguas transparentes."
     },
     {
       "id": 501,
@@ -1061,7 +1061,7 @@
       "flag": "🇧🇷",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Brasil",
-      "summary": ""
+      "summary": "Brasil ocupa gran parte del este de Sudamérica y se extiende desde la Amazonia hasta las llanuras del sur. Sus paisajes incluyen selvas, grandes ríos, sabanas y una extensa costa atlántica."
     },
     {
       "id": 345,
@@ -1467,7 +1467,7 @@
       "flag": "🇨🇱",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Chile",
-      "summary": ""
+      "summary": "Chile forma una estrecha franja entre la cordillera de los Andes y el océano Pacífico. Desde el desierto de Atacama hasta los fiordos australes, ofrece una extraordinaria variedad de paisajes."
     },
     {
       "id": 318,
@@ -1584,8 +1584,8 @@
       },
       "flag": "🇨🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Colombia",
+      "summary": "Colombia conecta los Andes con la Amazonia y posee costas tanto en el Caribe como en el Pacífico. Sus montañas, selvas y llanuras albergan una notable diversidad de ecosistemas."
     },
     {
       "id": 214,
@@ -1830,8 +1830,8 @@
       },
       "flag": "🇨🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Curazao",
+      "summary": "Situada frente a Venezuela, Curazao es una isla del Caribe meridional con costas rocosas, pequeñas bahías y arrecifes. Willemstad, su capital, destaca por sus coloridas construcciones frente al puerto."
     },
     {
       "id": 221,
@@ -1942,7 +1942,7 @@
       "flag": "🇪🇨",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Ecuador",
-      "summary": ""
+      "summary": "Atravesado por la línea ecuatorial, Ecuador reúne montañas andinas, selva amazónica y una costa sobre el Pacífico. Sus volcanes y la gran variedad de paisajes se suceden en distancias relativamente cortas."
     },
     {
       "id": 478,
@@ -2329,8 +2329,8 @@
       },
       "flag": "🇧🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Fernando_de_Noronha",
+      "summary": "Lejos de la costa nordeste de Brasil, Fernando de Noronha es un archipiélago volcánico de aguas claras y acantilados. Sus áreas marinas protegidas albergan tortugas, delfines y abundante fauna oceánica."
     },
     {
       "id": 375,
@@ -2790,8 +2790,8 @@
       },
       "flag": "🇬🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Guayana_Francesa",
+      "summary": "En la costa atlántica septentrional de Sudamérica, la Guayana Francesa está cubierta en gran parte por selva tropical. Allí se encuentra el puerto espacial de Kourou, desde donde se lanzan cohetes europeos."
     },
     {
       "id": 106,
@@ -2924,8 +2924,8 @@
       },
       "flag": "🇬🇾",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Guyana",
+      "summary": "Guyana se extiende entre el Atlántico y el interior selvático del escudo guayanés. Sus ríos, mesetas y grandes saltos de agua incluyen las impresionantes cataratas Kaieteur."
     },
     {
       "id": 78,
@@ -3483,7 +3483,7 @@
       "flag": "🇨🇱",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Isla_de_Pascua",
-      "summary": ""
+      "summary": "Aislada en el Pacífico, Rapa Nui o isla de Pascua es una isla volcánica célebre por sus monumentales moáis. Su cultura polinesia se desarrolló a miles de kilómetros de las costas continentales."
     },
     {
       "id": 252,
@@ -3616,7 +3616,7 @@
       "flag": "🇬🇧",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Islas_Georgias_del_Sur",
-      "summary": ""
+      "summary": "En el Atlántico Sur, Georgia del Sur es una isla montañosa de glaciares y costas abruptas. Sus playas y bahías reúnen grandes colonias de pingüinos, focas y otras aves marinas."
     },
     {
       "id": 111,
@@ -3778,8 +3778,8 @@
       },
       "flag": "🇨🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_de_Malpelo",
+      "summary": "Malpelo emerge como un macizo rocoso aislado del Pacífico colombiano. Sus acantilados casi desnudos contrastan con las aguas profundas que albergan una rica vida marina, incluidos tiburones."
     },
     {
       "id": 182,
@@ -4715,7 +4715,7 @@
       "flag": "🇪🇨",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Islas_Gal%C3%A1pagos",
-      "summary": ""
+      "summary": "Las Galápagos son un archipiélago volcánico del Pacífico ecuatorial, conocido por sus especies únicas. Su aislamiento convirtió a estas islas en una referencia fundamental para el estudio de la evolución."
     },
     {
       "id": 99,
@@ -4783,8 +4783,8 @@
       },
       "flag": "🇨🇱",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Archipi%C3%A9lago_Juan_Fern%C3%A1ndez",
+      "summary": "Este archipiélago chileno se alza en el Pacífico, lejos de la costa continental. Sus montañas volcánicas y especies endémicas acompañan a la isla Robinson Crusoe, ligada a una célebre historia literaria."
     },
     {
       "id": 131,
@@ -4926,7 +4926,7 @@
       "flag": "🇫🇰",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Islas_Malvinas",
-      "summary": ""
+      "summary": "Las islas Malvinas forman un archipiélago del Atlántico Sur de costas recortadas, turberas y extensas praderas. Su fauna incluye pingüinos y aves marinas; la soberanía del territorio es disputada por Argentina y el Reino Unido."
     },
     {
       "id": 166,
@@ -5063,7 +5063,7 @@
       "flag": "🇦🇶",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Islas_Orcadas_del_Sur",
-      "summary": ""
+      "summary": "Al nordeste de la península Antártica, las Orcadas del Sur son un archipiélago de montañas heladas y mares fríos. Allí funciona la base argentina Orcadas, una de las estaciones científicas más antiguas de la Antártida."
     },
     {
       "id": 197,
@@ -5218,7 +5218,7 @@
       "flag": "🇬🇧",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Islas_Sandwich_del_Sur",
-      "summary": ""
+      "summary": "Este remoto arco de islas volcánicas se extiende por las frías aguas del Atlántico Sur. Sus volcanes, glaciares y costas inaccesibles conforman uno de los archipiélagos más aislados de la región."
     },
     {
       "id": 241,
@@ -5245,7 +5245,7 @@
       "flag": "🇦🇶",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Islas_Shetland_del_Sur",
-      "summary": ""
+      "summary": "Frente a la península Antártica, las Shetland del Sur combinan islas montañosas, glaciares y costas pobladas de fauna marina. Albergan numerosas bases científicas de distintos países."
     },
     {
       "id": 247,
@@ -5371,8 +5371,8 @@
       },
       "flag": "🇧🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Trinidad_y_Mart%C3%ADn_Vaz",
+      "summary": "En pleno Atlántico Sur, al este de Brasil, Trindade y Martim Vaz forman un conjunto de islas oceánicas de origen volcánico. Sus costas escarpadas y aislamiento favorecen una fauna particular."
     },
     {
       "id": 274,
@@ -7420,8 +7420,8 @@
       },
       "flag": "🇵🇾",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Paraguay",
+      "summary": "Sin salida al mar, Paraguay está atravesado por grandes ríos que conectan sus regiones. El territorio alterna el Chaco de bosques y llanuras con áreas más húmedas y fértiles al este."
     },
     {
       "id": 136,
@@ -7447,8 +7447,8 @@
       },
       "flag": "🇵🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Per%C3%BA",
+      "summary": "Perú reúne la costa desértica del Pacífico, las altas cumbres de los Andes y extensas selvas amazónicas. Su geografía conserva testimonios de antiguas culturas andinas, como Machu Picchu."
     },
     {
       "id": 175,
@@ -8140,8 +8140,8 @@
       },
       "flag": "🇨🇱",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Desventuradas",
+      "summary": "Las islas San Félix y San Ambrosio, conocidas como Desventuradas, emergen del Pacífico frente a Chile. Son pequeñas tierras volcánicas, áridas y aisladas, rodeadas de una rica vida marina."
     },
     {
       "id": 278,
@@ -8232,8 +8232,8 @@
       },
       "flag": "🇧🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Archipi%C3%A9lago_de_San_Pedro_y_San_Pablo",
+      "summary": "En medio del Atlántico ecuatorial, este diminuto archipiélago brasileño está formado por rocas que sobresalen del océano. Su naturaleza inhóspita y su ubicación remota lo convierten en una entidad DXCC singular."
     },
     {
       "id": 98,
@@ -8817,8 +8817,8 @@
       },
       "flag": "🇸🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Surinam",
+      "summary": "Surinam se extiende desde una baja costa atlántica hacia el interior selvático de las Guayanas. Grandes ríos atraviesan un territorio donde predominan los bosques tropicales."
     },
     {
       "id": 259,
@@ -9079,8 +9079,8 @@
       },
       "flag": "🇹🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Trinidad_y_Tobago",
+      "summary": "Frente a la costa de Venezuela, Trinidad y Tobago reúne dos islas principales de carácter contrastante. Trinidad posee extensas llanuras y humedales; Tobago destaca por sus colinas y arrecifes."
     },
     {
       "id": 474,
@@ -9269,8 +9269,8 @@
       },
       "flag": "🇺🇾",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Uruguay",
+      "summary": "Entre Brasil y Argentina, Uruguay se caracteriza por sus praderas onduladas, ríos y una extensa franja costera sobre el Río de la Plata y el Atlántico. Su relieve es predominantemente suave."
     },
     {
       "id": 292,
@@ -9349,7 +9349,7 @@
       "flag": "🇻🇪",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Venezuela",
-      "summary": ""
+      "summary": "Venezuela combina la costa caribeña con los Andes, los llanos del Orinoco y las mesetas del macizo guayanés. En esta última región se encuentra el salto Ángel, una de las cataratas más altas del planeta."
     },
     {
       "id": 293,
