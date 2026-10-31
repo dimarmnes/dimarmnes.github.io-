@@ -27,6 +27,11 @@ function matchesSearch(entity) {
   ].join(" ")).includes(searchFilter);
 }
 
+function matchesContinent(entity) {
+  if (continentFilter === "ALL") return true;
+  return String(entity.cont || "").split(",").includes(continentFilter);
+}
+
 function parseAdif(text) {
   const records = [];
   const parts = text.split(/<eor\s*>/i);
@@ -94,7 +99,7 @@ function matchesStatus(entity) {
 function render() {
   const filtered = entities.filter(entity => (!searchFilter ? matchesStatus(entity) : true) &&
     matchesSearch(entity) &&
-    (continentFilter === "ALL" || entity.cont === continentFilter));
+    matchesContinent(entity));
   const grid = document.getElementById("grid");
   grid.innerHTML = filtered.length ? filtered.map(entity => `
     <div class="stamp-wrap" data-dxcc="${entity.id}" role="button" tabindex="0" title="${entity.name} · ${entity.nameEn} · DXCC ${entity.id}${entity.qsos ? ` · ${entity.qsos} QSO` : ""}">

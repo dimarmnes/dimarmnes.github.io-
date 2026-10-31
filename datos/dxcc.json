@@ -29,8 +29,8 @@
       },
       "flag": "🇦🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Afganist%C3%A1n",
+      "summary": "Afganistán es un país interior de Asia atravesado por las montañas del Hindu Kush. Altas mesetas, valles y regiones desérticas conectan históricas rutas entre Asia central, el subcontinente indio y Oriente Medio."
     },
     {
       "id": 6,
@@ -85,8 +85,8 @@
       },
       "flag": "🇦🇱",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Albania",
+      "summary": "Albania se extiende frente al mar Adriático, entre montañas abruptas, valles y una costa de aguas claras. Su territorio balcánico conserva ciudades históricas y paisajes marcados por siglos de intercambio mediterráneo."
     },
     {
       "id": 230,
@@ -114,7 +114,7 @@
       "flag": "🇩🇪",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Alemania",
-      "summary": ""
+      "summary": "Alemania ocupa una posición central en Europa, desde las costas del mar del Norte y el Báltico hasta los Alpes. Ríos, bosques y ciudades históricas acompañan una de las mayores economías del continente."
     },
     {
       "id": 203,
@@ -140,7 +140,7 @@
       "flag": "🇦🇩",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Andorra",
-      "summary": ""
+      "summary": "Andorra es un pequeño principado situado en los Pirineos, entre España y Francia. Sus valles de alta montaña, pueblos de piedra y estaciones invernales definen un territorio sin salida al mar."
     },
     {
       "id": 401,
@@ -165,8 +165,8 @@
       },
       "flag": "🇦🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Angola",
+      "summary": "Angola se extiende desde la costa atlántica hasta las mesetas del interior de África austral. Sabanas, selvas, desiertos y grandes ríos forman un territorio de notable diversidad natural."
     },
     {
       "id": 12,
@@ -191,7 +191,7 @@
       },
       "flag": "🇦🇮",
       "flagImage": "",
-      "wikipedia": "https://es.wikipedia.org/wiki/Anguila",
+      "wikipedia": "https://es.wikipedia.org/wiki/Anguila_(territorio_brit%C3%A1nico_de_ultramar)",
       "summary": "Anguila es una pequeña isla de las Antillas Menores, rodeada de playas y arrecifes coralinos. Su relieve bajo y sus aguas turquesas contrastan con las islas volcánicas cercanas."
     },
     {
@@ -230,7 +230,7 @@
       "flag": "🇦🇶",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Ant%C3%A1rtida",
-      "summary": ""
+      "summary": "La Antártida es el continente más austral y frío del planeta, cubierto casi por completo por una vasta capa de hielo. Sin población permanente, alberga bases científicas y extensas regiones de naturaleza extrema."
     },
     {
       "id": 94,
@@ -283,8 +283,8 @@
       },
       "flag": "🇸🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Arabia_Saudita",
+      "summary": "Arabia Saudita ocupa gran parte de la península arábiga, entre el mar Rojo y el golfo Pérsico. Desiertos, mesetas y oasis dominan un territorio estrechamente ligado a la historia del islam."
     },
     {
       "id": 400,
@@ -310,8 +310,8 @@
       },
       "flag": "🇩🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Argelia",
+      "summary": "Argelia es el país más extenso de África y se extiende desde el Mediterráneo hasta el corazón del Sahara. La población se concentra en las costas y montañas del norte, de clima más templado."
     },
     {
       "id": 100,
@@ -365,8 +365,8 @@
       },
       "flag": "🇦🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Armenia",
+      "summary": "Armenia es un país montañoso del Cáucaso sur, situado entre Asia occidental y Europa oriental. Altas mesetas, valles y antiguos monasterios rodean el lago Seván y una cultura de raíces milenarias."
     },
     {
       "id": 489,
@@ -391,8 +391,8 @@
       },
       "flag": "🇫🇯",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://en.wikipedia.org/wiki/Conway_Reef",
+      "summary": "Conway es un remoto arrecife coralino de Fiyi situado al suroeste del archipiélago principal. Apenas unas rocas emergen sobre el mar y su aislamiento convierte cada operación de radio en una expedición compleja."
     },
     {
       "id": 167,
@@ -417,8 +417,8 @@
       },
       "flag": "🇫🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/M%C3%A4rket",
+      "summary": "Märket es un diminuto arrecife rocoso del mar de Åland, dividido por la frontera entre Finlandia y Suecia. La porción finlandesa constituye una entidad DXCC propia y alberga un faro aislado."
     },
     {
       "id": 171,
@@ -446,8 +446,8 @@
       },
       "flag": "🇦🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://en.wikipedia.org/wiki/Mellish_Reef",
+      "summary": "Mellish es un atolón coralino deshabitado del mar del Coral, administrado por Australia. Su pequeña laguna y sus bancos apenas emergidos se encuentran a cientos de kilómetros de cualquier tierra habitada."
     },
     {
       "id": 506,
@@ -470,10 +470,10 @@
         "lat": 15.08,
         "lon": 117.72
       },
-      "flag": "🇨🇳",
+      "flag": "📡",
       "flagImage": "",
-      "wikipedia": "https://es.wikipedia.org/wiki/Arrecife_de_Scarborough",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Bajo_de_Masinloc",
+      "summary": "El arrecife de Scarborough es un conjunto de rocas y bancos coralinos del mar de China Meridional. Su laguna y su posición aislada lo convierten en un territorio marítimo disputado y de acceso limitado."
     },
     {
       "id": 91,
@@ -528,8 +528,8 @@
       },
       "flag": "🇦🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Australia",
+      "summary": "Australia ocupa la mayor masa continental de Oceanía entre los océanos Índico y Pacífico. Desiertos, sabanas, bosques, cordilleras y extensas costas rodean ciudades concentradas principalmente en el litoral."
     },
     {
       "id": 206,
@@ -554,8 +554,8 @@
       },
       "flag": "🇦🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Austria",
+      "summary": "Austria es un país alpino de Europa central atravesado por el Danubio. Montañas, lagos y ciudades de gran patrimonio cultural se distribuyen entre sus valles orientales y las elevadas cumbres del oeste."
     },
     {
       "id": 18,
@@ -580,8 +580,8 @@
       },
       "flag": "🇦🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Azerbaiy%C3%A1n",
+      "summary": "Azerbaiyán se extiende desde las montañas del Cáucaso hasta las costas del mar Caspio. Llanuras semiáridas, yacimientos de hidrocarburos y antiguas ciudades forman un puente entre Asia occidental y Europa oriental."
     },
     {
       "id": 149,
@@ -613,8 +613,8 @@
       },
       "flag": "🇵🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Azores",
+      "summary": "Las Azores forman un archipiélago portugués de origen volcánico en medio del Atlántico Norte. Sus nueve islas reúnen cráteres, lagunas, acantilados y verdes paisajes modelados por el clima oceánico."
     },
     {
       "id": 60,
@@ -691,8 +691,8 @@
       },
       "flag": "🇧🇩",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Banglad%C3%A9s",
+      "summary": "Bangladés ocupa el gran delta formado por los ríos Ganges, Brahmaputra y Meghna junto al golfo de Bengala. Sus fértiles llanuras, humedales y manglares sostienen una población muy numerosa."
     },
     {
       "id": 62,
@@ -743,8 +743,8 @@
       },
       "flag": "🇧🇭",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Bar%C3%A9in",
+      "summary": "Baréin es un pequeño archipiélago del golfo Pérsico conectado por carretera con Arabia Saudita. Su paisaje árido y costero rodea una sociedad históricamente vinculada al comercio marítimo y las perlas."
     },
     {
       "id": 283,
@@ -769,8 +769,8 @@
       },
       "flag": "🇬🇧",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Akrotiri_y_Dhekelia",
+      "summary": "Akrotiri y Dhekelia son dos áreas bajo soberanía británica situadas en la isla de Chipre. Albergan instalaciones militares y forman una entidad DXCC separada con sectores costeros y territorios fragmentados."
     },
     {
       "id": 209,
@@ -795,8 +795,8 @@
       },
       "flag": "🇧🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/B%C3%A9lgica",
+      "summary": "Bélgica se encuentra entre el mar del Norte y las regiones interiores de Europa occidental. Sus llanuras, ciudades medievales y diversidad lingüística reflejan una larga historia como punto de encuentro continental."
     },
     {
       "id": 66,
@@ -847,8 +847,8 @@
       },
       "flag": "🇧🇯",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Ben%C3%ADn",
+      "summary": "Benín es un país alargado de África occidental que se extiende desde el golfo de Guinea hacia el Sahel. Llanuras, sabanas y humedales acompañan una rica herencia histórica y cultural."
     },
     {
       "id": 64,
@@ -899,8 +899,8 @@
       },
       "flag": "🇧🇾",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Bielorrusia",
+      "summary": "Bielorrusia ocupa una extensa llanura de Europa oriental cubierta por bosques, lagos y humedales. Su territorio interior se extiende entre Polonia, los países bálticos, Rusia y Ucrania."
     },
     {
       "id": 104,
@@ -978,8 +978,8 @@
       },
       "flag": "🇧🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Bosnia_y_Herzegovina",
+      "summary": "Bosnia y Herzegovina combina montañas, valles fluviales y una pequeña salida al mar Adriático. Su diversidad cultural y religiosa refleja la compleja historia de esta región de los Balcanes."
     },
     {
       "id": 402,
@@ -1005,8 +1005,8 @@
       },
       "flag": "🇧🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Botsuana",
+      "summary": "Botsuana es un país interior de África austral dominado por el desierto del Kalahari. El delta del Okavango forma un gran humedal interior que sostiene una extraordinaria diversidad de fauna."
     },
     {
       "id": 24,
@@ -1032,7 +1032,7 @@
       "flag": "🇧🇻",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Isla_Bouvet",
-      "summary": ""
+      "summary": "Bouvet es una remota isla volcánica noruega del Atlántico Sur, considerada una de las más aisladas del mundo. Glaciares y acantilados cubren casi todo su territorio y dificultan enormemente el desembarco."
     },
     {
       "id": 108,
@@ -1086,8 +1086,8 @@
       },
       "flag": "🇧🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Brun%C3%A9i",
+      "summary": "Brunéi es un pequeño sultanato situado en la costa norte de Borneo, rodeado por Malasia y el mar de China Meridional. Selvas tropicales, ríos y reservas de hidrocarburos caracterizan su territorio."
     },
     {
       "id": 212,
@@ -1112,8 +1112,8 @@
       },
       "flag": "🇧🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Bulgaria",
+      "summary": "Bulgaria se extiende desde el río Danubio hasta las montañas y la costa del mar Negro. Llanuras fértiles, antiguos monasterios y ciudades históricas forman parte de su paisaje balcánico."
     },
     {
       "id": 480,
@@ -1138,8 +1138,8 @@
       },
       "flag": "🇧🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Burkina_Faso",
+      "summary": "Burkina Faso es un país interior del África occidental situado entre el Sahel y las sabanas sudanesas. Su relieve es mayormente llano y la vida rural depende de una estación de lluvias breve."
     },
     {
       "id": 404,
@@ -1164,8 +1164,8 @@
       },
       "flag": "🇧🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Burundi",
+      "summary": "Burundi es un pequeño país de la región de los Grandes Lagos africanos. Colinas densamente cultivadas descienden hacia el lago Tanganica en un territorio de elevada población y relieve montañoso."
     },
     {
       "id": 306,
@@ -1190,8 +1190,8 @@
       },
       "flag": "🇧🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/But%C3%A1n",
+      "summary": "Bután es un pequeño reino del Himalaya situado entre India y China. Valles boscosos, monasterios fortificados y cumbres elevadas se distribuyen en un territorio que conserva una marcada identidad cultural."
     },
     {
       "id": 409,
@@ -1216,8 +1216,8 @@
       },
       "flag": "🇨🇻",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Cabo_Verde",
+      "summary": "Cabo Verde es un archipiélago volcánico del Atlántico situado frente a África occidental. Sus islas áridas combinan montañas, valles, playas y una cultura profundamente vinculada al océano."
     },
     {
       "id": 312,
@@ -1242,8 +1242,8 @@
       },
       "flag": "🇰🇭",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Camboya",
+      "summary": "Camboya se extiende por las llanuras del bajo Mekong y alrededor del gran lago Tonlé Sap. Selvas, arrozales y los templos de Angkor reflejan la herencia histórica del antiguo Imperio jemer."
     },
     {
       "id": 406,
@@ -1268,8 +1268,8 @@
       },
       "flag": "🇨🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Camer%C3%BAn",
+      "summary": "Camerún se extiende desde el golfo de Guinea hasta el lago Chad. Selvas ecuatoriales, sabanas, montañas y regiones volcánicas reúnen en un solo país muchos de los paisajes africanos."
     },
     {
       "id": 1,
@@ -1347,8 +1347,8 @@
       },
       "flag": "🇶🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Catar",
+      "summary": "Catar ocupa una pequeña península árida que se proyecta sobre el golfo Pérsico. Su costa baja, sus reservas de gas y el crecimiento de Doha transformaron profundamente el paisaje del país."
     },
     {
       "id": 225,
@@ -1375,8 +1375,8 @@
       },
       "flag": "🇮🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Cerde%C3%B1a",
+      "summary": "Cerdeña es una gran isla italiana del Mediterráneo occidental, de costas recortadas y relieve montañoso. Su aislamiento favoreció una identidad cultural propia y la conservación de numerosos vestigios prehistóricos."
     },
     {
       "id": 32,
@@ -1411,8 +1411,8 @@
       },
       "flag": "🇪🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Plazas_de_soberan%C3%ADa",
+      "summary": "Ceuta y Melilla son dos ciudades españolas situadas en la costa norte de África. Separadas entre sí, forman una entidad DXCC conjunta entre el Mediterráneo, el estrecho de Gibraltar y territorio marroquí."
     },
     {
       "id": 410,
@@ -1437,8 +1437,8 @@
       },
       "flag": "🇹🇩",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Chad",
+      "summary": "Chad es un extenso país interior que enlaza el Sahara con las sabanas de África central. El lago Chad y las regiones fértiles del sur contrastan con el desierto y las montañas del norte."
     },
     {
       "id": 112,
@@ -1502,8 +1502,8 @@
       },
       "flag": "🇨🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/China",
+      "summary": "China se extiende desde las costas del Pacífico hasta las montañas y desiertos del interior asiático. Grandes ríos, llanuras fértiles, mesetas y enormes ciudades conforman uno de los territorios más diversos del mundo."
     },
     {
       "id": 215,
@@ -1531,8 +1531,8 @@
       },
       "flag": "🇨🇾",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Chipre",
+      "summary": "Chipre es una isla del Mediterráneo oriental situada al sur de Turquía. Montañas, llanuras costeras y ciudades antiguas reflejan su posición histórica entre Europa, Asia y Oriente Medio."
     },
     {
       "id": 295,
@@ -1557,8 +1557,8 @@
       },
       "flag": "🇻🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Ciudad_del_Vaticano",
+      "summary": "La Ciudad del Vaticano es el Estado independiente más pequeño del mundo y se encuentra dentro de Roma. Es la sede de la Iglesia católica y reúne edificios, museos y obras de excepcional valor histórico."
     },
     {
       "id": 116,
@@ -1610,8 +1610,8 @@
       },
       "flag": "🇫🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/C%C3%B3rcega",
+      "summary": "Córcega es una isla francesa del Mediterráneo occidental, atravesada por una elevada cadena montañosa. Sus bosques, calas y pueblos conservan una marcada identidad insular entre Francia e Italia."
     },
     {
       "id": 344,
@@ -1636,8 +1636,8 @@
       },
       "flag": "🇰🇵",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Corea_del_Norte",
+      "summary": "Corea del Norte ocupa la mitad septentrional de la península de Corea, entre China, Rusia y el mar del Japón. Su relieve es principalmente montañoso, con llanuras agrícolas concentradas al oeste."
     },
     {
       "id": 137,
@@ -1666,8 +1666,8 @@
       },
       "flag": "🇰🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Corea_del_Sur",
+      "summary": "Corea del Sur ocupa la mitad meridional de la península de Corea y numerosas islas cercanas. Montañas, costas y grandes ciudades conviven en un territorio densamente poblado y altamente industrializado."
     },
     {
       "id": 428,
@@ -1692,8 +1692,8 @@
       },
       "flag": "🇨🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Costa_de_Marfil",
+      "summary": "Costa de Marfil se extiende desde el golfo de Guinea hasta las sabanas interiores de África occidental. Bosques tropicales, plantaciones y ciudades costeras sostienen una de las mayores economías regionales."
     },
     {
       "id": 308,
@@ -1750,8 +1750,8 @@
       },
       "flag": "🇬🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Creta",
+      "summary": "Creta es la mayor isla de Grecia y se extiende al sur del mar Egeo. Montañas, desfiladeros y costas variadas acompañan los vestigios de la antigua civilización minoica."
     },
     {
       "id": 497,
@@ -1776,8 +1776,8 @@
       },
       "flag": "🇭🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Croacia",
+      "summary": "Croacia se extiende desde las llanuras interiores hasta una larga costa sobre el Adriático. Sus ciudades históricas y numerosas islas forman uno de los paisajes marítimos más característicos de los Balcanes."
     },
     {
       "id": 70,
@@ -1858,8 +1858,8 @@
       },
       "flag": "🇩🇰",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Dinamarca",
+      "summary": "Dinamarca ocupa la península de Jutlandia y centenares de islas entre los mares del Norte y Báltico. Su relieve bajo combina costas, campos cultivados y ciudades vinculadas históricamente a la navegación."
     },
     {
       "id": 45,
@@ -1889,8 +1889,8 @@
       },
       "flag": "🇬🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Dodecaneso",
+      "summary": "El Dodecaneso es un conjunto de islas griegas del sudeste del mar Egeo, próximo a la costa de Turquía. Sus puertos, fortalezas y paisajes secos reflejan una historia de múltiples influencias."
     },
     {
       "id": 95,
@@ -1969,8 +1969,8 @@
       },
       "flag": "🇪🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Egipto",
+      "summary": "Egipto se organiza alrededor del valle y el delta del Nilo, rodeados por extensos desiertos. Su posición entre África y Asia acompaña una historia milenaria y el estratégico canal de Suez."
     },
     {
       "id": 74,
@@ -2022,8 +2022,8 @@
       },
       "flag": "🇦🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Emiratos_%C3%81rabes_Unidos",
+      "summary": "Los Emiratos Árabes Unidos reúnen siete emiratos entre el golfo Pérsico y el desierto de Arabia. Dunas, oasis, montañas y ciudades modernas forman un territorio transformado por el comercio y el petróleo."
     },
     {
       "id": 51,
@@ -2048,8 +2048,8 @@
       },
       "flag": "🇪🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Eritrea",
+      "summary": "Eritrea ocupa una franja del Cuerno de África junto al mar Rojo. Mesetas elevadas, regiones áridas y numerosas islas costeras forman un territorio de fuertes contrastes climáticos."
     },
     {
       "id": 279,
@@ -2080,8 +2080,8 @@
       },
       "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Escocia",
+      "summary": "Escocia ocupa el norte de la isla de Gran Bretaña e incluye numerosos archipiélagos. Sus Highlands, lagos, costas y ciudades históricas conforman un paisaje estrechamente ligado al Atlántico Norte."
     },
     {
       "id": 504,
@@ -2106,8 +2106,8 @@
       },
       "flag": "🇸🇰",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Eslovaquia",
+      "summary": "Eslovaquia es un país interior de Europa central atravesado por los Cárpatos y el Danubio. Montañas, bosques, castillos y pueblos históricos se concentran en un territorio de dimensiones reducidas."
     },
     {
       "id": 499,
@@ -2132,8 +2132,8 @@
       },
       "flag": "🇸🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Eslovenia",
+      "summary": "Eslovenia reúne Alpes, bosques, regiones kársticas y una breve costa adriática. Su posición entre Europa central y los Balcanes produce una notable variedad de paisajes en poca distancia."
     },
     {
       "id": 281,
@@ -2159,8 +2159,8 @@
       },
       "flag": "🇪🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Espa%C3%B1a",
+      "summary": "España ocupa la mayor parte de la península ibérica y se abre al Mediterráneo y al Atlántico. Mesetas, cordilleras y costas variadas acompañan una gran diversidad regional, cultural y lingüística."
     },
     {
       "id": 291,
@@ -2219,8 +2219,8 @@
       },
       "flag": "🇪🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Estonia",
+      "summary": "Estonia se encuentra a orillas del mar Báltico y combina bosques, humedales y numerosas islas. Sus ciudades históricas conviven con una sociedad estrechamente vinculada a la tecnología y al ámbito nórdico."
     },
     {
       "id": 468,
@@ -2245,8 +2245,8 @@
       },
       "flag": "🇸🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Esuatini",
+      "summary": "Esuatini es un pequeño reino interior de África austral situado entre Sudáfrica y Mozambique. Montañas, valles y sabanas se suceden en poca distancia y sostienen una marcada identidad cultural."
     },
     {
       "id": 53,
@@ -2272,8 +2272,8 @@
       },
       "flag": "🇪🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Etiop%C3%ADa",
+      "summary": "Etiopía ocupa una elevada meseta del Cuerno de África, atravesada por el gran valle del Rift. Montañas, lagos y profundas gargantas rodean una de las tradiciones históricas más antiguas del continente."
     },
     {
       "id": 56,
@@ -2356,8 +2356,8 @@
       },
       "flag": "🇵🇭",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Filipinas",
+      "summary": "Filipinas es un extenso archipiélago tropical del Pacífico occidental formado por miles de islas. Montañas, volcanes, selvas y costas densamente pobladas se distribuyen entre Luzón, Bisayas y Mindanao."
     },
     {
       "id": 224,
@@ -2382,8 +2382,8 @@
       },
       "flag": "🇫🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Finlandia",
+      "summary": "Finlandia se extiende entre el Báltico y las regiones subárticas, con miles de lagos y grandes superficies boscosas. Su territorio alcanza Laponia, donde los inviernos son largos y la población muy dispersa."
     },
     {
       "id": 176,
@@ -2408,8 +2408,8 @@
       },
       "flag": "🇫🇯",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Fiyi",
+      "summary": "Fiyi es un archipiélago volcánico y coralino del Pacífico sur. Sus islas montañosas, selvas, lagunas y arrecifes albergan comunidades melanesias e indias de gran diversidad cultural."
     },
     {
       "id": 227,
@@ -2441,7 +2441,7 @@
       "flag": "🇫🇷",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Francia",
-      "summary": ""
+      "summary": "Francia se extiende desde el Atlántico y el Mediterráneo hasta los Alpes y los Pirineos. Sus llanuras, ríos, regiones montañosas y ciudades reúnen una amplia diversidad geográfica y cultural."
     },
     {
       "id": 420,
@@ -2466,8 +2466,8 @@
       },
       "flag": "🇬🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Gab%C3%B3n",
+      "summary": "Gabón se encuentra sobre el ecuador y posee una extensa costa en el golfo de Guinea. Selvas densas, grandes ríos y una población relativamente pequeña dominan su territorio."
     },
     {
       "id": 294,
@@ -2496,8 +2496,8 @@
       },
       "flag": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Gales",
+      "summary": "Gales ocupa una península montañosa al oeste de Gran Bretaña, rodeada por una extensa costa. Sus valles, parques naturales, castillos y lengua propia sostienen una identidad cultural diferenciada."
     },
     {
       "id": 422,
@@ -2522,8 +2522,8 @@
       },
       "flag": "🇬🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Gambia",
+      "summary": "Gambia es un estrecho país de África occidental que sigue el curso del río Gambia y está casi rodeado por Senegal. Humedales, manglares y sabanas acompañan su salida al Atlántico."
     },
     {
       "id": 75,
@@ -2548,8 +2548,8 @@
       },
       "flag": "🇬🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Georgia_(pa%C3%ADs)",
+      "summary": "Georgia se encuentra en el Cáucaso sur, entre las montañas y la costa del mar Negro. Valles fértiles, antiguas iglesias y altas cumbres acompañan una cultura situada entre Europa oriental y Asia occidental."
     },
     {
       "id": 424,
@@ -2574,8 +2574,8 @@
       },
       "flag": "🇬🇭",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Ghana",
+      "summary": "Ghana se extiende desde el golfo de Guinea hasta las sabanas de África occidental. Bosques, plantaciones, antiguas fortalezas costeras y el gran lago Volta caracterizan su geografía."
     },
     {
       "id": 233,
@@ -2601,8 +2601,8 @@
       },
       "flag": "🇬🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Gibraltar",
+      "summary": "Gibraltar es un territorio británico situado en el extremo sur de la península ibérica. Su gran peñón domina el estrecho que comunica el Mediterráneo con el océano Atlántico."
     },
     {
       "id": 77,
@@ -2627,7 +2627,7 @@
       },
       "flag": "🇬🇩",
       "flagImage": "",
-      "wikipedia": "https://es.wikipedia.org/wiki/Granada",
+      "wikipedia": "https://es.wikipedia.org/wiki/Granada_(pa%C3%ADs)",
       "summary": "Granada, conocida como la isla de las especias, se encuentra al sur del arco de las Antillas Menores. Su origen volcánico ha dejado montañas verdes, cascadas y playas resguardadas."
     },
     {
@@ -2654,8 +2654,8 @@
       },
       "flag": "🇬🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Grecia",
+      "summary": "Grecia ocupa el extremo meridional de los Balcanes y miles de islas de los mares Egeo y Jónico. Su relieve montañoso y sus costas enmarcan numerosos sitios de la antigüedad clásica."
     },
     {
       "id": 237,
@@ -2708,7 +2708,7 @@
       },
       "flag": "🇬🇵",
       "flagImage": "",
-      "wikipedia": "https://es.wikipedia.org/wiki/Guadalupe",
+      "wikipedia": "https://es.wikipedia.org/wiki/Guadalupe_(Francia)",
       "summary": "Guadalupe reúne islas de paisajes contrastantes en las Antillas Menores. Basse-Terre posee selvas y un volcán activo, mientras Grande-Terre ofrece colinas calcáreas, playas y lagunas."
     },
     {
@@ -2737,8 +2737,8 @@
       },
       "flag": "🇬🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Guam",
+      "summary": "Guam es una isla estadounidense del archipiélago de las Marianas, en el Pacífico occidental. Su relieve combina mesetas coralinas, colinas volcánicas y una importante presencia militar."
     },
     {
       "id": 76,
@@ -2820,8 +2820,8 @@
       },
       "flag": "🇬🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Guernsey",
+      "summary": "Guernsey es una dependencia de la Corona británica situada en el canal de la Mancha. La isla principal y sus pequeños territorios vecinos combinan acantilados, bahías y una larga tradición marítima."
     },
     {
       "id": 107,
@@ -2846,8 +2846,8 @@
       },
       "flag": "🇬🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Guinea",
+      "summary": "Guinea se encuentra en la costa atlántica de África occidental y posee montañas donde nacen importantes ríos regionales. Selvas, sabanas y fértiles tierras altas forman un territorio húmedo y diverso."
     },
     {
       "id": 49,
@@ -2872,8 +2872,8 @@
       },
       "flag": "🇬🇶",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Guinea_Ecuatorial",
+      "summary": "Guinea Ecuatorial reúne una región continental y varias islas volcánicas del golfo de Guinea. Selvas ecuatoriales, costas tropicales y la isla de Bioko conforman sus principales paisajes."
     },
     {
       "id": 109,
@@ -2898,8 +2898,8 @@
       },
       "flag": "🇬🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Guinea-Bis%C3%A1u",
+      "summary": "Guinea-Bisáu ocupa una costa baja y recortada de África occidental junto al archipiélago de Bijagós. Manglares, estuarios y sabanas sostienen una población mayormente rural."
     },
     {
       "id": 129,
@@ -2981,7 +2981,7 @@
       "flag": "🇺🇸",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Haw%C3%A1i",
-      "summary": ""
+      "summary": "Hawái es un archipiélago volcánico estadounidense situado en el centro del Pacífico norte. Grandes volcanes, selvas, costas y ecosistemas aislados forman una cadena de islas de origen relativamente reciente."
     },
     {
       "id": 80,
@@ -3032,8 +3032,8 @@
       },
       "flag": "🇭🇰",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Hong_Kong",
+      "summary": "Hong Kong es una región administrativa especial de China situada en la costa del mar de China Meridional. Islas, montañas y un puerto natural rodean una de las áreas urbanas más densas del mundo."
     },
     {
       "id": 239,
@@ -3059,8 +3059,8 @@
       },
       "flag": "🇭🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Hungr%C3%ADa",
+      "summary": "Hungría ocupa la cuenca de los Cárpatos y está atravesada por los ríos Danubio y Tisza. Sus llanuras, colinas y ciudades termales forman el corazón de este país centroeuropeo."
     },
     {
       "id": 324,
@@ -3087,8 +3087,8 @@
       },
       "flag": "🇮🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/India",
+      "summary": "India ocupa gran parte del subcontinente asiático, desde el Himalaya hasta el océano Índico. Llanuras fluviales, mesetas, desiertos y costas acompañan una extraordinaria diversidad cultural y lingüística."
     },
     {
       "id": 327,
@@ -3117,8 +3117,8 @@
       },
       "flag": "🇮🇩",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Indonesia",
+      "summary": "Indonesia es el mayor archipiélago del mundo y se extiende entre los océanos Índico y Pacífico. Miles de islas, volcanes, selvas y culturas se distribuyen a ambos lados del ecuador."
     },
     {
       "id": 223,
@@ -3145,8 +3145,8 @@
       },
       "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "flagImage": "",
-      "wikipedia": "https://es.wikipedia.org/wiki/Reino_Unido",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Inglaterra",
+      "summary": "Inglaterra ocupa la mayor parte meridional de Gran Bretaña. Colinas, llanuras y costas rodean ciudades históricas y grandes centros urbanos que tuvieron una profunda influencia mundial."
     },
     {
       "id": 330,
@@ -3172,8 +3172,8 @@
       },
       "flag": "🇮🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Ir%C3%A1n",
+      "summary": "Irán se extiende sobre una gran meseta entre el mar Caspio y el golfo Pérsico. Cordilleras, desiertos, oasis y ciudades históricas forman el núcleo geográfico de la antigua Persia."
     },
     {
       "id": 333,
@@ -3199,8 +3199,8 @@
       },
       "flag": "🇮🇶",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Irak",
+      "summary": "Iraq ocupa las llanuras de Mesopotamia atravesadas por los ríos Tigris y Éufrates. Desiertos, humedales y ciudades antiguas marcan un territorio central en el desarrollo de las primeras civilizaciones."
     },
     {
       "id": 245,
@@ -3225,8 +3225,8 @@
       },
       "flag": "🇮🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Irlanda",
+      "summary": "Irlanda ocupa la mayor parte de la isla del mismo nombre, frente a la costa occidental de Europa. Sus verdes llanuras, costas rocosas y suaves montañas están marcadas por el clima atlántico."
     },
     {
       "id": 265,
@@ -3255,8 +3255,8 @@
       },
       "flag": "🇬🇧",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Irlanda_del_Norte",
+      "summary": "Irlanda del Norte ocupa el nordeste de la isla de Irlanda y forma parte del Reino Unido. Lagos, colinas y una costa recortada rodean ciudades con una compleja herencia histórica e industrial."
     },
     {
       "id": 195,
@@ -3281,8 +3281,8 @@
       },
       "flag": "🇬🇶",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Annob%C3%B3n",
+      "summary": "Annobón es una pequeña isla volcánica de Guinea Ecuatorial situada al sur del ecuador, en el golfo de Guinea. Su relieve montañoso, selva húmeda y aislamiento justifican su condición de entidad DXCC."
     },
     {
       "id": 205,
@@ -3305,10 +3305,10 @@
         "lat": -7.93,
         "lon": -14.37
       },
-      "flag": "🇸🇭",
+      "flag": "🇦🇨",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_Ascensi%C3%B3n",
+      "summary": "Ascensión es una isla volcánica británica aislada en el Atlántico Sur. Su paisaje árido contrasta con la vegetación de Green Mountain y con instalaciones estratégicas de comunicaciones y seguimiento espacial."
     },
     {
       "id": 490,
@@ -3333,8 +3333,8 @@
       },
       "flag": "🇰🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Banaba",
+      "summary": "Banaba es una pequeña isla elevada de Kiribati, aislada al oeste de las islas Gilbert. La antigua extracción de fosfatos transformó profundamente su relieve y provocó el desplazamiento de gran parte de su población."
     },
     {
       "id": 36,
@@ -3358,7 +3358,7 @@
         "lat": 10.28,
         "lon": -109.22
       },
-      "flag": "🇵🇫",
+      "flag": "🇫🇷",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Isla_Clipperton",
       "summary": "Clipperton es un remoto atolón coralino francés del Pacífico oriental, muy alejado de tierras habitadas. Su anillo de arena rodea una laguna interior y recibe numerosas aves marinas."
@@ -3420,8 +3420,8 @@
       },
       "flag": "🇮🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_de_Man",
+      "summary": "La isla de Man es una dependencia de la Corona británica situada en el mar de Irlanda. Su territorio montañoso, sus costas y su parlamento histórico sostienen una identidad propia."
     },
     {
       "id": 35,
@@ -3449,8 +3449,8 @@
       },
       "flag": "🇨🇽",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_de_Navidad",
+      "summary": "La isla de Navidad es un territorio australiano del océano Índico, al sur de Java. Su meseta boscosa, acantilados y migraciones masivas de cangrejos rojos forman un ecosistema insular singular."
     },
     {
       "id": 47,
@@ -3589,8 +3589,8 @@
       },
       "flag": "🇵🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_Ducie",
+      "summary": "Ducie es un remoto atolón deshabitado perteneciente a las islas Pitcairn, en el Pacífico sur. Su laguna, arrecifes y pequeñas islas arenosas albergan grandes colonias de aves marinas."
     },
     {
       "id": 235,
@@ -3641,8 +3641,8 @@
       },
       "flag": "🇭🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Heard_y_McDonald",
+      "summary": "Heard y McDonald son remotas islas australianas del océano Índico austral. Glaciares, costas inhóspitas y el volcán activo Big Ben dominan un territorio deshabitado y protegido."
     },
     {
       "id": 123,
@@ -3670,8 +3670,8 @@
       },
       "flag": "🇺🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Atol%C3%B3n_Johnston",
+      "summary": "Johnston es un atolón estadounidense aislado en el Pacífico central. Sus islas fueron ampliadas artificialmente y alojaron instalaciones militares, mientras los arrecifes circundantes permanecen bajo protección natural."
     },
     {
       "id": 138,
@@ -3699,8 +3699,8 @@
       },
       "flag": "🇺🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Atol%C3%B3n_Kure",
+      "summary": "Kure es el atolón coralino más septentrional del archipiélago de Hawái. Sus bancos, laguna y pequeñas islas deshabitadas forman parte de una extensa área marina protegida."
     },
     {
       "id": 147,
@@ -3725,8 +3725,8 @@
       },
       "flag": "🇦🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_Lord_Howe",
+      "summary": "Lord Howe es una isla volcánica australiana del mar de Tasmania. Montañas abruptas, bosques y el arrecife coralino más austral del mundo rodean una pequeña comunidad permanente."
     },
     {
       "id": 153,
@@ -3751,8 +3751,8 @@
       },
       "flag": "🇦🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_Macquarie",
+      "summary": "Macquarie es una isla australiana subantártica situada entre Tasmania y la Antártida. Su terreno frío, ventoso y sin árboles alberga una base científica y grandes colonias de aves y mamíferos marinos."
     },
     {
       "id": 161,
@@ -3834,8 +3834,8 @@
       },
       "flag": "🇦🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_Norfolk",
+      "summary": "Norfolk es una pequeña isla australiana del Pacífico situada entre Nueva Caledonia y Nueva Zelanda. Acantilados, bosques y el característico pino de Norfolk rodean una comunidad de historia singular."
     },
     {
       "id": 199,
@@ -3858,10 +3858,10 @@
         "lat": -68.77,
         "lon": -90.58
       },
-      "flag": "🇧🇻",
+      "flag": "🇳🇴",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Isla_Pedro_I",
-      "summary": ""
+      "summary": "La isla Pedro I es una remota isla volcánica del mar de Bellingshausen, casi completamente cubierta por hielo. Sus costas escarpadas y el denso hielo marino hacen que el desembarco sea excepcionalmente difícil."
     },
     {
       "id": 172,
@@ -3886,8 +3886,8 @@
       },
       "flag": "🇵🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Pitcairn",
+      "summary": "Pitcairn es un remoto territorio británico del Pacífico sur formado por cuatro islas. Solo la isla principal está habitada, en un relieve volcánico escarpado y de acceso marítimo difícil."
     },
     {
       "id": 505,
@@ -3920,8 +3920,8 @@
       },
       "flag": "🇹🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Pratas",
+      "summary": "La isla Pratas y los arrecifes que la rodean forman un remoto atolón del norte del mar de China Meridional. Administrada por Taiwán, su pequeña superficie alberga instalaciones y un ecosistema coralino protegido."
     },
     {
       "id": 453,
@@ -3946,8 +3946,8 @@
       },
       "flag": "🇫🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Reuni%C3%B3n_(Francia)",
+      "summary": "Reunión es una isla francesa de origen volcánico situada al este de Madagascar. Altas montañas, profundos circos y el activo Piton de la Fournaise modelan un paisaje tropical abrupto."
     },
     {
       "id": 207,
@@ -3972,8 +3972,8 @@
       },
       "flag": "🇲🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_Rodrigues",
+      "summary": "Rodrigues es una isla autónoma de Mauricio situada en el océano Índico, muy al este de la isla principal. Colinas, lagunas y un extenso arrecife rodean su pequeño territorio volcánico."
     },
     {
       "id": 460,
@@ -3998,8 +3998,8 @@
       },
       "flag": "🇫🇯",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Rotuma",
+      "summary": "Rotuma es una isla volcánica de Fiyi situada muy al norte del archipiélago principal. Su aislamiento favoreció una cultura polinesia propia entre colinas, playas y arrecifes tropicales."
     },
     {
       "id": 211,
@@ -4050,8 +4050,8 @@
       },
       "flag": "🇦🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_Swains",
+      "summary": "Swains es un pequeño atolón administrado como parte de Samoa Americana. Una laguna cerrada, cocoteros y una población mínima ocupan esta isla aislada próxima a Tokelau."
     },
     {
       "id": 276,
@@ -4085,8 +4085,8 @@
       },
       "flag": "🇹🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_Tromelin",
+      "summary": "Tromelin es una diminuta isla francesa, baja y arenosa, aislada en el océano Índico. Rodeada por arrecifes y sin puerto natural, alberga una estación meteorológica y numerosas aves marinas."
     },
     {
       "id": 297,
@@ -4114,8 +4114,8 @@
       },
       "flag": "🇺🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Isla_Wake",
+      "summary": "Wake es un atolón estadounidense aislado en el Pacífico norte. Sus tres islotes rodean una laguna y albergan un aeródromo estratégico, sin población civil permanente."
     },
     {
       "id": 303,
@@ -4146,8 +4146,8 @@
       },
       "flag": "🇦🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://en.wikipedia.org/wiki/Willis_Island",
+      "summary": "Los islotes Willis son un pequeño grupo australiano del mar del Coral, al este de Queensland. Una estación meteorológica ocupa la isla principal en un entorno expuesto a ciclones tropicales."
     },
     {
       "id": 242,
@@ -4172,8 +4172,8 @@
       },
       "flag": "🇮🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islandia",
+      "summary": "Islandia es una isla volcánica del Atlántico Norte situada sobre una dorsal oceánica. Glaciares, campos de lava, géiseres y cascadas forman un paisaje joven y de intensa actividad geotérmica."
     },
     {
       "id": 4,
@@ -4198,8 +4198,8 @@
       },
       "flag": "🇲🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Agalega",
+      "summary": "Agalega y San Brandon son grupos de islas administrados por Mauricio y dispersos por el océano Índico. Atolones, bancos coralinos y pequeñas comunidades ocupan un vasto espacio marítimo."
     },
     {
       "id": 5,
@@ -4227,8 +4227,8 @@
       },
       "flag": "🇦🇽",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_%C3%85land",
+      "summary": "Las islas Åland forman un archipiélago autónomo finlandés entre Suecia y Finlandia. Miles de islas bajas y rocosas, unidas por ferris, rodean una comunidad de lengua sueca."
     },
     {
       "id": 10,
@@ -4261,8 +4261,8 @@
       },
       "flag": "🇹🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/San_Pablo_y_%C3%81msterdam",
+      "summary": "Ámsterdam y San Pablo son dos remotas islas volcánicas francesas del sur del océano Índico. Sus acantilados, clima oceánico y fauna marina rodean una pequeña base científica."
     },
     {
       "id": 11,
@@ -4287,8 +4287,8 @@
       },
       "flag": "🇮🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Andam%C3%A1n_y_Nicobar",
+      "summary": "Las islas Andamán y Nicobar forman un largo archipiélago indio entre el golfo de Bengala y el mar de Andamán. Selvas tropicales, arrecifes y pueblos indígenas caracterizan sus islas aisladas."
     },
     {
       "id": 508,
@@ -4314,8 +4314,8 @@
       },
       "flag": "🇵🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Australes",
+      "summary": "Las islas Australes forman el archipiélago más meridional de la Polinesia Francesa. Islas volcánicas, atolones, lagunas y un clima más fresco acompañan comunidades pequeñas y muy dispersas."
     },
     {
       "id": 20,
@@ -4343,8 +4343,8 @@
       },
       "flag": "🇺🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_menores_alejadas_de_los_Estados_Unidos",
+      "summary": "Baker y Howland son dos pequeñas islas coralinas estadounidenses, deshabitadas y aisladas cerca del ecuador. Sus refugios naturales protegen aves marinas y vestigios de antiguas instalaciones."
     },
     {
       "id": 21,
@@ -4379,8 +4379,8 @@
       },
       "flag": "🇪🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Baleares",
+      "summary": "Las islas Baleares forman un archipiélago español del Mediterráneo occidental. Mallorca, Menorca, Ibiza y Formentera combinan sierras, calas, llanuras y una prolongada tradición marítima."
     },
     {
       "id": 69,
@@ -4441,8 +4441,8 @@
       },
       "flag": "🇪🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Canarias",
+      "summary": "Las Canarias son un archipiélago español de origen volcánico situado frente al noroeste de África. Sus islas combinan altas cumbres, campos de lava, bosques, barrancos y costas de clima subtropical."
     },
     {
       "id": 33,
@@ -4467,8 +4467,8 @@
       },
       "flag": "🇮🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Archipi%C3%A9lago_de_Chagos",
+      "summary": "Chagos es un remoto archipiélago de atolones coralinos situado en el centro del océano Índico. Diego García alberga una importante base militar, mientras muchas de sus restantes islas permanecen deshabitadas."
     },
     {
       "id": 34,
@@ -4494,8 +4494,8 @@
       },
       "flag": "🇳🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Chatham",
+      "summary": "Las islas Chatham forman un remoto archipiélago neozelandés situado al este de la isla Sur. Su clima oceánico, costas expuestas y especies endémicas rodean pequeñas comunidades dedicadas al mar."
     },
     {
       "id": 512,
@@ -4521,8 +4521,8 @@
       },
       "flag": "🇳🇨",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Chesterfield",
+      "summary": "Las Chesterfield son un conjunto deshabitado de arrecifes y pequeños islotes de Nueva Caledonia en el mar del Coral. Sus extensos bancos y lagunas sirven de refugio a tortugas y aves marinas."
     },
     {
       "id": 38,
@@ -4553,8 +4553,8 @@
       },
       "flag": "🇨🇨",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Cocos",
+      "summary": "Las islas Cocos o Keeling son un territorio australiano formado por atolones del océano Índico. Cocoteros, lagunas y arrecifes rodean una pequeña población de herencia malaya y europea."
     },
     {
       "id": 411,
@@ -4579,8 +4579,8 @@
       },
       "flag": "🇰🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Comoras",
+      "summary": "Comoras es un archipiélago volcánico del canal de Mozambique, entre Madagascar y África continental. Montañas, selvas y costas tropicales rodean comunidades de tradición africana, árabe y malgache."
     },
     {
       "id": 191,
@@ -4605,8 +4605,8 @@
       },
       "flag": "🇨🇰",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Cook",
+      "summary": "Las islas Cook del Norte son atolones bajos y muy dispersos en el Pacífico central. Sus pequeñas comunidades polinesias se encuentran a gran distancia de Rarotonga y del grupo meridional."
     },
     {
       "id": 234,
@@ -4631,8 +4631,8 @@
       },
       "flag": "🇨🇰",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Cook",
+      "summary": "Las islas Cook del Sur reúnen islas volcánicas y atolones alrededor de Rarotonga, principal centro del país. Montañas, lagunas y arrecifes sostienen la mayor parte de su población."
     },
     {
       "id": 41,
@@ -4660,8 +4660,8 @@
       },
       "flag": "🇹🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Crozet",
+      "summary": "Las islas Crozet forman un remoto archipiélago volcánico francés del sur del océano Índico. Vientos intensos, costas escarpadas y grandes colonias de aves y mamíferos marinos dominan el paisaje."
     },
     {
       "id": 222,
@@ -4687,8 +4687,8 @@
       },
       "flag": "🇫🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Feroe",
+      "summary": "Las islas Feroe son un archipiélago autónomo danés del Atlántico Norte. Sus islas volcánicas presentan montañas escarpadas, acantilados, pequeños poblados y un clima oceánico cambiante."
     },
     {
       "id": 71,
@@ -4749,8 +4749,8 @@
       },
       "flag": "🇹🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Gloriosas",
+      "summary": "Las islas Glorioso son un pequeño conjunto de islas y arrecifes franceses al norte de Madagascar. Playas coralinas, vegetación tropical y una reducida presencia científica caracterizan este territorio aislado."
     },
     {
       "id": 125,
@@ -4813,8 +4813,8 @@
       },
       "flag": "🇹🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Kerguelen",
+      "summary": "Kerguelen es un extenso archipiélago volcánico francés del sur del océano Índico. Montañas, fiordos, glaciares y un clima frío y ventoso rodean la base científica de Port-aux-Français."
     },
     {
       "id": 133,
@@ -4840,8 +4840,8 @@
       },
       "flag": "🇳🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Kermadec",
+      "summary": "Las Kermadec son un remoto archipiélago volcánico neozelandés situado entre Nueva Zelanda y Tonga. Islas deshabitadas, volcanes activos y profundas fosas oceánicas caracterizan la región."
     },
     {
       "id": 142,
@@ -4866,8 +4866,8 @@
       },
       "flag": "🇮🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Laquedivas",
+      "summary": "Las islas Laquedivas, oficialmente Lakshadweep, son un archipiélago indio de atolones coralinos en el mar Arábigo. Lagunas, arrecifes y pequeñas islas bajas forman un territorio tropical muy disperso."
     },
     {
       "id": 256,
@@ -4899,8 +4899,8 @@
       },
       "flag": "🇵🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Madeira",
+      "summary": "Madeira es un archipiélago portugués de origen volcánico situado en el Atlántico, frente al noroeste africano. Montañas abruptas, bosques de laurisilva y costas escarpadas dominan sus islas."
     },
     {
       "id": 141,
@@ -4954,8 +4954,8 @@
       },
       "flag": "🇲🇵",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Marianas",
+      "summary": "Las Marianas forman un arco de islas volcánicas del Pacífico occidental. La entidad DXCC comprende las Marianas del Norte, mientras Guam constituye una entidad separada al extremo sur."
     },
     {
       "id": 509,
@@ -4981,8 +4981,8 @@
       },
       "flag": "🇵🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Marquesas",
+      "summary": "Las Marquesas son un remoto archipiélago volcánico de la Polinesia Francesa. Montañas abruptas, valles profundos y costas sin grandes lagunas rodean una cultura polinesia de fuerte identidad."
     },
     {
       "id": 168,
@@ -5007,8 +5007,8 @@
       },
       "flag": "🇲🇭",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Marshall",
+      "summary": "Las islas Marshall forman largas cadenas de atolones coralinos en el Pacífico central. Islas muy bajas rodean enormes lagunas y enfrentan una especial vulnerabilidad ante el aumento del nivel del mar."
     },
     {
       "id": 174,
@@ -5036,8 +5036,8 @@
       },
       "flag": "🇺🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Atol%C3%B3n_Midway",
+      "summary": "Midway es un atolón estadounidense situado en el extremo noroccidental del archipiélago hawaiano. Su laguna, aeródromo histórico y grandes colonias de albatros ocupan una reserva natural remota."
     },
     {
       "id": 238,
@@ -5092,8 +5092,8 @@
       },
       "flag": "🇺🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_menores_alejadas_de_los_Estados_Unidos",
+      "summary": "Palmyra y Jarvis son islas estadounidenses deshabitadas del Pacífico central. Palmyra posee una laguna y vegetación tropical, mientras Jarvis es una isla árida cercana al ecuador."
     },
     {
       "id": 201,
@@ -5121,8 +5121,8 @@
       },
       "flag": "🇿🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_del_Pr%C3%ADncipe_Eduardo",
+      "summary": "Marion y Príncipe Eduardo son dos islas volcánicas sudafricanas del océano Índico austral. Su clima frío, húmedo y ventoso sostiene grandes colonias de aves y mamíferos marinos."
     },
     {
       "id": 204,
@@ -5191,8 +5191,8 @@
       },
       "flag": "🇸🇧",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Salom%C3%B3n",
+      "summary": "Las islas Salomón forman un archipiélago melanesio de islas volcánicas y coralinas en el Pacífico occidental. Selvas, montañas y arrecifes rodean comunidades dispersas y culturalmente diversas."
     },
     {
       "id": 240,
@@ -5280,7 +5280,7 @@
       "flag": "📡",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Islas_Spratly",
-      "summary": ""
+      "summary": "Las islas Spratly son un conjunto disperso de arrecifes, bancos e islotes del mar de China Meridional. Varias naciones mantienen reclamaciones e instalaciones en esta remota región de importancia estratégica."
     },
     {
       "id": 16,
@@ -5305,8 +5305,8 @@
       },
       "flag": "🇳🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_subant%C3%A1rticas_de_Nueva_Zelanda",
+      "summary": "Las islas subantárticas de Nueva Zelanda son grupos remotos y deshabitados del océano Austral. Su clima frío y ventoso sostiene ecosistemas únicos y enormes colonias de aves marinas."
     },
     {
       "id": 270,
@@ -5331,8 +5331,8 @@
       },
       "flag": "🇹🇰",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Tokelau",
+      "summary": "Tokelau es un territorio neozelandés formado por tres pequeños atolones del Pacífico sur. Sus comunidades polinesias viven sobre estrechas franjas coralinas alrededor de grandes lagunas."
     },
     {
       "id": 273,
@@ -5395,10 +5395,10 @@
         "lat": -37.13,
         "lon": -12.3
       },
-      "flag": "🇸🇭",
+      "flag": "🇹🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Trist%C3%A1n_de_Acu%C3%B1a",
+      "summary": "Tristán de Acuña y Gough son remotas islas volcánicas británicas del Atlántico Sur. Tristán alberga una pequeña comunidad, mientras Gough permanece dedicada principalmente a la conservación y la investigación."
     },
     {
       "id": 89,
@@ -5505,8 +5505,8 @@
       },
       "flag": "🇼🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Wallis_y_Futuna",
+      "summary": "Wallis y Futuna es una colectividad francesa del Pacífico sur formada por islas volcánicas y arrecifes. Sus comunidades polinesias conservan reinos tradicionales y una fuerte organización local."
     },
     {
       "id": 336,
@@ -5532,8 +5532,8 @@
       },
       "flag": "🇮🇱",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Israel",
+      "summary": "Israel se encuentra en la costa oriental del Mediterráneo y se extiende hacia el valle del Jordán y el desierto del Néguev. Su pequeño territorio reúne paisajes y lugares de profunda importancia histórica."
     },
     {
       "id": 248,
@@ -5576,8 +5576,8 @@
       },
       "flag": "🇮🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Italia",
+      "summary": "Italia se extiende por una península del Mediterráneo e incluye Sicilia, Cerdeña y numerosas islas menores. Alpes, Apeninos, llanuras y ciudades históricas conforman un territorio de enorme diversidad cultural."
     },
     {
       "id": 82,
@@ -5628,8 +5628,8 @@
       },
       "flag": "🇸🇯",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Jan_Mayen",
+      "summary": "Jan Mayen es una remota isla volcánica noruega situada entre los mares de Groenlandia y Noruega. El volcán Beerenberg domina un paisaje ártico de glaciares, niebla y costas escarpadas."
     },
     {
       "id": 339,
@@ -5658,7 +5658,7 @@
       "flag": "🇯🇵",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Jap%C3%B3n",
-      "summary": ""
+      "summary": "Japón es un archipiélago montañoso del Pacífico occidental formado por miles de islas. Volcanes, bosques, costas y grandes áreas urbanas se alinean sobre una región de intensa actividad sísmica."
     },
     {
       "id": 122,
@@ -5687,8 +5687,8 @@
       },
       "flag": "🇯🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Jersey",
+      "summary": "Jersey es una dependencia de la Corona británica y la mayor de las islas del Canal. Sus costas, mareas pronunciadas y paisajes rurales conservan influencias británicas y normandas."
     },
     {
       "id": 342,
@@ -5713,8 +5713,8 @@
       },
       "flag": "🇯🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Jordania",
+      "summary": "Jordania es un país mayormente árido situado entre el valle del Jordán y los desiertos de Arabia. Cañones, mesetas y sitios históricos como Petra forman parte de su paisaje."
     },
     {
       "id": 124,
@@ -5756,8 +5756,8 @@
       },
       "flag": "🇹🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Dispersas_del_Oc%C3%A9ano_%C3%8Dndico",
+      "summary": "Juan de Nova y Europa son islas francesas del canal de Mozambique incluidas entre las Islas Dispersas. Arrecifes, manglares y playas de anidación rodean territorios sin población permanente."
     },
     {
       "id": 126,
@@ -5833,8 +5833,8 @@
       },
       "flag": "🇷🇺",
       "flagImage": "",
-      "wikipedia": "https://es.wikipedia.org/wiki/Kaliningrado",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/%C3%93blast_de_Kaliningrado",
+      "summary": "Kaliningrado es un enclave ruso situado junto al mar Báltico, separado del resto del país. Su territorio se encuentra entre Polonia y Lituania y posee puertos de gran importancia estratégica."
     },
     {
       "id": 130,
@@ -5861,8 +5861,8 @@
       },
       "flag": "🇰🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Kazajist%C3%A1n",
+      "summary": "Kazajistán se extiende entre Europa oriental y Asia central sobre vastas estepas y regiones desérticas. Montañas, lagos y extensas llanuras conforman el mayor país del mundo sin salida directa al océano."
     },
     {
       "id": 430,
@@ -5887,8 +5887,8 @@
       },
       "flag": "🇰🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Kenia",
+      "summary": "Kenia se extiende desde el océano Índico hasta las tierras altas y el gran valle del Rift. Sabanas, montañas, lagos y una abundante fauna forman algunos de los paisajes más conocidos de África."
     },
     {
       "id": 135,
@@ -5914,8 +5914,8 @@
       },
       "flag": "🇰🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Kirguist%C3%A1n",
+      "summary": "Kirguistán es un país montañoso de Asia central dominado por la cordillera del Tian Shan. Altos valles, pastizales y el lago Issyk-Kul acompañan una fuerte tradición nómada."
     },
     {
       "id": 31,
@@ -5940,8 +5940,8 @@
       },
       "flag": "🇰🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_F%C3%A9nix",
+      "summary": "Kiribati Central corresponde a las islas Fénix, un remoto grupo de atolones coralinos mayormente deshabitados. Su enorme área marina protegida conserva arrecifes y ecosistemas oceánicos casi intactos."
     },
     {
       "id": 301,
@@ -5966,8 +5966,8 @@
       },
       "flag": "🇰🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Gilbert",
+      "summary": "Kiribati Occidental comprende las islas Gilbert, una cadena de atolones donde vive la mayor parte de la población del país. Tarawa concentra la capital y numerosas comunidades sobre tierras muy bajas."
     },
     {
       "id": 48,
@@ -5993,8 +5993,8 @@
       },
       "flag": "🇰🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_de_la_L%C3%ADnea",
+      "summary": "Kiribati Oriental reúne las islas de la Línea, dispersas a ambos lados del ecuador. Incluye Kiritimati, uno de los mayores atolones del mundo, y varios territorios deshabitados."
     },
     {
       "id": 348,
@@ -6020,8 +6020,8 @@
       },
       "flag": "🇰🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Kuwait",
+      "summary": "Kuwait es un pequeño Estado árido situado en el extremo norte del golfo Pérsico. Su costa, sus islas y sus grandes reservas de petróleo rodean una población concentrada en el área metropolitana de la capital."
     },
     {
       "id": 143,
@@ -6046,8 +6046,8 @@
       },
       "flag": "🇱🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Laos",
+      "summary": "Laos es un país interior y montañoso del sudeste asiático atravesado por el río Mekong. Bosques, mesetas y pequeños valles agrícolas rodean ciudades y templos de tradición budista."
     },
     {
       "id": 432,
@@ -6072,8 +6072,8 @@
       },
       "flag": "🇱🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Lesoto",
+      "summary": "Lesoto es un reino montañoso completamente rodeado por Sudáfrica. Su territorio se encuentra a gran altitud y combina mesetas, valles profundos y las cumbres de los montes Drakensberg."
     },
     {
       "id": 145,
@@ -6098,8 +6098,8 @@
       },
       "flag": "🇱🇻",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Letonia",
+      "summary": "Letonia se extiende sobre una llanura boscosa junto al mar Báltico. Ríos, lagos, dunas y extensas turberas rodean Riga y otras ciudades de marcada herencia histórica."
     },
     {
       "id": 354,
@@ -6124,8 +6124,8 @@
       },
       "flag": "🇱🇧",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/L%C3%ADbano",
+      "summary": "Líbano ocupa una estrecha franja de la costa oriental del Mediterráneo. Dos cordilleras, fértiles valles y antiguas ciudades portuarias se concentran en un territorio pequeño y diverso."
     },
     {
       "id": 434,
@@ -6154,8 +6154,8 @@
       },
       "flag": "🇱🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Liberia",
+      "summary": "Liberia ocupa una franja húmeda de la costa atlántica de África occidental. Selvas, ríos y llanuras costeras rodean un país cuya historia moderna está vinculada a antiguos esclavos liberados."
     },
     {
       "id": 436,
@@ -6180,8 +6180,8 @@
       },
       "flag": "🇱🇾",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Libia",
+      "summary": "Libia se extiende desde la costa mediterránea hasta el interior del Sahara. Desiertos, mesetas y oasis ocupan casi todo el territorio, mientras la población se concentra en las ciudades costeras."
     },
     {
       "id": 251,
@@ -6207,8 +6207,8 @@
       },
       "flag": "🇱🇮",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Liechtenstein",
+      "summary": "Liechtenstein es un pequeño principado alpino situado entre Suiza y Austria. El valle del Rin y las montañas ocupan un territorio compacto, sin salida al mar y de fuerte identidad propia."
     },
     {
       "id": 146,
@@ -6233,8 +6233,8 @@
       },
       "flag": "🇱🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Lituania",
+      "summary": "Lituania es el más meridional de los países bálticos y se abre al mar Báltico. Llanuras, bosques y lagos rodean ciudades históricas y el singular paisaje de la península de Curlandia."
     },
     {
       "id": 254,
@@ -6259,8 +6259,8 @@
       },
       "flag": "🇱🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Luxemburgo",
+      "summary": "Luxemburgo es un pequeño país interior de Europa occidental, entre Bélgica, Alemania y Francia. Colinas boscosas, valles fluviales y fortificaciones históricas rodean una capital de carácter internacional."
     },
     {
       "id": 152,
@@ -6285,8 +6285,8 @@
       },
       "flag": "🇲🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Macao",
+      "summary": "Macao es una región administrativa especial de China situada en el delta del río de las Perlas. Su territorio densamente urbanizado conserva una particular mezcla de herencias china y portuguesa."
     },
     {
       "id": 502,
@@ -6311,8 +6311,8 @@
       },
       "flag": "🇲🇰",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Macedonia_del_Norte",
+      "summary": "Macedonia del Norte es un país balcánico interior de relieve montañoso. Valles, lagos y antiguas ciudades se distribuyen entre las cuencas del Vardar y las fronteras con sus vecinos."
     },
     {
       "id": 438,
@@ -6338,8 +6338,8 @@
       },
       "flag": "🇲🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Madagascar",
+      "summary": "Madagascar es una gran isla del océano Índico separada de África continental por el canal de Mozambique. Su prolongado aislamiento originó paisajes y especies únicas en el mundo."
     },
     {
       "id": 299,
@@ -6365,8 +6365,8 @@
       },
       "flag": "🇲🇾",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Malasia_peninsular",
+      "summary": "Malasia Occidental ocupa el sector meridional de la península malaya y concentra gran parte de la población del país. Selvas, montañas, costas y grandes ciudades se extienden entre Tailandia y Singapur."
     },
     {
       "id": 46,
@@ -6394,8 +6394,8 @@
       },
       "flag": "🇲🇾",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Malasia_Oriental",
+      "summary": "Malasia Oriental ocupa el norte de Borneo y comprende Sabah y Sarawak. Selvas tropicales, montañas, grandes ríos y costas extensas rodean ciudades y comunidades de gran diversidad cultural."
     },
     {
       "id": 440,
@@ -6420,8 +6420,8 @@
       },
       "flag": "🇲🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Malaui",
+      "summary": "Malaui es un país estrecho del sureste africano organizado alrededor del gran lago Malaui y el valle del Rift. Mesetas, montañas y fértiles tierras agrícolas rodean sus orillas."
     },
     {
       "id": 159,
@@ -6431,7 +6431,7 @@
       "prefixes": [
         "8Q"
       ],
-      "continent": "AS,AF",
+      "continent": "AS",
       "zones": {
         "cq": [
           22
@@ -6446,8 +6446,8 @@
       },
       "flag": "🇲🇻",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Maldivas",
+      "summary": "Maldivas es un archipiélago de atolones coralinos dispersos por el océano Índico. Sus islas bajas, lagunas y arrecifes apenas se elevan sobre el nivel del mar y forman un paisaje estrechamente ligado al océano."
     },
     {
       "id": 442,
@@ -6472,8 +6472,8 @@
       },
       "flag": "🇲🇱",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Mal%C3%AD",
+      "summary": "Malí se extiende desde las sabanas del río Níger hasta el corazón del Sahara. Antiguas ciudades comerciales, desiertos y regiones semiáridas reflejan su histórica posición en las rutas transaharianas."
     },
     {
       "id": 257,
@@ -6498,8 +6498,8 @@
       },
       "flag": "🇲🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Malta",
+      "summary": "Malta es un pequeño archipiélago del Mediterráneo central, situado al sur de Sicilia. Sus islas de roca caliza reúnen puertos naturales, ciudades fortificadas y vestigios de una historia milenaria."
     },
     {
       "id": 446,
@@ -6525,8 +6525,8 @@
       },
       "flag": "🇲🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Marruecos",
+      "summary": "Marruecos ocupa el extremo noroccidental de África, entre el Atlántico, el Mediterráneo y el Sahara. Las cordilleras del Rif y del Atlas separan costas, llanuras fértiles y regiones desérticas."
     },
     {
       "id": 84,
@@ -6577,8 +6577,8 @@
       },
       "flag": "🇲🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Mauricio",
+      "summary": "Mauricio es una isla volcánica del océano Índico situada al este de Madagascar. Montañas erosionadas, plantaciones, lagunas y arrecifes rodean una sociedad de gran diversidad cultural."
     },
     {
       "id": 444,
@@ -6603,8 +6603,8 @@
       },
       "flag": "🇲🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Mauritania",
+      "summary": "Mauritania se extiende desde la costa atlántica hasta las grandes extensiones del Sahara. Mesetas, dunas y oasis dominan un territorio poco poblado situado entre el Magreb y África occidental."
     },
     {
       "id": 169,
@@ -6629,8 +6629,8 @@
       },
       "flag": "🇾🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Mayotte",
+      "summary": "Mayotte es un departamento francés formado por islas volcánicas del archipiélago de las Comoras. Una extensa laguna coralina rodea su relieve montañoso y una población de raíces africanas y malgaches."
     },
     {
       "id": 50,
@@ -6683,8 +6683,8 @@
       },
       "flag": "🇫🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Estados_Federados_de_Micronesia",
+      "summary": "Los Estados Federados de Micronesia reúnen centenares de islas y atolones del Pacífico occidental. Sus cuatro estados se extienden por una enorme superficie oceánica entre lagunas, arrecifes y montañas volcánicas."
     },
     {
       "id": 177,
@@ -6709,8 +6709,8 @@
       },
       "flag": "🇯🇵",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Minami_Torishima",
+      "summary": "Minami Torishima es una diminuta isla coralina japonesa situada muy lejos al sureste de Tokio. Su posición aislada, una estación meteorológica y un aeródromo le otorgan importancia estratégica."
     },
     {
       "id": 179,
@@ -6735,8 +6735,8 @@
       },
       "flag": "🇲🇩",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Moldavia",
+      "summary": "Moldavia es un país interior de Europa oriental situado entre Rumania y Ucrania. Su relieve de suaves colinas, ríos y tierras fértiles favorece los viñedos y la actividad agrícola."
     },
     {
       "id": 260,
@@ -6761,8 +6761,8 @@
       },
       "flag": "🇲🇨",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/M%C3%B3naco",
+      "summary": "Mónaco es un diminuto principado de la costa mediterránea francesa. Su territorio densamente urbanizado se alza entre el mar y las laderas de los Alpes Marítimos."
     },
     {
       "id": 363,
@@ -6788,8 +6788,8 @@
       },
       "flag": "🇲🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Mongolia",
+      "summary": "Mongolia es un extenso país interior situado entre Rusia y China. Estepas, montañas y el desierto de Gobi sostienen una población dispersa y una cultura de profunda tradición nómada."
     },
     {
       "id": 180,
@@ -6814,8 +6814,8 @@
       },
       "flag": "🇬🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Monte_Athos",
+      "summary": "El Monte Athos es una península montañosa y comunidad monástica autónoma del norte de Grecia. Sus antiguos monasterios ortodoxos se distribuyen entre bosques y costas del mar Egeo."
     },
     {
       "id": 514,
@@ -6840,8 +6840,8 @@
       },
       "flag": "🇲🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Montenegro",
+      "summary": "Montenegro es un país balcánico de altas montañas y una breve costa sobre el Adriático. Profundos cañones, lagos y la bahía de Kotor forman algunos de sus paisajes más característicos."
     },
     {
       "id": 96,
@@ -6892,8 +6892,8 @@
       },
       "flag": "🇲🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Mozambique",
+      "summary": "Mozambique posee una larga costa sobre el océano Índico frente a Madagascar. Llanuras, grandes ríos, sabanas y archipiélagos acompañan un territorio que se estrecha hacia el norte."
     },
     {
       "id": 309,
@@ -6918,8 +6918,8 @@
       },
       "flag": "🇲🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Myanmar",
+      "summary": "Myanmar se extiende desde las montañas del norte hasta el mar de Andamán. Grandes ríos, llanuras, selvas y numerosos pueblos conforman uno de los territorios más diversos del sudeste asiático."
     },
     {
       "id": 464,
@@ -6944,8 +6944,8 @@
       },
       "flag": "🇳🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Namibia",
+      "summary": "Namibia se extiende por la costa atlántica de África austral y alberga los desiertos del Namib y Kalahari. Dunas, cañones y vastas mesetas forman paisajes de extrema aridez y baja población."
     },
     {
       "id": 157,
@@ -6970,8 +6970,8 @@
       },
       "flag": "🇳🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Nauru",
+      "summary": "Nauru es una pequeña isla elevada de Micronesia y uno de los Estados más pequeños del mundo. La extracción de fosfatos transformó profundamente su meseta central y dejó la población concentrada en la costa."
     },
     {
       "id": 369,
@@ -6996,8 +6996,8 @@
       },
       "flag": "🇳🇵",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Nepal",
+      "summary": "Nepal se extiende desde las llanuras del Terai hasta las mayores cumbres del Himalaya. Valles, bosques y montañas rodean antiguas ciudades y comunidades adaptadas a grandes diferencias de altitud."
     },
     {
       "id": 86,
@@ -7050,8 +7050,8 @@
       },
       "flag": "🇳🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/N%C3%ADger",
+      "summary": "Níger es un extenso país interior del Sahel cuyo norte se interna profundamente en el Sahara. El río Níger y las regiones meridionales concentran la mayor parte de la población y la agricultura."
     },
     {
       "id": 450,
@@ -7076,8 +7076,8 @@
       },
       "flag": "🇳🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Nigeria",
+      "summary": "Nigeria se extiende desde el golfo de Guinea hasta las sabanas del Sahel. El delta del Níger, grandes ciudades y una enorme diversidad cultural acompañan al país más poblado de África."
     },
     {
       "id": 188,
@@ -7102,8 +7102,8 @@
       },
       "flag": "🇳🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Niue",
+      "summary": "Niue es una isla coralina elevada y autónoma en libre asociación con Nueva Zelanda. Acantilados, cuevas, bosques y una costa sin laguna rodean una población pequeña y muy dispersa."
     },
     {
       "id": 266,
@@ -7128,8 +7128,8 @@
       },
       "flag": "🇳🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Noruega",
+      "summary": "Noruega ocupa el borde occidental de la península escandinava y se prolonga hacia el Ártico. Fiordos, montañas, glaciares e islas acompañan una de las costas más recortadas del mundo."
     },
     {
       "id": 162,
@@ -7154,8 +7154,8 @@
       },
       "flag": "🇳🇨",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Nueva_Caledonia",
+      "summary": "Nueva Caledonia es un territorio francés del Pacífico suroccidental. La gran isla montañosa, sus islas menores y una extensa laguna coralina albergan una biodiversidad excepcional."
     },
     {
       "id": 170,
@@ -7183,7 +7183,7 @@
       "flag": "🇳🇿",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Nueva_Zelanda",
-      "summary": ""
+      "summary": "Nueva Zelanda comprende dos grandes islas y numerosos territorios menores del Pacífico sur. Montañas, glaciares, volcanes, fiordos y llanuras forman paisajes modelados por una intensa actividad geológica."
     },
     {
       "id": 192,
@@ -7208,8 +7208,8 @@
       },
       "flag": "🇯🇵",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Islas_Ogasawara",
+      "summary": "Las islas Ogasawara forman un remoto archipiélago japonés del Pacífico, a unos mil kilómetros al sur de Tokio. Su aislamiento favoreció ecosistemas singulares, costas volcánicas y aguas de gran biodiversidad."
     },
     {
       "id": 370,
@@ -7234,8 +7234,8 @@
       },
       "flag": "🇴🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Om%C3%A1n",
+      "summary": "Omán ocupa el extremo sudoriental de la península arábiga, entre montañas, desiertos y el mar Arábigo. Oasis, wadis y antiguos puertos reflejan su prolongada relación con las rutas del océano Índico."
     },
     {
       "id": 263,
@@ -7261,7 +7261,7 @@
       "flag": "🇳🇱",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Pa%C3%ADses_Bajos",
-      "summary": ""
+      "summary": "Los Países Bajos se extienden sobre llanuras del delta de grandes ríos europeos. Diques, pólderes, canales y ciudades históricas caracterizan un territorio ganado parcialmente al mar."
     },
     {
       "id": 372,
@@ -7287,8 +7287,8 @@
       },
       "flag": "🇵🇰",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Pakist%C3%A1n",
+      "summary": "Pakistán se extiende desde las altas montañas del norte hasta el mar Arábigo. El valle del Indo, mesetas y desiertos sostienen la mayor parte de su población y una antigua tradición agrícola."
     },
     {
       "id": 22,
@@ -7313,8 +7313,8 @@
       },
       "flag": "🇵🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Palaos",
+      "summary": "Palaos es un archipiélago de Micronesia conocido por sus islas rocosas, lagunas y arrecifes. Islas volcánicas y coralinas rodean una pequeña población y una extraordinaria diversidad marina."
     },
     {
       "id": 510,
@@ -7339,8 +7339,8 @@
       },
       "flag": "🇵🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Estado_de_Palestina",
+      "summary": "Palestina comprende territorios de Oriente Próximo situados entre el Mediterráneo y el valle del Jordán. Ciudades antiguas, colinas y áreas densamente pobladas forman una geografía de enorme importancia histórica."
     },
     {
       "id": 88,
@@ -7394,8 +7394,8 @@
       },
       "flag": "🇵🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Pap%C3%BAa_Nueva_Guinea",
+      "summary": "Papúa Nueva Guinea ocupa la mitad oriental de Nueva Guinea y numerosas islas cercanas. Montañas, selvas y costas aisladas albergan una de las mayores diversidades lingüísticas y culturales del planeta."
     },
     {
       "id": 132,
@@ -7473,8 +7473,8 @@
       },
       "flag": "🇵🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Polinesia_Francesa",
+      "summary": "La Polinesia Francesa reúne archipiélagos volcánicos y coralinos dispersos por una enorme región del Pacífico sur. Tahití es su principal centro, rodeado por islas, atolones y lagunas tropicales."
     },
     {
       "id": 269,
@@ -7501,8 +7501,8 @@
       },
       "flag": "🇵🇱",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Polonia",
+      "summary": "Polonia ocupa una gran llanura de Europa central entre el Báltico y los Cárpatos. Lagos, bosques, ríos y ciudades reconstruidas reflejan una historia marcada por su posición continental."
     },
     {
       "id": 272,
@@ -7528,7 +7528,7 @@
       "flag": "🇵🇹",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Portugal",
-      "summary": ""
+      "summary": "Portugal ocupa el extremo occidental de la península ibérica y mira hacia el océano Atlántico. Ríos, sierras y una larga costa acompañan ciudades y regiones de fuerte tradición marítima."
     },
     {
       "id": 507,
@@ -7553,8 +7553,8 @@
       },
       "flag": "🇸🇧",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Provincia_de_Temotu",
+      "summary": "Temotu es la provincia más oriental de las islas Salomón y constituye una entidad DXCC separada. Sus islas volcánicas y coralinas están muy dispersas y próximas a Vanuatu."
     },
     {
       "id": 202,
@@ -7607,8 +7607,8 @@
       },
       "flag": "🇨🇫",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Rep%C3%BAblica_Centroafricana",
+      "summary": "La República Centroafricana es un país interior de mesetas, sabanas y selvas atravesado por numerosos ríos. Se encuentra en una zona de transición entre la cuenca del Congo y el Sahel."
     },
     {
       "id": 503,
@@ -7633,8 +7633,8 @@
       },
       "flag": "🇨🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Rep%C3%BAblica_Checa",
+      "summary": "La República Checa es un país interior de Europa central formado por las regiones históricas de Bohemia, Moravia y parte de Silesia. Colinas, bosques, castillos y ciudades medievales caracterizan su paisaje."
     },
     {
       "id": 522,
@@ -7659,8 +7659,8 @@
       },
       "flag": "🇽🇰",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Kosovo",
+      "summary": "Kosovo es un territorio balcánico interior rodeado por montañas y atravesado por fértiles llanuras. Sus ciudades y monasterios reflejan una historia compleja y una diversidad cultural todavía presente."
     },
     {
       "id": 412,
@@ -7685,8 +7685,8 @@
       },
       "flag": "🇨🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Rep%C3%BAblica_del_Congo",
+      "summary": "La República del Congo se extiende desde las selvas de la cuenca del Congo hasta una breve costa atlántica. Grandes ríos y bosques ecuatoriales dominan un territorio de población dispersa."
     },
     {
       "id": 414,
@@ -7711,8 +7711,8 @@
       },
       "flag": "🇨🇩",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Rep%C3%BAblica_Democr%C3%A1tica_del_Congo",
+      "summary": "La República Democrática del Congo ocupa gran parte de la inmensa cuenca del río Congo. Selvas, montañas, sabanas y grandes lagos forman uno de los territorios más extensos y diversos de África."
     },
     {
       "id": 72,
@@ -7763,8 +7763,8 @@
       },
       "flag": "🇷🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Ruanda",
+      "summary": "Ruanda es un pequeño país de altas colinas situado en la región de los Grandes Lagos. Su relieve montañoso, lagos y fértiles valles sostienen una de las poblaciones más densas de África."
     },
     {
       "id": 275,
@@ -7789,8 +7789,8 @@
       },
       "flag": "🇷🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Rumania",
+      "summary": "Rumania se extiende desde los Cárpatos hasta el Danubio y el mar Negro. Montañas, bosques, llanuras y el delta del Danubio forman un territorio de gran diversidad natural."
     },
     {
       "id": 15,
@@ -7864,7 +7864,7 @@
       "flag": "🇷🇺",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Rusia_asi%C3%A1tica",
-      "summary": ""
+      "summary": "La Rusia Asiática se extiende desde los montes Urales hasta el océano Pacífico y el Ártico. Siberia, grandes ríos, taiga, tundra y extensas regiones poco pobladas ocupan la mayor parte de su territorio."
     },
     {
       "id": 54,
@@ -7894,7 +7894,7 @@
       "flag": "🇷🇺",
       "flagImage": "",
       "wikipedia": "https://es.wikipedia.org/wiki/Rusia_europea",
-      "summary": ""
+      "summary": "La Rusia Europea comprende la porción occidental del país, situada principalmente al oeste de los montes Urales. Allí se concentran sus mayores ciudades, amplias llanuras y numerosos ríos históricos."
     },
     {
       "id": 519,
@@ -7945,8 +7945,8 @@
       },
       "flag": "🇪🇭",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Sahara_Occidental",
+      "summary": "El Sahara Occidental es un territorio desértico de la costa atlántica del noroeste africano y mantiene un estatus político disputado. Dunas, mesetas y extensas regiones áridas dominan su paisaje."
     },
     {
       "id": 213,
@@ -7997,8 +7997,8 @@
       },
       "flag": "🇼🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Samoa",
+      "summary": "Samoa es un país polinesio formado por islas volcánicas del Pacífico sur. Montañas cubiertas de selva, campos de lava, arrecifes y aldeas costeras sostienen una cultura comunitaria de fuertes tradiciones."
     },
     {
       "id": 9,
@@ -8026,8 +8026,8 @@
       },
       "flag": "🇦🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Samoa_Americana",
+      "summary": "Samoa Americana es un territorio estadounidense del Pacífico sur formado por islas volcánicas y atolones. Montañas abruptas, selvas y puertos naturales rodean comunidades de cultura polinesia."
     },
     {
       "id": 216,
@@ -8166,8 +8166,8 @@
       },
       "flag": "🇸🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/San_Marino",
+      "summary": "San Marino es un pequeño Estado enclavado en Italia, asentado sobre las laderas del monte Titano. Sus fortalezas y su centro histórico dominan el paisaje de colinas circundante."
     },
     {
       "id": 277,
@@ -8284,8 +8284,8 @@
       },
       "flag": "🇸🇭",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Santa_Elena_(isla)",
+      "summary": "Santa Elena es una remota isla volcánica británica del Atlántico Sur. Acantilados, valles y zonas verdes rodean Jamestown en un territorio conocido por el exilio final de Napoleón Bonaparte."
     },
     {
       "id": 97,
@@ -8336,8 +8336,8 @@
       },
       "flag": "🇸🇹",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Santo_Tom%C3%A9_y_Pr%C3%ADncipe",
+      "summary": "Santo Tomé y Príncipe es un país insular volcánico situado sobre el ecuador, en el golfo de Guinea. Selvas húmedas, montañas y antiguas plantaciones cubren gran parte de sus islas."
     },
     {
       "id": 117,
@@ -8362,8 +8362,8 @@
       },
       "flag": "🇺🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Uni%C3%B3n_Internacional_de_Telecomunicaciones",
+      "summary": "La sede de la Unión Internacional de Telecomunicaciones se encuentra en Ginebra, Suiza. Para el programa DXCC constituye una entidad propia cuando opera la estación internacional 4U1ITU."
     },
     {
       "id": 289,
@@ -8414,8 +8414,8 @@
       },
       "flag": "🇸🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Senegal",
+      "summary": "Senegal ocupa el extremo occidental de África y rodea casi por completo a Gambia. Sabanas, costas atlánticas, humedales y el valle del río Senegal estructuran su territorio."
     },
     {
       "id": 296,
@@ -8440,8 +8440,8 @@
       },
       "flag": "🇷🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Serbia",
+      "summary": "Serbia es un país interior de los Balcanes atravesado por el Danubio y otros grandes ríos. Llanuras septentrionales, colinas y montañas conectan Europa central con el sudeste continental."
     },
     {
       "id": 379,
@@ -8466,8 +8466,8 @@
       },
       "flag": "🇸🇨",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Seychelles",
+      "summary": "Seychelles es un archipiélago del océano Índico formado por islas graníticas y coralinas. Playas, selvas y arrecifes rodean un territorio muy disperso y de extraordinaria riqueza natural."
     },
     {
       "id": 458,
@@ -8492,8 +8492,8 @@
       },
       "flag": "🇸🇱",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Sierra_Leona",
+      "summary": "Sierra Leona se encuentra en la costa atlántica de África occidental. Playas, manglares, selvas y tierras altas rodean uno de los mayores puertos naturales del continente."
     },
     {
       "id": 381,
@@ -8519,8 +8519,8 @@
       },
       "flag": "🇸🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Singapur",
+      "summary": "Singapur es una ciudad-Estado insular situada en el extremo sur de la península malaya. Su puerto y su densa área urbana ocupan una posición estratégica entre el océano Índico y el Pacífico."
     },
     {
       "id": 518,
@@ -8573,8 +8573,8 @@
       },
       "flag": "🇸🇾",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Siria",
+      "summary": "Siria se extiende desde la costa mediterránea hasta las mesetas y desiertos del interior. El valle del Éufrates y sus ciudades antiguas reflejan una historia vinculada a las rutas de Oriente Próximo."
     },
     {
       "id": 246,
@@ -8599,8 +8599,8 @@
       },
       "flag": "📡",
       "flagImage": "images/dxcc/bandera-orden-de-malta.svg",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Orden_de_Malta",
+      "summary": "La Soberana Orden Militar de Malta es una orden religiosa católica y sujeto de derecho internacional con sede en Roma. Sus estaciones con prefijo 1A constituyen una entidad propia para el DXCC."
     },
     {
       "id": 232,
@@ -8626,8 +8626,8 @@
       },
       "flag": "🇸🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Somalia",
+      "summary": "Somalia ocupa el extremo oriental del Cuerno de África y posee una de las costas más largas del continente. Mesetas áridas, sabanas y desiertos dominan un territorio orientado al océano Índico."
     },
     {
       "id": 315,
@@ -8652,8 +8652,8 @@
       },
       "flag": "🇱🇰",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Sri_Lanka",
+      "summary": "Sri Lanka es una isla tropical del océano Índico situada al sur de India. Tierras altas, selvas, plantaciones y llanuras costeras rodean antiguos centros culturales y una notable diversidad natural."
     },
     {
       "id": 462,
@@ -8682,8 +8682,8 @@
       },
       "flag": "🇿🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Sud%C3%A1frica",
+      "summary": "Sudáfrica ocupa el extremo austral del continente entre los océanos Atlántico e Índico. Mesetas, montañas, sabanas y costas variadas acompañan una gran diversidad natural y cultural."
     },
     {
       "id": 466,
@@ -8710,8 +8710,8 @@
       },
       "flag": "🇸🇩",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Sud%C3%A1n",
+      "summary": "Sudán se extiende desde el Sahara hasta las sabanas atravesadas por el río Nilo. Desiertos, mesetas y fértiles riberas conectan el noreste africano con el valle del Nilo."
     },
     {
       "id": 521,
@@ -8736,8 +8736,8 @@
       },
       "flag": "🇸🇸",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Sud%C3%A1n_del_Sur",
+      "summary": "Sudán del Sur es un país interior atravesado por el Nilo Blanco y grandes humedales como el Sudd. Sabanas, bosques y llanuras estacionales sostienen una población de gran diversidad cultural."
     },
     {
       "id": 284,
@@ -8764,8 +8764,8 @@
       },
       "flag": "🇸🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Suecia",
+      "summary": "Suecia ocupa el sector oriental de la península escandinava, desde el Báltico hasta las regiones árticas. Bosques, lagos y archipiélagos dominan un territorio alargado y de baja densidad poblacional."
     },
     {
       "id": 287,
@@ -8791,8 +8791,8 @@
       },
       "flag": "🇨🇭",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Suiza",
+      "summary": "Suiza es un país alpino sin salida al mar situado en el centro de Europa. Altas montañas, lagos y valles densamente poblados conviven en un territorio de gran diversidad lingüística."
     },
     {
       "id": 140,
@@ -8843,8 +8843,8 @@
       },
       "flag": "🇸🇯",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Svalbard",
+      "summary": "Svalbard es un archipiélago noruego del océano Ártico, situado entre Noruega continental y el polo norte. Glaciares, montañas y fiordos dominan un ambiente polar de población muy reducida."
     },
     {
       "id": 387,
@@ -8870,8 +8870,8 @@
       },
       "flag": "🇹🇭",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Tailandia",
+      "summary": "Tailandia se extiende desde las montañas del norte hasta la península malaya. Llanuras arroceras, selvas, islas y ciudades históricas acompañan una cultura profundamente vinculada al budismo."
     },
     {
       "id": 386,
@@ -8897,8 +8897,8 @@
       },
       "flag": "🇹🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Taiw%C3%A1n",
+      "summary": "Taiwán es una isla montañosa del Pacífico occidental situada frente a la costa de China continental. Elevadas cordilleras ocupan el interior, mientras la población se concentra en las llanuras y ciudades del oeste."
     },
     {
       "id": 470,
@@ -8923,8 +8923,8 @@
       },
       "flag": "🇹🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Tanzania",
+      "summary": "Tanzania se extiende desde los Grandes Lagos hasta el océano Índico e incluye las islas de Zanzíbar. Sabanas, montañas y valles albergan el Kilimanjaro y una extraordinaria diversidad de fauna."
     },
     {
       "id": 262,
@@ -8949,8 +8949,8 @@
       },
       "flag": "🇹🇯",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Tayikist%C3%A1n",
+      "summary": "Tayikistán es un país interior de Asia central dominado por las montañas del Pamir. Altos valles, glaciares y ríos ocupan un territorio accidentado con escasas llanuras habitables."
     },
     {
       "id": 61,
@@ -8975,8 +8975,8 @@
       },
       "flag": "🇷🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Tierra_de_Francisco_Jos%C3%A9",
+      "summary": "La Tierra de Francisco José es un remoto archipiélago ruso del océano Ártico. Sus numerosas islas, cubiertas en gran parte por glaciares, permanecen rodeadas por hielo marino durante buena parte del año."
     },
     {
       "id": 511,
@@ -9001,8 +9001,8 @@
       },
       "flag": "🇹🇱",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Timor_Oriental",
+      "summary": "Timor Oriental ocupa la parte oriental de la isla de Timor y pequeños territorios vecinos. Montañas, sabanas y costas tropicales acompañan una cultura marcada por influencias austronesias y portuguesas."
     },
     {
       "id": 483,
@@ -9027,8 +9027,8 @@
       },
       "flag": "🇹🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Togo",
+      "summary": "Togo es un país estrecho de África occidental que se extiende desde el golfo de Guinea hacia el interior. Costas bajas, mesetas y sabanas se suceden en poca distancia."
     },
     {
       "id": 160,
@@ -9053,8 +9053,8 @@
       },
       "flag": "🇹🇴",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Tonga",
+      "summary": "Tonga es un reino polinesio formado por numerosas islas volcánicas y coralinas del Pacífico sur. Sus tres grupos principales se extienden sobre una amplia franja oceánica."
     },
     {
       "id": 90,
@@ -9106,8 +9106,8 @@
       },
       "flag": "🇹🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/T%C3%BAnez",
+      "summary": "Túnez ocupa el extremo septentrional de África entre el Mediterráneo y el Sahara. Costas, montañas, llanuras y oasis acompañan antiguas ciudades vinculadas a las rutas mediterráneas."
     },
     {
       "id": 280,
@@ -9132,8 +9132,8 @@
       },
       "flag": "🇹🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Turkmenist%C3%A1n",
+      "summary": "Turkmenistán se extiende entre el mar Caspio y los desiertos de Asia central. El desierto de Karakum domina gran parte del territorio, interrumpido por oasis, canales y ciudades."
     },
     {
       "id": 390,
@@ -9163,8 +9163,8 @@
       },
       "flag": "🇹🇷",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Turqu%C3%ADa",
+      "summary": "Turquía se extiende entre Europa sudoriental y Asia occidental, unidas por los estrechos del Bósforo y los Dardanelos. Mesetas, montañas y costas rodean un territorio de antigua diversidad cultural."
     },
     {
       "id": 282,
@@ -9189,8 +9189,8 @@
       },
       "flag": "🇹🇻",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Tuvalu",
+      "summary": "Tuvalu es un pequeño Estado polinesio compuesto por atolones e islas coralinas muy bajas. Sus estrechas tierras, lagunas y comunidades costeras son especialmente vulnerables al aumento del nivel del mar."
     },
     {
       "id": 288,
@@ -9217,8 +9217,8 @@
       },
       "flag": "🇺🇦",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Ucrania",
+      "summary": "Ucrania se extiende sobre amplias llanuras de Europa oriental, desde los Cárpatos hasta las costas del mar Negro. Grandes ríos, tierras fértiles y ciudades históricas estructuran su territorio."
     },
     {
       "id": 286,
@@ -9243,8 +9243,8 @@
       },
       "flag": "🇺🇬",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Uganda",
+      "summary": "Uganda es un país interior de África oriental situado en la región de los Grandes Lagos. Mesetas, sabanas y montañas rodean el lago Victoria y algunas de las fuentes del Nilo."
     },
     {
       "id": 144,
@@ -9295,8 +9295,8 @@
       },
       "flag": "🇺🇿",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Uzbekist%C3%A1n",
+      "summary": "Uzbekistán es un país interior de Asia central formado por desiertos, valles fértiles y antiguas ciudades de la Ruta de la Seda. Samarcanda, Bujará y Jiva conservan un valioso patrimonio histórico."
     },
     {
       "id": 158,
@@ -9321,8 +9321,8 @@
       },
       "flag": "🇻🇺",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Vanuatu",
+      "summary": "Vanuatu es un archipiélago melanesio de islas volcánicas en el Pacífico sur. Volcanes activos, selvas, arrecifes y numerosas lenguas reflejan una gran diversidad natural y cultural."
     },
     {
       "id": 148,
@@ -9375,8 +9375,8 @@
       },
       "flag": "🇻🇳",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Vietnam",
+      "summary": "Vietnam ocupa una estrecha franja del sudeste asiático junto al mar de China Meridional. Montañas, deltas, arrozales y una larga costa unen el norte y el sur del país."
     },
     {
       "id": 492,
@@ -9401,8 +9401,8 @@
       },
       "flag": "🇾🇪",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Yemen",
+      "summary": "Yemen ocupa el extremo suroccidental de la península arábiga y domina accesos al mar Rojo y al golfo de Adén. Montañas, mesetas, desiertos y ciudades históricas forman un paisaje de fuertes contrastes."
     },
     {
       "id": 382,
@@ -9427,8 +9427,8 @@
       },
       "flag": "🇩🇯",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Yibuti",
+      "summary": "Yibuti se encuentra en el Cuerno de África junto al estrecho de Bab el-Mandeb. Desiertos volcánicos, lagos salinos y una costa estratégica rodean uno de los climas más cálidos del planeta."
     },
     {
       "id": 482,
@@ -9453,8 +9453,8 @@
       },
       "flag": "🇿🇲",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Zambia",
+      "summary": "Zambia es un país interior de África austral formado por elevadas mesetas y grandes ríos. El Zambeze y las cataratas Victoria destacan entre sus sabanas, bosques y humedales."
     },
     {
       "id": 452,
@@ -9479,8 +9479,8 @@
       },
       "flag": "🇿🇼",
       "flagImage": "",
-      "wikipedia": "",
-      "summary": ""
+      "wikipedia": "https://es.wikipedia.org/wiki/Zimbabue",
+      "summary": "Zimbabue ocupa una meseta del África austral entre los ríos Zambeze y Limpopo. Sabanas, montañas y antiguas ruinas de piedra rodean un territorio conocido por las cataratas Victoria."
     }
   ]
 }
