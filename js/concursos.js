@@ -2,7 +2,7 @@ const contestGallery = document.querySelector('#contest-gallery');
 const contestDialog = document.querySelector('#contest-dialog');
 const contestImage = document.querySelector('#contest-image');
 const contestCaption = document.querySelector('#contest-caption');
-let contestYear = '2025';
+let contestYear = CONCURSOS_DATA[0]?.year || '';
 let visibleContests = [];
 let selectedContest = 0;
 
