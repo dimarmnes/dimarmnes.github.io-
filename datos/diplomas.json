@@ -1,10 +1,52 @@
 [
   {
+    "src": "images/awards/20261010_SANTA_CATARINA_INTEGRADA_2026.webp",
+    "category": "otros",
+    "year": "2026",
+    "date": "20261010",
+    "title": "SANTA CATARINA INTEGRADA 2026"
+  },
+  {
     "src": "images/awards/sstv/20261007_ARISS_Award_Series_33.webp",
     "category": "sstv",
     "year": "2026",
     "date": "20261007",
     "title": "ARISS Award Series 33"
+  },
+  {
+    "src": "images/awards/20260809_Homenaje_a_la_Pachamama.webp",
+    "category": "otros",
+    "year": "2026",
+    "date": "20260809",
+    "title": "Homenaje a la Pachamama"
+  },
+  {
+    "src": "images/awards/20260726_196_Aniv_Jura_de_la_Constitucion_ORO.webp",
+    "category": "otros",
+    "year": "2026",
+    "date": "20260726",
+    "title": "196 Aniv Jura de la Constitucion ORO"
+  },
+  {
+    "src": "images/awards/20260726_196_Aniv_Jura_de_la_Constitucion_PLATA.webp",
+    "category": "otros",
+    "year": "2026",
+    "date": "20260726",
+    "title": "196 Aniv Jura de la Constitucion PLATA"
+  },
+  {
+    "src": "images/awards/pota/20260718_POTA_Support_Your_Parks_Hunter.webp",
+    "category": "pota",
+    "year": "2026",
+    "date": "20260718",
+    "title": "POTA Support Your Parks Hunter"
+  },
+  {
+    "src": "images/awards/20260620_Dia_de_la_bandera_BRONCE.webp",
+    "category": "otros",
+    "year": "2026",
+    "date": "20260620",
+    "title": "Dia de la bandera BRONCE"
   },
   {
     "src": "images/awards/rca/20260522_RCA_101_10M_MIXTO.webp",
@@ -19,6 +61,13 @@
     "year": "2026",
     "date": "20260522",
     "title": "RCA TRA MIXTO"
+  },
+  {
+    "src": "images/awards/pota/20260419_POTA_Support_Your_Parks_Hunter.webp",
+    "category": "pota",
+    "year": "2026",
+    "date": "20260419",
+    "title": "POTA Support Your Parks Hunter"
   },
   {
     "src": "images/awards/sstv/20260414-Remeasat-SSTV-Award.webp",
@@ -42,6 +91,13 @@
     "title": "Gagarins-Week-2026"
   },
   {
+    "src": "images/awards/20260400-LU1XA_75_ANIV_2026_BRONCE.webp",
+    "category": "otros",
+    "year": "2026",
+    "date": "20260400",
+    "title": "LU1XA 75 ANIV 2026 BRONCE"
+  },
+  {
     "src": "images/awards/logros/20260318_LABRE_WAB_MIXED.png",
     "category": "logros",
     "year": "2026",
@@ -49,11 +105,32 @@
     "title": "LABRE WAB MIXED"
   },
   {
+    "src": "images/awards/20260308_LLOTA_Distincion_conmemorativa.webp",
+    "category": "otros",
+    "year": "2026",
+    "date": "20260308",
+    "title": "LLOTA Distincion conmemorativa"
+  },
+  {
+    "src": "images/awards/pota/20260304_POTA_Sapphire_Hunter.webp",
+    "category": "pota",
+    "year": "2026",
+    "date": "20260304",
+    "title": "POTA Sapphire Hunter"
+  },
+  {
     "src": "images/awards/20260300_LABRE_92_anos.jpg",
     "category": "otros",
     "year": "2026",
     "date": "20260300",
     "title": "LABRE 92 anos"
+  },
+  {
+    "src": "images/awards/pota/20260105_POTA_New_Years_Hunter_2026.webp",
+    "category": "pota",
+    "year": "2026",
+    "date": "20260105",
+    "title": "POTA New Years Hunter 2026"
   },
   {
     "src": "images/awards/20260000_WWA.jpg",
@@ -84,7 +161,7 @@
     "title": "Despidiendo el 2025 oro"
   },
   {
-    "src": "images/awards/pota/20251019_POTA_Diamond_Hunter.jpg",
+    "src": "images/awards/pota/20251019_POTA_Diamond_Hunter.webp",
     "category": "pota",
     "year": "2025",
     "date": "20251019",
@@ -112,7 +189,7 @@
     "title": "ARISS Award World Space Week 2025 Series 29"
   },
   {
-    "src": "images/awards/pota/20250929_POTA_Platinum_Hunter.jpg",
+    "src": "images/awards/pota/20250929_POTA_Platinum_Hunter.webp",
     "category": "pota",
     "year": "2025",
     "date": "20250929",
@@ -133,7 +210,7 @@
     "title": "PrefijosArgentinos 50"
   },
   {
-    "src": "images/awards/pota/20250608_POTA_Gold_Hunter.jpg",
+    "src": "images/awards/pota/20250608_POTA_Gold_Hunter.webp",
     "category": "pota",
     "year": "2025",
     "date": "20250608",
@@ -224,21 +301,28 @@
     "title": "eAsia"
   },
   {
-    "src": "images/awards/pota/20250120-POTA-Silver-Hunter.jpg",
+    "src": "images/awards/pota/20250120-POTA-Silver-Hunter.webp",
     "category": "pota",
     "year": "2025",
     "date": "20250120",
     "title": "POTA-Silver-Hunter"
   },
   {
-    "src": "images/awards/pota/20250118_POTA_Support_Your_Parks_Hunter.jpg",
+    "src": "images/awards/pota/20250118_POTA_Support_Your_Parks_Hunter.webp",
     "category": "pota",
     "year": "2025",
     "date": "20250118",
     "title": "POTA Support Your Parks Hunter"
   },
   {
-    "src": "images/awards/pota/20250105-POTA-New-Years-Hunter.jpg",
+    "src": "images/awards/pota/20250118_POTA_Support_Your_Parks_Hunter_Autumn.webp",
+    "category": "pota",
+    "year": "2025",
+    "date": "20250118",
+    "title": "POTA Support Your Parks Hunter Autumn"
+  },
+  {
+    "src": "images/awards/pota/20250105-POTA-New-Years-Hunter.webp",
     "category": "pota",
     "year": "2025",
     "date": "20250105",
@@ -441,11 +525,18 @@
     "title": "fiestas-patronales-san-miguel-arcangel-2024"
   },
   {
-    "src": "images/awards/pota/20240917_POTA_Bronze_Hunter.jpg",
+    "src": "images/awards/pota/20240917_POTA_Bronze_Hunter.webp",
     "category": "pota",
     "year": "2024",
     "date": "20240917",
     "title": "POTA Bronze Hunter"
+  },
+  {
+    "src": "images/awards/pota/20240917_POTA_DX_Hunter.webp",
+    "category": "pota",
+    "year": "2024",
+    "date": "20240917",
+    "title": "POTA DX Hunter"
   },
   {
     "src": "images/awards/20240915_44_Ani_BV_A-Seco_24.jpg",
@@ -803,12 +894,5 @@
     "year": "2023",
     "date": "20231029",
     "title": "B'SATTRAC SSTV AWARD ISS test 2023-10-27 DIEGO CARRATINI LU1IDC"
-  },
-  {
-    "src": "images/awards/pota/POTA_DX_Hunter.jpg",
-    "category": "pota",
-    "year": "",
-    "date": "",
-    "title": "POTA DX Hunter"
   }
 ]
